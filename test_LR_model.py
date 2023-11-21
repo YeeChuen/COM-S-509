@@ -1,13 +1,18 @@
 from logistic_regression import LogisticRegression
-from helper import parseData, splitData, normalize, score
+from helper import parseData, splitData, normalize, score, parseDataBreastCancer, parseDataSpamEmail
 from sklearn.utils import shuffle
 import numpy as np
+
+# encode string to number
+from sklearn.preprocessing import OneHotEncoder
+
 
 # test logistic regresison model
 from sklearn.linear_model import LogisticRegression as skLogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_digits
-from logistic_regression import CustomLogisticRegression, ShortLogisticRegression
+from logistic_regression import CustomLogisticRegression, ShortLogisticRegression, PELogisticRegression
+from LRmodel import sklearnDataset
 
 def trySKlearn():
     print("")
@@ -20,23 +25,28 @@ def trySKlearn():
 
     model = LogisticRegression(0.001, 150)
     model.fit(x_train, y_train)
-    score = model.score(x_train, y_train)
+    score = model.score(x_test, y_test)
     print(f"scratch model prediction: {score}")
 
     logisticRegr = skLogisticRegression()
     logisticRegr.fit(x_train, y_train)
-    score = logisticRegr.score(x_train, y_train)
+    score = logisticRegr.score(x_test, y_test)
     print(f"sklearn prediction: {score}")
 
     lr = CustomLogisticRegression()
     lr.fit(x_train, y_train, epochs=150)
-    score = lr.score(x_train, y_train)
+    score = lr.score(x_test, y_test)
     print(f"github 1 model prediction: {score}")
     
     model = ShortLogisticRegression(0.1, 150)
     model.fit(x_train, y_train)
-    score = model.score(x_train, y_train)
+    score = model.score(x_test, y_test)
     print(f"github 2 model prediction: {score}")
+
+    model = PELogisticRegression(0.1, 150)
+    model.fit(x_train, y_train)
+    score = model.score(x_test, y_test)
+    print(f"PE website model prediction: {score}")
 
     print("")
 
@@ -62,43 +72,164 @@ def handwriting_dataset():
     print(train_x.shape)
     print(train_y.shape)
 
-
     model = LogisticRegression(0.1, 150)
     model.fit(train_x, train_y)
-    score = model.score(train_x, train_y)
+    score = model.score(test_x, test_y)
     print(f"scratch model prediction: {score}")
 
     logisticRegr = skLogisticRegression()
     logisticRegr.fit(train_x, train_y)
-    score = logisticRegr.score(train_x, train_y)
+    score = logisticRegr.score(test_x, test_y)
     print(f"sklearn prediction: {score}")
 
     lr = CustomLogisticRegression()
     lr.fit(train_x, train_y, epochs=150)
-    score = lr.score(train_x, train_y)
+    score = lr.score(test_x, test_y)
     print(f"github 1 model prediction: {score}")
     
     model = ShortLogisticRegression(0.1, 150)
     model.fit(train_x, train_y)
-    score = model.score(train_x, train_y)
+    score = model.score(test_x, test_y)
     print(f"github 2 model prediction: {score}")
+    
+    model = PELogisticRegression(0.1, 150)
+    model.fit(train_x, train_y)
+    score = model.score(test_x, test_y)
+    print(f"PE website model prediction: {score}")
 
     print("")
     pass
 
 def breastcancer_dataset():
+    print("")
+    print("--- comparing model accuracy for breast cancer dataset ---")
     breast_cancer_csv = "./data/breast-cancer.csv"
+    
+    X, y = parseDataBreastCancer(breast_cancer_csv)
+    X = normalize(X)
+    
+    y = np.where(y == "M", 1, y)
+    y = np.where(y == "B", -1, y)
+
+    train_x, train_y, _, _, test_x, test_y = splitData(X, y, 0.8, 0, 0.2)
+    print(train_x.shape)
+    print(train_y.shape)
+
+    model = LogisticRegression(0.1, 150)
+    model.fit(train_x, train_y)
+    score = model.score(test_x, test_y)
+    print(f"scratch model prediction: {score}")
+
+    logisticRegr = skLogisticRegression()
+    logisticRegr.fit(train_x, train_y)
+    score = logisticRegr.score(test_x, test_y)
+    print(f"sklearn prediction: {score}")
+
+    lr = CustomLogisticRegression()
+    lr.fit(train_x, train_y, epochs=150)
+    score = lr.score(test_x, test_y)
+    print(f"github 1 model prediction: {score}")
+    
+    model = ShortLogisticRegression(0.1, 150)
+    model.fit(train_x, train_y)
+    score = model.score(test_x, test_y)
+    print(f"github 2 model prediction: {score}")
+    
+    model = PELogisticRegression(0.1, 150)
+    model.fit(train_x, train_y)
+    score = model.score(test_x, test_y)
+    print(f"PE website model prediction: {score}")
+
+    print("")
     pass
 
 def spamemail_dataset():
+    print("")
+    print("--- comparing model accuracy for spam email dataset ---")
     spam_email_csv = "./data/spam_email_dataset.csv"
+    X , y = parseDataSpamEmail(spam_email_csv)
+    X = normalize(X)
+
+    train_x, train_y, _, _, test_x, test_y = splitData(X, y, 0.8, 0, 0.2)
+    print(train_x.shape)
+    print(train_y.shape)
+
+    model = LogisticRegression(0.1, 150)
+    model.fit(train_x, train_y)
+    score = model.score(test_x, test_y)
+    print(f"scratch model prediction: {score}")
+
+    logisticRegr = skLogisticRegression()
+    logisticRegr.fit(train_x, train_y)
+    score = logisticRegr.score(test_x, test_y)
+    print(f"sklearn prediction: {score}")
+
+    lr = CustomLogisticRegression()
+    lr.fit(train_x, train_y, epochs=150)
+    score = lr.score(test_x, test_y)
+    print(f"github 1 model prediction: {score}")
+    
+    model = ShortLogisticRegression(0.1, 150)
+    model.fit(train_x, train_y)
+    score = model.score(test_x, test_y)
+    print(f"github 2 model prediction: {score}")
+    
+    model = PELogisticRegression(0.1, 150)
+    model.fit(train_x, train_y)
+    score = model.score(test_x, test_y)
+    print(f"PE website model prediction: {score}")
+    
+    print("")
     pass
 
 def waterpotability_dataset():
+    print("")
+    print("--- comparing model accuracy for water potability dataset ---")
     water_potability_csv = "./data/water_potability.csv"
+    
+    X, y = parseData(water_potability_csv)
+    X = normalize(X)
+
+    train_x, train_y, _, _, test_x, test_y = splitData(X, y, 0.8, 0, 0.2)
+    print(train_x.shape)
+    print(train_y.shape)
+
+    
+    model = LogisticRegression(0.1, 150)
+    model.fit(train_x, train_y)
+    score = model.score(test_x, test_y)
+    print(f"scratch model prediction: {score}")
+
+    logisticRegr = skLogisticRegression()
+    logisticRegr.fit(train_x, train_y)
+    score = logisticRegr.score(test_x, test_y)
+    print(f"sklearn prediction: {score}")
+
+    lr = CustomLogisticRegression()
+    lr.fit(train_x, train_y, epochs=150)
+    score = lr.score(test_x, test_y)
+    print(f"github 1 model prediction: {score}")
+    
+    model = ShortLogisticRegression(0.1, 150)
+    model.fit(train_x, train_y)
+    score = model.score(test_x, test_y)
+    print(f"github 2 model prediction: {score}")
+    
+    model = PELogisticRegression(0.1, 150)
+    model.fit(train_x, train_y)
+    score = model.score(test_x, test_y)
+    print(f"PE website model prediction: {score}")
+
+    print("")
     pass
 
 if __name__ == "__main__":
-    handwriting_dataset()
+
     trySKlearn()
+    sklearnDataset()
+    handwriting_dataset()
+    breastcancer_dataset()
+    waterpotability_dataset()
+    spamemail_dataset()
+
     pass
