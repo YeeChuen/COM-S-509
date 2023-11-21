@@ -6,17 +6,67 @@ import numpy as np
 # encode string to number
 from sklearn.preprocessing import OneHotEncoder
 
-
 # test logistic regresison model
 from sklearn.linear_model import LogisticRegression as skLogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_digits
+from sklearn.datasets import load_breast_cancer
 from logistic_regression import CustomLogisticRegression, ShortLogisticRegression, PELogisticRegression
 from LRmodel import sklearnDataset
+import pandas as pd
+
+def sklearn_to_df(data_loader):
+    X_data = data_loader.data
+    X_columns = data_loader.feature_names
+    x = pd.DataFrame(X_data, columns=X_columns)
+
+    y_data = data_loader.target
+    y = pd.Series(y_data, name='target')
+
+    return x, y
+
+def sklearnDataset():
+    print("")
+    print("--- comparing model accuracy for sklearn breast cancer dataset ---")
+    x, y = sklearn_to_df(load_breast_cancer())
+
+    x_train, x_test, y_train, y_test = train_test_split(
+        x, y, test_size=0.2, random_state=42)
+    
+    print(x_train.values.shape)
+    print(y_train.values.shape)
+    
+    model = LogisticRegression(0.1, 1000)
+    model.fit(x_train.values, y_train.values)
+    score = model.score(x_test.values, y_test.values)
+    print(f"scratch model prediction: {score}")
+
+    logisticRegr = skLogisticRegression()
+    logisticRegr.fit(x_train, y_train)
+    score = logisticRegr.score(x_test,y_test)
+    print(f"sklearn prediction: {score}")
+
+    lr = CustomLogisticRegression()
+    lr.fit(x_train, y_train, epochs=150)
+    score = lr.score(x_test,y_test)
+    print(f"github 1 model prediction: {score}")
+    
+    model = ShortLogisticRegression(0.1, 1000)
+    model.fit(x_train.values, y_train.values)
+    score = model.score(x_test.values, y_test.values)
+    print(f"github 2 model prediction: {score}")
+    
+    model = PELogisticRegression(0.1, 1000)
+    model.fit(x_train.values, y_train.values)
+    score = model.score(x_test.values, y_test.values)
+    print(f"PE website model prediction: {score}")
+    
+    print("")
+    pass
 
 def trySKlearn():
     print("")
-    print("--- comparing model accuracy for digit dataset ---")
+    print("--- comparing model accuracy for sklearn digit dataset ---")
     
     digits = load_digits()  
     x_train, x_test, y_train, y_test = train_test_split(digits.data, digits.target, test_size=0.25, random_state=0)
