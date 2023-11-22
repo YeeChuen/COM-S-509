@@ -86,7 +86,7 @@ def sklearnDataset():
     
 
     l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "multinomial", x_train.values, y_train.values)
-    print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
+    print("learning rate:",str(l_rate), ", No iterations:", str(no_iter), ", Probability threshold:", str(best_prob))
     model = LogisticRegression(l_rate, no_iter, classifier="multinomial")
     model.fit(x_train.values, y_train.values)
     score = model.score(x_test.values, y_test.values, prob = best_prob)
