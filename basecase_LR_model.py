@@ -36,7 +36,12 @@ def sklearnDataset():
     print(x_train.values.shape)
     print(y_train.values.shape)
     
-    model = LogisticRegression(0.1, 1000)
+    model = LogisticRegression(0.1, 150, classifier="multinomial")
+    model.fit(x_train.values, y_train.values)
+    score = model.score(x_test.values, y_test.values)
+    print(f"scratch multi model prediction: {score}")
+    
+    model = LogisticRegression(0.1, 150)
     model.fit(x_train.values, y_train.values)
     score = model.score(x_test.values, y_test.values)
     print(f"scratch model prediction: {score}")
@@ -51,12 +56,12 @@ def sklearnDataset():
     score = lr.score(x_test,y_test)
     print(f"github 1 model prediction: {score}")
     
-    model = ShortLogisticRegression(0.1, 1000)
+    model = ShortLogisticRegression(0.1, 150)
     model.fit(x_train.values, y_train.values)
     score = model.score(x_test.values, y_test.values)
     print(f"github 2 model prediction: {score}")
     
-    model = PELogisticRegression(0.1, 1000)
+    model = PELogisticRegression(0.1, 150)
     model.fit(x_train.values, y_train.values)
     score = model.score(x_test.values, y_test.values)
     print(f"PE website model prediction: {score}")
@@ -72,8 +77,13 @@ def trySKlearn():
     x_train, x_test, y_train, y_test = train_test_split(digits.data, digits.target, test_size=0.25, random_state=0)
     print(x_train.shape)
     print(y_train.shape)
+    
+    model = LogisticRegression(0.1, 150, classifier="multinomial")
+    model.fit(x_train, y_train)
+    score = model.score(x_test, y_test)
+    print(f"scratch multi model prediction: {score}")
 
-    model = LogisticRegression(0.001, 150)
+    model = LogisticRegression(0.1, 150)
     model.fit(x_train, y_train)
     score = model.score(x_test, y_test)
     print(f"scratch model prediction: {score}")
@@ -121,6 +131,11 @@ def handwriting_dataset():
     train_x, train_y, _, _, test_x, test_y = splitData(X, y, 0.8, 0, 0.2)
     print(train_x.shape)
     print(train_y.shape)
+    
+    model = LogisticRegression(0.1, 150, classifier="multinomial")
+    model.fit(train_x, train_y)
+    score = model.score(test_x, test_y)
+    print(f"scratch multi model prediction: {score}")
 
     model = LogisticRegression(0.1, 150)
     model.fit(train_x, train_y)
@@ -164,6 +179,11 @@ def breastcancer_dataset():
     train_x, train_y, _, _, test_x, test_y = splitData(X, y, 0.8, 0, 0.2)
     print(train_x.shape)
     print(train_y.shape)
+    
+    model = LogisticRegression(0.1, 150, classifier="multinomial")
+    model.fit(train_x, train_y)
+    score = model.score(test_x, test_y)
+    print(f"scratch multi model prediction: {score}")
 
     model = LogisticRegression(0.1, 150)
     model.fit(train_x, train_y)
@@ -203,6 +223,11 @@ def spamemail_dataset():
     train_x, train_y, _, _, test_x, test_y = splitData(X, y, 0.8, 0, 0.2)
     print(train_x.shape)
     print(train_y.shape)
+
+    model = LogisticRegression(0.1, 150, classifier="multinomial")
+    model.fit(train_x, train_y)
+    score = model.score(test_x, test_y)
+    print(f"scratch multi model prediction: {score}")
 
     model = LogisticRegression(0.1, 150)
     model.fit(train_x, train_y)
@@ -244,7 +269,11 @@ def waterpotability_dataset():
     print(train_x.shape)
     print(train_y.shape)
 
-    
+    model = LogisticRegression(0.1, 150, classifier="multinomial")
+    model.fit(train_x, train_y)
+    score = model.score(test_x, test_y)
+    print(f"scratch multi model prediction: {score}")
+
     model = LogisticRegression(0.1, 150)
     model.fit(train_x, train_y)
     score = model.score(test_x, test_y)
@@ -274,6 +303,7 @@ def waterpotability_dataset():
     pass
 
 if __name__ == "__main__":
+    print("\nBasecase, hyper parameter are set to:\nlearning rate: 0.1\niterations: 150")
 
     trySKlearn()
     sklearnDataset()

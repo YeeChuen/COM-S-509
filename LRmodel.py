@@ -51,3 +51,21 @@ def sklearnDataset():
     
     print("")
     pass
+
+if __name__ == "__main__":
+    print("")
+    x, y = sklearn_to_df(load_breast_cancer())
+
+    x_train, x_test, y_train, y_test = train_test_split(
+        x, y, test_size=0.2, random_state=42)
+    
+    model = MyLogisticRegression(0.01, 1000, classifier="multinomial")
+    model.fit(x_train.values, y_train.values)
+    score = model.score(x_test.values, y_test.values)
+    print(f"scratch multi model prediction: {score}")
+
+    
+    model = MyLogisticRegression(0.01, 500)
+    model.fit(x_train.values, y_train.values)
+    score = model.score(x_test.values, y_test.values)
+    print(f"scratch binomial model prediction: {score}")
