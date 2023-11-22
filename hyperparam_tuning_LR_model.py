@@ -78,7 +78,7 @@ def sklearnDataset():
     print(f"scratch multi model prediction: {score}")
     
     
-    l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, x_train.values, y_train.values)
+    l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "binomial", x_train.values, y_train.values)
     print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
     model = LogisticRegression(l_rate, no_iter)
     model.fit(x_train.values, y_train.values)
@@ -114,7 +114,7 @@ def trySKlearn():
     score = model.score(x_test, y_test, prob = best_prob)
     print(f"scratch multi model prediction: {score}")
 
-    l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, x_train, y_train)
+    l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "binomial", x_train, y_train)
     print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
     model = LogisticRegression(l_rate, no_iter)
     model.fit(x_train, y_train)
@@ -162,7 +162,7 @@ def handwriting_dataset():
     score = model.score(test_x, test_y, prob = best_prob)
     print(f"scratch multi model prediction: {score}")
 
-    l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, train_x, train_y)
+    l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
     print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
     model = LogisticRegression(l_rate, no_iter)
     model.fit(train_x, train_y)
@@ -204,7 +204,7 @@ def breastcancer_dataset():
     score = model.score(test_x, test_y, prob = best_prob)
     print(f"scratch multi model prediction: {score}")
 
-    l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, train_x, train_y)
+    l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
     print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
     model = LogisticRegression(l_rate, no_iter)
     model.fit(train_x, train_y)
@@ -242,7 +242,7 @@ def spamemail_dataset():
     score = model.score(test_x, test_y, prob = best_prob)
     print(f"scratch multi model prediction: {score}")
 
-    l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, train_x, train_y)
+    l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
     print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
     model = LogisticRegression(l_rate, no_iter)
     model.fit(train_x, train_y)
@@ -281,7 +281,7 @@ def waterpotability_dataset():
     score = model.score(test_x, test_y, prob = best_prob)
     print(f"scratch multi model prediction: {score}")
 
-    l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, train_x, train_y)
+    l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
     print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
     model = LogisticRegression(l_rate, no_iter)
     model.fit(train_x, train_y)
@@ -304,8 +304,8 @@ def waterpotability_dataset():
 if __name__ == "__main__":
     print("\nBasecase, hyper parameter are set to:\nlearning rate: 0.1\niterations: 150")
 
-    trySKlearn()
-    sklearnDataset()
+    # trySKlearn()
+    # sklearnDataset()
     handwriting_dataset()
     breastcancer_dataset()
     waterpotability_dataset()
