@@ -16,10 +16,20 @@ from LRmodel import sklearnDataset
 import pandas as pd
 from tqdm import tqdm
 
-def hyperparam_tuning(LRmodel, model_classifier, X, y):
+def hyperparam_tuning(LRmodel, model_classifier, X, y, n_fold = 5):
     print("Hyperparameter tuning ... ")
 
-    train_x, train_y, _, _, test_x, test_y = splitData2(X, y, 0.8, 0, 0.2)
+    # train_x, train_y, _, _, test_x, test_y = splitData2(X, y, 0.8, 0, 0.2)
+
+    x_fold = []
+    y_fold = []
+    length = X.shape[0]
+    fold = int(length/5)
+    for i in range(n_fold - 1):
+        x_fold.append(X[fold*i:fold*(i+1) ,:])
+        y_fold.append(y[fold*i:fold*(i+1)])
+    x_fold.append(X[fold*(n_fold - 1):length ,:])
+    y_fold.append(y[fold*(n_fold - 1):length])
 
     best = 0
     best_lr = 1
@@ -32,9 +42,14 @@ def hyperparam_tuning(LRmodel, model_classifier, X, y):
             rate /= 10
         for j in range(10):
             for threshold in [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9]:
+                
                 model = LRmodel(rate, iter, classifier=model_classifier)
-                model.fit(train_x, train_y)
-                score = model.score(test_x, test_y, prob = threshold)
+                model.fit(X, y)
+
+                score = 0
+                for k in range(len(x_fold)):  
+                    score += model.score(x_fold[k], y_fold[k], prob = threshold)
+                score /= len(x_fold)
 
                 # print(f"Score {score} for lr: {rate}, iter: {iter}, prob: {threshold}")
 
@@ -302,10 +317,10 @@ def waterpotability_dataset():
     pass
 
 if __name__ == "__main__":
-    print("\nBasecase, hyper parameter are set to:\nlearning rate: 0.1\niterations: 150")
+    print("\nhyper parameter tuning")
 
-    # trySKlearn()
-    # sklearnDataset()
+    trySKlearn()
+    sklearnDataset()
     handwriting_dataset()
     breastcancer_dataset()
     waterpotability_dataset()
