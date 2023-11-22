@@ -1,11 +1,11 @@
-try multinomial classifier
+[check] try multinomial classifier 
 
-no bias?
+[check] no bias?
 
-use different threshold
+[] use different threshold
 
-feature selection
+[] feature selection
 
-feature scaling
+[] feature scaling
 
-Dimensional deduction/feature reduction PCA
+[] Dimensional deduction/feature reduction PCA

@@ -68,6 +68,17 @@ def splitData(X, y, trainSplit, valSplit, testSplit):
     test_y = y[valStop:]
     return train_x, reshape_y(train_y), val_x, reshape_y(val_y), test_x, reshape_y(test_y)
 
+def splitData2(X, y, trainSplit, valSplit, testSplit):
+    trainStop = int(trainSplit * X.shape[0])
+    valStop = int((trainSplit + valSplit) * X.shape[0])
+    train_x = X[0:trainStop, :]
+    train_y = y[0:trainStop]
+    val_x = X[trainStop:valStop, :]
+    val_y = y[trainStop:valStop]
+    test_x = X[valStop:, :]
+    test_y = y[valStop:]
+    return train_x, train_y, val_x, val_y, test_x, test_y
+
 
 def normalize(X):
     rangeX = np.zeros(X.shape[1])
