@@ -2,9 +2,9 @@
 
 [check] no bias?
 
-[] use different threshold
+[check] use different threshold
 
-[] feature selection
+[] feature selection (filter method, IG method)
 
 [] feature scaling
 
