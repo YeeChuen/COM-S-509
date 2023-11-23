@@ -94,7 +94,7 @@ def sklearnDataset():
     
     
     l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "binomial", x_train.values, y_train.values)
-    print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
+    print("learning rate:",str(l_rate), ", No iterations:", str(no_iter), ", Probability threshold:", str(best_prob))
     model = LogisticRegression(l_rate, no_iter)
     model.fit(x_train.values, y_train.values)
     score = model.score(x_test.values, y_test.values, prob = best_prob)
@@ -123,14 +123,14 @@ def trySKlearn():
     print(y_train.shape)
     
     l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "multinomial", x_train, y_train)
-    print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
+    print("learning rate:",str(l_rate), ", No iterations:", str(no_iter), ", Probability threshold:", str(best_prob))
     model = LogisticRegression(l_rate, no_iter, classifier="multinomial")
     model.fit(x_train, y_train)
     score = model.score(x_test, y_test, prob = best_prob)
     print(f"scratch multi model prediction: {score}")
 
     l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "binomial", x_train, y_train)
-    print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
+    print("learning rate:",str(l_rate), ", No iterations:", str(no_iter), ", Probability threshold:", str(best_prob))
     model = LogisticRegression(l_rate, no_iter)
     model.fit(x_train, y_train)
     score = model.score(x_test, y_test, prob = best_prob)
@@ -171,14 +171,14 @@ def handwriting_dataset():
     print(train_y.shape)
     
     l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
-    print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
+    print("learning rate:",str(l_rate), ", No iterations:", str(no_iter), ", Probability threshold:", str(best_prob))
     model = LogisticRegression(l_rate, no_iter, classifier="multinomial")
     model.fit(train_x, train_y)
     score = model.score(test_x, test_y, prob = best_prob)
     print(f"scratch multi model prediction: {score}")
 
     l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
-    print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
+    print("learning rate:",str(l_rate), ", No iterations:", str(no_iter), ", Probability threshold:", str(best_prob))
     model = LogisticRegression(l_rate, no_iter)
     model.fit(train_x, train_y)
     score = model.score(test_x, test_y, prob = best_prob)
@@ -213,14 +213,14 @@ def breastcancer_dataset():
     print(train_y.shape)
     
     l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
-    print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
+    print("learning rate:",str(l_rate), ", No iterations:", str(no_iter), ", Probability threshold:", str(best_prob))
     model = LogisticRegression(l_rate, no_iter, classifier="multinomial")
     model.fit(train_x, train_y)
     score = model.score(test_x, test_y, prob = best_prob)
     print(f"scratch multi model prediction: {score}")
 
     l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
-    print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
+    print("learning rate:",str(l_rate), ", No iterations:", str(no_iter), ", Probability threshold:", str(best_prob))
     model = LogisticRegression(l_rate, no_iter)
     model.fit(train_x, train_y)
     score = model.score(test_x, test_y, prob = best_prob)
@@ -251,14 +251,14 @@ def spamemail_dataset():
     print(train_y.shape)
 
     l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
-    print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
+    print("learning rate:",str(l_rate), ", No iterations:", str(no_iter), ", Probability threshold:", str(best_prob))
     model = LogisticRegression(l_rate, no_iter, classifier="multinomial")
     model.fit(train_x, train_y)
     score = model.score(test_x, test_y, prob = best_prob)
     print(f"scratch multi model prediction: {score}")
 
     l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
-    print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
+    print("learning rate:",str(l_rate), ", No iterations:", str(no_iter), ", Probability threshold:", str(best_prob))
     model = LogisticRegression(l_rate, no_iter)
     model.fit(train_x, train_y)
     score = model.score(test_x, test_y, prob = best_prob)
@@ -290,14 +290,14 @@ def waterpotability_dataset():
     print(train_y.shape)
 
     l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
-    print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
+    print("learning rate:",str(l_rate), ", No iterations:", str(no_iter), ", Probability threshold:", str(best_prob))
     model = LogisticRegression(l_rate, no_iter, classifier="multinomial")
     model.fit(train_x, train_y)
     score = model.score(test_x, test_y, prob = best_prob)
     print(f"scratch multi model prediction: {score}")
 
     l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
-    print(str(l_rate), ", ", str(no_iter), ", ", str(best_prob))
+    print("learning rate:",str(l_rate), ", No iterations:", str(no_iter), ", Probability threshold:", str(best_prob))
     model = LogisticRegression(l_rate, no_iter)
     model.fit(train_x, train_y)
     score = model.score(test_x, test_y, prob = best_prob)
