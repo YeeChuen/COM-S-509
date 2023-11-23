@@ -19,7 +19,7 @@ class LogisticRegression():
             print("LR model Error: input for 'classifier' parameter needs to be 'binomial' or 'multinomial'.")
         self.classifier = classifier
         if self.classifier == "multinomial":
-            self.learning_rate *= 0.001
+            self.learning_rate *= 0.01
 
     def one_hot_encoding(self,Y):
         OneHotEncoding = []
