@@ -169,6 +169,16 @@ def handwriting_dataset():
     train_x, train_y, _, _, test_x, test_y = splitData(X, y, 0.8, 0, 0.2)
     print(train_x.shape)
     print(train_y.shape)
+
+    logisticRegr = skLogisticRegression()
+    logisticRegr.fit(train_x, train_y)
+    score = logisticRegr.score(test_x, test_y)
+    print(f"sklearn prediction: {score}")
+
+    lr = CustomLogisticRegression()
+    lr.fit(train_x, train_y, epochs=150)
+    score = lr.score(test_x, test_y)
+    print(f"github 1 model prediction: {score}")
     
     l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
     print("learning rate:",str(l_rate), ", No iterations:", str(no_iter), ", Probability threshold:", str(best_prob))
@@ -183,16 +193,6 @@ def handwriting_dataset():
     model.fit(train_x, train_y)
     score = model.score(test_x, test_y, prob = best_prob)
     print(f"scratch model prediction: {score}")
-
-    logisticRegr = skLogisticRegression()
-    logisticRegr.fit(train_x, train_y)
-    score = logisticRegr.score(test_x, test_y)
-    print(f"sklearn prediction: {score}")
-
-    lr = CustomLogisticRegression()
-    lr.fit(train_x, train_y, epochs=150)
-    score = lr.score(test_x, test_y)
-    print(f"github 1 model prediction: {score}")
 
     print("")
     pass
@@ -322,8 +322,8 @@ def waterpotability_dataset():
 if __name__ == "__main__":
     print("\nhyper parameter tuning")
 
-    trySKlearn()
-    sklearnDataset()
+    #trySKlearn()
+    #sklearnDataset()
     handwriting_dataset()
     breastcancer_dataset()
     waterpotability_dataset()

@@ -115,23 +115,35 @@ def sklearnDataset():
     model.fit(train_x, train_y)
     score = model.score(test_x, test_y)
     print(f"scratch model prediction: {score}")
-
-    FS_filter = feature_selection_filter_corr(x.values, y)
-    X_filter = select_feature(x.values, FS_filter)
-    X_pca = PCA(X_filter, k = int(X_filter.shape[1] * 0.5))
-    train_x, test_x, train_y, test_y = train_test_split(X_pca, y, test_size=0.2, random_state=42)
-    train_y = train_y.values
-    test_y = test_y.values
     
-    l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
-    print("learning rate:",str(l_rate), ", No iterations:", str(no_iter), ", Probability threshold:", str(best_prob))
-    model = LogisticRegression(l_rate, no_iter, classifier="multinomial")
+    l_rate1, no_iter1, best_prob1 = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
+    print("learning rate:",str(l_rate1), ", No iterations:", str(no_iter1), ", Probability threshold:", str(best_prob1))
+    model = LogisticRegression(l_rate1, no_iter1, classifier="multinomial")
     model.fit(train_x, train_y)
-    score = model.score(test_x, test_y, prob = best_prob)
-    print(f"scratch multi model prediction(w/HT,FS,FR): {score}")
+    score = model.score(test_x, test_y, prob = best_prob1)
+    print(f"scratch multi model prediction(w/HT): {score}")
 
     l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
     print("learning rate:",str(l_rate), ", No iterations:", str(no_iter), ", Probability threshold:", str(best_prob))
+    model = LogisticRegression(l_rate, no_iter)
+    model.fit(train_x, train_y)
+    score = model.score(test_x, test_y, prob = best_prob)
+    print(f"scratch model prediction(w/HT): {score}")
+    
+    X = x.values
+    y = y.values
+    FS_filter = feature_selection_filter_corr(X, y, threshold_percent=0.5, minimum = 10, maximum=30)
+    X_filter = select_feature(X, FS_filter)
+    X_pca = PCA(X_filter, k = int(X_filter.shape[1] * 0.5))
+    train_x, train_y, _, _, test_x, test_y = splitData2(X_pca, y, 0.8, 0, 0.2)
+    print(train_x.shape)
+    print(train_y.shape)
+    
+    model = LogisticRegression(l_rate1, no_iter1, classifier="multinomial")
+    model.fit(train_x, train_y)
+    score = model.score(test_x, test_y, prob = best_prob1)
+    print(f"scratch multi model prediction(w/HT,FS,FR): {score}")
+
     model = LogisticRegression(l_rate, no_iter)
     model.fit(train_x, train_y)
     score = model.score(test_x, test_y, prob = best_prob)
@@ -156,10 +168,10 @@ def handwriting_dataset():
     hand_writing_csv = f"{project_path}/data/handwriting_alzheimers.csv"
 
     X, y = parseData(hand_writing_csv)
-    y = reshape_y(y)
     X = X[:, 1:]
     y = np.where(y == "P", 1, y)
     y = np.where(y == "H", -1, y)
+    y = reshape_y(y)
     X = normalize(X)
 
     #Due to the data have a low sample count, depending on the distribution of the shuffle
@@ -181,11 +193,11 @@ def breastcancer_dataset():
     breast_cancer_csv = f"{project_path}/data/breast-cancer.csv"
     
     X, y = parseDataBreastCancer(breast_cancer_csv)
-    y = reshape_y(y)
     X = normalize(X)
     
     y = np.where(y == "M", 1, y)
     y = np.where(y == "B", -1, y)
+    y = reshape_y(y)
 
     training_all_model(X, y)
 
@@ -200,8 +212,8 @@ def waterpotability_dataset():
     water_potability_csv = f"{project_path}/data/water_potability.csv"
     
     X, y = parseData(water_potability_csv)
-    y = reshape_y(y)
     X = normalize(X)
+    y = reshape_y(y)
 
     training_all_model(X, y)
 
@@ -214,8 +226,8 @@ def spamemail_dataset():
     print("--- comparing model accuracy for spam email dataset ---")
     spam_email_csv = f"{project_path}/data/spam_email_dataset.csv"
     X , y = parseDataSpamEmail(spam_email_csv)
-    y = reshape_y(y)
     X = normalize(X)
+    y = reshape_y(y)
 
     training_all_model(X, y)
 

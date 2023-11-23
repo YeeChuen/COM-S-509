@@ -40,7 +40,7 @@ def PCA(X, k = 2):
         for x in X_hat:
             temp = x * values
             value_new = np.sum(temp)
-            x_new.append(value_new)
+            x_new.append(float(value_new))
         X_new.append(x_new)
     
     return np.array(X_new).T
