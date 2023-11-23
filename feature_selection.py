@@ -48,13 +48,19 @@ def feature_selection_filter_corr(X, y, threshold_percent = 0.2, remove_negative
 
     for i in range(no_feature):
         cov = (np.cov(X_feature[i],y)[0][1]) # starting at feature at index 0, column left --> right
-        var_Xy = (np.var(X_feature[0])*var_y)
-        corr = cov/var_Xy
+        #print(cov)
+
+        var_Xy = (np.var(X_feature[i])*var_y)
+        #print(var_Xy)
+
+        corr = cov/np.sqrt(var_Xy)
+        #print(corr)
+
         corr_list.append(corr)
         corr_dict[corr] = int(i)
     
     corr_list.sort(reverse = True)
-
+    #print(corr_list)
     selection = int(no_feature * threshold_percent)
 
     # minimum = 10, maximum = -1
