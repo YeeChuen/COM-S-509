@@ -4,8 +4,8 @@
 
 [check] use different threshold
 
-[] feature selection (filter method, IG method)
+[check] feature selection (filter method, IG method)
 
-[] feature scaling
+[check] feature scaling
 
 [] Dimensional deduction/feature reduction PCA
