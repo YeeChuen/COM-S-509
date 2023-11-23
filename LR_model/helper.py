@@ -43,7 +43,6 @@ def parseDataSpamEmail(filename):
         date = x[date_idx]
         date = date.replace("-", "")
         x[date_idx] = int(date)
-        
         time = x[time_idx]
         time = time.replace(":", "")
         x[time_idx] = int(time)

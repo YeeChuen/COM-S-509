@@ -111,9 +111,10 @@ def trySKlearn():
     print("")
 
 def handwriting_dataset():
+    project_path = 'D:/Files/ISU work/Computer Science Program/2023/Fall 2023/COM S 573/Term Project/COM-S-573'
     print("")
     print("--- comparing model accuracy for handwriting dataset ---")
-    hand_writing_csv = "./data/handwriting_alzheimers.csv"
+    hand_writing_csv = f"{project_path}/data/handwriting_alzheimers.csv"
 
     X, y = parseData(hand_writing_csv)
     X = X[:, 1:]
@@ -166,9 +167,10 @@ def handwriting_dataset():
     pass
 
 def breastcancer_dataset():
+    project_path = 'D:/Files/ISU work/Computer Science Program/2023/Fall 2023/COM S 573/Term Project/COM-S-573'
     print("")
     print("--- comparing model accuracy for breast cancer dataset ---")
-    breast_cancer_csv = "./data/breast-cancer.csv"
+    breast_cancer_csv = f"{project_path}/data/breast-cancer.csv"
     
     X, y = parseDataBreastCancer(breast_cancer_csv)
     X = normalize(X)
@@ -214,9 +216,10 @@ def breastcancer_dataset():
     pass
 
 def spamemail_dataset():
+    project_path = 'D:/Files/ISU work/Computer Science Program/2023/Fall 2023/COM S 573/Term Project/COM-S-573'
     print("")
     print("--- comparing model accuracy for spam email dataset ---")
-    spam_email_csv = "./data/spam_email_dataset.csv"
+    spam_email_csv = f"{project_path}/data/spam_email_dataset.csv"
     X , y = parseDataSpamEmail(spam_email_csv)
     X = normalize(X)
 
@@ -258,9 +261,10 @@ def spamemail_dataset():
     pass
 
 def waterpotability_dataset():
+    project_path = 'D:/Files/ISU work/Computer Science Program/2023/Fall 2023/COM S 573/Term Project/COM-S-573'
     print("")
     print("--- comparing model accuracy for water potability dataset ---")
-    water_potability_csv = "./data/water_potability.csv"
+    water_potability_csv = f"{project_path}/data/water_potability.csv"
     
     X, y = parseData(water_potability_csv)
     X = normalize(X)

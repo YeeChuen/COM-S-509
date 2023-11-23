@@ -7,12 +7,15 @@ import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
 import os
 
+# testing with sklearn library
+from sklearn.decomposition import PCA as skPCA
+
 
 def plotdata2D(X, y, save_name, min_x = 0.1, max_x = 0.1):
 
-    X_df = pd.DataFrame({'pca_1': X[:,0], 'pca_2': X[:,1], 'label': y})
+    X_df = pd.DataFrame({'Feature_1': X[:,0], 'Feature_2': X[:,1], 'label': y})
     fig, ax = plt.subplots(1)
-    sns.scatterplot(x='pca_1', y='pca_2', hue='label', data=X_df, ax=ax,s=30)
+    sns.scatterplot(x='Feature_1', y='Feature_2', hue='label', data=X_df, ax=ax,s=30).set(title=save_name)
     lim = (X.min()-min_x, X.max()+max_x)
     ax.set_xlim(lim)
     ax.set_ylim(lim)
@@ -34,12 +37,16 @@ def data_visualization():
     X = normalize(X)
     y = reshape_y(y)
     data = PCA(X)
-    plotdata2D(data, y, 'Alzheimers data visualization PCA', min_x = 0.05, max_x = 0.05)
+    plotdata2D(data, y, 'Alzheimers data visualization PCA 1', min_x = 0.05, max_x = 0.05)
    
     n_components = 2
     tsne = TSNE(n_components)
     tsne_result = tsne.fit_transform(X)
     plotdata2D(tsne_result, y, 'Alzheimers data visualization TSNE', min_x = 0.05, max_x = 0.05)
+    
+    pca = skPCA(n_components = n_components).fit(X)
+    X_pca_sklearn = pca.transform(X) # Apply dimensionality reduction to X.
+    plotdata2D(X_pca_sklearn, y, 'Alzheimers data visualization PCA 2', min_x = 0.05, max_x = 0.05)
 
     print("")
     print("--- data visualization for breast cancer dataset ---")
@@ -48,12 +55,16 @@ def data_visualization():
     X = normalize(X)
     y = reshape_y(y)
     data = PCA(X)
-    plotdata2D(data, y, 'Breast cancer data visualization PCA', min_x = 0.05, max_x = 0.05)
+    plotdata2D(data, y, 'Breast cancer data visualization PCA 1', min_x = 0.05, max_x = 0.05)
     
     n_components = 2
     tsne = TSNE(n_components)
     tsne_result = tsne.fit_transform(X)
     plotdata2D(tsne_result, y, 'Breast cancer data visualization TSNE', min_x = 0.05, max_x = 0.05)
+    
+    pca = skPCA(n_components = n_components).fit(X)
+    X_pca_sklearn = pca.transform(X) # Apply dimensionality reduction to X.
+    plotdata2D(X_pca_sklearn, y, 'Breast cancer data visualization PCA 2', min_x = 0.05, max_x = 0.05)
 
     print("")
     print("--- data visualization for spam email dataset ---")
@@ -62,12 +73,17 @@ def data_visualization():
     X = normalize(X)
     y = reshape_y(y)
     data = PCA(X)
-    plotdata2D(data, y, 'Spam email data visualization PCA', min_x = 0.05, max_x = 0.05)
+    plotdata2D(data, y, 'Spam email data visualization PCA 1', min_x = 0.05, max_x = 0.05)
     
     n_components = 2
     tsne = TSNE(n_components)
     tsne_result = tsne.fit_transform(X)
     plotdata2D(tsne_result, y, 'Spam email data visualization TSNE', min_x = 0.05, max_x = 0.05)
+
+    # test sklearn PCA
+    pca = skPCA(n_components = n_components).fit(X)
+    X_pca_sklearn = pca.transform(X) # Apply dimensionality reduction to X.
+    plotdata2D(X_pca_sklearn, y, 'Spam email data visualization PCA 2', min_x = 0.05, max_x = 0.05)
 
     print("")
     print("--- data visualization for water potability dataset ---")
@@ -76,12 +92,16 @@ def data_visualization():
     X = normalize(X)
     y = reshape_y(y)
     data = PCA(X)
-    plotdata2D(data, y, 'Water potability data visualization PCA', min_x = 0.05, max_x = 0.05)
+    plotdata2D(data, y, 'Water potability data visualization PCA 1', min_x = 0.05, max_x = 0.05)
     
     n_components = 2
     tsne = TSNE(n_components)
     tsne_result = tsne.fit_transform(X)
     plotdata2D(tsne_result, y, 'Water potability data visualization TSNE', min_x = 0.05, max_x = 0.05)
+    
+    pca = skPCA(n_components = n_components).fit(X)
+    X_pca_sklearn = pca.transform(X) # Apply dimensionality reduction to X.
+    plotdata2D(X_pca_sklearn, y, 'Water potability data visualization PCA 2', min_x = 0.05, max_x = 0.05)
 
     print("")
     pass

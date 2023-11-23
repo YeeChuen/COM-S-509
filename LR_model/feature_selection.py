@@ -231,9 +231,10 @@ def select_feature(X, index_list):
     return feature_selected
 
 def testing():
+    project_path = 'D:/Files/ISU work/Computer Science Program/2023/Fall 2023/COM S 573/Term Project/COM-S-573'
     print("")
     print("--- comparing model accuracy for handwriting dataset ---")
-    hand_writing_csv = "./data/handwriting_alzheimers.csv"
+    hand_writing_csv = f"{project_path}/data/handwriting_alzheimers.csv"
 
     X, y = parseData(hand_writing_csv)
     X = X[:, 1:]
@@ -248,9 +249,9 @@ def testing():
 
     FS_ig = feature_selection_IG(X, y)
     FS_filter = feature_selection_filter_corr(X, y)
+    X_filter = select_feature(X, FS_filter)
 
     X_ig = select_feature(X, FS_ig)
-    X_filter = select_feature(X, FS_filter)
     
 
     train_x, train_y, _, _, test_x, test_y = splitData2(X, y, 0.8, 0, 0.2)
