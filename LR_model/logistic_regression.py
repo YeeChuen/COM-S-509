@@ -81,8 +81,16 @@ class LogisticRegression():
             self.b = 0
 
     def function(self, z):
-        if self.classifier == "binomial":
-            return 1/(1+np.exp(-z))
+        if self.classifier == "binomial":   
+            sigmoid = []
+            for value in z:
+                if value >= 0:
+                    a = np.exp(-value)
+                    sigmoid.append( 1 / (1 + a))
+                else:
+                    a = np.exp(value)
+                    sigmoid.append( a / (1 + a))
+            return np.array(sigmoid)
         elif self.classifier == "multinomial":
             return (np.exp(z).T / np.sum(np.exp(z), axis=1)).T
 

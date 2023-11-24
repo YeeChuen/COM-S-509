@@ -79,22 +79,36 @@ def splitData2(X, y, trainSplit, valSplit, testSplit):
     return train_x, train_y, val_x, val_y, test_x, test_y
 
 
-def normalize(X):
+def normalize(X, nan = 'zero'):
+    '''
+    nan takes argument = ['mean', 'median', 'zero']
+    '''
     rangeX = np.zeros(X.shape[1])
     minX = np.zeros(X.shape[1])
     normX = np.zeros(X.shape)
 
+
+
     for i in range(X.shape[1]):
         minX[i] = min(X[:, i])
         rangeX[i] = max(X[:, i]) - minX[i]
-    for i in range(X.shape[0]):
-        for j in range(X.shape[1]):
+    for i in range(X.shape[0]): # row
+        for j in range(X.shape[1]): # column
             normX[i][j] = (X[i][j] - minX[j]) / rangeX[j]
+    
+            
+    meanX = np.nanmean(normX, axis = 0)
+    medianX = np.nanmedian(normX, axis = 0)
 
     for i in range(len(normX)):
         for j in range(len(normX[i])):
             if math.isnan(normX[i][j]):
-                normX[i][j] = 0
+                if nan == 'zero':
+                    normX[i][j] = 0
+                elif nan == 'mean':
+                    normX[i][j] = meanX[j]
+                elif nan == 'median':
+                    normX[i][j] = medianX[j]
 
     return normX
 
@@ -122,3 +136,20 @@ def score(predictions, y):
     numCorrect = np.sum(predictions == y.T)
     accuracy = numCorrect / y.shape[0]
     return accuracy
+
+if __name__ == "__main__":
+    project_path = 'D:/Files/ISU work/Computer Science Program/2023/Fall 2023/COM S 573/Term Project/COM-S-573'
+    water_potability_csv = f"{project_path}/data/water_potability.csv"
+    
+    X, y = parseData(water_potability_csv)
+    X = X[:,1:]
+    y = reshape_y(y)
+
+    Xzero = normalize(X)
+    print(Xzero[:10])
+    
+    Xmean = normalize(X, nan = 'mean')
+    print(Xmean[:10])
+    
+    Xmedian = normalize(X, nan = 'median')
+    print(Xmedian[:10])

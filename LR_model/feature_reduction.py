@@ -19,15 +19,13 @@ def PCA(X, k = 2):
     S = np.cov(X_hat.T)
     
     eig_vals, eig_vecs = np.linalg.eig(S) 
-
-
-    '''
+    
     # Adjusting the eigenvectors (loadings) that are largest in absolute value to be positive
     # Not as per lecture
     max_abs_idx = np.argmax(np.abs(eig_vecs), axis=0)
     signs = np.sign(eig_vecs[max_abs_idx, range(eig_vecs.shape[0])])
     eig_vecs = eig_vecs*signs[np.newaxis,:]
-    eig_vecs = eig_vecs.T'''
+    eig_vecs = eig_vecs.T
 
     eig_pairs_list = [(eig_vals[i], eig_vecs[i]) for i in range(no_feature)]
     eig_pairs_list.sort(key=lambda x: x[0], reverse=True)

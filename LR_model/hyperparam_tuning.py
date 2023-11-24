@@ -15,7 +15,7 @@ from logistic_regression import CustomLogisticRegression, ShortLogisticRegressio
 import pandas as pd
 from tqdm import tqdm
 
-def hyperparam_tuning(LRmodel, model_classifier, X, y, n_fold = 5):
+def hyperparam_tuning(LRmodel, model_classifier, X, y, n_fold = 5, percent = False):
     print("Hyperparameter tuning ... ")
 
     # train_x, train_y, _, _, test_x, test_y = splitData2(X, y, 0.8, 0, 0.2)
@@ -34,20 +34,37 @@ def hyperparam_tuning(LRmodel, model_classifier, X, y, n_fold = 5):
     best_lr = 1
     best_iter = 100
     best_prob = 0.5
-    for i in tqdm(range(5)):
-        rate = 0.1
+    for i in tqdm(range(10)):
+        rate = 1
         iter = 100
         for _ in range(i):
             rate /= 10
         for j in range(10):
-            for threshold in [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9]:
-                
+            if percent:
+                for threshold in [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9]:
+                    
+                    model = LRmodel(rate, iter, classifier=model_classifier)
+                    model.fit(X, y)
+
+                    score = 0
+                    for k in range(len(x_fold)):  
+                        score += model.score(x_fold[k], y_fold[k], prob = threshold)
+                    score /= len(x_fold)
+
+                    # print(f"Score {score} for lr: {rate}, iter: {iter}, prob: {threshold}")
+
+                    if score > best:
+                        best = score
+                        best_lr = rate
+                        best_iter = iter
+                        best_prob = threshold
+            else:
                 model = LRmodel(rate, iter, classifier=model_classifier)
                 model.fit(X, y)
 
                 score = 0
                 for k in range(len(x_fold)):  
-                    score += model.score(x_fold[k], y_fold[k], prob = threshold)
+                    score += model.score(x_fold[k], y_fold[k])
                 score /= len(x_fold)
 
                 # print(f"Score {score} for lr: {rate}, iter: {iter}, prob: {threshold}")
@@ -56,10 +73,10 @@ def hyperparam_tuning(LRmodel, model_classifier, X, y, n_fold = 5):
                     best = score
                     best_lr = rate
                     best_iter = iter
-                    best_prob = threshold
-                
+
             iter += 100
     
+    print("learning rate:",str(best_lr), ", No iterations:", str(best_iter), ", Probability threshold:", str(best_prob))
     return best_lr, best_iter, best_prob
 
 def sklearn_to_df(data_loader):
