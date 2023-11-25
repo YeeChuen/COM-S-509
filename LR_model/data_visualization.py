@@ -84,7 +84,7 @@ def data_visualization3D():
     
     pca = skPCA(n_components = n_components).fit(X)
     X_pca_sklearn = pca.transform(X) # Apply dimensionality reduction to X.
-    plotdata3D(X_pca_sklearn, y, '3D Alzheimers data visualization PCA 2')
+    #plotdata3D(X_pca_sklearn, y, '3D Alzheimers data visualization PCA 2')
 
     print("")
     print("--- data visualization for breast cancer dataset ---")
@@ -105,7 +105,7 @@ def data_visualization3D():
     
     pca = skPCA(n_components = n_components).fit(X)
     X_pca_sklearn = pca.transform(X) # Apply dimensionality reduction to X.
-    plotdata3D(X_pca_sklearn, y, '3D Breast cancer data visualization PCA 2')
+    #plotdata3D(X_pca_sklearn, y, '3D Breast cancer data visualization PCA 2')
 
     print("")
     print("--- data visualization for spam email dataset ---")
@@ -123,7 +123,7 @@ def data_visualization3D():
     # test sklearn PCA
     pca = skPCA(n_components = n_components).fit(X)
     X_pca_sklearn = pca.transform(X) # Apply dimensionality reduction to X.
-    plotdata3D(X_pca_sklearn, y, '3D Spam email data visualization PCA 2')
+    #plotdata3D(X_pca_sklearn, y, '3D Spam email data visualization PCA 2')
 
     print("")
     print("--- data visualization for water potability dataset ---")
@@ -140,7 +140,7 @@ def data_visualization3D():
     
     pca = skPCA(n_components = n_components).fit(X)
     X_pca_sklearn = pca.transform(X) # Apply dimensionality reduction to X.
-    plotdata3D(X_pca_sklearn, y, '3D Water potability data visualization PCA 2')
+    #plotdata3D(X_pca_sklearn, y, '3D Water potability data visualization PCA 2')
 
 def data_visualization2D():
     n_components = 2
@@ -165,7 +165,7 @@ def data_visualization2D():
     
     pca = skPCA(n_components = n_components).fit(X)
     X_pca_sklearn = pca.transform(X) # Apply dimensionality reduction to X.
-    plotdata2D(X_pca_sklearn, y, 'Alzheimers data visualization PCA 2', min_x = 0.05, max_x = 0.05)
+    #plotdata2D(X_pca_sklearn, y, 'Alzheimers data visualization PCA 2', min_x = 0.05, max_x = 0.05)
 
     print("")
     print("--- data visualization for breast cancer dataset ---")
@@ -183,7 +183,7 @@ def data_visualization2D():
     
     pca = skPCA(n_components = n_components).fit(X)
     X_pca_sklearn = pca.transform(X) # Apply dimensionality reduction to X.
-    plotdata2D(X_pca_sklearn, y, 'Breast cancer data visualization PCA 2', min_x = 0.05, max_x = 0.05)
+    #plotdata2D(X_pca_sklearn, y, 'Breast cancer data visualization PCA 2', min_x = 0.05, max_x = 0.05)
 
     print("")
     print("--- data visualization for spam email dataset ---")
@@ -202,7 +202,7 @@ def data_visualization2D():
     # test sklearn PCA
     pca = skPCA(n_components = n_components).fit(X)
     X_pca_sklearn = pca.transform(X) # Apply dimensionality reduction to X.
-    plotdata2D(X_pca_sklearn, y, 'Spam email data visualization PCA 2', min_x = 0.05, max_x = 0.05)
+    #plotdata2D(X_pca_sklearn, y, 'Spam email data visualization PCA 2', min_x = 0.05, max_x = 0.05)
 
     print("")
     print("--- data visualization for water potability dataset ---")
@@ -220,12 +220,12 @@ def data_visualization2D():
     
     pca = skPCA(n_components = n_components).fit(X)
     X_pca_sklearn = pca.transform(X) # Apply dimensionality reduction to X.
-    plotdata2D(X_pca_sklearn, y, 'Water potability data visualization PCA 2', min_x = 0.05, max_x = 0.05)
+    #plotdata2D(X_pca_sklearn, y, 'Water potability data visualization PCA 2', min_x = 0.05, max_x = 0.05)
 
     print("")
     pass
 
 if __name__ == "__main__":
-    # data_visualization2D()
+    data_visualization2D()
     data_visualization3D()
     pass

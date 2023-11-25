@@ -79,12 +79,12 @@ def splitData2(X, y, trainSplit, valSplit, testSplit):
     return train_x, train_y, val_x, val_y, test_x, test_y
 
 def nan_value(X, nan = 'zero'):
-    
     meanX = np.nanmean(X, axis = 0)
     medianX = np.nanmedian(X, axis = 0)
 
     for i in range(len(X)):
         for j in range(len(X[i])):
+            #print(X[i][j])
             if math.isnan(X[i][j]):
                 if nan == 'zero':
                     X[i][j] = 0
@@ -112,13 +112,13 @@ def normalize(X, nan = 'zero'):
             normX[i][j] = (X[i][j] - minX[j]) / rangeX[j]
 
     if nan == 'zero':
-         nan_value(X, nan = 'zero')
+        return nan_value(normX, nan = 'zero')
     elif nan == 'mean':
-         nan_value(X, nan = 'mean')
+        return nan_value(normX, nan = 'mean')
     elif nan == 'median':
-         nan_value(X, nan = 'median')
-
-    return normX
+        return nan_value(normX, nan = 'median')
+    else:
+        return normX
 
 def normalizeBreastCancer(X):
     print(X.shape)
