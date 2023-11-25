@@ -324,7 +324,7 @@ if __name__ == "__main__":
     feature_selection()     # 4 <-- odd issue where it needs normalization first, 
     feature_reduction()     # 5 <-- similarly with #3
 
-    #shuffling()             # 6 CHECK
+    shuffling()             # 6 CHECK
 
     # model will go too low of float, turns into Nan, and predicts all -1
     bagging_model()          # 7 CHECK
