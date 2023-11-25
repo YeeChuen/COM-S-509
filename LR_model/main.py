@@ -9,7 +9,8 @@ from hyperparam_tuning import hyperparam_tuning
 # training and testing model functions
 def training_test_model_bagging(
         train_x, train_y, val_x, val_y, test_x, test_y, 
-        l_rate1 = 0.1, no_iter1 = 100, l_rate2 = 0.1, no_iter2 = 100, batch_size = 10, C = 1, num_models = 10):
+        l_rate1 = 0.1, no_iter1 = 100, best_prob1 = 0.5, l_rate2 = 0.1, no_iter2 = 100, best_prob2 = 0.5, 
+        batch_size = 10, C = 1, num_models = 10):
 
         ws, bs, ls = bagging(train_x, train_y, val_x, val_y, C, batch_size, l_rate1, no_iter1, num_models, int(train_x.shape[0] / 3), 
                             model = LogisticRegression, model_type = 'binomial')
@@ -17,7 +18,7 @@ def training_test_model_bagging(
                                model = LogisticRegression, model_type = 'binomial')
         print(f"scratch binom LRmodel prediction: {score}")
         
-        ws, bs, ls = bagging(train_x, train_y, val_x, val_y, C, batch_size, l_rate1, no_iter1, num_models, int(train_x.shape[0] / 3), 
+        ws, bs, ls = bagging(train_x, train_y, val_x, val_y, C, batch_size, l_rate2, no_iter2, num_models, int(train_x.shape[0] / 3), 
                             model = LogisticRegression, model_type = 'multinomial')
         score = ensemble_wrapper(test_x, test_y, ws, bs, False, 0.5,
                                model = LogisticRegression, model_type = 'multinomial')
@@ -25,7 +26,8 @@ def training_test_model_bagging(
 
 def training_test_model_boosting(
         train_x, train_y, val_x, val_y, test_x, test_y, 
-        l_rate1 = 0.1, no_iter1 = 100, l_rate2 = 0.1, no_iter2 = 100, batch_size = 10, C = 1, num_models = 10):
+        l_rate1 = 0.1, no_iter1 = 100, best_prob1 = 0.5, l_rate2 = 0.1, no_iter2 = 100, best_prob2 = 0.5, 
+        batch_size = 10, num_models = 10):
 
         ws, bs, ls, lWs = boosting(train_x, train_y, val_x, val_y, batch_size, l_rate1, no_iter1, num_models, int(train_x.shape[0] / 3), 
                             model = LogisticRegression, model_type = 'binomial')
@@ -33,7 +35,7 @@ def training_test_model_boosting(
                                model = LogisticRegression, model_type = 'binomial')
         print(f"scratch binom LRmodel prediction: {score}")
         
-        ws, bs, ls, lWs = boosting(train_x, train_y, val_x, val_y, batch_size, l_rate1, no_iter1, num_models, int(train_x.shape[0] / 3), 
+        ws, bs, ls, lWs = boosting(train_x, train_y, val_x, val_y, batch_size, l_rate2, no_iter2, num_models, int(train_x.shape[0] / 3), 
                             model = LogisticRegression, model_type = 'multinomial')
         score = ensemble_wrapper(test_x, test_y, ws, bs, True, 0.5, accs = lWs,
                                model = LogisticRegression, model_type = 'multinomial')
@@ -41,15 +43,15 @@ def training_test_model_boosting(
 
 def training_test_model(
         train_x, train_y, val_x, val_y, test_x, test_y, 
-        l_rate1 = 0.1, no_iter1 = 100, l_rate2 = 0.1, no_iter2 = 100):
+        l_rate1 = 0.1, no_iter1 = 100, best_prob1 = 0.5, l_rate2 = 0.1, no_iter2 = 100, best_prob2 = 0.5):
     model = LogisticRegression(l_rate2, no_iter2)
     model.fit(train_x, train_y)
-    score = model.score(test_x, test_y)
+    score = model.score(test_x, test_y, prob= best_prob1)
     print(f"scratch binom LRmodel prediction: {score}")
 
     model = LogisticRegression(l_rate1, no_iter1, classifier="multinomial")
     model.fit(train_x, train_y)
-    score = model.score(test_x, test_y)
+    score = model.score(test_x, test_y, prob= best_prob2)
     print(f"scratch multi LRmodel prediction: {score}")
 '''
 Normalization
