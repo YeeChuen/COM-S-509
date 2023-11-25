@@ -1,13 +1,12 @@
 from logistic_regression import LogisticRegression
-from helper import parseData, splitData, normalize, ensemble_wrapper,bagging,boosting, get_datasets, data_reconstruct, applyCorruption
+from helper import parseData, splitData, normalize, ensemble_wrapper, poly_kernel, rbf_kernel, sigmoid_kernel, bagging,boosting, get_datasets, data_reconstruct, applyCorruption
 from sklearn.utils import shuffle
 import numpy as np
 from feature_reduction import PCA
 from feature_selection import feature_selection_filter_corr, select_feature
 from hyperparam_tuning import hyperparam_tuning
 
-# basic training and testing model
-
+# training and testing model functions
 def training_test_model_bagging(
         train_x, train_y, val_x, val_y, test_x, test_y, 
         l_rate1 = 0.1, no_iter1 = 100, l_rate2 = 0.1, no_iter2 = 100, batch_size = 10, C = 1, num_models = 10):
@@ -23,7 +22,6 @@ def training_test_model_bagging(
         score = ensemble_wrapper(test_x, test_y, ws, bs, False, 0.5,
                                model = LogisticRegression, model_type = 'multinomial')
         print(f"scratch multi LRmodel prediction: {score}")
-
 
 def training_test_model_boosting(
         train_x, train_y, val_x, val_y, test_x, test_y, 
@@ -96,8 +94,58 @@ def normalization():
         training_test_model(train_x, train_y, val_x, val_y, test_x, test_y)
     pass
 
-def kernelization():
-    print("\n --- kernelization ---")
+def poly_kernelization():
+    print("\n --- poly kernelization ---")
+    #[[X_hw, y_hw], [X_bc, y_bc], [X_se, y_se], [X_wp, y_wp]]
+    # index:    0-alzheimers, 1-breastcancer, 2-spamemail, 3-water-potability
+    datasets = get_datasets()
+
+    for key in datasets:
+        dataset = datasets[key]
+        print(f"\nModel performance for: {key}")
+        X = dataset[0]
+        y = dataset[1]
+
+        X = poly_kernel(X, 1, 1, 2)
+
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
+        training_test_model(train_x, train_y, val_x, val_y, test_x, test_y)
+    pass
+
+def rbf_kernelization():
+    print("\n --- rbf kernelization ---")
+    #[[X_hw, y_hw], [X_bc, y_bc], [X_se, y_se], [X_wp, y_wp]]
+    # index:    0-alzheimers, 1-breastcancer, 2-spamemail, 3-water-potability
+    datasets = get_datasets()
+
+    for key in datasets:
+        dataset = datasets[key]
+        print(f"\nModel performance for: {key}")
+        X = dataset[0]
+        y = dataset[1]
+
+        X = rbf_kernel(X, 1)
+
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
+        training_test_model(train_x, train_y, val_x, val_y, test_x, test_y)
+    pass
+
+def sigmoid_kernelization():
+    print("\n --- sigmoid kernelization ---")
+    #[[X_hw, y_hw], [X_bc, y_bc], [X_se, y_se], [X_wp, y_wp]]
+    # index:    0-alzheimers, 1-breastcancer, 2-spamemail, 3-water-potability
+    datasets = get_datasets()
+
+    for key in datasets:
+        dataset = datasets[key]
+        print(f"\nModel performance for: {key}")
+        X = dataset[0]
+        y = dataset[1]
+
+        X = sigmoid_kernel(X, 1, 1)
+
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
+        training_test_model(train_x, train_y, val_x, val_y, test_x, test_y)
     pass
 
 def feature_selection():
@@ -169,7 +217,7 @@ def shuffling():
     pass
 
 def bagging_model():
-    print("\n --- Bagging ---")
+    print("\n --- bagging ---")
     datasets = get_datasets()
 
     '''
@@ -211,7 +259,7 @@ def boosting_model():
     pass
 
 def hyperparameter_tuning():
-    print("\n --- shuffling ---")
+    print("\n --- hyperparameter tuning ---")
     datasets = get_datasets()
 
     for key in datasets:
@@ -266,13 +314,15 @@ if __name__ == "__main__":
     basecase()              # 1 CHECK
 
     normalization()          # 2 CHECK
-    #kernelization()         # 3 <-- ignore for now
+    poly_kernelization()     # 3 <-- ignore for now
+    rbf_kernelization()     # 3 <-- ignore for now
+    sigmoid_kernelization()     # 3 <-- ignore for now
 
     # current fix for below 2, is to try without normalize, except with normalize, 
     feature_selection()     # 4 <-- odd issue where it needs normalization first, 
     feature_reduction()     # 5 <-- similarly with #3
 
-    shuffling()             # 6 CHECK
+    #shuffling()             # 6 CHECK
 
     # model will go too low of float, turns into Nan, and predicts all -1
     bagging_model()          # 7 CHECK
