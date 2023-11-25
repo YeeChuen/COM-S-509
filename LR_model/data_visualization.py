@@ -129,7 +129,7 @@ def data_visualization3D():
     print("--- data visualization for water potability dataset ---")
     water_potability_csv = f"{project_path}/data/water_potability.csv"
     X, y = parseData(water_potability_csv)
-    X = normalize(X)
+    X = normalize(X, nan = 'median')
     y = reshape_y(y)
     data = PCA(X, k=n_components)
     plotdata3D(data, y, '3D Water potability data visualization PCA 1')

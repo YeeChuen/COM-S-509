@@ -81,13 +81,13 @@ def training_all_model(X, y, l_rate1, no_iter1, best_prob1, l_rate, no_iter, bes
     model = LogisticRegression(l_rate1, no_iter1, classifier="multinomial")
     model.fit(train_x, train_y)
     score = model.score(test_x, test_y, prob = best_prob1)
-    print(f"scratch multi model prediction(w/HT,FS,FR): {score}")
+    print(f"scratch multi model prediction(w/HT,FR): {score}")
 
     l_rate, no_iter, best_prob = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
     model = LogisticRegression(l_rate, no_iter)
     model.fit(train_x, train_y)
     score = model.score(test_x, test_y, prob = best_prob)
-    print(f"scratch model prediction(w/HT,FS,FR): {score}")
+    print(f"scratch model prediction(w/HT,FR): {score}")
 
 def sklearn_to_df(data_loader):
     X_data = data_loader.data

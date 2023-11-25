@@ -16,7 +16,7 @@ import pandas as pd
 from tqdm import tqdm
 
 def hyperparam_tuning(LRmodel, model_classifier, X, y, n_fold = 5, percent = False):
-    print("Hyperparameter tuning ... ")
+    # print("Hyperparameter tuning ... ")
 
     # train_x, train_y, _, _, test_x, test_y = splitData2(X, y, 0.8, 0, 0.2)
 
@@ -34,7 +34,7 @@ def hyperparam_tuning(LRmodel, model_classifier, X, y, n_fold = 5, percent = Fal
     best_lr = 1
     best_iter = 100
     best_prob = 0.5
-    for i in tqdm(range(10)):
+    for i in range(10):
         rate = 1
         iter = 100
         for _ in range(i):

@@ -78,6 +78,23 @@ def splitData2(X, y, trainSplit, valSplit, testSplit):
     test_y = y[valStop:]
     return train_x, train_y, val_x, val_y, test_x, test_y
 
+def nan_value(X, nan = 'zero'):
+    
+    meanX = np.nanmean(X, axis = 0)
+    medianX = np.nanmedian(X, axis = 0)
+
+    for i in range(len(X)):
+        for j in range(len(X[i])):
+            if math.isnan(X[i][j]):
+                if nan == 'zero':
+                    X[i][j] = 0
+                elif nan == 'mean':
+                    X[i][j] = meanX[j]
+                elif nan == 'median':
+                    X[i][j] = medianX[j]
+
+    return X
+
 
 def normalize(X, nan = 'zero'):
     '''
@@ -87,28 +104,19 @@ def normalize(X, nan = 'zero'):
     minX = np.zeros(X.shape[1])
     normX = np.zeros(X.shape)
 
-
-
     for i in range(X.shape[1]):
         minX[i] = min(X[:, i])
         rangeX[i] = max(X[:, i]) - minX[i]
     for i in range(X.shape[0]): # row
         for j in range(X.shape[1]): # column
             normX[i][j] = (X[i][j] - minX[j]) / rangeX[j]
-    
-            
-    meanX = np.nanmean(normX, axis = 0)
-    medianX = np.nanmedian(normX, axis = 0)
 
-    for i in range(len(normX)):
-        for j in range(len(normX[i])):
-            if math.isnan(normX[i][j]):
-                if nan == 'zero':
-                    normX[i][j] = 0
-                elif nan == 'mean':
-                    normX[i][j] = meanX[j]
-                elif nan == 'median':
-                    normX[i][j] = medianX[j]
+    if nan == 'zero':
+         nan_value(X, nan = 'zero')
+    elif nan == 'mean':
+         nan_value(X, nan = 'mean')
+    elif nan == 'median':
+         nan_value(X, nan = 'median')
 
     return normX
 
