@@ -35,10 +35,10 @@ def hyperparam_tuning(LRmodel, model_classifier, X, y, n_fold = 5, percent = Fal
     best_iter = 100
     best_prob = 0.5
     for i in range(10):
-        rate = 1
+        rate = 10
         iter = 100
         for _ in range(i):
-            rate /= 10
+            rate *= 0.1
         for j in range(10):
             if percent:
                 for threshold in [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9]:
