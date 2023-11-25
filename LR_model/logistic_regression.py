@@ -20,18 +20,32 @@ class LogisticRegression():
         self.classifier = classifier
         if self.classifier == "multinomial":
             self.learning_rate *= 0.01
+        elif self.classifier == "binomial":
+            self.learning_rate *= 0.1
 
     def one_hot_encoding(self,Y):
         OneHotEncoding = []
         encoding = []
-        for i in range(len(Y)):
-            if(Y[i] == 0): encoding = np.array([1,0]) #Class 1, if y = 0
-            elif(Y[i] == 1): encoding = np.array([0,1]) #Class 2, if y = 1
-            else: encoding = np.array([Y[i],Y[i]]) #Class 2, if y = 1
 
-            OneHotEncoding.append(encoding)
+        if type(Y[0]).__name__ == 'ndarray':
+            for i in range(len(Y)):
+                if(Y[i].tolist() == [1,0] or Y[i].tolist() == [-1,1] or Y[i].tolist() == [-1,-1]): encoding = -1 #Class 1, if y = 0
+                elif(Y[i].tolist() == [0,1]or Y[i].tolist() == [1,-1] or Y[i].tolist() == [1,1]): encoding = 1 #Class 2, if y = 1
+                else: encoding = (-1) # if is neither
 
-        return np.array(OneHotEncoding)
+                OneHotEncoding.append(encoding)
+
+            return np.array(OneHotEncoding)
+
+        else:
+            for i in range(len(Y)):
+                if(Y[i] == -1): encoding = np.array([1,0]) #Class 1, if y = 0
+                elif(Y[i] == 1): encoding = np.array([0,1]) #Class 2, if y = 1
+                else: encoding = np.array([Y[i],Y[i]]) #Class 3, if is neither
+
+                OneHotEncoding.append(encoding)
+
+            return np.array(OneHotEncoding)
 
     def fit(self, X_train, y_train):
         m, n = X_train.shape # m --> number of data (row), n --> number of feature map (col)
@@ -49,13 +63,13 @@ class LogisticRegression():
             z = np.array(np.dot(X, self.w) + self.b, dtype=np.float32) # z = wX + b
             y_hat = self.function(z) # y_hat is probabilistic prediction for y
             
-            Ti = self.one_hot_encoding(y)
 
             # ignore cost at the moment
             #cost = self.cost_function(m, y, y_hat)
             #self.cost_list.append(cost)
 
             if self.classifier == "multinomial":
+                Ti = self.one_hot_encoding(y)
                 self.gradient_descent(m, y_hat, Ti, X)
             elif self.classifier == "binomial":
                 self.gradient_descent(m, y_hat, y, X)
@@ -94,24 +108,41 @@ class LogisticRegression():
         elif self.classifier == "multinomial":
             return (np.exp(z).T / np.sum(np.exp(z), axis=1)).T
 
-    def predict(self, X, prob):
+    def predict(self, X, prob = 0.5):
         if self.classifier == "binomial":
             z = np.array(np.dot(X, self.w) + self.b, dtype=np.float32) # z = wX + b
             y_pred = self.function(z) # y prediction
-            y_pred = np.where(y_pred > prob, 1, 0) # y = 1 if y[i]>0.5, else 0
+            y_pred = np.where(y_pred > prob, 1, -1) # y = 1 if y[i]>0.5, else 0
             return y_pred
         elif self.classifier == "multinomial":
             z = np.array(np.dot(X, self.w) + self.b, dtype=np.float32) # z = wX + b
             y_pred = self.function(z) # y prediction
-            y_pred = np.where(y_pred > prob, 1, 0) # y = 1 if y[i]>0.5, else 0
+            y_pred = np.where(y_pred > prob, 1, -1) # y = 1 if y[i]>0.5, else 0
+            return self.one_hot_encoding(y_pred)
+        
+    def predict_with_param(self, X, weight, bias, prob = 0.5):
+        if self.classifier == "binomial":
+            z = np.array(np.dot(X, weight) + bias, dtype=np.float32) # z = wX + b
+            y_pred = self.function(z) # y prediction
+            y_pred = np.where(y_pred > prob, 1, -1) # y = 1 if y[i]>0.5, else 0
             return y_pred
+        
+        elif self.classifier == "multinomial":
+            z = np.array(np.dot(X, weight) + bias, dtype=np.float32) # z = wX + b
+            y_pred = self.function(z) # y prediction
+            y_pred = np.where(y_pred > prob, 1, -1) # y = 1 if y[i]>0.5, else 0
+
+            return self.one_hot_encoding(y_pred)
     
     def score(self, X, y_true, prob = 0.5):
         y_pred = self.predict(X, prob)
-
-        if self.classifier == "multinomial":
-            y_true = self.one_hot_encoding(y_true)
         accuracy = np.mean(y_pred == y_true)
+        return accuracy
+    
+    
+    def score_with_pred(self, y_pred, y_true):
+        accuracy = np.mean(y_pred == y_true)
+
         return accuracy
     
     def get_params(self):

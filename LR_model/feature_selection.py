@@ -40,7 +40,6 @@ def feature_selection_filter_corr(X, y, threshold_percent = 0.2, remove_negative
     # y should be after reshape
     X_feature = X.T
     no_feature = X_feature.shape[0] #no_feature
-    print(no_feature)
 
     corr_list = []
     corr_dict = {}
@@ -48,7 +47,6 @@ def feature_selection_filter_corr(X, y, threshold_percent = 0.2, remove_negative
 
     for i in range(no_feature):
         cov = (np.cov(X_feature[i],y)[0][1]) # starting at feature at index 0, column left --> right
-        #print(cov)
 
         var_Xy = (np.var(X_feature[i])*var_y)
         #print(var_Xy)
@@ -60,7 +58,6 @@ def feature_selection_filter_corr(X, y, threshold_percent = 0.2, remove_negative
         corr_dict[corr] = int(i)
     
     corr_list.sort(reverse = True)
-    #print(corr_list)
     selection = int(no_feature * threshold_percent)
 
     # minimum = 10, maximum = -1
@@ -240,7 +237,7 @@ def testing():
     X = X[:, 1:]
     y = np.where(y == "P", 1, y)
     y = np.where(y == "H", -1, y)
-    X = normalize(X)
+    X = normalize(X) # <-- this is needed before running feature selection , to be fixed
     y = reshape_y(y) # <-- this is needed before running feature selection
 
     X, y = shuffle(X, y)
@@ -254,7 +251,7 @@ def testing():
     X_ig = select_feature(X, FS_ig)
     
 
-    train_x, train_y, _, _, test_x, test_y = splitData2(X, y, 0.8, 0, 0.2)
+    train_x, train_y, _, _, test_x, test_y = splitData(X, y, 0.8, 0, 0.2)
     print(train_x.shape)
     print("\n--- No feature selection ---")
     l_rate, no_iter, best_prob = 0.1, 100, 0.5
@@ -270,7 +267,7 @@ def testing():
     score = model.score(test_x, test_y, prob = best_prob)
     print(f"scratch model prediction: {score}")
     
-    train_x, train_y, _, _, test_x, test_y = splitData2(X_ig, y, 0.8, 0, 0.2)
+    train_x, train_y, _, _, test_x, test_y = splitData(X_ig, y, 0.8, 0, 0.2)
     print(train_x.shape)
     print("\n--- IG feature selection ---")
     l_rate, no_iter, best_prob = 0.1, 100, 0.5
@@ -286,7 +283,7 @@ def testing():
     score = model.score(test_x, test_y, prob = best_prob)
     print(f"scratch model prediction: {score}")
     
-    train_x, train_y, _, _, test_x, test_y = splitData2(X_filter, y, 0.8, 0, 0.2)
+    train_x, train_y, _, _, test_x, test_y = splitData(X_filter, y, 0.8, 0, 0.2)
     print(train_x.shape)
     print("\n--- filter feature selection ---")
     l_rate, no_iter, best_prob = 0.1, 100, 0.5
