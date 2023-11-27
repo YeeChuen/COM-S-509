@@ -11,7 +11,7 @@ warnings.filterwarnings('ignore')
 # get X, y for all 4 data sets
 # index:    0-alzheimers, 1-breastcancer, 2-spamemail, 3-water-potability
 def get_datasets():
-    project_path = 'D:/Files/ISU work/Computer Science Program/2023/Fall 2023/COM S 573/Term Project/COM-S-573'
+    project_path = '/work/ratul1/chuen/temp/COM-S-573'
     hand_writing_csv = f"{project_path}/data/handwriting_alzheimers.csv"
     X_hw, y_hw = parseData(hand_writing_csv, form = 0)
 
@@ -584,7 +584,7 @@ def data_reconstruct(X, t):
     return X
 
 if __name__ == "__main__":
-    project_path = 'D:/Files/ISU work/Computer Science Program/2023/Fall 2023/COM S 573/Term Project/COM-S-573'
+    project_path = '/work/ratul1/chuen/temp/COM-S-573'
     water_potability_csv = f"{project_path}/data/water_potability.csv"
     
     X, y = parseData(water_potability_csv)

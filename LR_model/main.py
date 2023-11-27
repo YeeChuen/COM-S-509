@@ -8,9 +8,9 @@ from hyperparam_tuning import hyperparam_tuning
 
 
 def write(s):
-    save = 'D:/Files/ISU work/Computer Science Program/2023/Fall 2023/COM S 573/Term Project/COM-S-573/LR_model/results.txt'
+    save = '/work/ratul1/chuen/temp/COM-S-573/LR_model/results_v4.txt'
     with open(save, 'a') as f:
-        f.write(f'{s}\n')
+        f.write(f'{s}')
 
 # training and testing model functions
 def training_test_model_bagging(
@@ -22,13 +22,13 @@ def training_test_model_bagging(
                             model = LogisticRegression, model_type = 'binomial')
         score = ensemble_wrapper(test_x, test_y, ws, bs, False, 0.5,
                                model = LogisticRegression, model_type = 'binomial')
-        write(f"scratch binom LRmodel prediction: {score}")
+        write(f"binom LRmodel,{score}\n")
         
         ws, bs, ls = bagging(train_x, train_y, val_x, val_y, C, batch_size, l_rate2, no_iter2, num_models, int(train_x.shape[0] / 3), 
                             model = LogisticRegression, model_type = 'multinomial')
         score = ensemble_wrapper(test_x, test_y, ws, bs, False, 0.5,
                                model = LogisticRegression, model_type = 'multinomial')
-        write(f"scratch multi LRmodel prediction: {score}")
+        write(f"multi LRmodel,{score}\n")
 
 def training_test_model_boosting(
         train_x, train_y, val_x, val_y, test_x, test_y, 
@@ -39,13 +39,13 @@ def training_test_model_boosting(
                             model = LogisticRegression, model_type = 'binomial')
         score = ensemble_wrapper(test_x, test_y, ws, bs, True, 0.5, accs = lWs,
                                model = LogisticRegression, model_type = 'binomial')
-        write(f"scratch binom LRmodel prediction: {score}")
+        write(f"binom LRmodel,{score}\n")
         
         ws, bs, ls, lWs = boosting(train_x, train_y, val_x, val_y, batch_size, l_rate2, no_iter2, num_models, int(train_x.shape[0] / 3), 
                             model = LogisticRegression, model_type = 'multinomial')
         score = ensemble_wrapper(test_x, test_y, ws, bs, True, 0.5, accs = lWs,
                                model = LogisticRegression, model_type = 'multinomial')
-        write(f"scratch multi LRmodel prediction: {score}")
+        write(f"multi LRmodel,{score}\n")
 
 def training_test_model(
         train_x, train_y, val_x, val_y, test_x, test_y, 
@@ -53,12 +53,12 @@ def training_test_model(
     model = LogisticRegression(l_rate2, no_iter2)
     model.fit(train_x, train_y)
     score = model.score(test_x, test_y, prob= best_prob1)
-    write(f"scratch binom LRmodel prediction: {score}")
+    write(f"binom LRmodel,{score}\n")
 
     model = LogisticRegression(l_rate1, no_iter1, classifier="multinomial")
     model.fit(train_x, train_y)
     score = model.score(test_x, test_y, prob= best_prob2)
-    write(f"scratch multi LRmodel prediction: {score}")
+    write(f"multi LRmodel,{score}\n")
 '''
 Normalization
 Kernelization
@@ -72,14 +72,15 @@ Data-reconstruction
 Combination of the above techniques
 '''
 def basecase():
-    write("\n --- base case ---")
+    #write("base case ---")
     #[[X_hw, y_hw], [X_bc, y_bc], [X_se, y_se], [X_wp, y_wp]]
     # index:    0-alzheimers, 1-breastcancer, 2-spamemail, 3-water-potability
     datasets = get_datasets()
 
     for key in datasets:
         dataset = datasets[key]
-        write(f"\nModel performance for: {key}")
+        #write(f"\nModel performance for: {key}")
+        write(f"base case,{key},")
         X = dataset[0]
         y = dataset[1]
         train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
@@ -87,12 +88,13 @@ def basecase():
     pass
 
 def normalization():
-    write("\n --- normalization ---")
+    #write("normalization ---")
     datasets = get_datasets()
 
     for key in datasets:
         dataset = datasets[key]
-        write(f"\nModel performance for: {key}")
+        #write(f"\nModel performance for: {key}")
+        write(f"normalization,{key},")
         X = dataset[0]
         y = dataset[1]
 
@@ -103,14 +105,15 @@ def normalization():
     pass
 
 def poly_kernelization():
-    write("\n --- poly kernelization ---")
+    #write("poly kernelization ---")
     #[[X_hw, y_hw], [X_bc, y_bc], [X_se, y_se], [X_wp, y_wp]]
     # index:    0-alzheimers, 1-breastcancer, 2-spamemail, 3-water-potability
     datasets = get_datasets()
 
     for key in datasets:
         dataset = datasets[key]
-        write(f"\nModel performance for: {key}")
+        #write(f"\nModel performance for: {key}")
+        write(f"poly kernelization,{key},")
         X = dataset[0]
         y = dataset[1]
 
@@ -121,14 +124,15 @@ def poly_kernelization():
     pass
 
 def rbf_kernelization():
-    write("\n --- rbf kernelization ---")
+    #write("rbf kernelization ---")
     #[[X_hw, y_hw], [X_bc, y_bc], [X_se, y_se], [X_wp, y_wp]]
     # index:    0-alzheimers, 1-breastcancer, 2-spamemail, 3-water-potability
     datasets = get_datasets()
 
     for key in datasets:
         dataset = datasets[key]
-        write(f"\nModel performance for: {key}")
+        #write(f"\nModel performance for: {key}")
+        write(f"rbf kernelization,{key},")
         X = dataset[0]
         y = dataset[1]
 
@@ -139,14 +143,15 @@ def rbf_kernelization():
     pass
 
 def sigmoid_kernelization():
-    write("\n --- sigmoid kernelization ---")
+    #write("sigmoid kernelization ---")
     #[[X_hw, y_hw], [X_bc, y_bc], [X_se, y_se], [X_wp, y_wp]]
     # index:    0-alzheimers, 1-breastcancer, 2-spamemail, 3-water-potability
     datasets = get_datasets()
 
     for key in datasets:
         dataset = datasets[key]
-        write(f"\nModel performance for: {key}")
+        #write(f"\nModel performance for: {key}")
+        write(f"sigmoid kernelization,{key},")
         X = dataset[0]
         y = dataset[1]
 
@@ -157,12 +162,13 @@ def sigmoid_kernelization():
     pass
 
 def feature_selection():
-    write("\n --- feature selection ---")
+    #write("feature selection ---")
     datasets = get_datasets()
 
     for key in datasets:
         dataset = datasets[key]
-        write(f"\nModel performance for: {key}")
+        #write(f"\nModel performance for: {key}")
+        write(f"feature selection,{key},")
         X = dataset[0]
         y = dataset[1]
 
@@ -183,12 +189,13 @@ def feature_selection():
     pass
 
 def feature_reduction():
-    write("\n --- feature reduction ---")
+    #write("feature reduction ---")
     datasets = get_datasets()
 
     for key in datasets:
         dataset = datasets[key]
-        write(f"\nModel performance for: {key}")
+        #write(f"\nModel performance for: {key}")
+        write(f"feature reduction,{key},")
         X = dataset[0]
         y = dataset[1]
 
@@ -207,12 +214,13 @@ def feature_reduction():
     pass
 
 def shuffling():
-    write("\n --- shuffling ---")
+    #write("shuffling ---")
     datasets = get_datasets()
 
     for key in datasets:
         dataset = datasets[key]
-        write(f"\nModel performance for: {key}")
+        #write(f"\nModel performance for: {key}")
+        write(f"poly shuffling,{key},")
         X = dataset[0]
         y = dataset[1]
         
@@ -225,13 +233,13 @@ def shuffling():
     pass
 
 def bagging_model():
-    write("\n --- bagging ---")
+    #write("bagging ---")
     datasets = get_datasets()
 
     '''
     key = 'Spam Email'
     dataset = datasets[key]
-    write(f"\nModel performance for: {key}")
+    #write(f"\nModel performance for: {key}")
     X = dataset[0]
     y = dataset[1]
 
@@ -242,7 +250,8 @@ def bagging_model():
 
     for key in datasets:
         dataset = datasets[key]
-        write(f"\nModel performance for: {key}")
+        #write(f"\nModel performance for: {key}")
+        write(f"bagging,{key},")
         X = dataset[0]
         y = dataset[1]
 
@@ -252,12 +261,13 @@ def bagging_model():
     pass
 
 def boosting_model():
-    write("\n --- boosting ---")
+    #write("boosting ---")
     datasets = get_datasets()
 
     for key in datasets:
         dataset = datasets[key]
-        write(f"\nModel performance for: {key}")
+        #write(f"\nModel performance for: {key}")
+        write(f"boosting,{key},")
         X = dataset[0]
         y = dataset[1]
 
@@ -267,12 +277,13 @@ def boosting_model():
     pass
 
 def hyperparameter_tuning():
-    write("\n --- hyperparameter tuning ---")
+    #write("hyperparameter tuning ---")
     datasets = get_datasets()
 
     for key in datasets:
         dataset = datasets[key]
-        write(f"\nModel performance for: {key}")
+        #write(f"\nModel performance for: {key}")
+        write(f"hyperparameter tuning,{key},")
         X = dataset[0]
         y = dataset[1]
 
@@ -286,12 +297,13 @@ def hyperparameter_tuning():
     pass
 
 def data_reconstruction():
-    write("\n --- data reconstruction ---")
+    #write("data reconstruction ---")
     datasets = get_datasets()
 
     for key in datasets:
         dataset = datasets[key]
-        write(f"\nModel performance for: {key}")
+        #write(f"\nModel performance for: {key}")
+        write(f"data reconstruction,{key},")
         
         X = dataset[0]
         y = dataset[1]
@@ -310,12 +322,13 @@ def data_reconstruction():
     pass
 
 def combination():
-    write("\n --- combination ---")
+    #write("combination_")
     datasets = get_datasets()
 
     for key in datasets:
         dataset = datasets[key]
-        write(f"\nModel performance for: {key}")
+        #write(f"\nModel performance for: {key}")
+        write(f"combination,{key},")
         X = dataset[0]
         y = dataset[1]
 
@@ -402,6 +415,6 @@ if __name__ == "__main__":
     data_reconstruction()   # 10 CHECK
 
     for i in range(10):
-        write("Round ", i)
+        write(f"Round {i}")
         combination()           # 11 No combinations yet.
     pass
