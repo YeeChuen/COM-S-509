@@ -17,7 +17,7 @@ from tqdm import tqdm
 import copy
 
 def hyperparam_tuning(LRmodel, model_classifier, X, y, n_fold = 5, percent = False):
-    print("Hyperparameter tuning ... ")
+    # print("Hyperparameter tuning ... ")
 
     # train_x, train_y, _, _, test_x, test_y = splitData2(X, y, 0.8, 0, 0.2)
     '''print(X.shape)
