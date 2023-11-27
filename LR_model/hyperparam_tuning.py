@@ -14,11 +14,14 @@ from sklearn.datasets import load_breast_cancer
 from logistic_regression import CustomLogisticRegression, ShortLogisticRegression, PELogisticRegression
 import pandas as pd
 from tqdm import tqdm
+import copy
 
 def hyperparam_tuning(LRmodel, model_classifier, X, y, n_fold = 5, percent = False):
-    # print("Hyperparameter tuning ... ")
+    print("Hyperparameter tuning ... ")
 
     # train_x, train_y, _, _, test_x, test_y = splitData2(X, y, 0.8, 0, 0.2)
+    '''print(X.shape)
+    print(y.shape)'''
 
     x_fold = []
     y_fold = []
@@ -42,12 +45,25 @@ def hyperparam_tuning(LRmodel, model_classifier, X, y, n_fold = 5, percent = Fal
         for j in range(10):
             if percent:
                 for threshold in [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9]:
-                    
-                    model = LRmodel(rate, iter, classifier=model_classifier)
-                    model.fit(X, y)
 
                     score = 0
                     for k in range(len(x_fold)):  
+                        model = LRmodel(rate, iter, classifier=model_classifier)
+                        deep_X = copy.deepcopy(X)
+                        deep_y = copy.deepcopy(y)
+                        deep_X_list = deep_X.tolist()
+                        deep_y_list = deep_y.tolist()
+
+                        remove_X = x_fold[k]
+
+                        for m in range(len(deep_X_list)):
+                            if deep_X_list[m] in remove_X:
+                                print("removed: ", m)
+                                deep_X_list.pop(m)
+                                deep_y_list.pop(m)
+                        
+                        model.fit(np.array(deep_X_list), np.array(deep_y_list))
+
                         score += model.score(x_fold[k], y_fold[k], prob = threshold)
                     score /= len(x_fold)
 
@@ -59,12 +75,35 @@ def hyperparam_tuning(LRmodel, model_classifier, X, y, n_fold = 5, percent = Fal
                         best_iter = iter
                         best_prob = threshold
             else:
-                model = LRmodel(rate, iter, classifier=model_classifier)
-                model.fit(X, y)
-
                 score = 0
-                for k in range(len(x_fold)):  
-                    score += model.score(x_fold[k], y_fold[k])
+                for k in range(len(x_fold)):
+                    fold_test_X = x_fold[k]
+                    fold_test_y = y_fold[k]
+                    if k == 0:
+                        start = 1
+                        fold_train_X = x_fold[start]
+                        fold_train_y = y_fold[start]
+
+                    else:
+                        start = 0
+                        fold_train_X = x_fold[start]
+                        fold_train_y = y_fold[start]
+
+                    for m in range(start + 1, len(x_fold)):
+                        if m == k:
+                            continue
+                        else:
+                            fold_train_X = np.concatenate((fold_train_X, x_fold[m]), axis=0)
+                            fold_train_y = np.concatenate((fold_train_y, y_fold[m]), axis=0)
+                        
+                        '''print("add ", m)
+                        print(fold_train_X.shape)
+                        print(fold_train_y.shape)'''
+
+                    model = LRmodel(rate, iter, classifier=model_classifier)                        
+                    model.fit(fold_train_X, fold_train_y)
+
+                    score += model.score(fold_test_X, fold_test_y)
                 score /= len(x_fold)
 
                 # print(f"Score {score} for lr: {rate}, iter: {iter}, prob: {threshold}")

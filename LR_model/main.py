@@ -9,7 +9,7 @@ from hyperparam_tuning import hyperparam_tuning
 # training and testing model functions
 def training_test_model_bagging(
         train_x, train_y, val_x, val_y, test_x, test_y, 
-        l_rate1 = 0.1, no_iter1 = 100, best_prob1 = 0.5, l_rate2 = 0.1, no_iter2 = 100, best_prob2 = 0.5, 
+        l_rate1 = 0.001, no_iter1 = 100, best_prob1 = 0.5, l_rate2 = 0.001, no_iter2 = 100, best_prob2 = 0.5, 
         batch_size = 10, C = 1, num_models = 10):
 
         ws, bs, ls = bagging(train_x, train_y, val_x, val_y, C, batch_size, l_rate1, no_iter1, num_models, int(train_x.shape[0] / 3), 
@@ -26,7 +26,7 @@ def training_test_model_bagging(
 
 def training_test_model_boosting(
         train_x, train_y, val_x, val_y, test_x, test_y, 
-        l_rate1 = 0.1, no_iter1 = 100, best_prob1 = 0.5, l_rate2 = 0.1, no_iter2 = 100, best_prob2 = 0.5, 
+        l_rate1 = 0.001, no_iter1 = 100, best_prob1 = 0.5, l_rate2 = 0.001, no_iter2 = 100, best_prob2 = 0.5, 
         batch_size = 10, num_models = 10):
 
         ws, bs, ls, lWs = boosting(train_x, train_y, val_x, val_y, batch_size, l_rate1, no_iter1, num_models, int(train_x.shape[0] / 3), 
@@ -43,7 +43,7 @@ def training_test_model_boosting(
 
 def training_test_model(
         train_x, train_y, val_x, val_y, test_x, test_y, 
-        l_rate1 = 0.1, no_iter1 = 100, best_prob1 = 0.5, l_rate2 = 0.1, no_iter2 = 100, best_prob2 = 0.5):
+        l_rate1 = 0.001, no_iter1 = 100, best_prob1 = 0.5, l_rate2 = 0.001, no_iter2 = 100, best_prob2 = 0.5):
     model = LogisticRegression(l_rate2, no_iter2)
     model.fit(train_x, train_y)
     score = model.score(test_x, test_y, prob= best_prob1)
@@ -304,6 +304,65 @@ def data_reconstruction():
     pass
 
 def combination():
+    print("\n --- combination ---")
+    datasets = get_datasets()
+
+    for key in datasets:
+        dataset = datasets[key]
+        print(f"\nModel performance for: {key}")
+        X = dataset[0]
+        y = dataset[1]
+
+        X, y = shuffle(X, y)
+        X, y = shuffle(X, y)
+        X, y = shuffle(X, y)
+
+        X = normalize(X)
+        print("--- add normalization ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
+        training_test_model(train_x, train_y, val_x, val_y, test_x, test_y)
+
+        FS_filter = feature_selection_filter_corr(X, y, remove_negative=True, minimum = X.shape[1])
+        X_filter = select_feature(X, FS_filter)
+        print("--- add feature selection ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_filter, y, 0.8, 0.0, 0.2)
+        training_test_model(train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        X_pca = PCA(X_filter, k=X.shape[1] * 0.2)
+        print("--- add feature reduction w/ FS ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_pca, y, 0.8, 0.0, 0.2)
+        training_test_model(train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        print("--- add hyperparameter tuning ---")
+        l_rate1, no_iter1, best_prob1 = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
+        l_rate2, no_iter2, best_prob2 = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
+
+        training_test_model(train_x, train_y, val_x, val_y, test_x, test_y, 
+                            l_rate1, no_iter1, best_prob1, l_rate2, no_iter2, best_prob2)
+
+        print("--- add bagging ---")
+        training_test_model_bagging(train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        print("--- add boosting ---")
+        training_test_model_boosting(train_x, train_y, val_x, val_y, test_x, test_y)
+
+
+        X_pca = PCA(X, k=X.shape[1] * 0.2)
+        print("--- add feature reduction w/o FS ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_pca, y, 0.8, 0.0, 0.2)
+        training_test_model(train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        print("--- add hyperparameter tuning w/o FS ---")
+        l_rate1, no_iter1, best_prob1 = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
+        l_rate2, no_iter2, best_prob2 = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
+        training_test_model(train_x, train_y, val_x, val_y, test_x, test_y, 
+                            l_rate1, no_iter1, best_prob1, l_rate2, no_iter2, best_prob2)
+
+        print("--- add bagging w/o FS ---")
+        training_test_model_bagging(train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        print("--- add boosting w/o FS ---")
+        training_test_model_boosting(train_x, train_y, val_x, val_y, test_x, test_y)
     pass
 
 if __name__ == "__main__":
@@ -313,25 +372,26 @@ if __name__ == "__main__":
     # this issue occurs similarly, until we test with it with shuffle. 
 
     # shuffle is needed to ensure realistic testing, imo
-    basecase()              # 1 CHECK
+    #basecase()              # 1 CHECK
 
-    normalization()          # 2 CHECK
-    poly_kernelization()     # 3 <-- ignore for now
-    rbf_kernelization()     # 3 <-- ignore for now
-    sigmoid_kernelization()     # 3 <-- ignore for now
+    #normalization()          # 2 CHECK
+    #poly_kernelization()     # 3 <-- ignore for now
+    #rbf_kernelization()     # 3 <-- ignore for now
+    #sigmoid_kernelization()     # 3 <-- ignore for now
 
     # current fix for below 2, is to try without normalize, except with normalize, 
-    feature_selection()     # 4 <-- odd issue where it needs normalization first, 
-    feature_reduction()     # 5 <-- similarly with #3
+    #feature_selection()     # 4 <-- odd issue where it needs normalization first, 
+    #feature_reduction()     # 5 <-- similarly with #3
 
-    shuffling()             # 6 CHECK
+    #shuffling()             # 6 CHECK
 
     # model will go too low of float, turns into Nan, and predicts all -1
-    bagging_model()          # 7 CHECK
-    boosting_model()         # 8 CHECK
+    #bagging_model()          # 7 CHECK
+    #boosting_model()         # 8 CHECK
 
-    hyperparameter_tuning() # 9 CHECK
-    data_reconstruction()   # 10 CHECK
+    #hyperparameter_tuning() # 9 CHECK
+    #data_reconstruction()   # 10 CHECK
 
-    combination()           # 11 No combinations yet.
+    for _ in range(10):
+        combination()           # 11 No combinations yet.
     pass
