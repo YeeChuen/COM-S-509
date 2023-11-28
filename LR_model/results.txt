@@ -1,0 +1,66 @@
+
+ --- base case ---
+
+Model performance for: Alzheimers Handwriting
+scratch binom LRmodel prediction: 0.6857142857142857
+scratch multi LRmodel prediction: 1.0
+
+Model performance for: Breast Cancer
+scratch binom LRmodel prediction: 0.8245614035087719
+scratch multi LRmodel prediction: 0.7719298245614035
+
+Model performance for: Spam Email
+scratch binom LRmodel prediction: 0.485
+scratch multi LRmodel prediction: 0.485
+
+Model performance for: Water Potability
+scratch binom LRmodel prediction: 0.5152439024390244
+scratch multi LRmodel prediction: 0.5152439024390244
+
+ --- normalization ---
+
+Model performance for: Alzheimers Handwriting
+scratch binom LRmodel prediction: 1.0
+scratch multi LRmodel prediction: 1.0
+
+Model performance for: Breast Cancer
+scratch binom LRmodel prediction: 0.7719298245614035
+scratch multi LRmodel prediction: 0.7456140350877193
+
+Model performance for: Spam Email
+scratch binom LRmodel prediction: 0.485
+scratch multi LRmodel prediction: 0.515
+
+Model performance for: Water Potability
+scratch binom LRmodel prediction: 0.5152439024390244
+scratch multi LRmodel prediction: 0.4847560975609756
+
+ --- poly kernelization ---
+
+Model performance for: Alzheimers Handwriting
+scratch binom LRmodel prediction: 0.6
+scratch multi LRmodel prediction: 1.0
+
+Model performance for: Breast Cancer
+scratch binom LRmodel prediction: 0.22807017543859648
+scratch multi LRmodel prediction: 0.7719298245614035
+
+Model performance for: Spam Email
+scratch binom LRmodel prediction: 0.485
+scratch multi LRmodel prediction: 0.485
+
+Model performance for: Water Potability
+scratch binom LRmodel prediction: 0.5152439024390244
+scratch multi LRmodel prediction: 0.5152439024390244
+
+ --- rbf kernelization ---
+
+Model performance for: Alzheimers Handwriting
+scratch binom LRmodel prediction: 1.0
+scratch multi LRmodel prediction: 1.0
+
+Model performance for: Breast Cancer
+scratch binom LRmodel prediction: 0.7719298245614035
+scratch multi LRmodel prediction: 0.7719298245614035
+
+Model performance for: Spam Email

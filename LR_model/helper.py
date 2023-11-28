@@ -156,7 +156,7 @@ def nan_value(X, nan = 'zero'):
     return X
 
 
-def normalize(X, nan = 'zero'):
+def normalize(X, nan = 'median'):
     '''
     nan takes argument = ['mean', 'median', 'zero']
     '''

@@ -49,7 +49,8 @@ def plotdata2D(X, y, save_name, min_x = 0.1, max_x = 0.1):
 
     X_df = pd.DataFrame({'Feature_1': X[:,0], 'Feature_2': X[:,1], 'label': y})
     fig, ax = plt.subplots(1)
-    sns.scatterplot(x='Feature_1', y='Feature_2', hue='label', data=X_df, ax=ax,s=30).set(title=save_name)
+    sns.scatterplot(x='Feature_1', y='Feature_2', hue='label', 
+                    data=X_df, ax=ax,s=30).set(title=save_name)
     lim = (X.min()-min_x, X.max()+max_x)
     ax.set_xlim(lim)
     ax.set_ylim(lim)
@@ -67,11 +68,8 @@ def data_visualization3D():
     print("")
     print("--- data visualization for handwriting dataset ---")
     hand_writing_csv = f"{project_path}/data/handwriting_alzheimers.csv"
-    X, y = parseData(hand_writing_csv)
-    X = X[:, 1:]
+    X, y = parseData(hand_writing_csv, form = 0)
     X = normalize(X)
-    y = np.where(y == "P", 1, y)
-    y = np.where(y == "H", -1, y)
     y = reshape_y(y)
     data = PCA(X, k=n_components)
     #print(data)
@@ -89,10 +87,8 @@ def data_visualization3D():
     print("")
     print("--- data visualization for breast cancer dataset ---")
     breast_cancer_csv = f"{project_path}/data/breast-cancer.csv"
-    X, y = parseDataBreastCancer(breast_cancer_csv)
+    X, y = parseData(breast_cancer_csv, form = 1)
     X = normalize(X)
-    y = np.where(y == "M", 1, y)
-    y = np.where(y == "B", -1, y)
     y = reshape_y(y)
     data = PCA(X, k=n_components)
     #print(data)
@@ -110,7 +106,7 @@ def data_visualization3D():
     print("")
     print("--- data visualization for spam email dataset ---")
     spam_email_csv = f"{project_path}/data/spam_email_dataset.csv"
-    X , y = parseDataSpamEmail(spam_email_csv)
+    X, y = parseData(spam_email_csv, form = 2)
     X = normalize(X)
     y = reshape_y(y)
     data = PCA(X, k=n_components)
@@ -128,8 +124,8 @@ def data_visualization3D():
     print("")
     print("--- data visualization for water potability dataset ---")
     water_potability_csv = f"{project_path}/data/water_potability.csv"
-    X, y = parseData(water_potability_csv)
-    X = normalize(X, nan = 'median')
+    X, y = parseData(water_potability_csv, form = 3)
+    X = normalize(X)
     y = reshape_y(y)
     data = PCA(X, k=n_components)
     plotdata3D(data, y, '3D Water potability data visualization PCA 1')
@@ -152,8 +148,7 @@ def data_visualization2D():
     print("")
     print("--- data visualization for handwriting dataset ---")
     hand_writing_csv = f"{project_path}/data/handwriting_alzheimers.csv"
-    X, y = parseData(hand_writing_csv)
-    X = X[:, 1:]
+    X, y = parseData(hand_writing_csv, form = 0)
     X = normalize(X)
     y = reshape_y(y)
     data = PCA(X, k = n_components)
@@ -170,10 +165,10 @@ def data_visualization2D():
     print("")
     print("--- data visualization for breast cancer dataset ---")
     breast_cancer_csv = f"{project_path}/data/breast-cancer.csv"
-    X, y = parseDataBreastCancer(breast_cancer_csv)
+    X, y = parseData(breast_cancer_csv, form = 1)
     X = normalize(X)
     y = reshape_y(y)
-    data = PCA(X)
+    data = PCA(X, k = n_components)
     plotdata2D(data, y, 'Breast cancer data visualization PCA 1', min_x = 0.05, max_x = 0.05)
 
     
@@ -188,10 +183,10 @@ def data_visualization2D():
     print("")
     print("--- data visualization for spam email dataset ---")
     spam_email_csv = f"{project_path}/data/spam_email_dataset.csv"
-    X , y = parseDataSpamEmail(spam_email_csv)
+    X, y = parseData(spam_email_csv, form = 2)
     X = normalize(X)
     y = reshape_y(y)
-    data = PCA(X)
+    data = PCA(X, k = n_components)
     plotdata2D(data, y, 'Spam email data visualization PCA 1', min_x = 0.05, max_x = 0.05)
     
     
@@ -207,10 +202,10 @@ def data_visualization2D():
     print("")
     print("--- data visualization for water potability dataset ---")
     water_potability_csv = f"{project_path}/data/water_potability.csv"
-    X, y = parseData(water_potability_csv)
+    X, y = parseData(water_potability_csv, form = 3)
     X = normalize(X)
     y = reshape_y(y)
-    data = PCA(X)
+    data = PCA(X, k = n_components)
     plotdata2D(data, y, 'Water potability data visualization PCA 1', min_x = 0.05, max_x = 0.05)
     
     
