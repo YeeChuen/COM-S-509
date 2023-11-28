@@ -1,0 +1,10 @@
+base case,Alzheimers Handwriting,1.0,0.3597122302158273
+base case,Breast Cancer,0.7719298245614035,0.5912087912087912
+base case,Spam Email,0.485,0.5075
+base case,Water Potability,0.5152439024390244,0.6335877862595419
+normalization,Alzheimers Handwriting,1.0,0.3597122302158273
+normalization,Breast Cancer,0.7456140350877193,0.5626373626373626
+normalization,Spam Email,0.515,0.4925
+normalization,Water Potability,0.4847560975609756,0.366412213740458
+poly kernelization,Alzheimers Handwriting,1.0,0.3597122302158273
+poly kernelization,Breast Cancer,0.7719298245614035,0.5912087912087912

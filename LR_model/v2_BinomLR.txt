@@ -1,0 +1,46 @@
+base case,Alzheimers Handwriting,0.6857142857142857,0.7338129496402878
+base case,Breast Cancer,0.8245614035087719,0.7252747252747253
+base case,Spam Email,0.485,0.5075
+base case,Water Potability,0.5152439024390244,0.6335877862595419
+normalization,Alzheimers Handwriting,1.0,0.3597122302158273
+normalization,Breast Cancer,0.7719298245614035,0.5912087912087912
+normalization,Spam Email,0.485,0.5075
+normalization,Water Potability,0.5152439024390244,0.6335877862595419
+poly kernelization,Alzheimers Handwriting,0.6,0.49640287769784175
+poly kernelization,Breast Cancer,0.22807017543859648,0.4087912087912088
+poly kernelization,Spam Email,0.485,0.5075
+poly kernelization,Water Potability,0.5152439024390244,0.6335877862595419
+rbf kernelization,Alzheimers Handwriting,1.0,0.3597122302158273
+rbf kernelization,Breast Cancer,0.7719298245614035,0.5912087912087912
+rbf kernelization,Spam Email,0.485,0.5075
+rbf kernelization,Water Potability,0.5152439024390244,0.6335877862595419
+sigmoid kernelization,Alzheimers Handwriting,1.0,0.3597122302158273
+sigmoid kernelization,Breast Cancer,0.7719298245614035,0.5912087912087912
+sigmoid kernelization,Spam Email,0.485,0.5075
+sigmoid kernelization,Water Potability,0.5152439024390244,0.6335877862595419
+feature selection,Alzheimers Handwriting,1.0,0.3597122302158273
+feature selection,Breast Cancer,0.7719298245614035,0.5912087912087912
+feature selection,Spam Email,0.485,0.5075
+feature selection,Water Potability,0.5152439024390244,0.6335877862595419
+feature reduction,Alzheimers Handwriting,0.8,0.7410071942446043
+feature reduction,Breast Cancer,0.7894736842105263,0.6087912087912087
+feature reduction,Spam Email,0.485,0.5075
+feature reduction,Water Potability,0.4923780487804878,0.4782442748091603
+shuffling,Alzheimers Handwriting,0.5428571428571428,0.49640287769784175
+shuffling,Breast Cancer,0.8157894736842105,0.7208791208791209
+shuffling,Spam Email,0.5025,0.503125
+shuffling,Water Potability,0.586890243902439,0.6156488549618321
+bagging,Alzheimers Handwriting,0.6857142857142857,0.5467625899280576
+bagging,Breast Cancer,0.8157894736842105,0.7186813186813187
+bagging,Spam Email,0.485,0.5075
+bagging,Water Potability,0.5152439024390244,0.6335877862595419
+boosting,Alzheimers Handwriting,0.0,0.0
+boosting,Breast Cancer,0.7982456140350878,0.6923076923076923
+boosting,Spam Email,0.485,0.5075
+boosting,Water Potability,0.5152439024390244,0.6335877862595419
+data reconstruction,Alzheimers Handwriting,0.4857142857142857,0.8633093525179856
+data reconstruction,Breast Cancer,0.5789473684210527,0.6087912087912087
+data reconstruction,Spam Email,0.485,0.5075
+data reconstruction,Water Potability,0.510670731707317,0.632824427480916
+hyperparameter tuning,Alzheimers Handwriting,0.6857142857142857,0.6762589928057554
+hyperparameter tuning,Breast Cancer,0.8245614035087719,0.7296703296703296

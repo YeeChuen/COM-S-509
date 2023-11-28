@@ -208,7 +208,7 @@ def plot_bar_combination(file_content_list, save_name, model_type):
     plt.savefig(save_name)
 
 def lr_model():
-    folder = 'example_LR_result.txt'
+    folder = 'LR_result.txt'
     file_content_list = readfile(folder)
     plot_bar_individual(file_content_list,'LR_Alzheimers_Handwriting', 'Alzheimers Handwriting', 'Binomial Logistic Regression')
     plot_bar_individual(file_content_list,'LR_Breast_Cancer', 'Breast Cancer', 'Binomial Logistic Regression')
@@ -216,7 +216,7 @@ def lr_model():
     plot_bar_individual(file_content_list,'LR_Water_Potability', 'Water Potability', 'Binomial Logistic Regression')
 
     
-    folder_comb = 'example_LR_combination.txt'
+    folder_comb = 'LR_combination.txt'
     result_list = readfile(folder_comb)
     plot_bar_combination(result_list, 'LR_Combination', 'Binomial Logistic Regression')
 
@@ -269,4 +269,5 @@ if __name__ == "__main__":
         data reconstruction
         combination
     '''
+    lr_model()
     svm_model()

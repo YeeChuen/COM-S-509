@@ -1,0 +1,482 @@
+
+ --- base case ---
+
+Model performance for: Alzheimers Handwriting
+scratch binom LRmodel prediction: 0.6857142857142857
+scratch multi LRmodel prediction: 1.0
+
+Model performance for: Breast Cancer
+scratch binom LRmodel prediction: 0.8245614035087719
+scratch multi LRmodel prediction: 0.7719298245614035
+
+Model performance for: Spam Email
+scratch binom LRmodel prediction: 0.485
+scratch multi LRmodel prediction: 0.485
+
+Model performance for: Water Potability
+scratch binom LRmodel prediction: 0.5152439024390244
+scratch multi LRmodel prediction: 0.5152439024390244
+
+ --- normalization ---
+
+Model performance for: Alzheimers Handwriting
+scratch binom LRmodel prediction: 1.0
+scratch multi LRmodel prediction: 1.0
+
+Model performance for: Breast Cancer
+scratch binom LRmodel prediction: 0.7719298245614035
+scratch multi LRmodel prediction: 0.7456140350877193
+
+Model performance for: Spam Email
+scratch binom LRmodel prediction: 0.485
+scratch multi LRmodel prediction: 0.515
+
+Model performance for: Water Potability
+scratch binom LRmodel prediction: 0.5152439024390244
+scratch multi LRmodel prediction: 0.4847560975609756
+
+ --- poly kernelization ---
+
+Model performance for: Alzheimers Handwriting
+scratch binom LRmodel prediction: 0.6
+scratch multi LRmodel prediction: 1.0
+
+Model performance for: Breast Cancer
+scratch binom LRmodel prediction: 0.22807017543859648
+scratch multi LRmodel prediction: 0.7719298245614035
+
+Model performance for: Spam Email
+scratch binom LRmodel prediction: 0.485
+scratch multi LRmodel prediction: 0.485
+
+Model performance for: Water Potability
+scratch binom LRmodel prediction: 0.5152439024390244
+scratch multi LRmodel prediction: 0.5152439024390244
+
+ --- rbf kernelization ---
+
+Model performance for: Alzheimers Handwriting
+scratch binom LRmodel prediction: 1.0
+scratch multi LRmodel prediction: 1.0
+
+Model performance for: Breast Cancer
+scratch binom LRmodel prediction: 0.7719298245614035
+scratch multi LRmodel prediction: 0.7719298245614035
+
+Model performance for: Spam Email
+scratch binom LRmodel prediction: 0.485
+scratch multi LRmodel prediction: 0.485
+
+Model performance for: Water Potability
+scratch binom LRmodel prediction: 0.5152439024390244
+scratch multi LRmodel prediction: 0.5152439024390244
+
+ --- sigmoid kernelization ---
+
+Model performance for: Alzheimers Handwriting
+scratch binom LRmodel prediction: 1.0
+scratch multi LRmodel prediction: 1.0
+
+Model performance for: Breast Cancer
+scratch binom LRmodel prediction: 0.7719298245614035
+scratch multi LRmodel prediction: 0.22807017543859648
+
+Model performance for: Spam Email
+scratch binom LRmodel prediction: 0.485
+scratch multi LRmodel prediction: 0.485
+
+Model performance for: Water Potability
+scratch binom LRmodel prediction: 0.5152439024390244
+scratch multi LRmodel prediction: 0.4847560975609756
+
+ --- feature selection ---
+
+Model performance for: Alzheimers Handwriting
+scratch binom LRmodel prediction: 1.0
+scratch multi LRmodel prediction: 1.0
+
+Model performance for: Breast Cancer
+scratch binom LRmodel prediction: 0.7719298245614035
+scratch multi LRmodel prediction: 0.7719298245614035
+
+Model performance for: Spam Email
+scratch binom LRmodel prediction: 0.485
+scratch multi LRmodel prediction: 0.5083333333333333
+
+Model performance for: Water Potability
+scratch binom LRmodel prediction: 0.5152439024390244
+scratch multi LRmodel prediction: 0.5152439024390244
+
+ --- feature reduction ---
+
+Model performance for: Alzheimers Handwriting
+scratch binom LRmodel prediction: 0.8
+scratch multi LRmodel prediction: 0.2571428571428571
+
+Model performance for: Breast Cancer
+scratch binom LRmodel prediction: 0.7894736842105263
+scratch multi LRmodel prediction: 0.07017543859649122
+
+Model performance for: Spam Email
+scratch binom LRmodel prediction: 0.485
+scratch multi LRmodel prediction: 0.5025
+
+Model performance for: Water Potability
+scratch binom LRmodel prediction: 0.4923780487804878
+scratch multi LRmodel prediction: 0.5152439024390244
+
+ --- shuffling ---
+
+Model performance for: Alzheimers Handwriting
+scratch binom LRmodel prediction: 0.45714285714285713
+scratch multi LRmodel prediction: 0.45714285714285713
+
+Model performance for: Breast Cancer
+scratch binom LRmodel prediction: 0.7017543859649122
+scratch multi LRmodel prediction: 0.631578947368421
+
+Model performance for: Spam Email
+scratch binom LRmodel prediction: 0.5116666666666667
+scratch multi LRmodel prediction: 0.48833333333333334
+
+Model performance for: Water Potability
+scratch binom LRmodel prediction: 0.6189024390243902
+scratch multi LRmodel prediction: 0.6189024390243902
+
+ --- bagging ---
+
+Model performance for: Alzheimers Handwriting
+scratch binom LRmodel prediction: 0.6571428571428571
+scratch multi LRmodel prediction: 1.0
+
+Model performance for: Breast Cancer
+scratch binom LRmodel prediction: 0.7982456140350878
+scratch multi LRmodel prediction: 0.7719298245614035
+
+Model performance for: Spam Email
+scratch binom LRmodel prediction: 0.485
+scratch multi LRmodel prediction: 0.485
+
+Model performance for: Water Potability
+scratch binom LRmodel prediction: 0.5152439024390244
+scratch multi LRmodel prediction: 0.5152439024390244
+
+ --- boosting ---
+
+Model performance for: Alzheimers Handwriting
+scratch binom LRmodel prediction: 0.9428571428571428
+scratch multi LRmodel prediction: 1.0
+
+Model performance for: Breast Cancer
+scratch binom LRmodel prediction: 0.7982456140350878
+scratch multi LRmodel prediction: 0.7719298245614035
+
+Model performance for: Spam Email
+scratch binom LRmodel prediction: 0.485
+scratch multi LRmodel prediction: 0.485
+
+Model performance for: Water Potability
+scratch binom LRmodel prediction: 0.5152439024390244
+scratch multi LRmodel prediction: 0.5152439024390244
+
+ --- hyperparameter tuning ---
+
+Model performance for: Alzheimers Handwriting
+scratch binom LRmodel prediction: 0.6857142857142857
+scratch multi LRmodel prediction: 1.0
+
+Model performance for: Breast Cancer
+scratch binom LRmodel prediction: 0.8245614035087719
+scratch multi LRmodel prediction: 0.7719298245614035
+
+Model performance for: Spam Email
+scratch binom LRmodel prediction: 0.485
+scratch multi LRmodel prediction: 0.485
+
+Model performance for: Water Potability
+scratch binom LRmodel prediction: 0.5152439024390244
+scratch multi LRmodel prediction: 0.5182926829268293
+
+ --- data reconstruction ---
+
+Model performance for: Alzheimers Handwriting
+scratch binom LRmodel prediction: 0.4857142857142857
+scratch multi LRmodel prediction: 1.0
+
+Model performance for: Breast Cancer
+scratch binom LRmodel prediction: 0.7631578947368421
+scratch multi LRmodel prediction: 0.7719298245614035
+
+Model performance for: Spam Email
+scratch binom LRmodel prediction: 0.485
+scratch multi LRmodel prediction: 0.485
+
+Model performance for: Water Potability
+scratch binom LRmodel prediction: 0.5152439024390244
+scratch multi LRmodel prediction: 0.5152439024390244
+Round 0
+
+ --- combination ---
+
+Model performance for: Alzheimers Handwriting
+--- basecase ---
+scratch binom LRmodel prediction: 0.4
+scratch multi LRmodel prediction: 0.37142857142857144
+--- add normalization ---
+scratch binom LRmodel prediction: 0.37142857142857144
+scratch multi LRmodel prediction: 0.4857142857142857
+--- add feature selection ---
+scratch binom LRmodel prediction: 0.37142857142857144
+scratch multi LRmodel prediction: 0.37142857142857144
+--- add feature reduction w/ FS ---
+scratch binom LRmodel prediction: 0.5428571428571428
+scratch multi LRmodel prediction: 0.22857142857142856
+--- add hyperparameter tuning ---
+scratch binom LRmodel prediction: 0.6285714285714286
+scratch multi LRmodel prediction: 0.22857142857142856
+--- add bagging ---
+scratch binom LRmodel prediction: 0.5428571428571428
+scratch multi LRmodel prediction: 0.22857142857142856
+--- add boosting ---
+scratch binom LRmodel prediction: 0.5714285714285714
+scratch multi LRmodel prediction: 0.22857142857142856
+--- add feature reduction w/o FS ---
+scratch binom LRmodel prediction: 0.8
+scratch multi LRmodel prediction: 0.17142857142857143
+--- add hyperparameter tuning w/o FS ---
+scratch binom LRmodel prediction: 0.8
+scratch multi LRmodel prediction: 0.17142857142857143
+--- add bagging w/o FS ---
+scratch binom LRmodel prediction: 0.8
+scratch multi LRmodel prediction: 0.17142857142857143
+--- add boosting w/o FS ---
+scratch binom LRmodel prediction: 0.8285714285714286
+scratch multi LRmodel prediction: 0.2
+
+Model performance for: Breast Cancer
+--- basecase ---
+scratch binom LRmodel prediction: 0.6666666666666666
+scratch multi LRmodel prediction: 0.5789473684210527
+--- add normalization ---
+scratch binom LRmodel prediction: 0.5789473684210527
+scratch multi LRmodel prediction: 0.14912280701754385
+--- add feature selection ---
+scratch binom LRmodel prediction: 0.5789473684210527
+scratch multi LRmodel prediction: 0.24561403508771928
+--- add feature reduction w/ FS ---
+scratch binom LRmodel prediction: 0.5964912280701754
+scratch multi LRmodel prediction: 0.043859649122807015
+--- add hyperparameter tuning ---
+scratch binom LRmodel prediction: 0.6929824561403509
+scratch multi LRmodel prediction: 0.2631578947368421
+--- add bagging ---
+scratch binom LRmodel prediction: 0.5964912280701754
+scratch multi LRmodel prediction: 0.043859649122807015
+--- add boosting ---
+scratch binom LRmodel prediction: 0.5789473684210527
+scratch multi LRmodel prediction: 0.043859649122807015
+--- add feature reduction w/o FS ---
+scratch binom LRmodel prediction: 0.5964912280701754
+scratch multi LRmodel prediction: 0.03508771929824561
+--- add hyperparameter tuning w/o FS ---
+scratch binom LRmodel prediction: 0.6929824561403509
+scratch multi LRmodel prediction: 0.2719298245614035
+--- add bagging w/o FS ---
+scratch binom LRmodel prediction: 0.5964912280701754
+scratch multi LRmodel prediction: 0.043859649122807015
+--- add boosting w/o FS ---
+scratch binom LRmodel prediction: 0.5964912280701754
+scratch multi LRmodel prediction: 0.03508771929824561
+
+Model performance for: Spam Email
+--- basecase ---
+scratch binom LRmodel prediction: 0.5191666666666667
+scratch multi LRmodel prediction: 0.5191666666666667
+--- add normalization ---
+scratch binom LRmodel prediction: 0.5191666666666667
+scratch multi LRmodel prediction: 0.4866666666666667
+--- add feature selection ---
+scratch binom LRmodel prediction: 0.5191666666666667
+scratch multi LRmodel prediction: 0.5191666666666667
+--- add feature reduction w/ FS ---
+scratch binom LRmodel prediction: 0.5191666666666667
+scratch multi LRmodel prediction: 0.49416666666666664
+--- add hyperparameter tuning ---
+scratch binom LRmodel prediction: 0.5191666666666667
+scratch multi LRmodel prediction: 0.49416666666666664
+--- add bagging ---
+scratch binom LRmodel prediction: 0.5191666666666667
+scratch multi LRmodel prediction: 0.405
+--- add boosting ---
+scratch binom LRmodel prediction: 0.5191666666666667
+scratch multi LRmodel prediction: 0.4675
+--- add feature reduction w/o FS ---
+scratch binom LRmodel prediction: 0.5191666666666667
+scratch multi LRmodel prediction: 0.4925
+--- add hyperparameter tuning w/o FS ---
+scratch binom LRmodel prediction: 0.5191666666666667
+scratch multi LRmodel prediction: 0.5191666666666667
+--- add bagging w/o FS ---
+scratch binom LRmodel prediction: 0.5191666666666667
+scratch multi LRmodel prediction: 0.49166666666666664
+--- add boosting w/o FS ---
+scratch binom LRmodel prediction: 0.5191666666666667
+scratch multi LRmodel prediction: 0.4875
+
+Model performance for: Water Potability
+--- basecase ---
+scratch binom LRmodel prediction: 0.6189024390243902
+scratch multi LRmodel prediction: 0.6189024390243902
+--- add normalization ---
+scratch binom LRmodel prediction: 0.6189024390243902
+scratch multi LRmodel prediction: 0.38109756097560976
+--- add feature selection ---
+scratch binom LRmodel prediction: 0.6189024390243902
+scratch multi LRmodel prediction: 0.38109756097560976
+--- add feature reduction w/ FS ---
+scratch binom LRmodel prediction: 0.6189024390243902
+scratch multi LRmodel prediction: 0.48628048780487804
+--- add hyperparameter tuning ---
+scratch binom LRmodel prediction: 0.6189024390243902
+scratch multi LRmodel prediction: 0.6189024390243902
+--- add bagging ---
+scratch binom LRmodel prediction: 0.6189024390243902
+scratch multi LRmodel prediction: 0.5350609756097561
+--- add boosting ---
+scratch binom LRmodel prediction: 0.6189024390243902
+scratch multi LRmodel prediction: 0.4695121951219512
+--- add feature reduction w/o FS ---
+scratch binom LRmodel prediction: 0.6189024390243902
+scratch multi LRmodel prediction: 0.5533536585365854
+--- add hyperparameter tuning w/o FS ---
+scratch binom LRmodel prediction: 0.6189024390243902
+scratch multi LRmodel prediction: 0.6189024390243902
+--- add bagging w/o FS ---
+scratch binom LRmodel prediction: 0.6189024390243902
+scratch multi LRmodel prediction: 0.5533536585365854
+--- add boosting w/o FS ---
+scratch binom LRmodel prediction: 0.6189024390243902
+scratch multi LRmodel prediction: 0.5533536585365854
+Round 1
+
+ --- combination ---
+
+Model performance for: Alzheimers Handwriting
+--- basecase ---
+scratch binom LRmodel prediction: 0.4857142857142857
+scratch multi LRmodel prediction: 0.45714285714285713
+--- add normalization ---
+scratch binom LRmodel prediction: 0.45714285714285713
+scratch multi LRmodel prediction: 0.2857142857142857
+--- add feature selection ---
+scratch binom LRmodel prediction: 0.45714285714285713
+scratch multi LRmodel prediction: 0.45714285714285713
+--- add feature reduction w/ FS ---
+scratch binom LRmodel prediction: 0.6
+scratch multi LRmodel prediction: 0.2571428571428571
+--- add hyperparameter tuning ---
+scratch binom LRmodel prediction: 0.6285714285714286
+scratch multi LRmodel prediction: 0.14285714285714285
+--- add bagging ---
+scratch binom LRmodel prediction: 0.6
+scratch multi LRmodel prediction: 0.2571428571428571
+--- add boosting ---
+scratch binom LRmodel prediction: 0.4857142857142857
+scratch multi LRmodel prediction: 0.2571428571428571
+--- add feature reduction w/o FS ---
+scratch binom LRmodel prediction: 0.7142857142857143
+scratch multi LRmodel prediction: 0.14285714285714285
+--- add hyperparameter tuning w/o FS ---
+scratch binom LRmodel prediction: 0.6857142857142857
+scratch multi LRmodel prediction: 0.14285714285714285
+--- add bagging w/o FS ---
+scratch binom LRmodel prediction: 0.7142857142857143
+scratch multi LRmodel prediction: 0.14285714285714285
+--- add boosting w/o FS ---
+scratch binom LRmodel prediction: 0.7428571428571429
+scratch multi LRmodel prediction: 0.2
+
+Model performance for: Breast Cancer
+--- basecase ---
+scratch binom LRmodel prediction: 0.8508771929824561
+scratch multi LRmodel prediction: 0.7631578947368421
+--- add normalization ---
+scratch binom LRmodel prediction: 0.7631578947368421
+scratch multi LRmodel prediction: 0.7017543859649122
+--- add feature selection ---
+scratch binom LRmodel prediction: 0.7631578947368421
+scratch multi LRmodel prediction: 0.7543859649122807
+--- add feature reduction w/ FS ---
+scratch binom LRmodel prediction: 0.7719298245614035
+scratch multi LRmodel prediction: 0.03508771929824561
+--- add hyperparameter tuning ---
+scratch binom LRmodel prediction: 0.8157894736842105
+scratch multi LRmodel prediction: 0.34210526315789475
+--- add bagging ---
+scratch binom LRmodel prediction: 0.7719298245614035
+scratch multi LRmodel prediction: 0.03508771929824561
+--- add boosting ---
+scratch binom LRmodel prediction: 0.7719298245614035
+scratch multi LRmodel prediction: 0.03508771929824561
+--- add feature reduction w/o FS ---
+scratch binom LRmodel prediction: 0.7719298245614035
+scratch multi LRmodel prediction: 0.03508771929824561
+--- add hyperparameter tuning w/o FS ---
+scratch binom LRmodel prediction: 0.7982456140350878
+scratch multi LRmodel prediction: 0.35964912280701755
+--- add bagging w/o FS ---
+scratch binom LRmodel prediction: 0.7719298245614035
+scratch multi LRmodel prediction: 0.03508771929824561
+--- add boosting w/o FS ---
+scratch binom LRmodel prediction: 0.7719298245614035
+scratch multi LRmodel prediction: 0.043859649122807015
+
+Model performance for: Spam Email
+--- basecase ---
+scratch binom LRmodel prediction: 0.49583333333333335
+scratch multi LRmodel prediction: 0.49583333333333335
+--- add normalization ---
+scratch binom LRmodel prediction: 0.49583333333333335
+scratch multi LRmodel prediction: 0.5041666666666667
+--- add feature selection ---
+scratch binom LRmodel prediction: 0.49583333333333335
+scratch multi LRmodel prediction: 0.5033333333333333
+--- add feature reduction w/ FS ---
+scratch binom LRmodel prediction: 0.49583333333333335
+scratch multi LRmodel prediction: 0.49333333333333335
+--- add hyperparameter tuning ---
+scratch binom LRmodel prediction: 0.49583333333333335
+scratch multi LRmodel prediction: 0.49583333333333335
+--- add bagging ---
+scratch binom LRmodel prediction: 0.49583333333333335
+scratch multi LRmodel prediction: 0.47833333333333333
+--- add boosting ---
+scratch binom LRmodel prediction: 0.49583333333333335
+scratch multi LRmodel prediction: 0.49583333333333335
+--- add feature reduction w/o FS ---
+scratch binom LRmodel prediction: 0.49583333333333335
+scratch multi LRmodel prediction: 0.49583333333333335
+--- add hyperparameter tuning w/o FS ---
+scratch binom LRmodel prediction: 0.49583333333333335
+scratch multi LRmodel prediction: 0.49583333333333335
+--- add bagging w/o FS ---
+scratch binom LRmodel prediction: 0.49583333333333335
+scratch multi LRmodel prediction: 0.0008333333333333334
+--- add boosting w/o FS ---
+scratch binom LRmodel prediction: 0.49583333333333335
+scratch multi LRmodel prediction: 0.4975
+
+Model performance for: Water Potability
+--- basecase ---
+scratch binom LRmodel prediction: 0.6219512195121951
+scratch multi LRmodel prediction: 0.6219512195121951
+--- add normalization ---
+scratch binom LRmodel prediction: 0.6219512195121951
+scratch multi LRmodel prediction: 0.3780487804878049
+--- add feature selection ---
+scratch binom LRmodel prediction: 0.6219512195121951
+scratch multi LRmodel prediction: 0.3780487804878049
+--- add feature reduction w/ FS ---
+scratch binom LRmodel prediction: 0.6219512195121951
+scratch multi LRmodel prediction: 0.5304878048780488
+--- add hyperparameter tuning ---
