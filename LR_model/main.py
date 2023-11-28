@@ -244,7 +244,7 @@ def shuffling():
         X, y = shuffle(X, y)
 
         train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
-        training_test_model('poly shuffling', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model('shuffling', key,train_x, train_y, val_x, val_y, test_x, test_y)
     pass
 
 def bagging_model():
@@ -352,54 +352,54 @@ def combination():
         X, y = shuffle(X, y)
         #write("--- basecase ---")
         train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
-        training_test_model('combination base', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model('combination$BC', key,train_x, train_y, val_x, val_y, test_x, test_y)
 
         X = normalize(X)
         #write("--- add normalization ---")
         train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
-        training_test_model('combination normalization', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model('combination$BC+N', key,train_x, train_y, val_x, val_y, test_x, test_y)
 
         FS_filter = feature_selection_filter_corr(X, y, remove_negative=True, minimum = X.shape[1])
         X_filter = select_feature(X, FS_filter)
         #write("--- add feature selection ---")
         train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_filter, y, 0.8, 0.0, 0.2)
-        training_test_model('combination FS', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model('combination$BC+N+FS', key,train_x, train_y, val_x, val_y, test_x, test_y)
         
         X_pca = PCA(X_filter, k=2)
         #write("--- add feature reduction w/ FS ---")
         train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_pca, y, 0.8, 0.0, 0.2)
-        training_test_model('combination FS FR', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model('combination$BC+N+FS+FR', key,train_x, train_y, val_x, val_y, test_x, test_y)
         
         #write("--- add hyperparameter tuning ---")
         l_rate1, no_iter1, best_prob1 = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
         l_rate2, no_iter2, best_prob2 = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
 
-        training_test_model('combination FS HT', key,train_x, train_y, val_x, val_y, test_x, test_y, 
+        training_test_model('combination$BC+N+FS+FR+HT', key,train_x, train_y, val_x, val_y, test_x, test_y, 
                             l_rate1, no_iter1, best_prob1, l_rate2, no_iter2, best_prob2)
 
         #write("--- add bagging ---")
-        training_test_model_bagging('bagging', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_bagging('combination$BC+N+FS+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
         
         #write("--- add boosting ---")
-        training_test_model_boosting('boosting', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_boosting('combination$BC+N+FS+FR+HT+HT+Boost', key,train_x, train_y, val_x, val_y, test_x, test_y)
 
 
         X_pca = PCA(X, k=X.shape[1] * 0.2)
         #write("--- add feature reduction w/o FS ---")
         train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_pca, y, 0.8, 0.0, 0.2)
-        training_test_model('combination FR', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model('combination$BC+N+FR', key,train_x, train_y, val_x, val_y, test_x, test_y)
         
         #write("--- add hyperparameter tuning w/o FS ---")
         l_rate1, no_iter1, best_prob1 = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
         l_rate2, no_iter2, best_prob2 = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
-        training_test_model('combination FR HT', key,train_x, train_y, val_x, val_y, test_x, test_y, 
+        training_test_model('combination$BC+N+FR+HT', key,train_x, train_y, val_x, val_y, test_x, test_y, 
                             l_rate1, no_iter1, best_prob1, l_rate2, no_iter2, best_prob2)
 
         #write("--- add bagging w/o FS ---")
-        training_test_model_bagging('bagging', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_bagging('combination$BC+N+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
         
         #write("--- add boosting w/o FS ---")
-        training_test_model_boosting('boosting', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_boosting('combination$BC+N+FR+HT+Boost', key, train_x, train_y, val_x, val_y, test_x, test_y)
     pass
 
 if __name__ == "__main__":
@@ -426,8 +426,8 @@ if __name__ == "__main__":
     bagging_model()          # 7 CHECK
     boosting_model()         # 8 CHECK
 
-    hyperparameter_tuning() # 9 CHECK
-    data_reconstruction()   # 10 CHECK
+    data_reconstruction()   # 9 CHECK
+    hyperparameter_tuning() # 10 CHECK
 
     for i in range(10):
         #write(f"Round {i}")

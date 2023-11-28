@@ -115,7 +115,7 @@ def hyperparam_tuning(LRmodel, model_classifier, X, y, n_fold = 5, percent = Fal
 
             iter += 100
     
-    print("learning rate:",str(best_lr), ", No iterations:", str(best_iter), ", Probability threshold:", str(best_prob))
+    #print("learning rate:",str(best_lr), ", No iterations:", str(best_iter), ", Probability threshold:", str(best_prob))
     return best_lr, best_iter, best_prob
 
 def sklearn_to_df(data_loader):
