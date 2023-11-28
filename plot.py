@@ -2,10 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 '''
-git remote set-url origin https://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@github.com/your_user/your_project.git
-
-git remote set-url origin https://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@github.com/YeeChuen/COM-S-573.git
-
+git remote set-url origin https://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@github.com/YeeChuen/COM-S-573.git
 '''
 
 def readfile(folder):
