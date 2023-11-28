@@ -8,12 +8,12 @@ from hyperparam_tuning import hyperparam_tuning
 
 
 def writeB(s):
-    save = '/work/ratul1/chuen/temp/COM-S-573/LR_model/v1_BinomLR.txt'
+    save = '/work/ratul1/chuen/temp/COM-S-573/LR_model/v2_BinomLR.txt'
     with open(save, 'a') as f:
         f.write(f'{s}')
 
 def writeM(s):
-    save = '/work/ratul1/chuen/temp/COM-S-573/LR_model/v1_MultiLR.txt'
+    save = '/work/ratul1/chuen/temp/COM-S-573/LR_model/v2_MultiLR.txt'
     with open(save, 'a') as f:
         f.write(f'{s}')
 
