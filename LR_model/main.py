@@ -8,55 +8,69 @@ from hyperparam_tuning import hyperparam_tuning
 
 
 def writeB(s):
-    save = '/work/ratul1/chuen/temp/COM-S-573/LR_model/v2_BinomLR.txt'
+    save = '/work/ratul1/chuen/temp/COM-S-573/LR_model/testing_BinomLR.txt'
     with open(save, 'a') as f:
         f.write(f'{s}')
 
 def writeM(s):
-    save = '/work/ratul1/chuen/temp/COM-S-573/LR_model/v2_MultiLR.txt'
+    save = '/work/ratul1/chuen/temp/COM-S-573/LR_model/testing_MultiLR.txt'
     with open(save, 'a') as f:
         f.write(f'{s}')
 
 # training and testing model functions
-def training_test_model_bagging(technique,dataset_name,
+def training_test_model_bagging(offset, technique,dataset_name,
         train_x, train_y, val_x, val_y, test_x, test_y, 
         l_rate1 = 0.001, no_iter1 = 100, best_prob1 = 0.5, l_rate2 = 0.001, no_iter2 = 100, best_prob2 = 0.5, 
         batch_size = 10, C = 1, num_models = 10):
 
+        weighted = offset
+        if offset:
+            technique = technique + ' offset'
+        else:
+            technique = technique + ' nooffset'
+
         ws, bs, ls = bagging(train_x, train_y, val_x, val_y, C, batch_size, l_rate1, no_iter1, num_models, int(train_x.shape[0] / 3), 
                             model = LogisticRegression, model_type = 'binomial')
-        score_test = ensemble_wrapper(test_x, test_y, ws, bs, False, 0.5,
+        score_test = ensemble_wrapper(test_x, test_y, ws, bs, weighted, 0.5,
                                model = LogisticRegression, model_type = 'binomial')
-        score_train = ensemble_wrapper(train_x, train_y, ws, bs, False, 0.5,
+        score_train = ensemble_wrapper(train_x, train_y, ws, bs, weighted, 0.5,
                                model = LogisticRegression, model_type = 'binomial')
         writeB(f"{technique},{dataset_name},{score_test},{score_train}\n")
         
         ws, bs, ls = bagging(train_x, train_y, val_x, val_y, C, batch_size, l_rate2, no_iter2, num_models, int(train_x.shape[0] / 3), 
                             model = LogisticRegression, model_type = 'multinomial')
-        score_test = ensemble_wrapper(test_x, test_y, ws, bs, False, 0.5,
+        score_test = ensemble_wrapper(test_x, test_y, ws, bs, weighted, 0.5,
                                model = LogisticRegression, model_type = 'multinomial')
-        score_train = ensemble_wrapper(train_x, train_y, ws, bs, False, 0.5,
+        score_train = ensemble_wrapper(train_x, train_y, ws, bs, weighted, 0.5,
                                model = LogisticRegression, model_type = 'multinomial')
         writeM(f"{technique},{dataset_name},{score_test},{score_train}\n")
 
-def training_test_model_boosting(technique,dataset_name,
+def training_test_model_boosting(offset, technique,dataset_name,
         train_x, train_y, val_x, val_y, test_x, test_y, 
         l_rate1 = 0.001, no_iter1 = 100, best_prob1 = 0.5, l_rate2 = 0.001, no_iter2 = 100, best_prob2 = 0.5, 
         batch_size = 10, num_models = 10):
 
+        weight = 0.5
+        if not offset:
+            weight = 0.0
+            technique = technique + ' nooffset'
+        else:
+            technique = technique + ' offset'
+
+
         ws, bs, ls, lWs = boosting(train_x, train_y, val_x, val_y, batch_size, l_rate1, no_iter1, num_models, int(train_x.shape[0] / 3), 
                             model = LogisticRegression, model_type = 'binomial')
-        score_test = ensemble_wrapper(test_x, test_y, ws, bs, True, 0.5, accs = lWs,
+        score_test = ensemble_wrapper(test_x, test_y, ws, bs, True, weight, accs = lWs,
                                model = LogisticRegression, model_type = 'binomial')
-        score_train = ensemble_wrapper(train_x, train_y, ws, bs, True, 0.5, accs = lWs,
+        score_train = ensemble_wrapper(train_x, train_y, ws, bs, True, weight, accs = lWs,
                                model = LogisticRegression, model_type = 'binomial')
         writeB(f"{technique},{dataset_name},{score_test},{score_train}\n")
         
         ws, bs, ls, lWs = boosting(train_x, train_y, val_x, val_y, batch_size, l_rate2, no_iter2, num_models, int(train_x.shape[0] / 3), 
                             model = LogisticRegression, model_type = 'multinomial')
-        score_test = ensemble_wrapper(test_x, test_y, ws, bs, True, 0.5, accs = lWs,
+        score_test = ensemble_wrapper(test_x, test_y, ws, bs, True, weight, accs = lWs,
                                model = LogisticRegression, model_type = 'multinomial')
-        score_train = ensemble_wrapper(train_x, train_y, ws, bs, True, 0.5, accs = lWs,
+        score_train = ensemble_wrapper(train_x, train_y, ws, bs, True, weight, accs = lWs,
                                model = LogisticRegression, model_type = 'multinomial')
         writeM(f"{technique},{dataset_name},{score_test},{score_train}\n")
 
@@ -259,8 +273,6 @@ def bagging_model():
     y = dataset[1]
 
     train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
-
-    training_test_model_bagging(train_x, train_y, val_x, val_y, test_x, test_y)
     '''
 
     for key in datasets:
@@ -272,7 +284,8 @@ def bagging_model():
 
         train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
 
-        training_test_model_bagging('bagging', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_bagging(False, 'bagging', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_bagging(True, 'bagging', key, train_x, train_y, val_x, val_y, test_x, test_y)
     pass
 
 def boosting_model():
@@ -288,7 +301,8 @@ def boosting_model():
 
         train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
 
-        training_test_model_boosting('boosting', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_boosting(True, 'boosting', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_boosting(False, 'boosting', key,train_x, train_y, val_x, val_y, test_x, test_y)
     pass
 
 def hyperparameter_tuning():
@@ -377,11 +391,11 @@ def combination():
         training_test_model('combination$BC+N+FS+FR+HT', key,train_x, train_y, val_x, val_y, test_x, test_y, 
                             l_rate1, no_iter1, best_prob1, l_rate2, no_iter2, best_prob2)
 
-        #write("--- add bagging ---")
-        training_test_model_bagging('combination$BC+N+FS+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        #write("--- add bagging no offset---")
+        training_test_model_bagging(False, 'combination$BC+N+FS+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
         
-        #write("--- add boosting ---")
-        training_test_model_boosting('combination$BC+N+FS+FR+HT+HT+Boost', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        #write("--- add boosting offset---")
+        training_test_model_boosting(True, 'combination$BC+N+FS+FR+HT+HT+Boost', key,train_x, train_y, val_x, val_y, test_x, test_y)
 
 
         X_pca = PCA(X, k=X.shape[1] * 0.2)
@@ -395,11 +409,11 @@ def combination():
         training_test_model('combination$BC+N+FR+HT', key,train_x, train_y, val_x, val_y, test_x, test_y, 
                             l_rate1, no_iter1, best_prob1, l_rate2, no_iter2, best_prob2)
 
-        #write("--- add bagging w/o FS ---")
-        training_test_model_bagging('combination$BC+N+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        #write("--- add bagging no offset w/o FS ---")
+        training_test_model_bagging(False, 'combination$BC+N+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
         
-        #write("--- add boosting w/o FS ---")
-        training_test_model_boosting('combination$BC+N+FR+HT+Boost', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        #write("--- add boosting offset w/o FS ---")
+        training_test_model_boosting(True, 'combination$BC+N+FR+HT+Boost', key, train_x, train_y, val_x, val_y, test_x, test_y)
     pass
 
 if __name__ == "__main__":
@@ -421,15 +435,24 @@ if __name__ == "__main__":
     feature_reduction()     # 5 <-- similarly with #3
 
     shuffling()             # 6 CHECK
+    shuffling()             # 6 CHECK
+    shuffling()             # 6 CHECK
 
     # model will go too low of float, turns into Nan, and predicts all -1
     bagging_model()          # 7 CHECK
+    bagging_model()          # 7 CHECK
+    bagging_model()          # 7 CHECK
+
+    boosting_model()         # 8 CHECK
+    boosting_model()         # 8 CHECK
     boosting_model()         # 8 CHECK
 
     data_reconstruction()   # 9 CHECK
-    hyperparameter_tuning() # 10 CHECK
+    #hyperparameter_tuning() # 10 CHECK
 
     for i in range(10):
         #write(f"Round {i}")
-        combination()           # 11 No combinations yet.
+        #combination()           # 11 No combinations yet.
+        continue
+
     pass

@@ -25,20 +25,28 @@ def plot_bar_individual(file_content_list, save_name, dataset_name, model_type, 
 
     techniques_test = {}
     techniques_train = {}
+    test = []
+    train = []
 
     for content in file_content_list:
+        if 'combination' in content[0] or content[1] != dataset_name:
+            continue
+
         if content[0] not in labels:
             labels.append(content[0])
-        if content[1] not in techniques_test:
-            techniques_test[content[1]] = []
-        if content[1] not in techniques_train:
-            techniques_train[content[1]] = []
-        techniques_test[content[1]].append(float(content[2])*100)
-        techniques_train[content[1]].append(float(content[3])*100)
+        if content[0] not in techniques_test:
+            techniques_test[content[0]] = []
+        if content[0] not in techniques_train:
+            techniques_train[content[0]] = []
+        techniques_test[content[0]].append(float(content[2])*100)
+        techniques_train[content[0]].append(float(content[3])*100)
 
-    #labels = ['G1', 'G2', 'G3', 'G4', 'G5']
-    test = techniques_test[dataset_name]
-    train = techniques_train[dataset_name]
+    for technique_key in labels:
+        average_test = sum(techniques_test[technique_key]) / len(techniques_test[technique_key]) 
+        test.append(average_test)
+
+        average_train = sum(techniques_train[technique_key]) / len(techniques_train[technique_key]) 
+        train.append(average_train)
 
     # plot with combination if provided
     if combination:
@@ -199,6 +207,43 @@ def plot_bar_combination(file_content_list, save_name, model_type):
 
     plt.savefig(save_name)
 
+def lr_model():
+    folder = 'example_LR_result.txt'
+    file_content_list = readfile(folder)
+    plot_bar_individual(file_content_list,'LR_Alzheimers_Handwriting', 'Alzheimers Handwriting', 'Binomial Logistic Regression')
+    plot_bar_individual(file_content_list,'LR_Breast_Cancer', 'Breast Cancer', 'Binomial Logistic Regression')
+    plot_bar_individual(file_content_list,'LR_Spam_Email', 'Spam Email', 'Binomial Logistic Regression')
+    plot_bar_individual(file_content_list,'LR_Water_Potability', 'Water Potability', 'Binomial Logistic Regression')
+
+    
+    folder_comb = 'example_LR_combination.txt'
+    result_list = readfile(folder_comb)
+    plot_bar_combination(result_list, 'LR_Combination', 'Binomial Logistic Regression')
+
+    
+    plot_bar_individual(file_content_list,'LR_Alzheimers_Handwriting_w_combination', 'Alzheimers Handwriting', 'Binomial Logistic Regression', result_list)
+    plot_bar_individual(file_content_list,'LR_Breast_Cancer_w_combination', 'Breast Cancer', 'Binomial Logistic Regression', result_list)
+    plot_bar_individual(file_content_list,'LR_Spam_Email_w_combination', 'Spam Email', 'Binomial Logistic Regression', result_list)
+    plot_bar_individual(file_content_list,'LR_Water_Potability_w_combination', 'Water Potability', 'Binomial Logistic Regression', result_list)
+
+def svm_model():
+    folder = 'SVM_result.txt'
+    file_content_list = readfile(folder)
+    plot_bar_individual(file_content_list,'SVM_Alzheimers_Handwriting', 'Alzheimers Handwriting', 'Support Vector Machines')
+    plot_bar_individual(file_content_list,'SVM_Breast_Cancer', 'Breast Cancer', 'Support Vector Machines')
+    plot_bar_individual(file_content_list,'SVM_Spam_Email', 'Spam Email', 'Support Vector Machines')
+    plot_bar_individual(file_content_list,'SVM_Water_Potability', 'Water Potability', 'Support Vector Machines')
+
+    
+    folder_comb = 'SVM_combination.txt'
+    result_list = readfile(folder_comb)
+    plot_bar_combination(result_list, 'SVM_Combination', 'Support Vector Machines')
+
+    
+    plot_bar_individual(file_content_list,'SVM_Alzheimers_Handwriting_w_combination', 'Alzheimers Handwriting', 'Support Vector Machines', result_list)
+    plot_bar_individual(file_content_list,'SVM_Breast_Cancer_w_combination', 'Breast Cancer', 'Support Vector Machines', result_list)
+    plot_bar_individual(file_content_list,'SVM_Spam_Email_w_combination', 'Spam Email', 'Support Vector Machines', result_list)
+    plot_bar_individual(file_content_list,'SVM_Water_Potability_w_combination', 'Water Potability', 'Support Vector Machines', result_list)
 
 if __name__ == "__main__":
     '''
@@ -224,20 +269,4 @@ if __name__ == "__main__":
         data reconstruction
         combination
     '''
-    folder = 'example_LR_result.txt'
-    file_content_list = readfile(folder)
-    plot_bar_individual(file_content_list,'LR_Alzheimers_Handwriting', 'Alzheimers Handwriting', 'Binomial Logistic Regression')
-    plot_bar_individual(file_content_list,'LR_Breast_Cancer', 'Breast Cancer', 'Binomial Logistic Regression')
-    plot_bar_individual(file_content_list,'LR_Spam_Email', 'Spam Email', 'Binomial Logistic Regression')
-    plot_bar_individual(file_content_list,'LR_Water_Potability', 'Water Potability', 'Binomial Logistic Regression')
-
-    
-    folder_comb = 'example_LR_combination.txt'
-    result_list = readfile(folder_comb)
-    plot_bar_combination(result_list, 'LR_Combination', 'Binomial Logistic Regression')
-
-    
-    plot_bar_individual(file_content_list,'LR_Alzheimers_Handwriting_w_combination', 'Alzheimers Handwriting', 'Binomial Logistic Regression', result_list)
-    plot_bar_individual(file_content_list,'LR_Breast_Cancer_w_combination', 'Breast Cancer', 'Binomial Logistic Regression', result_list)
-    plot_bar_individual(file_content_list,'LR_Spam_Email_w_combination', 'Spam Email', 'Binomial Logistic Regression', result_list)
-    plot_bar_individual(file_content_list,'LR_Water_Potability_w_combination', 'Water Potability', 'Binomial Logistic Regression', result_list)
+    svm_model()
