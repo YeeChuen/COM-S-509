@@ -1,10 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-'''
-git remote set-url origin https://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@github.com/YeeChuen/COM-S-573.git
-'''
-
 def readfile(folder):
     with open(folder, 'r') as f:
         to_return = []
