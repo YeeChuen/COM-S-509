@@ -288,6 +288,7 @@ def boosting(tX, tY, vX, vY, batchSize, learningRate, epochs, numModels, spp, mo
         for j in range(mscInd.shape[0]):
             error +=  sWs[ti[mscInd[j]]]
         
+        error = min(0.99999,error)
         beta = np.log(((1 - error) / max(error, 1e-7)))
         delta = np.exp(beta)
 
@@ -398,14 +399,14 @@ def poly_kernel(X, g, c, d):
 
     return Xk
 
-def rbf_kernel(X, g):
+def rbf_kernel(X, g=1, c=0):
     n = X.shape[0]
     Xk = np.zeros((n,n))
 
     for i in range(n):
         for j in range(n):
             norm_sq = np.linalg.norm(X[i] - X[j]) ** 2
-            Xk[i, j] = np.exp(-g * norm_sq)
+            Xk[i, j] = np.exp(-g * norm_sq) + c
     
     return Xk
 
@@ -486,7 +487,8 @@ def ensemble_wrapper(X, y, ws, bs, weighted, offset = 0.0, accs = 0, model = Non
         accs = get_bagging_acc(X, y, ws, bs, model = model, model_type = model_type)
 
     predictions = ensemble_predict(X, ws, bs, weighted, accs, offset, model = model, model_type = model_type)
-    
+    #print(predictions)
+
     if model_type in ["multinomial", "binomial"]:
         non_fit_model = model(0, 0, classifier=model_type)
         acc = non_fit_model.score_with_pred(predictions, y)

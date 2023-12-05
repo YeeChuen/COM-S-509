@@ -1,0 +1,60 @@
+combination$BC+N+FS+FR+HT,Alzheimers Handwriting,0.7714285714285715,0.8705035971223022
+combination$BC+N+FS+FR+HT,Alzheimers Handwriting,0.7714285714285715,0.8561151079136691
+combination$BC+N+FS+FR+HT,Alzheimers Handwriting,0.8285714285714286,0.8561151079136691
+combination$BC+N+FS+FR+HT,Alzheimers Handwriting,0.8,0.8561151079136691
+combination$BC+N+FS+FR+HT,Alzheimers Handwriting,0.8857142857142857,0.8057553956834532
+combination$BC+N+FS+FR+HT,Alzheimers Handwriting,0.8857142857142857,0.8345323741007195
+combination$BC+N+FS+FR+HT,Alzheimers Handwriting,0.8285714285714286,0.8489208633093526
+combination$BC+N+FS+FR+HT,Alzheimers Handwriting,0.8285714285714286,0.8273381294964028
+combination$BC+N+FS+FR+HT,Alzheimers Handwriting,0.8285714285714286,0.8345323741007195
+combination$BC+N+FS+FR+HT,Alzheimers Handwriting,0.9142857142857143,0.8345323741007195
+combination$BC+N+FR+HT,Alzheimers Handwriting,0.8,1.0
+combination$BC+N+FR+HT,Alzheimers Handwriting,0.8,1.0
+combination$BC+N+FR+HT,Alzheimers Handwriting,0.8285714285714286,0.9928057553956835
+combination$BC+N+FR+HT,Alzheimers Handwriting,0.9142857142857143,1.0
+combination$BC+N+FR+HT,Alzheimers Handwriting,0.8857142857142857,0.9928057553956835
+combination$BC+N+FR+HT,Alzheimers Handwriting,0.8,0.9928057553956835
+combination$BC+N+FR+HT,Alzheimers Handwriting,0.7714285714285715,0.9928057553956835
+combination$BC+N+FR+HT,Alzheimers Handwriting,0.8285714285714286,0.9280575539568345
+combination$BC+N+FR+HT,Alzheimers Handwriting,0.8285714285714286,1.0
+combination$BC+N+FR+HT,Alzheimers Handwriting,0.8,1.0
+combination$BC+N+FR+HT,Breast Cancer,0.956140350877193,0.9626373626373627
+combination$BC+N+FR+HT,Breast Cancer,0.9649122807017544,0.9604395604395605
+combination$BC+N+FR+HT,Breast Cancer,0.9473684210526315,0.9648351648351648
+combination$BC+N+FR+HT,Breast Cancer,0.9385964912280702,0.9648351648351648
+combination$BC+N+FR+HT,Breast Cancer,0.956140350877193,0.9604395604395605
+combination$BC+N+FR+HT,Breast Cancer,0.9473684210526315,0.9626373626373627
+combination$BC+N+FR+HT,Breast Cancer,0.956140350877193,0.9604395604395605
+combination$BC+N+FR+HT,Breast Cancer,0.9649122807017544,0.9362637362637363
+combination$BC+N+FR+HT,Breast Cancer,0.9473684210526315,0.9626373626373627
+combination$BC+N+FR+HT,Breast Cancer,0.9385964912280702,0.9692307692307692
+combination$BC+N+DR+FR+HT+Bag offset,Spam Email,0.5116666666666667,0.50875
+combination$BC+N+DR+FR+HT+Bag offset,Spam Email,0.52,0.508125
+combination$BC+N+DR+FR+HT+Bag offset,Spam Email,0.515,0.5029166666666667
+combination$BC+N+DR+FR+HT+Bag offset,Spam Email,0.5141666666666667,0.5070833333333333
+combination$BC+N+DR+FR+HT+Bag offset,Spam Email,0.5175,0.5091666666666667
+combination$BC+N+DR+FR+HT+Bag offset,Spam Email,0.5233333333333333,0.5102083333333334
+combination$BC+N+DR+FR+HT+Bag offset,Spam Email,0.5175,0.5095833333333334
+combination$BC+N+DR+FR+HT+Bag offset,Spam Email,0.5133333333333333,0.5139583333333333
+combination$BC+N+DR+FR+HT+Bag offset,Spam Email,0.5083333333333333,0.5045833333333334
+combination$BC+N+DR+FR+HT+Bag offset,Spam Email,0.51,0.5033333333333333
+combination$BC+N+PolyK+FR+HT,Water Potability,0.6112804878048781,0.6095419847328244
+combination$BC+N+PolyK+FR+HT,Water Potability,0.5975609756097561,0.6129770992366412
+combination$BC+N+PolyK+FR+HT,Water Potability,0.5838414634146342,0.6164122137404581
+combination$BC+N+PolyK+FR+HT,Water Potability,0.6067073170731707,0.6106870229007634
+combination$BC+N+PolyK+FR+HT,Water Potability,0.625,0.6061068702290077
+combination$BC+N+PolyK+FR+HT,Water Potability,0.625,0.6061068702290077
+combination$BC+N+PolyK+FR+HT,Water Potability,0.6067073170731707,0.6106870229007634
+combination$BC+N+PolyK+FR+HT,Water Potability,0.6021341463414634,0.6118320610687022
+combination$BC+N+PolyK+FR+HT,Water Potability,0.625,0.6061068702290077
+combination$BC+N+PolyK+FR+HT,Water Potability,0.5990853658536586,0.6125954198473282
+combination$BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.6112804878048781,0.6095419847328244
+combination$BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.5975609756097561,0.6129770992366412
+combination$BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.5838414634146342,0.6164122137404581
+combination$BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.6067073170731707,0.6106870229007634
+combination$BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.625,0.6061068702290077
+combination$BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.625,0.6061068702290077
+combination$BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.6067073170731707,0.6106870229007634
+combination$BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.6021341463414634,0.6118320610687022
+combination$BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.625,0.6061068702290077
+combination$BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.5990853658536586,0.6125954198473282

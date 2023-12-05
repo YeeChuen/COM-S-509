@@ -37,6 +37,103 @@ def hyperparam_tuning(LRmodel, model_classifier, X, y, n_fold = 5, percent = Fal
     best_lr = 1
     best_iter = 100
     best_prob = 0.5
+
+    for i in range(5):
+        rate = 1
+        iter = 100
+        for _ in range(i):
+            rate *= 0.1
+        score = 0
+        for k in range(len(x_fold)):
+            fold_test_X = x_fold[k]
+            fold_test_y = y_fold[k]
+            if k == 0:
+                start = 1
+                fold_train_X = x_fold[start]
+                fold_train_y = y_fold[start]
+            else:
+                start = 0
+                fold_train_X = x_fold[start]
+                fold_train_y = y_fold[start]
+
+            for m in range(start + 1, len(x_fold)):
+                if m == k:
+                    continue
+                else:
+                    fold_train_X = np.concatenate((fold_train_X, x_fold[m]), axis=0)
+                    fold_train_y = np.concatenate((fold_train_y, y_fold[m]), axis=0)
+
+            model = LRmodel(rate, iter, classifier=model_classifier)                        
+            model.fit(fold_train_X, fold_train_y)
+
+            score += model.score(fold_test_X, fold_test_y)
+            score /= len(x_fold)
+
+            if score > best:
+                best = score
+                best_lr = rate
+                best_iter = iter
+
+    for j in range(5):
+        rate = best_lr
+        iter = 100
+        score = 0
+        for k in range(len(x_fold)):
+            fold_test_X = x_fold[k]
+            fold_test_y = y_fold[k]
+            if k == 0:
+                start = 1
+                fold_train_X = x_fold[start]
+                fold_train_y = y_fold[start]
+            else:
+                start = 0
+                fold_train_X = x_fold[start]
+                fold_train_y = y_fold[start]
+
+            for m in range(start + 1, len(x_fold)):
+                if m == k:
+                    continue
+                else:
+                    fold_train_X = np.concatenate((fold_train_X, x_fold[m]), axis=0)
+                    fold_train_y = np.concatenate((fold_train_y, y_fold[m]), axis=0)
+
+            model = LRmodel(rate, iter, classifier=model_classifier)                        
+            model.fit(fold_train_X, fold_train_y)
+
+            score += model.score(fold_test_X, fold_test_y)
+            score /= len(x_fold)
+
+            if score > best:
+                best = score
+                best_lr = rate
+                best_iter = iter
+
+        iter += 100
+    
+    #print("learning rate:",str(best_lr), ", No iterations:", str(best_iter), ", Probability threshold:", str(best_prob))
+    return best_lr, best_iter, best_prob
+
+def hyperparam_tuning2(LRmodel, model_classifier, X, y, n_fold = 5, percent = False):
+    # print("Hyperparameter tuning ... ")
+
+    # train_x, train_y, _, _, test_x, test_y = splitData2(X, y, 0.8, 0, 0.2)
+    '''print(X.shape)
+    print(y.shape)'''
+
+    x_fold = []
+    y_fold = []
+    length = X.shape[0]
+    fold = int(length/5)
+    for i in range(n_fold - 1):
+        x_fold.append(X[fold*i:fold*(i+1) ,:])
+        y_fold.append(y[fold*i:fold*(i+1)])
+    x_fold.append(X[fold*(n_fold - 1):length ,:])
+    y_fold.append(y[fold*(n_fold - 1):length])
+
+    best = 0
+    best_lr = 1
+    best_iter = 100
+    best_prob = 0.5
     for i in range(10):
         rate = 10
         iter = 100

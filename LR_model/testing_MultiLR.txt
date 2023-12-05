@@ -2,91 +2,21 @@ base case,Alzheimers Handwriting,1.0,0.3597122302158273
 base case,Breast Cancer,0.7719298245614035,0.5912087912087912
 base case,Spam Email,0.485,0.5075
 base case,Water Potability,0.5152439024390244,0.6335877862595419
-normalization,Alzheimers Handwriting,1.0,0.3597122302158273
-normalization,Breast Cancer,0.7456140350877193,0.5626373626373626
-normalization,Spam Email,0.515,0.4925
-normalization,Water Potability,0.4847560975609756,0.366412213740458
-poly kernelization,Alzheimers Handwriting,1.0,0.3597122302158273
-poly kernelization,Breast Cancer,0.7719298245614035,0.5912087912087912
-poly kernelization,Spam Email,0.485,0.5075
-poly kernelization,Water Potability,0.5152439024390244,0.6335877862595419
-rbf kernelization,Alzheimers Handwriting,1.0,0.0
-rbf kernelization,Breast Cancer,0.7719298245614035,0.0
-rbf kernelization,Spam Email,0.485,0.0
-rbf kernelization,Water Potability,0.5152439024390244,0.0
-sigmoid kernelization,Alzheimers Handwriting,1.0,0.3597122302158273
-sigmoid kernelization,Breast Cancer,0.22807017543859648,0.4087912087912088
-sigmoid kernelization,Spam Email,0.485,0.5075
-sigmoid kernelization,Water Potability,0.4847560975609756,0.366412213740458
-feature selection,Alzheimers Handwriting,1.0,0.3597122302158273
-feature selection,Breast Cancer,0.7719298245614035,0.5912087912087912
-feature selection,Spam Email,0.5083333333333333,0.5008333333333334
-feature selection,Water Potability,0.5152439024390244,0.6335877862595419
-feature reduction,Alzheimers Handwriting,0.2571428571428571,0.2014388489208633
-feature reduction,Breast Cancer,0.07017543859649122,0.06153846153846154
-feature reduction,Spam Email,0.5025,0.49291666666666667
-feature reduction,Water Potability,0.5152439024390244,0.6335877862595419
-shuffling,Alzheimers Handwriting,0.4857142857142857,0.4892086330935252
-shuffling,Breast Cancer,0.6403508771929824,0.6241758241758242
-shuffling,Spam Email,0.5,0.50375
-shuffling,Water Potability,0.6173780487804879,0.6080152671755725
-shuffling,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
-shuffling,Breast Cancer,0.5964912280701754,0.6351648351648351
-shuffling,Spam Email,0.5075,0.501875
-shuffling,Water Potability,0.6189024390243902,0.6076335877862595
-shuffling,Alzheimers Handwriting,0.37142857142857144,0.5179856115107914
-shuffling,Breast Cancer,0.631578947368421,0.6263736263736264
-shuffling,Spam Email,0.48,0.50875
-shuffling,Water Potability,0.5929878048780488,0.6141221374045801
-bagging nooffset,Alzheimers Handwriting,1.0,0.3597122302158273
-bagging offset,Alzheimers Handwriting,1.0,0.6402877697841727
-bagging nooffset,Breast Cancer,0.7719298245614035,0.5912087912087912
-bagging offset,Breast Cancer,0.7719298245614035,0.5912087912087912
-bagging nooffset,Spam Email,0.485,0.5075
-bagging offset,Spam Email,0.515,0.5075
-bagging nooffset,Water Potability,0.5152439024390244,0.6335877862595419
-bagging offset,Water Potability,0.5152439024390244,0.6335877862595419
-bagging nooffset,Alzheimers Handwriting,1.0,0.3597122302158273
-bagging offset,Alzheimers Handwriting,1.0,0.6402877697841727
-bagging nooffset,Breast Cancer,0.7719298245614035,0.5912087912087912
-bagging offset,Breast Cancer,0.7719298245614035,0.5912087912087912
-bagging nooffset,Spam Email,0.485,0.5075
-bagging offset,Spam Email,0.515,0.5075
-bagging nooffset,Water Potability,0.5152439024390244,0.6335877862595419
-bagging offset,Water Potability,0.5152439024390244,0.6335877862595419
-bagging nooffset,Alzheimers Handwriting,1.0,0.3597122302158273
-bagging offset,Alzheimers Handwriting,1.0,0.6402877697841727
-bagging nooffset,Breast Cancer,0.7719298245614035,0.5912087912087912
-bagging offset,Breast Cancer,0.7719298245614035,0.5912087912087912
-bagging nooffset,Spam Email,0.485,0.5075
-bagging offset,Spam Email,0.515,0.5075
-bagging nooffset,Water Potability,0.5152439024390244,0.6335877862595419
-bagging offset,Water Potability,0.5152439024390244,0.6335877862595419
+hyperparameter tuning,Alzheimers Handwriting,1.0,0.3597122302158273
+hyperparameter tuning,Breast Cancer,0.7719298245614035,0.5912087912087912
 boosting offset,Alzheimers Handwriting,1.0,0.3597122302158273
-boosting nooffset,Alzheimers Handwriting,1.0,0.3597122302158273
-boosting offset,Breast Cancer,0.0,0.0
-boosting nooffset,Breast Cancer,0.7719298245614035,0.5912087912087912
-boosting offset,Spam Email,0.485,0.5075
-boosting nooffset,Spam Email,0.485,0.5075
-boosting offset,Water Potability,0.5152439024390244,0.6335877862595419
-boosting nooffset,Water Potability,0.5152439024390244,0.6335877862595419
-boosting offset,Alzheimers Handwriting,1.0,0.3597122302158273
-boosting nooffset,Alzheimers Handwriting,1.0,0.3597122302158273
 boosting offset,Breast Cancer,0.7719298245614035,0.5912087912087912
-boosting nooffset,Breast Cancer,0.7719298245614035,0.5912087912087912
-boosting offset,Spam Email,0.0,0.0
-boosting nooffset,Spam Email,0.485,0.5075
-boosting offset,Water Potability,0.5152439024390244,0.6335877862595419
-boosting nooffset,Water Potability,0.5152439024390244,0.6335877862595419
-boosting offset,Alzheimers Handwriting,1.0,0.3597122302158273
-boosting nooffset,Alzheimers Handwriting,1.0,0.3597122302158273
-boosting offset,Breast Cancer,0.7719298245614035,0.5912087912087912
-boosting nooffset,Breast Cancer,0.7719298245614035,0.5912087912087912
 boosting offset,Spam Email,0.515,0.4925
-boosting nooffset,Spam Email,0.485,0.5075
 boosting offset,Water Potability,0.5152439024390244,0.6335877862595419
-boosting nooffset,Water Potability,0.5152439024390244,0.6335877862595419
-data reconstruction,Alzheimers Handwriting,1.0,0.3597122302158273
-data reconstruction,Breast Cancer,0.7719298245614035,0.5912087912087912
-data reconstruction,Spam Email,0.485,0.5075
-data reconstruction,Water Potability,0.5152439024390244,0.6335877862595419
+boosting offset,Alzheimers Handwriting,1.0,0.3597122302158273
+boosting offset,Breast Cancer,0.7719298245614035,0.5912087912087912
+boosting offset,Spam Email,0.485,0.5075
+boosting offset,Water Potability,0.5152439024390244,0.6335877862595419
+boosting offset,Alzheimers Handwriting,1.0,0.3597122302158273
+boosting offset,Breast Cancer,0.7719298245614035,0.5912087912087912
+boosting offset,Spam Email,0.485,0.5075
+boosting offset,Water Potability,0.5152439024390244,0.6335877862595419
+rbf kernelization,Alzheimers Handwriting,1.0,0.3597122302158273
+rbf kernelization,Breast Cancer,0.7719298245614035,0.5912087912087912
+rbf kernelization,Spam Email,0.485,0.5075
+rbf kernelization,Water Potability,0.5152439024390244,0.6335877862595419

@@ -17,9 +17,9 @@ def PCA(X, k = 2):
     mean = np.mean(X, axis=0)
     X_hat = X - mean
     S = np.cov(X_hat.T)
-    
+    print(S)
     eig_vals, eig_vecs = np.linalg.eig(S) 
-    
+    print(eig_vecs)
     # Adjusting the eigenvectors (loadings) that are largest in absolute value to be positive
     # Not as per lecture
     max_abs_idx = np.argmax(np.abs(eig_vecs), axis=0)
@@ -29,6 +29,8 @@ def PCA(X, k = 2):
 
     eig_pairs_list = [(eig_vals[i], eig_vecs[i]) for i in range(no_feature)]
     eig_pairs_list.sort(key=lambda x: x[0], reverse=True)
+
+    print(len(eig_pairs_list))
 
     X_new = []
     for i in range(int(k)):
@@ -64,7 +66,7 @@ def PCAIntegrity():
         [30, 73],
     ])
 
-    X_pca = PCA(data_x2, k = 1)
+    X_pca = PCA(data_x1, k = 1)
 
     # test sklearn PCA
     pca = skPCA(n_components = 1).fit(data_x2)

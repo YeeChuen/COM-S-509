@@ -2,7 +2,7 @@
 import numpy as np
 import copy
 import warnings
-
+import math
 warnings.filterwarnings('ignore')
 
 class LogisticRegression():
@@ -48,9 +48,7 @@ class LogisticRegression():
             return np.array(OneHotEncoding)
 
     def fit(self, X_train, y_train):
-        m, n = X_train.shape # m --> number of data (row), n --> number of feature map (col)
-
-        
+        m, n = X_train.shape # m --> number of data (row), n --> number of feature map (col)        
         if self.classifier == "multinomial":
             self.w = np.array([[0,0] for _ in range(n)])        # weight per feature
         elif self.classifier == "binomial":
@@ -98,12 +96,12 @@ class LogisticRegression():
         if self.classifier == "binomial":   
             sigmoid = []
             for value in z:
-                if value >= 0:
-                    a = np.exp(-value)
-                    sigmoid.append( 1 / (1 + a))
-                else:
-                    a = np.exp(value)
-                    sigmoid.append( a / (1 + a))
+                #if value is not None: # >= 0 previously
+                a = np.exp(-value)
+                sigmoid.append( 1 / (1 + a))
+                #elif value < 0:
+                #    a = np.exp(value)
+                #    sigmoid.append( a / (1 + a))
             return np.array(sigmoid)
         elif self.classifier == "multinomial":
             return (np.exp(z).T / np.sum(np.exp(z), axis=1)).T
@@ -117,7 +115,20 @@ class LogisticRegression():
         elif self.classifier == "multinomial":
             z = np.array(np.dot(X, self.w) + self.b, dtype=np.float32) # z = wX + b
             y_pred = self.function(z) # y prediction
-            y_pred = np.where(y_pred > prob, 1, -1) # y = 1 if y[i]>0.5, else 0
+            max_row = []
+            for y_row in y_pred:
+                idx_max = 0
+                for i in range(len(y_row)):
+                    if y_row[i] >= y_row[idx_max]:
+                        idx_max = i
+                max_row.append(idx_max)
+            for i in range(len(y_pred)):
+                for j in range(len(y_pred[i])):
+                    if j == max_row[i]:
+                        y_pred[i][j] = int(1)
+                    else:
+                        y_pred[i][j] = int(0)
+            #print(y_pred)
             return self.one_hot_encoding(y_pred)
         
     def predict_with_param(self, X, weight, bias, prob = 0.5):
@@ -125,18 +136,40 @@ class LogisticRegression():
             z = np.array(np.dot(X, weight) + bias, dtype=np.float32) # z = wX + b
             y_pred = self.function(z) # y prediction
             y_pred = np.where(y_pred > prob, 1, -1) # y = 1 if y[i]>0.5, else 0
+            y_pred = np.where(y_pred > prob, 1, -1) # y = 1 if y[i]>0.5, else 0
             return y_pred
         
         elif self.classifier == "multinomial":
             z = np.array(np.dot(X, weight) + bias, dtype=np.float32) # z = wX + b
             y_pred = self.function(z) # y prediction
-            y_pred = np.where(y_pred > prob, 1, -1) # y = 1 if y[i]>0.5, else 0
-
+            max_row = []
+            for y_row in y_pred:
+                idx_max = 0
+                for i in range(len(y_row)):
+                    if y_row[i] >= y_row[idx_max]:
+                        idx_max = i
+                max_row.append(idx_max)
+            for i in range(len(y_pred)):
+                for j in range(len(y_pred[i])):
+                    if j == max_row[i]:
+                        y_pred[i][j] = int(1)
+                    else:
+                        y_pred[i][j] = int(0)
+            #print(y_pred)
             return self.one_hot_encoding(y_pred)
     
     def score(self, X, y_true, prob = 0.5):
         y_pred = self.predict(X, prob)
         accuracy = np.mean(y_pred == y_true)
+
+        if self.classifier == "multinomial":
+            for row in y_pred:
+                if (math.isnan(row)):
+                    print(row)
+            for row in y_true:
+                if (math.isnan(row)):
+                    print(row)
+
         return accuracy
     
     

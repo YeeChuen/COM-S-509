@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/work/ratul1/chuen/temp/COM-S-573/LR_model/main.py", line 673, in <module>
+    bagging_model()          # 7 CHECK
+    ^^^^^^^^^^^^^^^
+  File "/work/ratul1/chuen/temp/COM-S-573/LR_model/main.py", line 290, in bagging_model
+    training_test_model_bagging(False, 'bagging', key, train_x, train_y, val_x, val_y, test_x, test_y)
+  File "/work/ratul1/chuen/temp/COM-S-573/LR_model/main.py", line 44, in training_test_model_bagging
+    score_test = ensemble_wrapper(test_x, test_y, ws, bs, weighted, 0.5,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/ratul1/chuen/temp/COM-S-573/LR_model/helper.py", line 487, in ensemble_wrapper
+    accs = get_bagging_acc(X, y, ws, bs, model = model, model_type = model_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/ratul1/chuen/temp/COM-S-573/LR_model/helper.py", line 476, in get_bagging_acc
+    predictions = non_fit_model.predict_with_param(X, ws[i], bs[i])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/ratul1/chuen/temp/COM-S-573/LR_model/logistic_regression.py", line 143, in predict_with_param
+    z = np.array(np.dot(X, self.w) + self.b, dtype=np.float32) # z = wX + b
+                           ^^^^^^
+AttributeError: 'LogisticRegression' object has no attribute 'w'

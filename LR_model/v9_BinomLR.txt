@@ -1,0 +1,2364 @@
+base case,Alzheimers Handwriting,0.6857142857142857,0.7338129496402878
+base case,Breast Cancer,0.8245614035087719,0.7252747252747253
+base case,Spam Email,0.485,0.5075
+base case,Water Potability,0.5152439024390244,0.6335877862595419
+normalization,Alzheimers Handwriting,1.0,0.3597122302158273
+normalization,Breast Cancer,0.7719298245614035,0.5912087912087912
+normalization,Spam Email,0.485,0.5075
+normalization,Water Potability,0.5152439024390244,0.6335877862595419
+poly kernelization,Alzheimers Handwriting,0.6,0.49640287769784175
+poly kernelization,Breast Cancer,0.22807017543859648,0.4087912087912088
+poly kernelization,Spam Email,0.485,0.5075
+poly kernelization,Water Potability,0.5152439024390244,0.6335877862595419
+rbf kernelization,Alzheimers Handwriting,1.0,0.3597122302158273
+rbf kernelization,Breast Cancer,0.7719298245614035,0.5912087912087912
+rbf kernelization,Spam Email,0.485,0.5075
+rbf kernelization,Water Potability,0.5152439024390244,0.6335877862595419
+sigmoid kernelization,Alzheimers Handwriting,1.0,0.3597122302158273
+sigmoid kernelization,Breast Cancer,0.7719298245614035,0.5912087912087912
+sigmoid kernelization,Spam Email,0.485,0.5075
+sigmoid kernelization,Water Potability,0.5152439024390244,0.6335877862595419
+feature selection,Alzheimers Handwriting,1.0,0.3597122302158273
+feature selection,Breast Cancer,0.7719298245614035,0.5912087912087912
+feature selection,Spam Email,0.485,0.5075
+feature selection,Water Potability,0.5152439024390244,0.6335877862595419
+feature reduction,Alzheimers Handwriting,0.8,0.7410071942446043
+feature reduction,Breast Cancer,0.7894736842105263,0.6087912087912087
+feature reduction,Spam Email,0.485,0.5075
+feature reduction,Water Potability,0.4923780487804878,0.4782442748091603
+shuffling,Alzheimers Handwriting,0.4857142857142857,0.5179856115107914
+shuffling,Breast Cancer,0.7807017543859649,0.7252747252747253
+shuffling,Spam Email,0.5166666666666667,0.4995833333333333
+shuffling,Water Potability,0.6128048780487805,0.6091603053435114
+shuffling,Alzheimers Handwriting,0.4857142857142857,0.5035971223021583
+shuffling,Breast Cancer,0.6754385964912281,0.7054945054945055
+shuffling,Spam Email,0.5208333333333334,0.49854166666666666
+shuffling,Water Potability,0.6204268292682927,0.6072519083969465
+shuffling,Alzheimers Handwriting,0.6285714285714286,0.5251798561151079
+shuffling,Breast Cancer,0.7543859649122807,0.7098901098901099
+shuffling,Spam Email,0.4925,0.505625
+shuffling,Water Potability,0.6021341463414634,0.6118320610687022
+bagging nooffset,Alzheimers Handwriting,0.6857142857142857,0.4676258992805755
+bagging offset,Alzheimers Handwriting,0.6857142857142857,0.7338129496402878
+bagging nooffset,Breast Cancer,0.7982456140350878,0.7032967032967034
+bagging offset,Breast Cancer,0.7982456140350878,0.7318681318681318
+bagging nooffset,Spam Email,0.485,0.5075
+bagging offset,Spam Email,0.515,0.5075
+bagging nooffset,Water Potability,0.5152439024390244,0.6335877862595419
+bagging offset,Water Potability,0.5152439024390244,0.6335877862595419
+bagging nooffset,Alzheimers Handwriting,0.6571428571428571,0.49640287769784175
+bagging offset,Alzheimers Handwriting,0.7142857142857143,0.8345323741007195
+bagging nooffset,Breast Cancer,0.7982456140350878,0.6945054945054945
+bagging offset,Breast Cancer,0.8157894736842105,0.7120879120879121
+bagging nooffset,Spam Email,0.485,0.5075
+bagging offset,Spam Email,0.515,0.5075
+bagging nooffset,Water Potability,0.5152439024390244,0.6335877862595419
+bagging offset,Water Potability,0.5152439024390244,0.6335877862595419
+bagging nooffset,Alzheimers Handwriting,0.6857142857142857,0.49640287769784175
+bagging offset,Alzheimers Handwriting,0.7142857142857143,0.6762589928057554
+bagging nooffset,Breast Cancer,0.7982456140350878,0.6923076923076923
+bagging offset,Breast Cancer,0.8245614035087719,0.734065934065934
+bagging nooffset,Spam Email,0.485,0.5075
+bagging offset,Spam Email,0.515,0.5075
+bagging nooffset,Water Potability,0.5152439024390244,0.6335877862595419
+bagging offset,Water Potability,0.5152439024390244,0.6335877862595419
+boosting offset,Alzheimers Handwriting,0.6571428571428571,0.6474820143884892
+boosting offset,Breast Cancer,0.8333333333333334,0.7670329670329671
+boosting offset,Spam Email,0.485,0.5075
+boosting offset,Water Potability,0.5152439024390244,0.6335877862595419
+boosting offset,Alzheimers Handwriting,0.6857142857142857,0.5899280575539568
+boosting offset,Breast Cancer,0.7982456140350878,0.6923076923076923
+boosting offset,Spam Email,0.485,0.5075
+boosting offset,Water Potability,0.5152439024390244,0.6335877862595419
+boosting offset,Alzheimers Handwriting,0.6571428571428571,0.5827338129496403
+boosting offset,Breast Cancer,0.8333333333333334,0.7538461538461538
+boosting offset,Spam Email,0.485,0.5075
+boosting offset,Water Potability,0.5152439024390244,0.6335877862595419
+data reconstruction,Alzheimers Handwriting,0.4857142857142857,0.8633093525179856
+data reconstruction,Breast Cancer,0.6140350877192983,0.654945054945055
+data reconstruction,Spam Email,0.4841666666666667,0.5085416666666667
+data reconstruction,Water Potability,0.5152439024390244,0.6335877862595419
+hyperparameter tuning,Alzheimers Handwriting,0.6857142857142857,0.7338129496402878
+hyperparameter tuning,Breast Cancer,0.8245614035087719,0.7274725274725274
+hyperparameter tuning,Spam Email,0.485,0.5075
+hyperparameter tuning,Water Potability,0.5152439024390244,0.6335877862595419
+combination$0+BC,Alzheimers Handwriting,0.5142857142857142,0.5179856115107914
+combination$0+BC+N,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$0+BC+N+FS,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$0+BC+N+FS+FR,Alzheimers Handwriting,0.6571428571428571,0.6330935251798561
+combination$0+BC+N+FS+FR+HT,Alzheimers Handwriting,0.7142857142857143,0.6834532374100719
+combination$0+BC+N+FS+FR+HT+Bag offset,Alzheimers Handwriting,0.6571428571428571,0.6618705035971223
+combination$0+BC+N+FS+FR+HT+Bag nooffset,Alzheimers Handwriting,0.6571428571428571,0.6474820143884892
+combination$0+BC+N+FS+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.6571428571428571,0.6258992805755396
+combination$0+BC+N+FS+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.7142857142857143,0.7122302158273381
+combination$0+BC+N+FR,Alzheimers Handwriting,0.6285714285714286,0.762589928057554
+combination$0+BC+N+FR+HT,Alzheimers Handwriting,0.6285714285714286,0.762589928057554
+combination$0+BC+N+FR+HT+Bag nooffset,Alzheimers Handwriting,0.6,0.762589928057554
+combination$0+BC+N+FR+HT+Bag offset,Alzheimers Handwriting,0.6285714285714286,0.7769784172661871
+combination$0+BC+N+FR+HT+Boost nooffset,Alzheimers Handwriting,0.6,0.7841726618705036
+combination$0+BC+N+FR+HT+Boost offset,Alzheimers Handwriting,0.6571428571428571,0.7482014388489209
+combination$0+BC,Breast Cancer,0.6491228070175439,0.7054945054945055
+combination$0+BC+N,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$0+BC+N+FS,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$0+BC+N+FS+FR,Breast Cancer,0.631578947368421,0.6395604395604395
+combination$0+BC+N+FS+FR+HT,Breast Cancer,0.7017543859649122,0.6945054945054945
+combination$0+BC+N+FS+FR+HT+Bag offset,Breast Cancer,0.631578947368421,0.6395604395604395
+combination$0+BC+N+FS+FR+HT+Bag nooffset,Breast Cancer,0.631578947368421,0.6395604395604395
+combination$0+BC+N+FS+FR+HT+HT+Boost nooffset,Breast Cancer,0.631578947368421,0.6395604395604395
+combination$0+BC+N+FS+FR+HT+HT+Boost offset,Breast Cancer,0.6491228070175439,0.6395604395604395
+combination$0+BC+N+FR,Breast Cancer,0.631578947368421,0.6395604395604395
+combination$0+BC+N+FR+HT,Breast Cancer,0.7017543859649122,0.6945054945054945
+combination$0+BC+N+FR+HT+Bag nooffset,Breast Cancer,0.6140350877192983,0.6351648351648351
+combination$0+BC+N+FR+HT+Bag offset,Breast Cancer,0.6491228070175439,0.6395604395604395
+combination$0+BC+N+FR+HT+Boost nooffset,Breast Cancer,0.6228070175438597,0.6395604395604395
+combination$0+BC+N+FR+HT+Boost offset,Breast Cancer,0.6491228070175439,0.6395604395604395
+combination$0+BC,Spam Email,0.5166666666666667,0.4995833333333333
+combination$0+BC+N,Spam Email,0.5166666666666667,0.4995833333333333
+combination$0+BC+N+FS,Spam Email,0.5166666666666667,0.4995833333333333
+combination$0+BC+N+FS+FR,Spam Email,0.5166666666666667,0.4995833333333333
+combination$0+BC+N+FS+FR+HT,Spam Email,0.5166666666666667,0.4995833333333333
+combination$0+BC+N+FS+FR+HT+Bag offset,Spam Email,0.5166666666666667,0.5004166666666666
+combination$0+BC+N+FS+FR+HT+Bag nooffset,Spam Email,0.5166666666666667,0.4995833333333333
+combination$0+BC+N+FS+FR+HT+HT+Boost nooffset,Spam Email,0.5166666666666667,0.4995833333333333
+combination$0+BC+N+FS+FR+HT+HT+Boost offset,Spam Email,0.5166666666666667,0.4995833333333333
+combination$0+BC+N+FR,Spam Email,0.5166666666666667,0.4995833333333333
+combination$0+BC+N+FR+HT,Spam Email,0.5166666666666667,0.4995833333333333
+combination$0+BC+N+FR+HT+Bag nooffset,Spam Email,0.5166666666666667,0.4995833333333333
+combination$0+BC+N+FR+HT+Bag offset,Spam Email,0.5166666666666667,0.5004166666666666
+combination$0+BC+N+FR+HT+Boost nooffset,Spam Email,0.5166666666666667,0.4995833333333333
+combination$0+BC+N+FR+HT+Boost offset,Spam Email,0.5166666666666667,0.4995833333333333
+combination$0+BC,Water Potability,0.6097560975609756,0.6099236641221374
+combination$0+BC+N,Water Potability,0.6097560975609756,0.6099236641221374
+combination$0+BC+N+FS,Water Potability,0.6097560975609756,0.6099236641221374
+combination$0+BC+N+FS+FR,Water Potability,0.6097560975609756,0.6099236641221374
+combination$0+BC+N+FS+FR+HT,Water Potability,0.6097560975609756,0.6099236641221374
+combination$0+BC+N+FS+FR+HT+Bag offset,Water Potability,0.6097560975609756,0.6099236641221374
+combination$0+BC+N+FS+FR+HT+Bag nooffset,Water Potability,0.6097560975609756,0.6099236641221374
+combination$0+BC+N+FS+FR+HT+HT+Boost nooffset,Water Potability,0.6097560975609756,0.6099236641221374
+combination$0+BC+N+FS+FR+HT+HT+Boost offset,Water Potability,0.6097560975609756,0.6099236641221374
+combination$0+BC+N+FR,Water Potability,0.6097560975609756,0.6099236641221374
+combination$0+BC+N+FR+HT,Water Potability,0.6097560975609756,0.6099236641221374
+combination$0+BC+N+FR+HT+Bag nooffset,Water Potability,0.6097560975609756,0.6099236641221374
+combination$0+BC+N+FR+HT+Bag offset,Water Potability,0.6097560975609756,0.6099236641221374
+combination$0+BC+N+FR+HT+Boost nooffset,Water Potability,0.6097560975609756,0.6099236641221374
+combination$0+BC+N+FR+HT+Boost offset,Water Potability,0.6097560975609756,0.6099236641221374
+combination$0+BC,Alzheimers Handwriting,0.45714285714285713,0.5251798561151079
+combination$0+BC+N,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$0+BC+N+DR,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$0+BC+N+DR+FR,Alzheimers Handwriting,0.5428571428571428,0.5467625899280576
+combination$0+BC+N+DR+FR+HT,Alzheimers Handwriting,0.5428571428571428,0.5971223021582733
+combination$0+BC+N+DR+FR+HT+Bag offset,Alzheimers Handwriting,0.6285714285714286,0.5899280575539568
+combination$0+BC+N+DR+FR+HT+Bag nooffset,Alzheimers Handwriting,0.45714285714285713,0.5107913669064749
+combination$0+BC+N+DR+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.6285714285714286,0.5683453237410072
+combination$0+BC+N+DR+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$0+BC+N+DR,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$0+BC+N+DR+HT,Alzheimers Handwriting,0.45714285714285713,0.5035971223021583
+combination$0+BC+N+DR+HT+Bag nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$0+BC+N+DR+HT+Bag offset,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$0+BC+N+DR+HT+Boost nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$0+BC+N+DR+HT+Boost offset,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$0+BC,Breast Cancer,0.7017543859649122,0.7076923076923077
+combination$0+BC+N,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$0+BC+N+DR,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$0+BC+N+DR+FR,Breast Cancer,0.6140350877192983,0.6527472527472528
+combination$0+BC+N+DR+FR+HT,Breast Cancer,0.6491228070175439,0.7142857142857143
+combination$0+BC+N+DR+FR+HT+Bag offset,Breast Cancer,0.6140350877192983,0.654945054945055
+combination$0+BC+N+DR+FR+HT+Bag nooffset,Breast Cancer,0.6140350877192983,0.6527472527472528
+combination$0+BC+N+DR+FR+HT+HT+Boost nooffset,Breast Cancer,0.6140350877192983,0.6527472527472528
+combination$0+BC+N+DR+FR+HT+HT+Boost offset,Breast Cancer,0.6140350877192983,0.6571428571428571
+combination$0+BC+N+DR,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$0+BC+N+DR+HT,Breast Cancer,0.6140350877192983,0.6351648351648351
+combination$0+BC+N+DR+HT+Bag nooffset,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$0+BC+N+DR+HT+Bag offset,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$0+BC+N+DR+HT+Boost nooffset,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$0+BC+N+DR+HT+Boost offset,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$0+BC,Spam Email,0.515,0.5
+combination$0+BC+N,Spam Email,0.515,0.5
+combination$0+BC+N+DR,Spam Email,0.515,0.5
+combination$0+BC+N+DR+FR,Spam Email,0.515,0.5
+combination$0+BC+N+DR+FR+HT,Spam Email,0.515,0.5
+combination$0+BC+N+DR+FR+HT+Bag offset,Spam Email,0.515,0.0
+combination$0+BC+N+DR+FR+HT+Bag nooffset,Spam Email,0.515,0.5
+combination$0+BC+N+DR+FR+HT+HT+Boost nooffset,Spam Email,0.515,0.5
+combination$0+BC+N+DR+FR+HT+HT+Boost offset,Spam Email,0.515,0.5
+combination$0+BC+N+DR,Spam Email,0.515,0.5
+combination$0+BC+N+DR+HT,Spam Email,0.515,0.5
+combination$0+BC+N+DR+HT+Bag nooffset,Spam Email,0.515,0.5
+combination$0+BC+N+DR+HT+Bag offset,Spam Email,0.515,0.0
+combination$0+BC+N+DR+HT+Boost nooffset,Spam Email,0.515,0.5
+combination$0+BC+N+DR+HT+Boost offset,Spam Email,0.515,0.5
+combination$0+BC,Water Potability,0.6051829268292683,0.6110687022900764
+combination$0+BC+N,Water Potability,0.6051829268292683,0.6110687022900764
+combination$0+BC+N+DR,Water Potability,0.6051829268292683,0.6110687022900764
+combination$0+BC+N+DR+FR,Water Potability,0.6051829268292683,0.6110687022900764
+combination$0+BC+N+DR+FR+HT,Water Potability,0.6051829268292683,0.6110687022900764
+combination$0+BC+N+DR+FR+HT+Bag offset,Water Potability,0.6051829268292683,0.6110687022900764
+combination$0+BC+N+DR+FR+HT+Bag nooffset,Water Potability,0.6051829268292683,0.6110687022900764
+combination$0+BC+N+DR+FR+HT+HT+Boost nooffset,Water Potability,0.6051829268292683,0.6110687022900764
+combination$0+BC+N+DR+FR+HT+HT+Boost offset,Water Potability,0.6051829268292683,0.6110687022900764
+combination$0+BC+N+DR,Water Potability,0.6051829268292683,0.6110687022900764
+combination$0+BC+N+DR+HT,Water Potability,0.6051829268292683,0.6110687022900764
+combination$0+BC+N+DR+HT+Bag nooffset,Water Potability,0.6051829268292683,0.6110687022900764
+combination$0+BC+N+DR+HT+Bag offset,Water Potability,0.6051829268292683,0.6110687022900764
+combination$0+BC+N+DR+HT+Boost nooffset,Water Potability,0.6051829268292683,0.6110687022900764
+combination$0+BC+N+DR+HT+Boost offset,Water Potability,0.6051829268292683,0.6110687022900764
+combination$0+BC,Alzheimers Handwriting,0.45714285714285713,0.5251798561151079
+combination$0+BC+N,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$0+BC+N+SigK,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$0+BC+N+SigK+FR,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$0+BC+N+SigK+FR+HT,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$0+BC+N+SigK+FR+HT+Bag offset,Alzheimers Handwriting,0.5714285714285714,0.5035971223021583
+combination$0+BC+N+SigK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$0+BC+N+SigK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$0+BC+N+SigK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$0+BC,Breast Cancer,0.6929824561403509,0.7098901098901099
+combination$0+BC+N,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$0+BC+N+SigK,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$0+BC+N+SigK+FR,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$0+BC+N+SigK+FR+HT,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$0+BC+N+SigK+FR+HT+Bag offset,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$0+BC+N+SigK+FR+HT+Bag nooffset,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$0+BC+N+SigK+FR+HT+HT+Boost nooffset,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$0+BC+N+SigK+FR+HT+HT+Boost offset,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$0+BC,Spam Email,0.49666666666666665,0.5045833333333334
+combination$0+BC+N,Spam Email,0.49666666666666665,0.5045833333333334
+combination$0+BC+N+SigK,Spam Email,0.49666666666666665,0.5045833333333334
+combination$0+BC+N+SigK+FR,Spam Email,0.49666666666666665,0.5045833333333334
+combination$0+BC+N+SigK+FR+HT,Spam Email,0.49666666666666665,0.5045833333333334
+combination$0+BC+N+SigK+FR+HT+Bag offset,Spam Email,0.5033333333333333,0.5045833333333334
+combination$0+BC+N+SigK+FR+HT+Bag nooffset,Spam Email,0.49666666666666665,0.5045833333333334
+combination$0+BC+N+SigK+FR+HT+HT+Boost nooffset,Spam Email,0.49666666666666665,0.5045833333333334
+combination$0+BC+N+SigK+FR+HT+HT+Boost offset,Spam Email,0.49666666666666665,0.5045833333333334
+combination$0+BC,Water Potability,0.625,0.6061068702290077
+combination$0+BC+N,Water Potability,0.625,0.6061068702290077
+combination$0+BC+N+SigK,Water Potability,0.625,0.6061068702290077
+combination$0+BC+N+SigK+FR,Water Potability,0.625,0.6061068702290077
+combination$0+BC+N+SigK+FR+HT,Water Potability,0.625,0.6061068702290077
+combination$0+BC+N+SigK+FR+HT+Bag offset,Water Potability,0.625,0.6061068702290077
+combination$0+BC+N+SigK+FR+HT+Bag nooffset,Water Potability,0.625,0.6061068702290077
+combination$0+BC+N+SigK+FR+HT+HT+Boost nooffset,Water Potability,0.625,0.6061068702290077
+combination$0+BC+N+SigK+FR+HT+HT+Boost offset,Water Potability,0.625,0.6061068702290077
+combination$0+BC,Alzheimers Handwriting,0.5142857142857142,0.5107913669064749
+combination$0+BC+N,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$0+BC+N+PolyK,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$0+BC+N+PolyK+FR,Alzheimers Handwriting,0.4857142857142857,0.5035971223021583
+combination$0+BC+N+PolyK+FR+HT,Alzheimers Handwriting,0.4857142857142857,0.5035971223021583
+combination$0+BC+N+PolyK+FR+HT+Bag offset,Alzheimers Handwriting,0.6,0.5755395683453237
+combination$0+BC+N+PolyK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.4857142857142857,0.4676258992805755
+combination$0+BC+N+PolyK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.45714285714285713,0.5539568345323741
+combination$0+BC+N+PolyK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$0+BC,Breast Cancer,0.6754385964912281,0.7098901098901099
+combination$0+BC+N,Breast Cancer,0.5964912280701754,0.6351648351648351
+combination$0+BC+N+PolyK,Breast Cancer,0.5964912280701754,0.6351648351648351
+combination$0+BC+N+PolyK+FR,Breast Cancer,0.6228070175438597,0.5582417582417583
+combination$0+BC+N+PolyK+FR+HT,Breast Cancer,0.6228070175438597,0.5582417582417583
+combination$0+BC+N+PolyK+FR+HT+Bag offset,Breast Cancer,0.6228070175438597,0.5582417582417583
+combination$0+BC+N+PolyK+FR+HT+Bag nooffset,Breast Cancer,0.6228070175438597,0.5582417582417583
+combination$0+BC+N+PolyK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6228070175438597,0.5582417582417583
+combination$0+BC+N+PolyK+FR+HT+HT+Boost offset,Breast Cancer,0.6228070175438597,0.5582417582417583
+combination$0+BC,Spam Email,0.5016666666666667,0.5033333333333333
+combination$0+BC+N,Spam Email,0.5016666666666667,0.5033333333333333
+combination$0+BC+N+PolyK,Spam Email,0.5016666666666667,0.5033333333333333
+combination$0+BC+N+PolyK+FR,Spam Email,0.49916666666666665,0.5016666666666667
+combination$0+BC+N+PolyK+FR+HT,Spam Email,0.49916666666666665,0.5016666666666667
+combination$0+BC+N+PolyK+FR+HT+Bag offset,Spam Email,0.5008333333333334,0.5016666666666667
+combination$0+BC+N+PolyK+FR+HT+Bag nooffset,Spam Email,0.49916666666666665,0.5016666666666667
+combination$0+BC+N+PolyK+FR+HT+HT+Boost nooffset,Spam Email,0.49916666666666665,0.5016666666666667
+combination$0+BC+N+PolyK+FR+HT+HT+Boost offset,Spam Email,0.49916666666666665,0.5016666666666667
+combination$0+BC,Water Potability,0.6112804878048781,0.6095419847328244
+combination$0+BC+N,Water Potability,0.6112804878048781,0.6095419847328244
+combination$0+BC+N+PolyK,Water Potability,0.6112804878048781,0.6095419847328244
+combination$0+BC+N+PolyK+FR,Water Potability,0.47103658536585363,0.4858778625954199
+combination$0+BC+N+PolyK+FR+HT,Water Potability,0.47103658536585363,0.4858778625954199
+combination$0+BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.5289634146341463,0.5141221374045801
+combination$0+BC+N+PolyK+FR+HT+Bag nooffset,Water Potability,0.0,0.0
+combination$0+BC+N+PolyK+FR+HT+HT+Boost nooffset,Water Potability,0.47103658536585363,0.4858778625954199
+combination$0+BC+N+PolyK+FR+HT+HT+Boost offset,Water Potability,0.47103658536585363,0.4858778625954199
+combination$0+BC,Alzheimers Handwriting,0.45714285714285713,0.5251798561151079
+combination$0+BC+N,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$0+BC+N+RBFK,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$0+BC+N+RBFK+FR,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$0+BC+N+RBFK+FR+HT,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$0+BC+N+RBFK+FR+HT+Bag offset,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$0+BC+N+RBFK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$0+BC+N+RBFK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$0+BC+N+RBFK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$0+BC,Breast Cancer,0.7631578947368421,0.7098901098901099
+combination$0+BC+N,Breast Cancer,0.6754385964912281,0.6153846153846154
+combination$0+BC+N+RBFK,Breast Cancer,0.6754385964912281,0.6153846153846154
+combination$0+BC+N+RBFK+FR,Breast Cancer,0.6754385964912281,0.6153846153846154
+combination$0+BC+N+RBFK+FR+HT,Breast Cancer,0.6754385964912281,0.6153846153846154
+combination$0+BC+N+RBFK+FR+HT+Bag offset,Breast Cancer,0.6754385964912281,0.6153846153846154
+combination$0+BC+N+RBFK+FR+HT+Bag nooffset,Breast Cancer,0.6754385964912281,0.6153846153846154
+combination$0+BC+N+RBFK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6754385964912281,0.6153846153846154
+combination$0+BC+N+RBFK+FR+HT+HT+Boost offset,Breast Cancer,0.6754385964912281,0.6153846153846154
+combination$0+BC,Spam Email,0.4925,0.505625
+combination$0+BC+N,Spam Email,0.4925,0.505625
+combination$0+BC+N+RBFK,Spam Email,0.4925,0.505625
+combination$0+BC+N+RBFK+FR,Spam Email,0.4925,0.505625
+combination$0+BC+N+RBFK+FR+HT,Spam Email,0.4925,0.505625
+combination$0+BC+N+RBFK+FR+HT+Bag offset,Spam Email,0.5075,0.505625
+combination$0+BC+N+RBFK+FR+HT+Bag nooffset,Spam Email,0.4925,0.505625
+combination$0+BC+N+RBFK+FR+HT+HT+Boost nooffset,Spam Email,0.4925,0.505625
+combination$0+BC+N+RBFK+FR+HT+HT+Boost offset,Spam Email,0.4925,0.505625
+combination$0+BC,Water Potability,0.6554878048780488,0.5984732824427481
+combination$0+BC+N,Water Potability,0.6554878048780488,0.5984732824427481
+combination$0+BC+N+RBFK,Water Potability,0.6554878048780488,0.5984732824427481
+combination$0+BC+N+RBFK+FR,Water Potability,0.6554878048780488,0.5984732824427481
+combination$0+BC+N+RBFK+FR+HT,Water Potability,0.6554878048780488,0.5984732824427481
+combination$0+BC+N+RBFK+FR+HT+Bag offset,Water Potability,0.6554878048780488,0.5984732824427481
+combination$0+BC+N+RBFK+FR+HT+Bag nooffset,Water Potability,0.6554878048780488,0.5984732824427481
+combination$0+BC+N+RBFK+FR+HT+HT+Boost nooffset,Water Potability,0.6554878048780488,0.5984732824427481
+combination$0+BC+N+RBFK+FR+HT+HT+Boost offset,Water Potability,0.6554878048780488,0.5984732824427481
+combination$1+BC,Alzheimers Handwriting,0.45714285714285713,0.5179856115107914
+combination$1+BC+N,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$1+BC+N+FS,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$1+BC+N+FS+FR,Alzheimers Handwriting,0.5142857142857142,0.6258992805755396
+combination$1+BC+N+FS+FR+HT,Alzheimers Handwriting,0.6571428571428571,0.6834532374100719
+combination$1+BC+N+FS+FR+HT+Bag offset,Alzheimers Handwriting,0.6571428571428571,0.6474820143884892
+combination$1+BC+N+FS+FR+HT+Bag nooffset,Alzheimers Handwriting,0.5142857142857142,0.6330935251798561
+combination$1+BC+N+FS+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.5142857142857142,0.5899280575539568
+combination$1+BC+N+FS+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5142857142857142,0.6115107913669064
+combination$1+BC+N+FR,Alzheimers Handwriting,0.6285714285714286,0.7769784172661871
+combination$1+BC+N+FR+HT,Alzheimers Handwriting,0.6857142857142857,0.762589928057554
+combination$1+BC+N+FR+HT+Bag nooffset,Alzheimers Handwriting,0.6285714285714286,0.7697841726618705
+combination$1+BC+N+FR+HT+Bag offset,Alzheimers Handwriting,0.6571428571428571,0.7769784172661871
+combination$1+BC+N+FR+HT+Boost nooffset,Alzheimers Handwriting,0.6,0.762589928057554
+combination$1+BC+N+FR+HT+Boost offset,Alzheimers Handwriting,0.6,0.7841726618705036
+combination$1+BC,Breast Cancer,0.6228070175438597,0.7098901098901099
+combination$1+BC+N,Breast Cancer,0.5614035087719298,0.643956043956044
+combination$1+BC+N+FS,Breast Cancer,0.5614035087719298,0.643956043956044
+combination$1+BC+N+FS+FR,Breast Cancer,0.5701754385964912,0.654945054945055
+combination$1+BC+N+FS+FR+HT,Breast Cancer,0.6140350877192983,0.7076923076923077
+combination$1+BC+N+FS+FR+HT+Bag offset,Breast Cancer,0.5701754385964912,0.654945054945055
+combination$1+BC+N+FS+FR+HT+Bag nooffset,Breast Cancer,0.5701754385964912,0.6593406593406593
+combination$1+BC+N+FS+FR+HT+HT+Boost nooffset,Breast Cancer,0.5701754385964912,0.6527472527472528
+combination$1+BC+N+FS+FR+HT+HT+Boost offset,Breast Cancer,0.5701754385964912,0.654945054945055
+combination$1+BC+N+FR,Breast Cancer,0.5701754385964912,0.654945054945055
+combination$1+BC+N+FR+HT,Breast Cancer,0.6052631578947368,0.7098901098901099
+combination$1+BC+N+FR+HT+Bag nooffset,Breast Cancer,0.5701754385964912,0.6505494505494506
+combination$1+BC+N+FR+HT+Bag offset,Breast Cancer,0.5701754385964912,0.654945054945055
+combination$1+BC+N+FR+HT+Boost nooffset,Breast Cancer,0.5701754385964912,0.6615384615384615
+combination$1+BC+N+FR+HT+Boost offset,Breast Cancer,0.5701754385964912,0.6505494505494506
+combination$1+BC,Spam Email,0.5041666666666667,0.5027083333333333
+combination$1+BC+N,Spam Email,0.5041666666666667,0.5027083333333333
+combination$1+BC+N+FS,Spam Email,0.5041666666666667,0.5027083333333333
+combination$1+BC+N+FS+FR,Spam Email,0.5041666666666667,0.5027083333333333
+combination$1+BC+N+FS+FR+HT,Spam Email,0.5041666666666667,0.5027083333333333
+combination$1+BC+N+FS+FR+HT+Bag offset,Spam Email,0.5041666666666667,0.5027083333333333
+combination$1+BC+N+FS+FR+HT+Bag nooffset,Spam Email,0.5041666666666667,0.5027083333333333
+combination$1+BC+N+FS+FR+HT+HT+Boost nooffset,Spam Email,0.5041666666666667,0.5027083333333333
+combination$1+BC+N+FS+FR+HT+HT+Boost offset,Spam Email,0.5041666666666667,0.5027083333333333
+combination$1+BC+N+FR,Spam Email,0.5041666666666667,0.5027083333333333
+combination$1+BC+N+FR+HT,Spam Email,0.5041666666666667,0.5027083333333333
+combination$1+BC+N+FR+HT+Bag nooffset,Spam Email,0.5041666666666667,0.5027083333333333
+combination$1+BC+N+FR+HT+Bag offset,Spam Email,0.5041666666666667,0.5027083333333333
+combination$1+BC+N+FR+HT+Boost nooffset,Spam Email,0.5041666666666667,0.5027083333333333
+combination$1+BC+N+FR+HT+Boost offset,Spam Email,0.5041666666666667,0.5027083333333333
+combination$1+BC,Water Potability,0.5929878048780488,0.6141221374045801
+combination$1+BC+N,Water Potability,0.5929878048780488,0.6141221374045801
+combination$1+BC+N+FS,Water Potability,0.5929878048780488,0.6141221374045801
+combination$1+BC+N+FS+FR,Water Potability,0.5929878048780488,0.6141221374045801
+combination$1+BC+N+FS+FR+HT,Water Potability,0.5929878048780488,0.6141221374045801
+combination$1+BC+N+FS+FR+HT+Bag offset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$1+BC+N+FS+FR+HT+Bag nooffset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$1+BC+N+FS+FR+HT+HT+Boost nooffset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$1+BC+N+FS+FR+HT+HT+Boost offset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$1+BC+N+FR,Water Potability,0.5929878048780488,0.6141221374045801
+combination$1+BC+N+FR+HT,Water Potability,0.5929878048780488,0.6141221374045801
+combination$1+BC+N+FR+HT+Bag nooffset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$1+BC+N+FR+HT+Bag offset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$1+BC+N+FR+HT+Boost nooffset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$1+BC+N+FR+HT+Boost offset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$1+BC,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$1+BC+N,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$1+BC+N+DR,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$1+BC+N+DR+FR,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$1+BC+N+DR+FR+HT,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$1+BC+N+DR+FR+HT+Bag offset,Alzheimers Handwriting,0.5428571428571428,0.5323741007194245
+combination$1+BC+N+DR+FR+HT+Bag nooffset,Alzheimers Handwriting,0.5428571428571428,0.43884892086330934
+combination$1+BC+N+DR+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.5428571428571428,0.49640287769784175
+combination$1+BC+N+DR+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$1+BC+N+DR,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$1+BC+N+DR+HT,Alzheimers Handwriting,0.5714285714285714,0.5323741007194245
+combination$1+BC+N+DR+HT+Bag nooffset,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$1+BC+N+DR+HT+Bag offset,Alzheimers Handwriting,0.5428571428571428,0.5251798561151079
+combination$1+BC+N+DR+HT+Boost nooffset,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$1+BC+N+DR+HT+Boost offset,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$1+BC,Breast Cancer,0.8070175438596491,0.7274725274725274
+combination$1+BC+N,Breast Cancer,0.7017543859649122,0.6087912087912087
+combination$1+BC+N+DR,Breast Cancer,0.7017543859649122,0.6087912087912087
+combination$1+BC+N+DR+FR,Breast Cancer,0.7105263157894737,0.6593406593406593
+combination$1+BC+N+DR+FR+HT,Breast Cancer,0.7105263157894737,0.7032967032967034
+combination$1+BC+N+DR+FR+HT+Bag offset,Breast Cancer,0.7105263157894737,0.6659340659340659
+combination$1+BC+N+DR+FR+HT+Bag nooffset,Breast Cancer,0.7105263157894737,0.6593406593406593
+combination$1+BC+N+DR+FR+HT+HT+Boost nooffset,Breast Cancer,0.7017543859649122,0.654945054945055
+combination$1+BC+N+DR+FR+HT+HT+Boost offset,Breast Cancer,0.7017543859649122,0.6505494505494506
+combination$1+BC+N+DR,Breast Cancer,0.7017543859649122,0.6087912087912087
+combination$1+BC+N+DR+HT,Breast Cancer,0.7105263157894737,0.6395604395604395
+combination$1+BC+N+DR+HT+Bag nooffset,Breast Cancer,0.7017543859649122,0.6087912087912087
+combination$1+BC+N+DR+HT+Bag offset,Breast Cancer,0.7017543859649122,0.6087912087912087
+combination$1+BC+N+DR+HT+Boost nooffset,Breast Cancer,0.7017543859649122,0.6087912087912087
+combination$1+BC+N+DR+HT+Boost offset,Breast Cancer,0.7017543859649122,0.6087912087912087
+combination$1+BC,Spam Email,0.4891666666666667,0.5064583333333333
+combination$1+BC+N,Spam Email,0.4891666666666667,0.5064583333333333
+combination$1+BC+N+DR,Spam Email,0.4891666666666667,0.5064583333333333
+combination$1+BC+N+DR+FR,Spam Email,0.4891666666666667,0.5064583333333333
+combination$1+BC+N+DR+FR+HT,Spam Email,0.4891666666666667,0.5064583333333333
+combination$1+BC+N+DR+FR+HT+Bag offset,Spam Email,0.5108333333333334,0.5064583333333333
+combination$1+BC+N+DR+FR+HT+Bag nooffset,Spam Email,0.4891666666666667,0.5064583333333333
+combination$1+BC+N+DR+FR+HT+HT+Boost nooffset,Spam Email,0.4891666666666667,0.5064583333333333
+combination$1+BC+N+DR+FR+HT+HT+Boost offset,Spam Email,0.4891666666666667,0.5064583333333333
+combination$1+BC+N+DR,Spam Email,0.4891666666666667,0.5064583333333333
+combination$1+BC+N+DR+HT,Spam Email,0.4891666666666667,0.5064583333333333
+combination$1+BC+N+DR+HT+Bag nooffset,Spam Email,0.4891666666666667,0.5064583333333333
+combination$1+BC+N+DR+HT+Bag offset,Spam Email,0.5108333333333334,0.5064583333333333
+combination$1+BC+N+DR+HT+Boost nooffset,Spam Email,0.4891666666666667,0.5064583333333333
+combination$1+BC+N+DR+HT+Boost offset,Spam Email,0.4891666666666667,0.5064583333333333
+combination$1+BC,Water Potability,0.5899390243902439,0.6148854961832061
+combination$1+BC+N,Water Potability,0.5899390243902439,0.6148854961832061
+combination$1+BC+N+DR,Water Potability,0.5899390243902439,0.6148854961832061
+combination$1+BC+N+DR+FR,Water Potability,0.5899390243902439,0.6148854961832061
+combination$1+BC+N+DR+FR+HT,Water Potability,0.5899390243902439,0.6148854961832061
+combination$1+BC+N+DR+FR+HT+Bag offset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$1+BC+N+DR+FR+HT+Bag nooffset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$1+BC+N+DR+FR+HT+HT+Boost nooffset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$1+BC+N+DR+FR+HT+HT+Boost offset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$1+BC+N+DR,Water Potability,0.5899390243902439,0.6148854961832061
+combination$1+BC+N+DR+HT,Water Potability,0.5899390243902439,0.6148854961832061
+combination$1+BC+N+DR+HT+Bag nooffset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$1+BC+N+DR+HT+Bag offset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$1+BC+N+DR+HT+Boost nooffset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$1+BC+N+DR+HT+Boost offset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$1+BC,Alzheimers Handwriting,0.37142857142857144,0.5323741007194245
+combination$1+BC+N,Alzheimers Handwriting,0.37142857142857144,0.5179856115107914
+combination$1+BC+N+SigK,Alzheimers Handwriting,0.37142857142857144,0.5179856115107914
+combination$1+BC+N+SigK+FR,Alzheimers Handwriting,0.37142857142857144,0.5179856115107914
+combination$1+BC+N+SigK+FR+HT,Alzheimers Handwriting,0.37142857142857144,0.5179856115107914
+combination$1+BC+N+SigK+FR+HT+Bag offset,Alzheimers Handwriting,0.6285714285714286,0.5179856115107914
+combination$1+BC+N+SigK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.37142857142857144,0.5179856115107914
+combination$1+BC+N+SigK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.37142857142857144,0.5179856115107914
+combination$1+BC+N+SigK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.37142857142857144,0.5179856115107914
+combination$1+BC,Breast Cancer,0.6754385964912281,0.7076923076923077
+combination$1+BC+N,Breast Cancer,0.5789473684210527,0.6395604395604395
+combination$1+BC+N+SigK,Breast Cancer,0.5789473684210527,0.6395604395604395
+combination$1+BC+N+SigK+FR,Breast Cancer,0.5789473684210527,0.6395604395604395
+combination$1+BC+N+SigK+FR+HT,Breast Cancer,0.5789473684210527,0.6395604395604395
+combination$1+BC+N+SigK+FR+HT+Bag offset,Breast Cancer,0.5789473684210527,0.6395604395604395
+combination$1+BC+N+SigK+FR+HT+Bag nooffset,Breast Cancer,0.5789473684210527,0.6395604395604395
+combination$1+BC+N+SigK+FR+HT+HT+Boost nooffset,Breast Cancer,0.5789473684210527,0.6395604395604395
+combination$1+BC+N+SigK+FR+HT+HT+Boost offset,Breast Cancer,0.5789473684210527,0.6395604395604395
+combination$1+BC,Spam Email,0.5183333333333333,0.49916666666666665
+combination$1+BC+N,Spam Email,0.5183333333333333,0.49916666666666665
+combination$1+BC+N+SigK,Spam Email,0.5183333333333333,0.49916666666666665
+combination$1+BC+N+SigK+FR,Spam Email,0.5183333333333333,0.49916666666666665
+combination$1+BC+N+SigK+FR+HT,Spam Email,0.5183333333333333,0.49916666666666665
+combination$1+BC+N+SigK+FR+HT+Bag offset,Spam Email,0.5183333333333333,0.5008333333333334
+combination$1+BC+N+SigK+FR+HT+Bag nooffset,Spam Email,0.5183333333333333,0.49916666666666665
+combination$1+BC+N+SigK+FR+HT+HT+Boost nooffset,Spam Email,0.5183333333333333,0.49916666666666665
+combination$1+BC+N+SigK+FR+HT+HT+Boost offset,Spam Email,0.5183333333333333,0.49916666666666665
+combination$1+BC,Water Potability,0.6097560975609756,0.6099236641221374
+combination$1+BC+N,Water Potability,0.6097560975609756,0.6099236641221374
+combination$1+BC+N+SigK,Water Potability,0.6097560975609756,0.6099236641221374
+combination$1+BC+N+SigK+FR,Water Potability,0.6097560975609756,0.6099236641221374
+combination$1+BC+N+SigK+FR+HT,Water Potability,0.6097560975609756,0.6099236641221374
+combination$1+BC+N+SigK+FR+HT+Bag offset,Water Potability,0.6097560975609756,0.6099236641221374
+combination$1+BC+N+SigK+FR+HT+Bag nooffset,Water Potability,0.6097560975609756,0.6099236641221374
+combination$1+BC+N+SigK+FR+HT+HT+Boost nooffset,Water Potability,0.6097560975609756,0.6099236641221374
+combination$1+BC+N+SigK+FR+HT+HT+Boost offset,Water Potability,0.6097560975609756,0.6099236641221374
+combination$1+BC,Alzheimers Handwriting,0.5714285714285714,0.5323741007194245
+combination$1+BC+N,Alzheimers Handwriting,0.6,0.460431654676259
+combination$1+BC+N+PolyK,Alzheimers Handwriting,0.6,0.460431654676259
+combination$1+BC+N+PolyK+FR,Alzheimers Handwriting,0.4857142857142857,0.5467625899280576
+combination$1+BC+N+PolyK+FR+HT,Alzheimers Handwriting,0.4857142857142857,0.5467625899280576
+combination$1+BC+N+PolyK+FR+HT+Bag offset,Alzheimers Handwriting,0.6,0.5683453237410072
+combination$1+BC+N+PolyK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.4857142857142857,0.4460431654676259
+combination$1+BC+N+PolyK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.45714285714285713,0.4244604316546763
+combination$1+BC+N+PolyK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5428571428571428,0.5251798561151079
+combination$1+BC,Breast Cancer,0.7368421052631579,0.7120879120879121
+combination$1+BC+N,Breast Cancer,0.6578947368421053,0.6197802197802198
+combination$1+BC+N+PolyK,Breast Cancer,0.6578947368421053,0.6197802197802198
+combination$1+BC+N+PolyK+FR,Breast Cancer,0.543859649122807,0.578021978021978
+combination$1+BC+N+PolyK+FR+HT,Breast Cancer,0.543859649122807,0.578021978021978
+combination$1+BC+N+PolyK+FR+HT+Bag offset,Breast Cancer,0.543859649122807,0.578021978021978
+combination$1+BC+N+PolyK+FR+HT+Bag nooffset,Breast Cancer,0.543859649122807,0.578021978021978
+combination$1+BC+N+PolyK+FR+HT+HT+Boost nooffset,Breast Cancer,0.543859649122807,0.578021978021978
+combination$1+BC+N+PolyK+FR+HT+HT+Boost offset,Breast Cancer,0.543859649122807,0.578021978021978
+combination$1+BC,Spam Email,0.5008333333333334,0.5035416666666667
+combination$1+BC+N,Spam Email,0.5008333333333334,0.5035416666666667
+combination$1+BC+N+PolyK,Spam Email,0.5008333333333334,0.5035416666666667
+combination$1+BC+N+PolyK+FR,Spam Email,0.49666666666666665,0.499375
+combination$1+BC+N+PolyK+FR+HT,Spam Email,0.49666666666666665,0.499375
+combination$1+BC+N+PolyK+FR+HT+Bag offset,Spam Email,0.5033333333333333,0.500625
+combination$1+BC+N+PolyK+FR+HT+Bag nooffset,Spam Email,0.0,0.0
+combination$1+BC+N+PolyK+FR+HT+HT+Boost nooffset,Spam Email,0.5033333333333333,0.500625
+combination$1+BC+N+PolyK+FR+HT+HT+Boost offset,Spam Email,0.5033333333333333,0.500625
+combination$1+BC,Water Potability,0.5975609756097561,0.6129770992366412
+combination$1+BC+N,Water Potability,0.5975609756097561,0.6129770992366412
+combination$1+BC+N+PolyK,Water Potability,0.5975609756097561,0.6129770992366412
+combination$1+BC+N+PolyK+FR,Water Potability,0.4954268292682927,0.47977099236641224
+combination$1+BC+N+PolyK+FR+HT,Water Potability,0.4954268292682927,0.47977099236641224
+combination$1+BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.5045731707317073,0.5202290076335878
+combination$1+BC+N+PolyK+FR+HT+Bag nooffset,Water Potability,0.0,0.0
+combination$1+BC+N+PolyK+FR+HT+HT+Boost nooffset,Water Potability,0.4954268292682927,0.47977099236641224
+combination$1+BC+N+PolyK+FR+HT+HT+Boost offset,Water Potability,0.5045731707317073,0.5202290076335878
+combination$1+BC,Alzheimers Handwriting,0.5142857142857142,0.5179856115107914
+combination$1+BC+N,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$1+BC+N+RBFK,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$1+BC+N+RBFK+FR,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$1+BC+N+RBFK+FR+HT,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$1+BC+N+RBFK+FR+HT+Bag offset,Alzheimers Handwriting,0.5142857142857142,0.5179856115107914
+combination$1+BC+N+RBFK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$1+BC+N+RBFK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$1+BC+N+RBFK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$1+BC,Breast Cancer,0.7192982456140351,0.7164835164835165
+combination$1+BC+N,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$1+BC+N+RBFK,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$1+BC+N+RBFK+FR,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$1+BC+N+RBFK+FR+HT,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$1+BC+N+RBFK+FR+HT+Bag offset,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$1+BC+N+RBFK+FR+HT+Bag nooffset,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$1+BC+N+RBFK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$1+BC+N+RBFK+FR+HT+HT+Boost offset,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$1+BC,Spam Email,0.5025,0.503125
+combination$1+BC+N,Spam Email,0.5025,0.503125
+combination$1+BC+N+RBFK,Spam Email,0.5025,0.503125
+combination$1+BC+N+RBFK+FR,Spam Email,0.5025,0.503125
+combination$1+BC+N+RBFK+FR+HT,Spam Email,0.5025,0.503125
+combination$1+BC+N+RBFK+FR+HT+Bag offset,Spam Email,0.5025,0.503125
+combination$1+BC+N+RBFK+FR+HT+Bag nooffset,Spam Email,0.5025,0.503125
+combination$1+BC+N+RBFK+FR+HT+HT+Boost nooffset,Spam Email,0.5025,0.503125
+combination$1+BC+N+RBFK+FR+HT+HT+Boost offset,Spam Email,0.5025,0.503125
+combination$1+BC,Water Potability,0.5884146341463414,0.6152671755725191
+combination$1+BC+N,Water Potability,0.5884146341463414,0.6152671755725191
+combination$1+BC+N+RBFK,Water Potability,0.5884146341463414,0.6152671755725191
+combination$1+BC+N+RBFK+FR,Water Potability,0.5884146341463414,0.6152671755725191
+combination$1+BC+N+RBFK+FR+HT,Water Potability,0.5884146341463414,0.6152671755725191
+combination$1+BC+N+RBFK+FR+HT+Bag offset,Water Potability,0.5884146341463414,0.6152671755725191
+combination$1+BC+N+RBFK+FR+HT+Bag nooffset,Water Potability,0.5884146341463414,0.6152671755725191
+combination$1+BC+N+RBFK+FR+HT+HT+Boost nooffset,Water Potability,0.5884146341463414,0.6152671755725191
+combination$1+BC+N+RBFK+FR+HT+HT+Boost offset,Water Potability,0.5884146341463414,0.6152671755725191
+combination$2+BC,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$2+BC+N,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$2+BC+N+FS,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$2+BC+N+FS+FR,Alzheimers Handwriting,0.6,0.6330935251798561
+combination$2+BC+N+FS+FR+HT,Alzheimers Handwriting,0.6,0.6906474820143885
+combination$2+BC+N+FS+FR+HT+Bag offset,Alzheimers Handwriting,0.6,0.6618705035971223
+combination$2+BC+N+FS+FR+HT+Bag nooffset,Alzheimers Handwriting,0.6,0.6187050359712231
+combination$2+BC+N+FS+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.6,0.6546762589928058
+combination$2+BC+N+FS+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5714285714285714,0.6187050359712231
+combination$2+BC+N+FR,Alzheimers Handwriting,0.7714285714285715,0.7553956834532374
+combination$2+BC+N+FR+HT,Alzheimers Handwriting,0.7714285714285715,0.762589928057554
+combination$2+BC+N+FR+HT+Bag nooffset,Alzheimers Handwriting,0.7142857142857143,0.7553956834532374
+combination$2+BC+N+FR+HT+Bag offset,Alzheimers Handwriting,0.8285714285714286,0.7697841726618705
+combination$2+BC+N+FR+HT+Boost nooffset,Alzheimers Handwriting,0.7428571428571429,0.7482014388489209
+combination$2+BC+N+FR+HT+Boost offset,Alzheimers Handwriting,0.7428571428571429,0.7482014388489209
+combination$2+BC,Breast Cancer,0.7543859649122807,0.7076923076923077
+combination$2+BC+N,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$2+BC+N+FS,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$2+BC+N+FS+FR,Breast Cancer,0.6491228070175439,0.6351648351648351
+combination$2+BC+N+FS+FR+HT,Breast Cancer,0.6929824561403509,0.6967032967032967
+combination$2+BC+N+FS+FR+HT+Bag offset,Breast Cancer,0.6578947368421053,0.6395604395604395
+combination$2+BC+N+FS+FR+HT+Bag nooffset,Breast Cancer,0.6491228070175439,0.6351648351648351
+combination$2+BC+N+FS+FR+HT+HT+Boost nooffset,Breast Cancer,0.6491228070175439,0.6373626373626373
+combination$2+BC+N+FS+FR+HT+HT+Boost offset,Breast Cancer,0.6491228070175439,0.6329670329670329
+combination$2+BC+N+FR,Breast Cancer,0.6491228070175439,0.6373626373626373
+combination$2+BC+N+FR+HT,Breast Cancer,0.6929824561403509,0.6989010989010989
+combination$2+BC+N+FR+HT+Bag nooffset,Breast Cancer,0.6491228070175439,0.6395604395604395
+combination$2+BC+N+FR+HT+Bag offset,Breast Cancer,0.6491228070175439,0.6395604395604395
+combination$2+BC+N+FR+HT+Boost nooffset,Breast Cancer,0.6403508771929824,0.6285714285714286
+combination$2+BC+N+FR+HT+Boost offset,Breast Cancer,0.6666666666666666,0.6395604395604395
+combination$2+BC,Spam Email,0.49333333333333335,0.5054166666666666
+combination$2+BC+N,Spam Email,0.49333333333333335,0.5054166666666666
+combination$2+BC+N+FS,Spam Email,0.49333333333333335,0.5054166666666666
+combination$2+BC+N+FS+FR,Spam Email,0.49333333333333335,0.5054166666666666
+combination$2+BC+N+FS+FR+HT,Spam Email,0.49333333333333335,0.5054166666666666
+combination$2+BC+N+FS+FR+HT+Bag offset,Spam Email,0.5066666666666667,0.5054166666666666
+combination$2+BC+N+FS+FR+HT+Bag nooffset,Spam Email,0.49333333333333335,0.5054166666666666
+combination$2+BC+N+FS+FR+HT+HT+Boost nooffset,Spam Email,0.49333333333333335,0.5054166666666666
+combination$2+BC+N+FS+FR+HT+HT+Boost offset,Spam Email,0.49333333333333335,0.5054166666666666
+combination$2+BC+N+FR,Spam Email,0.49333333333333335,0.5054166666666666
+combination$2+BC+N+FR+HT,Spam Email,0.49333333333333335,0.5054166666666666
+combination$2+BC+N+FR+HT+Bag nooffset,Spam Email,0.49333333333333335,0.5054166666666666
+combination$2+BC+N+FR+HT+Bag offset,Spam Email,0.5066666666666667,0.5054166666666666
+combination$2+BC+N+FR+HT+Boost nooffset,Spam Email,0.49333333333333335,0.5054166666666666
+combination$2+BC+N+FR+HT+Boost offset,Spam Email,0.49333333333333335,0.5054166666666666
+combination$2+BC,Water Potability,0.6189024390243902,0.6076335877862595
+combination$2+BC+N,Water Potability,0.6189024390243902,0.6076335877862595
+combination$2+BC+N+FS,Water Potability,0.6189024390243902,0.6076335877862595
+combination$2+BC+N+FS+FR,Water Potability,0.6189024390243902,0.6076335877862595
+combination$2+BC+N+FS+FR+HT,Water Potability,0.6189024390243902,0.6076335877862595
+combination$2+BC+N+FS+FR+HT+Bag offset,Water Potability,0.6189024390243902,0.6076335877862595
+combination$2+BC+N+FS+FR+HT+Bag nooffset,Water Potability,0.6189024390243902,0.6076335877862595
+combination$2+BC+N+FS+FR+HT+HT+Boost nooffset,Water Potability,0.6189024390243902,0.6076335877862595
+combination$2+BC+N+FS+FR+HT+HT+Boost offset,Water Potability,0.6189024390243902,0.6076335877862595
+combination$2+BC+N+FR,Water Potability,0.6189024390243902,0.6076335877862595
+combination$2+BC+N+FR+HT,Water Potability,0.6189024390243902,0.6076335877862595
+combination$2+BC+N+FR+HT+Bag nooffset,Water Potability,0.6189024390243902,0.6076335877862595
+combination$2+BC+N+FR+HT+Bag offset,Water Potability,0.6189024390243902,0.6076335877862595
+combination$2+BC+N+FR+HT+Boost nooffset,Water Potability,0.6189024390243902,0.6076335877862595
+combination$2+BC+N+FR+HT+Boost offset,Water Potability,0.6189024390243902,0.6076335877862595
+combination$2+BC,Alzheimers Handwriting,0.4857142857142857,0.5179856115107914
+combination$2+BC+N,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$2+BC+N+DR,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$2+BC+N+DR+FR,Alzheimers Handwriting,0.6,0.5755395683453237
+combination$2+BC+N+DR+FR+HT,Alzheimers Handwriting,0.6,0.5107913669064749
+combination$2+BC+N+DR+FR+HT+Bag offset,Alzheimers Handwriting,0.5714285714285714,0.60431654676259
+combination$2+BC+N+DR+FR+HT+Bag nooffset,Alzheimers Handwriting,0.4857142857142857,0.5179856115107914
+combination$2+BC+N+DR+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.5714285714285714,0.5899280575539568
+combination$2+BC+N+DR+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.6571428571428571,0.5035971223021583
+combination$2+BC+N+DR,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$2+BC+N+DR+HT,Alzheimers Handwriting,0.45714285714285713,0.5107913669064749
+combination$2+BC+N+DR+HT+Bag nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$2+BC+N+DR+HT+Bag offset,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$2+BC+N+DR+HT+Boost nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$2+BC+N+DR+HT+Boost offset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$2+BC,Breast Cancer,0.7543859649122807,0.7142857142857143
+combination$2+BC+N,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$2+BC+N+DR,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$2+BC+N+DR+FR,Breast Cancer,0.6578947368421053,0.6461538461538462
+combination$2+BC+N+DR+FR+HT,Breast Cancer,0.6842105263157895,0.701098901098901
+combination$2+BC+N+DR+FR+HT+Bag offset,Breast Cancer,0.6666666666666666,0.6505494505494506
+combination$2+BC+N+DR+FR+HT+Bag nooffset,Breast Cancer,0.6578947368421053,0.6395604395604395
+combination$2+BC+N+DR+FR+HT+HT+Boost nooffset,Breast Cancer,0.6578947368421053,0.654945054945055
+combination$2+BC+N+DR+FR+HT+HT+Boost offset,Breast Cancer,0.6578947368421053,0.6571428571428571
+combination$2+BC+N+DR,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$2+BC+N+DR+HT,Breast Cancer,0.6666666666666666,0.6351648351648351
+combination$2+BC+N+DR+HT+Bag nooffset,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$2+BC+N+DR+HT+Bag offset,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$2+BC+N+DR+HT+Boost nooffset,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$2+BC+N+DR+HT+Boost offset,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$2+BC,Spam Email,0.4875,0.506875
+combination$2+BC+N,Spam Email,0.4875,0.506875
+combination$2+BC+N+DR,Spam Email,0.4875,0.506875
+combination$2+BC+N+DR+FR,Spam Email,0.4875,0.506875
+combination$2+BC+N+DR+FR+HT,Spam Email,0.4875,0.506875
+combination$2+BC+N+DR+FR+HT+Bag offset,Spam Email,0.5125,0.506875
+combination$2+BC+N+DR+FR+HT+Bag nooffset,Spam Email,0.4875,0.506875
+combination$2+BC+N+DR+FR+HT+HT+Boost nooffset,Spam Email,0.4875,0.506875
+combination$2+BC+N+DR+FR+HT+HT+Boost offset,Spam Email,0.4875,0.506875
+combination$2+BC+N+DR,Spam Email,0.4875,0.506875
+combination$2+BC+N+DR+HT,Spam Email,0.4875,0.506875
+combination$2+BC+N+DR+HT+Bag nooffset,Spam Email,0.4875,0.506875
+combination$2+BC+N+DR+HT+Bag offset,Spam Email,0.5125,0.506875
+combination$2+BC+N+DR+HT+Boost nooffset,Spam Email,0.4875,0.506875
+combination$2+BC+N+DR+HT+Boost offset,Spam Email,0.4875,0.506875
+combination$2+BC,Water Potability,0.5929878048780488,0.6141221374045801
+combination$2+BC+N,Water Potability,0.5929878048780488,0.6141221374045801
+combination$2+BC+N+DR,Water Potability,0.5929878048780488,0.6141221374045801
+combination$2+BC+N+DR+FR,Water Potability,0.5929878048780488,0.6141221374045801
+combination$2+BC+N+DR+FR+HT,Water Potability,0.5929878048780488,0.6141221374045801
+combination$2+BC+N+DR+FR+HT+Bag offset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$2+BC+N+DR+FR+HT+Bag nooffset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$2+BC+N+DR+FR+HT+HT+Boost nooffset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$2+BC+N+DR+FR+HT+HT+Boost offset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$2+BC+N+DR,Water Potability,0.5929878048780488,0.6141221374045801
+combination$2+BC+N+DR+HT,Water Potability,0.5929878048780488,0.6141221374045801
+combination$2+BC+N+DR+HT+Bag nooffset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$2+BC+N+DR+HT+Bag offset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$2+BC+N+DR+HT+Boost nooffset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$2+BC+N+DR+HT+Boost offset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$2+BC,Alzheimers Handwriting,0.4857142857142857,0.5179856115107914
+combination$2+BC+N,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$2+BC+N+SigK,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$2+BC+N+SigK+FR,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$2+BC+N+SigK+FR+HT,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$2+BC+N+SigK+FR+HT+Bag offset,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$2+BC+N+SigK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$2+BC+N+SigK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$2+BC+N+SigK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$2+BC,Breast Cancer,0.6842105263157895,0.7098901098901099
+combination$2+BC+N,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$2+BC+N+SigK,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$2+BC+N+SigK+FR,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$2+BC+N+SigK+FR+HT,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$2+BC+N+SigK+FR+HT+Bag offset,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$2+BC+N+SigK+FR+HT+Bag nooffset,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$2+BC+N+SigK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$2+BC+N+SigK+FR+HT+HT+Boost offset,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$2+BC,Spam Email,0.49666666666666665,0.5045833333333334
+combination$2+BC+N,Spam Email,0.49666666666666665,0.5045833333333334
+combination$2+BC+N+SigK,Spam Email,0.49666666666666665,0.5045833333333334
+combination$2+BC+N+SigK+FR,Spam Email,0.49666666666666665,0.5045833333333334
+combination$2+BC+N+SigK+FR+HT,Spam Email,0.49666666666666665,0.5045833333333334
+combination$2+BC+N+SigK+FR+HT+Bag offset,Spam Email,0.5033333333333333,0.5045833333333334
+combination$2+BC+N+SigK+FR+HT+Bag nooffset,Spam Email,0.49666666666666665,0.5045833333333334
+combination$2+BC+N+SigK+FR+HT+HT+Boost nooffset,Spam Email,0.49666666666666665,0.5045833333333334
+combination$2+BC+N+SigK+FR+HT+HT+Boost offset,Spam Email,0.49666666666666665,0.5045833333333334
+combination$2+BC,Water Potability,0.6326219512195121,0.6041984732824427
+combination$2+BC+N,Water Potability,0.6326219512195121,0.6041984732824427
+combination$2+BC+N+SigK,Water Potability,0.6326219512195121,0.6041984732824427
+combination$2+BC+N+SigK+FR,Water Potability,0.6326219512195121,0.6041984732824427
+combination$2+BC+N+SigK+FR+HT,Water Potability,0.6326219512195121,0.6041984732824427
+combination$2+BC+N+SigK+FR+HT+Bag offset,Water Potability,0.6326219512195121,0.6041984732824427
+combination$2+BC+N+SigK+FR+HT+Bag nooffset,Water Potability,0.6326219512195121,0.6041984732824427
+combination$2+BC+N+SigK+FR+HT+HT+Boost nooffset,Water Potability,0.6326219512195121,0.6041984732824427
+combination$2+BC+N+SigK+FR+HT+HT+Boost offset,Water Potability,0.6326219512195121,0.6041984732824427
+combination$2+BC,Alzheimers Handwriting,0.5428571428571428,0.5107913669064749
+combination$2+BC+N,Alzheimers Handwriting,0.6285714285714286,0.45323741007194246
+combination$2+BC+N+PolyK,Alzheimers Handwriting,0.6285714285714286,0.45323741007194246
+combination$2+BC+N+PolyK+FR,Alzheimers Handwriting,0.42857142857142855,0.5539568345323741
+combination$2+BC+N+PolyK+FR+HT,Alzheimers Handwriting,0.42857142857142855,0.5539568345323741
+combination$2+BC+N+PolyK+FR+HT+Bag offset,Alzheimers Handwriting,0.6571428571428571,0.5323741007194245
+combination$2+BC+N+PolyK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.42857142857142855,0.3237410071942446
+combination$2+BC+N+PolyK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.6,0.5107913669064749
+combination$2+BC+N+PolyK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5714285714285714,0.45323741007194246
+combination$2+BC,Breast Cancer,0.7105263157894737,0.7186813186813187
+combination$2+BC+N,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$2+BC+N+PolyK,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$2+BC+N+PolyK+FR,Breast Cancer,0.5877192982456141,0.567032967032967
+combination$2+BC+N+PolyK+FR+HT,Breast Cancer,0.5877192982456141,0.567032967032967
+combination$2+BC+N+PolyK+FR+HT+Bag offset,Breast Cancer,0.5877192982456141,0.567032967032967
+combination$2+BC+N+PolyK+FR+HT+Bag nooffset,Breast Cancer,0.5877192982456141,0.567032967032967
+combination$2+BC+N+PolyK+FR+HT+HT+Boost nooffset,Breast Cancer,0.5877192982456141,0.567032967032967
+combination$2+BC+N+PolyK+FR+HT+HT+Boost offset,Breast Cancer,0.5877192982456141,0.567032967032967
+combination$2+BC,Spam Email,0.49583333333333335,0.5047916666666666
+combination$2+BC+N,Spam Email,0.49583333333333335,0.5047916666666666
+combination$2+BC+N+PolyK,Spam Email,0.49583333333333335,0.5047916666666666
+combination$2+BC+N+PolyK+FR,Spam Email,0.5033333333333333,0.4977083333333333
+combination$2+BC+N+PolyK+FR+HT,Spam Email,0.5033333333333333,0.4977083333333333
+combination$2+BC+N+PolyK+FR+HT+Bag offset,Spam Email,0.5033333333333333,0.5022916666666667
+combination$2+BC+N+PolyK+FR+HT+Bag nooffset,Spam Email,0.5033333333333333,0.4977083333333333
+combination$2+BC+N+PolyK+FR+HT+HT+Boost nooffset,Spam Email,0.49666666666666665,0.5022916666666667
+combination$2+BC+N+PolyK+FR+HT+HT+Boost offset,Spam Email,0.5033333333333333,0.4977083333333333
+combination$2+BC,Water Potability,0.5838414634146342,0.6164122137404581
+combination$2+BC+N,Water Potability,0.5838414634146342,0.6164122137404581
+combination$2+BC+N+PolyK,Water Potability,0.5838414634146342,0.6164122137404581
+combination$2+BC+N+PolyK+FR,Water Potability,0.5,0.47862595419847326
+combination$2+BC+N+PolyK+FR+HT,Water Potability,0.5,0.47862595419847326
+combination$2+BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.0,0.5213740458015267
+combination$2+BC+N+PolyK+FR+HT+Bag nooffset,Water Potability,0.0,0.0
+combination$2+BC+N+PolyK+FR+HT+HT+Boost nooffset,Water Potability,0.5,0.5213740458015267
+combination$2+BC+N+PolyK+FR+HT+HT+Boost offset,Water Potability,0.5,0.5213740458015267
+combination$2+BC,Alzheimers Handwriting,0.42857142857142855,0.5251798561151079
+combination$2+BC+N,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$2+BC+N+RBFK,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$2+BC+N+RBFK+FR,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$2+BC+N+RBFK+FR+HT,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$2+BC+N+RBFK+FR+HT+Bag offset,Alzheimers Handwriting,0.5714285714285714,0.5035971223021583
+combination$2+BC+N+RBFK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$2+BC+N+RBFK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$2+BC+N+RBFK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$2+BC,Breast Cancer,0.6491228070175439,0.7120879120879121
+combination$2+BC+N,Breast Cancer,0.5964912280701754,0.6351648351648351
+combination$2+BC+N+RBFK,Breast Cancer,0.5964912280701754,0.6351648351648351
+combination$2+BC+N+RBFK+FR,Breast Cancer,0.5964912280701754,0.6351648351648351
+combination$2+BC+N+RBFK+FR+HT,Breast Cancer,0.5964912280701754,0.6351648351648351
+combination$2+BC+N+RBFK+FR+HT+Bag offset,Breast Cancer,0.5964912280701754,0.6351648351648351
+combination$2+BC+N+RBFK+FR+HT+Bag nooffset,Breast Cancer,0.5964912280701754,0.6351648351648351
+combination$2+BC+N+RBFK+FR+HT+HT+Boost nooffset,Breast Cancer,0.5964912280701754,0.6351648351648351
+combination$2+BC+N+RBFK+FR+HT+HT+Boost offset,Breast Cancer,0.5964912280701754,0.6351648351648351
+combination$2+BC,Spam Email,0.505,0.5025
+combination$2+BC+N,Spam Email,0.505,0.5025
+combination$2+BC+N+RBFK,Spam Email,0.505,0.5025
+combination$2+BC+N+RBFK+FR,Spam Email,0.505,0.5025
+combination$2+BC+N+RBFK+FR+HT,Spam Email,0.505,0.5025
+combination$2+BC+N+RBFK+FR+HT+Bag offset,Spam Email,0.505,0.5025
+combination$2+BC+N+RBFK+FR+HT+Bag nooffset,Spam Email,0.505,0.5025
+combination$2+BC+N+RBFK+FR+HT+HT+Boost nooffset,Spam Email,0.505,0.5025
+combination$2+BC+N+RBFK+FR+HT+HT+Boost offset,Spam Email,0.505,0.5025
+combination$2+BC,Water Potability,0.6097560975609756,0.6099236641221374
+combination$2+BC+N,Water Potability,0.6097560975609756,0.6099236641221374
+combination$2+BC+N+RBFK,Water Potability,0.6097560975609756,0.6099236641221374
+combination$2+BC+N+RBFK+FR,Water Potability,0.6097560975609756,0.6099236641221374
+combination$2+BC+N+RBFK+FR+HT,Water Potability,0.6097560975609756,0.6099236641221374
+combination$2+BC+N+RBFK+FR+HT+Bag offset,Water Potability,0.6097560975609756,0.6099236641221374
+combination$2+BC+N+RBFK+FR+HT+Bag nooffset,Water Potability,0.6097560975609756,0.6099236641221374
+combination$2+BC+N+RBFK+FR+HT+HT+Boost nooffset,Water Potability,0.6097560975609756,0.6099236641221374
+combination$2+BC+N+RBFK+FR+HT+HT+Boost offset,Water Potability,0.6097560975609756,0.6099236641221374
+combination$3+BC,Alzheimers Handwriting,0.5714285714285714,0.5035971223021583
+combination$3+BC+N,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$3+BC+N+FS,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$3+BC+N+FS+FR,Alzheimers Handwriting,0.6,0.5971223021582733
+combination$3+BC+N+FS+FR+HT,Alzheimers Handwriting,0.6857142857142857,0.6474820143884892
+combination$3+BC+N+FS+FR+HT+Bag offset,Alzheimers Handwriting,0.7142857142857143,0.6834532374100719
+combination$3+BC+N+FS+FR+HT+Bag nooffset,Alzheimers Handwriting,0.6,0.5755395683453237
+combination$3+BC+N+FS+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.6,0.5467625899280576
+combination$3+BC+N+FS+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.6,0.5539568345323741
+combination$3+BC+N+FR,Alzheimers Handwriting,0.8285714285714286,0.7266187050359713
+combination$3+BC+N+FR+HT,Alzheimers Handwriting,0.8285714285714286,0.7410071942446043
+combination$3+BC+N+FR+HT+Bag nooffset,Alzheimers Handwriting,0.8285714285714286,0.7194244604316546
+combination$3+BC+N+FR+HT+Bag offset,Alzheimers Handwriting,0.8285714285714286,0.7697841726618705
+combination$3+BC+N+FR+HT+Boost nooffset,Alzheimers Handwriting,0.8285714285714286,0.7410071942446043
+combination$3+BC+N+FR+HT+Boost offset,Alzheimers Handwriting,0.8,0.7266187050359713
+combination$3+BC,Breast Cancer,0.7192982456140351,0.7186813186813187
+combination$3+BC+N,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$3+BC+N+FS,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$3+BC+N+FS+FR,Breast Cancer,0.6403508771929824,0.6417582417582418
+combination$3+BC+N+FS+FR+HT,Breast Cancer,0.6929824561403509,0.701098901098901
+combination$3+BC+N+FS+FR+HT+Bag offset,Breast Cancer,0.6403508771929824,0.6373626373626373
+combination$3+BC+N+FS+FR+HT+Bag nooffset,Breast Cancer,0.6403508771929824,0.6417582417582418
+combination$3+BC+N+FS+FR+HT+HT+Boost nooffset,Breast Cancer,0.631578947368421,0.6307692307692307
+combination$3+BC+N+FS+FR+HT+HT+Boost offset,Breast Cancer,0.6403508771929824,0.6461538461538462
+combination$3+BC+N+FR,Breast Cancer,0.6403508771929824,0.6395604395604395
+combination$3+BC+N+FR+HT,Breast Cancer,0.6929824561403509,0.7032967032967034
+combination$3+BC+N+FR+HT+Bag nooffset,Breast Cancer,0.6403508771929824,0.6417582417582418
+combination$3+BC+N+FR+HT+Bag offset,Breast Cancer,0.6403508771929824,0.6461538461538462
+combination$3+BC+N+FR+HT+Boost nooffset,Breast Cancer,0.6403508771929824,0.6417582417582418
+combination$3+BC+N+FR+HT+Boost offset,Breast Cancer,0.35964912280701755,0.35384615384615387
+combination$3+BC,Spam Email,0.5125,0.500625
+combination$3+BC+N,Spam Email,0.5125,0.500625
+combination$3+BC+N+FS,Spam Email,0.5125,0.500625
+combination$3+BC+N+FS+FR,Spam Email,0.5125,0.500625
+combination$3+BC+N+FS+FR+HT,Spam Email,0.5125,0.500625
+combination$3+BC+N+FS+FR+HT+Bag offset,Spam Email,0.5125,0.500625
+combination$3+BC+N+FS+FR+HT+Bag nooffset,Spam Email,0.5125,0.500625
+combination$3+BC+N+FS+FR+HT+HT+Boost nooffset,Spam Email,0.5125,0.500625
+combination$3+BC+N+FS+FR+HT+HT+Boost offset,Spam Email,0.5125,0.500625
+combination$3+BC+N+FR,Spam Email,0.5125,0.500625
+combination$3+BC+N+FR+HT,Spam Email,0.5125,0.500625
+combination$3+BC+N+FR+HT+Bag nooffset,Spam Email,0.5125,0.500625
+combination$3+BC+N+FR+HT+Bag offset,Spam Email,0.5125,0.500625
+combination$3+BC+N+FR+HT+Boost nooffset,Spam Email,0.5125,0.500625
+combination$3+BC+N+FR+HT+Boost offset,Spam Email,0.5125,0.500625
+combination$3+BC,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+FS,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+FS+FR,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+FS+FR+HT,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+FS+FR+HT+Bag offset,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+FS+FR+HT+Bag nooffset,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+FS+FR+HT+HT+Boost nooffset,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+FS+FR+HT+HT+Boost offset,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+FR,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+FR+HT,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+FR+HT+Bag nooffset,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+FR+HT+Bag offset,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+FR+HT+Boost nooffset,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+FR+HT+Boost offset,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC,Alzheimers Handwriting,0.6285714285714286,0.5251798561151079
+combination$3+BC+N,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$3+BC+N+DR,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$3+BC+N+DR+FR,Alzheimers Handwriting,0.5714285714285714,0.5035971223021583
+combination$3+BC+N+DR+FR+HT,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$3+BC+N+DR+FR+HT+Bag offset,Alzheimers Handwriting,0.5714285714285714,0.5611510791366906
+combination$3+BC+N+DR+FR+HT+Bag nooffset,Alzheimers Handwriting,0.5714285714285714,0.4316546762589928
+combination$3+BC+N+DR+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.5428571428571428,0.48201438848920863
+combination$3+BC+N+DR+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$3+BC+N+DR,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$3+BC+N+DR+HT,Alzheimers Handwriting,0.5714285714285714,0.5035971223021583
+combination$3+BC+N+DR+HT+Bag nooffset,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$3+BC+N+DR+HT+Bag offset,Alzheimers Handwriting,0.5714285714285714,0.5323741007194245
+combination$3+BC+N+DR+HT+Boost nooffset,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$3+BC+N+DR+HT+Boost offset,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$3+BC,Breast Cancer,0.7105263157894737,0.7186813186813187
+combination$3+BC+N,Breast Cancer,0.6403508771929824,0.6241758241758242
+combination$3+BC+N+DR,Breast Cancer,0.6403508771929824,0.6241758241758242
+combination$3+BC+N+DR+FR,Breast Cancer,0.6491228070175439,0.6527472527472528
+combination$3+BC+N+DR+FR+HT,Breast Cancer,0.6666666666666666,0.7230769230769231
+combination$3+BC+N+DR+FR+HT+Bag offset,Breast Cancer,0.6491228070175439,0.6571428571428571
+combination$3+BC+N+DR+FR+HT+Bag nooffset,Breast Cancer,0.6578947368421053,0.6725274725274726
+combination$3+BC+N+DR+FR+HT+HT+Boost nooffset,Breast Cancer,0.6578947368421053,0.676923076923077
+combination$3+BC+N+DR+FR+HT+HT+Boost offset,Breast Cancer,0.6491228070175439,0.6461538461538462
+combination$3+BC+N+DR,Breast Cancer,0.6403508771929824,0.6241758241758242
+combination$3+BC+N+DR+HT,Breast Cancer,0.6403508771929824,0.6373626373626373
+combination$3+BC+N+DR+HT+Bag nooffset,Breast Cancer,0.6403508771929824,0.6241758241758242
+combination$3+BC+N+DR+HT+Bag offset,Breast Cancer,0.6403508771929824,0.6241758241758242
+combination$3+BC+N+DR+HT+Boost nooffset,Breast Cancer,0.6403508771929824,0.6241758241758242
+combination$3+BC+N+DR+HT+Boost offset,Breast Cancer,0.6403508771929824,0.6241758241758242
+combination$3+BC,Spam Email,0.5091666666666667,0.5014583333333333
+combination$3+BC+N,Spam Email,0.5091666666666667,0.5014583333333333
+combination$3+BC+N+DR,Spam Email,0.5091666666666667,0.5014583333333333
+combination$3+BC+N+DR+FR,Spam Email,0.5091666666666667,0.5014583333333333
+combination$3+BC+N+DR+FR+HT,Spam Email,0.5091666666666667,0.5014583333333333
+combination$3+BC+N+DR+FR+HT+Bag offset,Spam Email,0.5091666666666667,0.5014583333333333
+combination$3+BC+N+DR+FR+HT+Bag nooffset,Spam Email,0.5091666666666667,0.5014583333333333
+combination$3+BC+N+DR+FR+HT+HT+Boost nooffset,Spam Email,0.5091666666666667,0.5014583333333333
+combination$3+BC+N+DR+FR+HT+HT+Boost offset,Spam Email,0.5091666666666667,0.5014583333333333
+combination$3+BC+N+DR,Spam Email,0.5091666666666667,0.5014583333333333
+combination$3+BC+N+DR+HT,Spam Email,0.5091666666666667,0.5014583333333333
+combination$3+BC+N+DR+HT+Bag nooffset,Spam Email,0.5091666666666667,0.5014583333333333
+combination$3+BC+N+DR+HT+Bag offset,Spam Email,0.5091666666666667,0.5014583333333333
+combination$3+BC+N+DR+HT+Boost nooffset,Spam Email,0.5091666666666667,0.5014583333333333
+combination$3+BC+N+DR+HT+Boost offset,Spam Email,0.5091666666666667,0.5014583333333333
+combination$3+BC,Water Potability,0.6341463414634146,0.6038167938931298
+combination$3+BC+N,Water Potability,0.6341463414634146,0.6038167938931298
+combination$3+BC+N+DR,Water Potability,0.6341463414634146,0.6038167938931298
+combination$3+BC+N+DR+FR,Water Potability,0.6341463414634146,0.6038167938931298
+combination$3+BC+N+DR+FR+HT,Water Potability,0.6341463414634146,0.6038167938931298
+combination$3+BC+N+DR+FR+HT+Bag offset,Water Potability,0.6341463414634146,0.6038167938931298
+combination$3+BC+N+DR+FR+HT+Bag nooffset,Water Potability,0.6341463414634146,0.6038167938931298
+combination$3+BC+N+DR+FR+HT+HT+Boost nooffset,Water Potability,0.6341463414634146,0.6038167938931298
+combination$3+BC+N+DR+FR+HT+HT+Boost offset,Water Potability,0.6341463414634146,0.6038167938931298
+combination$3+BC+N+DR,Water Potability,0.6341463414634146,0.6038167938931298
+combination$3+BC+N+DR+HT,Water Potability,0.6341463414634146,0.6038167938931298
+combination$3+BC+N+DR+HT+Bag nooffset,Water Potability,0.6341463414634146,0.6038167938931298
+combination$3+BC+N+DR+HT+Bag offset,Water Potability,0.6341463414634146,0.6038167938931298
+combination$3+BC+N+DR+HT+Boost nooffset,Water Potability,0.6341463414634146,0.6038167938931298
+combination$3+BC+N+DR+HT+Boost offset,Water Potability,0.6341463414634146,0.6038167938931298
+combination$3+BC,Alzheimers Handwriting,0.5142857142857142,0.5107913669064749
+combination$3+BC+N,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$3+BC+N+SigK,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$3+BC+N+SigK+FR,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$3+BC+N+SigK+FR+HT,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$3+BC+N+SigK+FR+HT+Bag offset,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$3+BC+N+SigK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$3+BC+N+SigK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$3+BC+N+SigK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$3+BC,Breast Cancer,0.7105263157894737,0.7120879120879121
+combination$3+BC+N,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$3+BC+N+SigK,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$3+BC+N+SigK+FR,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$3+BC+N+SigK+FR+HT,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$3+BC+N+SigK+FR+HT+Bag offset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$3+BC+N+SigK+FR+HT+Bag nooffset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$3+BC+N+SigK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$3+BC+N+SigK+FR+HT+HT+Boost offset,Breast Cancer,0.37719298245614036,0.37142857142857144
+combination$3+BC,Spam Email,0.485,0.5075
+combination$3+BC+N,Spam Email,0.485,0.5075
+combination$3+BC+N+SigK,Spam Email,0.485,0.5075
+combination$3+BC+N+SigK+FR,Spam Email,0.485,0.5075
+combination$3+BC+N+SigK+FR+HT,Spam Email,0.485,0.5075
+combination$3+BC+N+SigK+FR+HT+Bag offset,Spam Email,0.515,0.5075
+combination$3+BC+N+SigK+FR+HT+Bag nooffset,Spam Email,0.485,0.5075
+combination$3+BC+N+SigK+FR+HT+HT+Boost nooffset,Spam Email,0.485,0.5075
+combination$3+BC+N+SigK+FR+HT+HT+Boost offset,Spam Email,0.485,0.5075
+combination$3+BC,Water Potability,0.5914634146341463,0.6145038167938931
+combination$3+BC+N,Water Potability,0.5914634146341463,0.6145038167938931
+combination$3+BC+N+SigK,Water Potability,0.5914634146341463,0.6145038167938931
+combination$3+BC+N+SigK+FR,Water Potability,0.5914634146341463,0.6145038167938931
+combination$3+BC+N+SigK+FR+HT,Water Potability,0.5914634146341463,0.6145038167938931
+combination$3+BC+N+SigK+FR+HT+Bag offset,Water Potability,0.5914634146341463,0.6145038167938931
+combination$3+BC+N+SigK+FR+HT+Bag nooffset,Water Potability,0.5914634146341463,0.6145038167938931
+combination$3+BC+N+SigK+FR+HT+HT+Boost nooffset,Water Potability,0.5914634146341463,0.6145038167938931
+combination$3+BC+N+SigK+FR+HT+HT+Boost offset,Water Potability,0.5914634146341463,0.6145038167938931
+combination$3+BC,Alzheimers Handwriting,0.5428571428571428,0.5251798561151079
+combination$3+BC+N,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$3+BC+N+PolyK,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$3+BC+N+PolyK+FR,Alzheimers Handwriting,0.5428571428571428,0.48201438848920863
+combination$3+BC+N+PolyK+FR+HT,Alzheimers Handwriting,0.5428571428571428,0.48201438848920863
+combination$3+BC+N+PolyK+FR+HT+Bag offset,Alzheimers Handwriting,0.6,0.539568345323741
+combination$3+BC+N+PolyK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.5428571428571428,0.460431654676259
+combination$3+BC+N+PolyK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.6,0.5107913669064749
+combination$3+BC+N+PolyK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.4,0.539568345323741
+combination$3+BC,Breast Cancer,0.7631578947368421,0.7406593406593407
+combination$3+BC+N,Breast Cancer,0.7017543859649122,0.6087912087912087
+combination$3+BC+N+PolyK,Breast Cancer,0.7017543859649122,0.6087912087912087
+combination$3+BC+N+PolyK+FR,Breast Cancer,0.543859649122807,0.578021978021978
+combination$3+BC+N+PolyK+FR+HT,Breast Cancer,0.543859649122807,0.578021978021978
+combination$3+BC+N+PolyK+FR+HT+Bag offset,Breast Cancer,0.543859649122807,0.578021978021978
+combination$3+BC+N+PolyK+FR+HT+Bag nooffset,Breast Cancer,0.543859649122807,0.578021978021978
+combination$3+BC+N+PolyK+FR+HT+HT+Boost nooffset,Breast Cancer,0.543859649122807,0.578021978021978
+combination$3+BC+N+PolyK+FR+HT+HT+Boost offset,Breast Cancer,0.543859649122807,0.578021978021978
+combination$3+BC,Spam Email,0.48833333333333334,0.5066666666666667
+combination$3+BC+N,Spam Email,0.48833333333333334,0.5066666666666667
+combination$3+BC+N+PolyK,Spam Email,0.48833333333333334,0.5066666666666667
+combination$3+BC+N+PolyK+FR,Spam Email,0.4841666666666667,0.5054166666666666
+combination$3+BC+N+PolyK+FR+HT,Spam Email,0.4841666666666667,0.5054166666666666
+combination$3+BC+N+PolyK+FR+HT+Bag offset,Spam Email,0.5158333333333334,0.5054166666666666
+combination$3+BC+N+PolyK+FR+HT+Bag nooffset,Spam Email,0.0,0.0
+combination$3+BC+N+PolyK+FR+HT+HT+Boost nooffset,Spam Email,0.4841666666666667,0.5054166666666666
+combination$3+BC+N+PolyK+FR+HT+HT+Boost offset,Spam Email,0.5158333333333334,0.4945833333333333
+combination$3+BC,Water Potability,0.6067073170731707,0.6106870229007634
+combination$3+BC+N,Water Potability,0.6067073170731707,0.6106870229007634
+combination$3+BC+N+PolyK,Water Potability,0.6067073170731707,0.6106870229007634
+combination$3+BC+N+PolyK+FR,Water Potability,0.47560975609756095,0.4847328244274809
+combination$3+BC+N+PolyK+FR+HT,Water Potability,0.47560975609756095,0.4847328244274809
+combination$3+BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.524390243902439,0.5152671755725191
+combination$3+BC+N+PolyK+FR+HT+Bag nooffset,Water Potability,0.47560975609756095,0.4847328244274809
+combination$3+BC+N+PolyK+FR+HT+HT+Boost nooffset,Water Potability,0.47560975609756095,0.4847328244274809
+combination$3+BC+N+PolyK+FR+HT+HT+Boost offset,Water Potability,0.47560975609756095,0.4847328244274809
+combination$3+BC,Alzheimers Handwriting,0.4857142857142857,0.5179856115107914
+combination$3+BC+N,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$3+BC+N+RBFK,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$3+BC+N+RBFK+FR,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$3+BC+N+RBFK+FR+HT,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$3+BC+N+RBFK+FR+HT+Bag offset,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$3+BC+N+RBFK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$3+BC+N+RBFK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$3+BC+N+RBFK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$3+BC,Breast Cancer,0.7192982456140351,0.7164835164835165
+combination$3+BC+N,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$3+BC+N+RBFK,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$3+BC+N+RBFK+FR,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$3+BC+N+RBFK+FR+HT,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$3+BC+N+RBFK+FR+HT+Bag offset,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$3+BC+N+RBFK+FR+HT+Bag nooffset,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$3+BC+N+RBFK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$3+BC+N+RBFK+FR+HT+HT+Boost offset,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$3+BC,Spam Email,0.4866666666666667,0.5070833333333333
+combination$3+BC+N,Spam Email,0.4866666666666667,0.5070833333333333
+combination$3+BC+N+RBFK,Spam Email,0.4866666666666667,0.5070833333333333
+combination$3+BC+N+RBFK+FR,Spam Email,0.4866666666666667,0.5070833333333333
+combination$3+BC+N+RBFK+FR+HT,Spam Email,0.4866666666666667,0.5070833333333333
+combination$3+BC+N+RBFK+FR+HT+Bag offset,Spam Email,0.5133333333333333,0.5070833333333333
+combination$3+BC+N+RBFK+FR+HT+Bag nooffset,Spam Email,0.4866666666666667,0.5070833333333333
+combination$3+BC+N+RBFK+FR+HT+HT+Boost nooffset,Spam Email,0.4866666666666667,0.5070833333333333
+combination$3+BC+N+RBFK+FR+HT+HT+Boost offset,Spam Email,0.4866666666666667,0.5070833333333333
+combination$3+BC,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+RBFK,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+RBFK+FR,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+RBFK+FR+HT,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+RBFK+FR+HT+Bag offset,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+RBFK+FR+HT+Bag nooffset,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+RBFK+FR+HT+HT+Boost nooffset,Water Potability,0.6265243902439024,0.6057251908396947
+combination$3+BC+N+RBFK+FR+HT+HT+Boost offset,Water Potability,0.6265243902439024,0.6057251908396947
+combination$4+BC,Alzheimers Handwriting,0.4,0.5251798561151079
+combination$4+BC+N,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$4+BC+N+FS,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$4+BC+N+FS+FR,Alzheimers Handwriting,0.4857142857142857,0.6187050359712231
+combination$4+BC+N+FS+FR+HT,Alzheimers Handwriting,0.5142857142857142,0.7050359712230215
+combination$4+BC+N+FS+FR+HT+Bag offset,Alzheimers Handwriting,0.6285714285714286,0.6618705035971223
+combination$4+BC+N+FS+FR+HT+Bag nooffset,Alzheimers Handwriting,0.4857142857142857,0.5467625899280576
+combination$4+BC+N+FS+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.4857142857142857,0.5971223021582733
+combination$4+BC+N+FS+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5142857142857142,0.6762589928057554
+combination$4+BC+N+FR,Alzheimers Handwriting,0.6857142857142857,0.7482014388489209
+combination$4+BC+N+FR+HT,Alzheimers Handwriting,0.6857142857142857,0.7769784172661871
+combination$4+BC+N+FR+HT+Bag nooffset,Alzheimers Handwriting,0.7142857142857143,0.7553956834532374
+combination$4+BC+N+FR+HT+Bag offset,Alzheimers Handwriting,0.7142857142857143,0.7482014388489209
+combination$4+BC+N+FR+HT+Boost nooffset,Alzheimers Handwriting,0.6571428571428571,0.7482014388489209
+combination$4+BC+N+FR+HT+Boost offset,Alzheimers Handwriting,0.7142857142857143,0.7410071942446043
+combination$4+BC,Breast Cancer,0.7368421052631579,0.7076923076923077
+combination$4+BC+N,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$4+BC+N+FS,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$4+BC+N+FS+FR,Breast Cancer,0.6403508771929824,0.6373626373626373
+combination$4+BC+N+FS+FR+HT,Breast Cancer,0.7192982456140351,0.6945054945054945
+combination$4+BC+N+FS+FR+HT+Bag offset,Breast Cancer,0.6403508771929824,0.6373626373626373
+combination$4+BC+N+FS+FR+HT+Bag nooffset,Breast Cancer,0.6491228070175439,0.6395604395604395
+combination$4+BC+N+FS+FR+HT+HT+Boost nooffset,Breast Cancer,0.6403508771929824,0.6373626373626373
+combination$4+BC+N+FS+FR+HT+HT+Boost offset,Breast Cancer,0.6403508771929824,0.6373626373626373
+combination$4+BC+N+FR,Breast Cancer,0.6403508771929824,0.6373626373626373
+combination$4+BC+N+FR+HT,Breast Cancer,0.7192982456140351,0.6967032967032967
+combination$4+BC+N+FR+HT+Bag nooffset,Breast Cancer,0.6403508771929824,0.6351648351648351
+combination$4+BC+N+FR+HT+Bag offset,Breast Cancer,0.6491228070175439,0.6395604395604395
+combination$4+BC+N+FR+HT+Boost nooffset,Breast Cancer,0.6403508771929824,0.6373626373626373
+combination$4+BC+N+FR+HT+Boost offset,Breast Cancer,0.6403508771929824,0.6417582417582418
+combination$4+BC,Spam Email,0.5,0.50375
+combination$4+BC+N,Spam Email,0.5,0.50375
+combination$4+BC+N+FS,Spam Email,0.5,0.50375
+combination$4+BC+N+FS+FR,Spam Email,0.5,0.50375
+combination$4+BC+N+FS+FR+HT,Spam Email,0.5,0.50375
+combination$4+BC+N+FS+FR+HT+Bag offset,Spam Email,0.0,0.50375
+combination$4+BC+N+FS+FR+HT+Bag nooffset,Spam Email,0.5,0.50375
+combination$4+BC+N+FS+FR+HT+HT+Boost nooffset,Spam Email,0.5,0.50375
+combination$4+BC+N+FS+FR+HT+HT+Boost offset,Spam Email,0.5,0.50375
+combination$4+BC+N+FR,Spam Email,0.5,0.50375
+combination$4+BC+N+FR+HT,Spam Email,0.5,0.50375
+combination$4+BC+N+FR+HT+Bag nooffset,Spam Email,0.5,0.50375
+combination$4+BC+N+FR+HT+Bag offset,Spam Email,0.0,0.50375
+combination$4+BC+N+FR+HT+Boost nooffset,Spam Email,0.5,0.50375
+combination$4+BC+N+FR+HT+Boost offset,Spam Email,0.5,0.50375
+combination$4+BC,Water Potability,0.6234756097560976,0.6064885496183207
+combination$4+BC+N,Water Potability,0.6234756097560976,0.6064885496183207
+combination$4+BC+N+FS,Water Potability,0.6234756097560976,0.6064885496183207
+combination$4+BC+N+FS+FR,Water Potability,0.6234756097560976,0.6064885496183207
+combination$4+BC+N+FS+FR+HT,Water Potability,0.6234756097560976,0.6064885496183207
+combination$4+BC+N+FS+FR+HT+Bag offset,Water Potability,0.6234756097560976,0.6064885496183207
+combination$4+BC+N+FS+FR+HT+Bag nooffset,Water Potability,0.6234756097560976,0.6064885496183207
+combination$4+BC+N+FS+FR+HT+HT+Boost nooffset,Water Potability,0.6234756097560976,0.6064885496183207
+combination$4+BC+N+FS+FR+HT+HT+Boost offset,Water Potability,0.6234756097560976,0.6064885496183207
+combination$4+BC+N+FR,Water Potability,0.6234756097560976,0.6064885496183207
+combination$4+BC+N+FR+HT,Water Potability,0.6234756097560976,0.6064885496183207
+combination$4+BC+N+FR+HT+Bag nooffset,Water Potability,0.6234756097560976,0.6064885496183207
+combination$4+BC+N+FR+HT+Bag offset,Water Potability,0.6234756097560976,0.6064885496183207
+combination$4+BC+N+FR+HT+Boost nooffset,Water Potability,0.6234756097560976,0.6064885496183207
+combination$4+BC+N+FR+HT+Boost offset,Water Potability,0.6234756097560976,0.6064885496183207
+combination$4+BC,Alzheimers Handwriting,0.6,0.5035971223021583
+combination$4+BC+N,Alzheimers Handwriting,0.6285714285714286,0.45323741007194246
+combination$4+BC+N+DR,Alzheimers Handwriting,0.6285714285714286,0.45323741007194246
+combination$4+BC+N+DR+FR,Alzheimers Handwriting,0.37142857142857144,0.5611510791366906
+combination$4+BC+N+DR+FR+HT,Alzheimers Handwriting,0.37142857142857144,0.5611510791366906
+combination$4+BC+N+DR+FR+HT+Bag offset,Alzheimers Handwriting,0.6285714285714286,0.5539568345323741
+combination$4+BC+N+DR+FR+HT+Bag nooffset,Alzheimers Handwriting,0.2857142857142857,0.4676258992805755
+combination$4+BC+N+DR+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.6285714285714286,0.45323741007194246
+combination$4+BC+N+DR+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.37142857142857144,0.5179856115107914
+combination$4+BC+N+DR,Alzheimers Handwriting,0.6285714285714286,0.45323741007194246
+combination$4+BC+N+DR+HT,Alzheimers Handwriting,0.6285714285714286,0.539568345323741
+combination$4+BC+N+DR+HT+Bag nooffset,Alzheimers Handwriting,0.6285714285714286,0.45323741007194246
+combination$4+BC+N+DR+HT+Bag offset,Alzheimers Handwriting,0.6285714285714286,0.5467625899280576
+combination$4+BC+N+DR+HT+Boost nooffset,Alzheimers Handwriting,0.6285714285714286,0.45323741007194246
+combination$4+BC+N+DR+HT+Boost offset,Alzheimers Handwriting,0.6285714285714286,0.45323741007194246
+combination$4+BC,Breast Cancer,0.7456140350877193,0.7120879120879121
+combination$4+BC+N,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$4+BC+N+DR,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$4+BC+N+DR+FR,Breast Cancer,0.6403508771929824,0.6527472527472528
+combination$4+BC+N+DR+FR+HT,Breast Cancer,0.6842105263157895,0.7032967032967034
+combination$4+BC+N+DR+FR+HT+Bag offset,Breast Cancer,0.6578947368421053,0.6571428571428571
+combination$4+BC+N+DR+FR+HT+Bag nooffset,Breast Cancer,0.6491228070175439,0.654945054945055
+combination$4+BC+N+DR+FR+HT+HT+Boost nooffset,Breast Cancer,0.6228070175438597,0.6461538461538462
+combination$4+BC+N+DR+FR+HT+HT+Boost offset,Breast Cancer,0.631578947368421,0.6527472527472528
+combination$4+BC+N+DR,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$4+BC+N+DR+HT,Breast Cancer,0.6228070175438597,0.6329670329670329
+combination$4+BC+N+DR+HT+Bag nooffset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$4+BC+N+DR+HT+Bag offset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$4+BC+N+DR+HT+Boost nooffset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$4+BC+N+DR+HT+Boost offset,Breast Cancer,0.37719298245614036,0.37142857142857144
+combination$4+BC,Spam Email,0.5183333333333333,0.49916666666666665
+combination$4+BC+N,Spam Email,0.5183333333333333,0.49916666666666665
+combination$4+BC+N+DR,Spam Email,0.5183333333333333,0.49916666666666665
+combination$4+BC+N+DR+FR,Spam Email,0.5183333333333333,0.49916666666666665
+combination$4+BC+N+DR+FR+HT,Spam Email,0.5183333333333333,0.49916666666666665
+combination$4+BC+N+DR+FR+HT+Bag offset,Spam Email,0.5183333333333333,0.5008333333333334
+combination$4+BC+N+DR+FR+HT+Bag nooffset,Spam Email,0.5183333333333333,0.49916666666666665
+combination$4+BC+N+DR+FR+HT+HT+Boost nooffset,Spam Email,0.5183333333333333,0.49916666666666665
+combination$4+BC+N+DR+FR+HT+HT+Boost offset,Spam Email,0.5183333333333333,0.49916666666666665
+combination$4+BC+N+DR,Spam Email,0.5183333333333333,0.49916666666666665
+combination$4+BC+N+DR+HT,Spam Email,0.5183333333333333,0.49916666666666665
+combination$4+BC+N+DR+HT+Bag nooffset,Spam Email,0.5183333333333333,0.49916666666666665
+combination$4+BC+N+DR+HT+Bag offset,Spam Email,0.5183333333333333,0.5008333333333334
+combination$4+BC+N+DR+HT+Boost nooffset,Spam Email,0.5183333333333333,0.49916666666666665
+combination$4+BC+N+DR+HT+Boost offset,Spam Email,0.5183333333333333,0.49916666666666665
+combination$4+BC,Water Potability,0.5746951219512195,0.6187022900763359
+combination$4+BC+N,Water Potability,0.5746951219512195,0.6187022900763359
+combination$4+BC+N+DR,Water Potability,0.5746951219512195,0.6187022900763359
+combination$4+BC+N+DR+FR,Water Potability,0.5746951219512195,0.6187022900763359
+combination$4+BC+N+DR+FR+HT,Water Potability,0.5746951219512195,0.6187022900763359
+combination$4+BC+N+DR+FR+HT+Bag offset,Water Potability,0.5746951219512195,0.6187022900763359
+combination$4+BC+N+DR+FR+HT+Bag nooffset,Water Potability,0.5746951219512195,0.6187022900763359
+combination$4+BC+N+DR+FR+HT+HT+Boost nooffset,Water Potability,0.5746951219512195,0.6187022900763359
+combination$4+BC+N+DR+FR+HT+HT+Boost offset,Water Potability,0.5746951219512195,0.6187022900763359
+combination$4+BC+N+DR,Water Potability,0.5746951219512195,0.6187022900763359
+combination$4+BC+N+DR+HT,Water Potability,0.5746951219512195,0.6187022900763359
+combination$4+BC+N+DR+HT+Bag nooffset,Water Potability,0.5746951219512195,0.6187022900763359
+combination$4+BC+N+DR+HT+Bag offset,Water Potability,0.5746951219512195,0.6187022900763359
+combination$4+BC+N+DR+HT+Boost nooffset,Water Potability,0.5746951219512195,0.6187022900763359
+combination$4+BC+N+DR+HT+Boost offset,Water Potability,0.5746951219512195,0.6187022900763359
+combination$4+BC,Alzheimers Handwriting,0.5142857142857142,0.5035971223021583
+combination$4+BC+N,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$4+BC+N+SigK,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$4+BC+N+SigK+FR,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$4+BC+N+SigK+FR+HT,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$4+BC+N+SigK+FR+HT+Bag offset,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$4+BC+N+SigK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$4+BC+N+SigK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$4+BC+N+SigK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$4+BC,Breast Cancer,0.631578947368421,0.7032967032967034
+combination$4+BC+N,Breast Cancer,0.5614035087719298,0.643956043956044
+combination$4+BC+N+SigK,Breast Cancer,0.5614035087719298,0.643956043956044
+combination$4+BC+N+SigK+FR,Breast Cancer,0.5614035087719298,0.643956043956044
+combination$4+BC+N+SigK+FR+HT,Breast Cancer,0.5614035087719298,0.643956043956044
+combination$4+BC+N+SigK+FR+HT+Bag offset,Breast Cancer,0.5614035087719298,0.643956043956044
+combination$4+BC+N+SigK+FR+HT+Bag nooffset,Breast Cancer,0.5614035087719298,0.643956043956044
+combination$4+BC+N+SigK+FR+HT+HT+Boost nooffset,Breast Cancer,0.5614035087719298,0.643956043956044
+combination$4+BC+N+SigK+FR+HT+HT+Boost offset,Breast Cancer,0.5614035087719298,0.643956043956044
+combination$4+BC,Spam Email,0.5033333333333333,0.5029166666666667
+combination$4+BC+N,Spam Email,0.5033333333333333,0.5029166666666667
+combination$4+BC+N+SigK,Spam Email,0.5033333333333333,0.5029166666666667
+combination$4+BC+N+SigK+FR,Spam Email,0.5033333333333333,0.5029166666666667
+combination$4+BC+N+SigK+FR+HT,Spam Email,0.5033333333333333,0.5029166666666667
+combination$4+BC+N+SigK+FR+HT+Bag offset,Spam Email,0.5033333333333333,0.5029166666666667
+combination$4+BC+N+SigK+FR+HT+Bag nooffset,Spam Email,0.5033333333333333,0.5029166666666667
+combination$4+BC+N+SigK+FR+HT+HT+Boost nooffset,Spam Email,0.5033333333333333,0.5029166666666667
+combination$4+BC+N+SigK+FR+HT+HT+Boost offset,Spam Email,0.5033333333333333,0.5029166666666667
+combination$4+BC,Water Potability,0.5929878048780488,0.6141221374045801
+combination$4+BC+N,Water Potability,0.5929878048780488,0.6141221374045801
+combination$4+BC+N+SigK,Water Potability,0.5929878048780488,0.6141221374045801
+combination$4+BC+N+SigK+FR,Water Potability,0.5929878048780488,0.6141221374045801
+combination$4+BC+N+SigK+FR+HT,Water Potability,0.5929878048780488,0.6141221374045801
+combination$4+BC+N+SigK+FR+HT+Bag offset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$4+BC+N+SigK+FR+HT+Bag nooffset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$4+BC+N+SigK+FR+HT+HT+Boost nooffset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$4+BC+N+SigK+FR+HT+HT+Boost offset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$4+BC,Alzheimers Handwriting,0.5142857142857142,0.5251798561151079
+combination$4+BC+N,Alzheimers Handwriting,0.4857142857142857,0.4892086330935252
+combination$4+BC+N+PolyK,Alzheimers Handwriting,0.4857142857142857,0.4892086330935252
+combination$4+BC+N+PolyK+FR,Alzheimers Handwriting,0.45714285714285713,0.5539568345323741
+combination$4+BC+N+PolyK+FR+HT,Alzheimers Handwriting,0.45714285714285713,0.5539568345323741
+combination$4+BC+N+PolyK+FR+HT+Bag offset,Alzheimers Handwriting,0.6,0.5755395683453237
+combination$4+BC+N+PolyK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.4,0.49640287769784175
+combination$4+BC+N+PolyK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.42857142857142855,0.5899280575539568
+combination$4+BC+N+PolyK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$4+BC,Breast Cancer,0.7719298245614035,0.7274725274725274
+combination$4+BC+N,Breast Cancer,0.7105263157894737,0.6065934065934065
+combination$4+BC+N+PolyK,Breast Cancer,0.7105263157894737,0.6065934065934065
+combination$4+BC+N+PolyK+FR,Breast Cancer,0.5789473684210527,0.5692307692307692
+combination$4+BC+N+PolyK+FR+HT,Breast Cancer,0.5789473684210527,0.5692307692307692
+combination$4+BC+N+PolyK+FR+HT+Bag offset,Breast Cancer,0.5789473684210527,0.5692307692307692
+combination$4+BC+N+PolyK+FR+HT+Bag nooffset,Breast Cancer,0.5789473684210527,0.5692307692307692
+combination$4+BC+N+PolyK+FR+HT+HT+Boost nooffset,Breast Cancer,0.5789473684210527,0.5692307692307692
+combination$4+BC+N+PolyK+FR+HT+HT+Boost offset,Breast Cancer,0.5789473684210527,0.5692307692307692
+combination$4+BC,Spam Email,0.5183333333333333,0.49916666666666665
+combination$4+BC+N,Spam Email,0.5183333333333333,0.49916666666666665
+combination$4+BC+N+PolyK,Spam Email,0.5183333333333333,0.49916666666666665
+combination$4+BC+N+PolyK+FR,Spam Email,0.47333333333333333,0.5052083333333334
+combination$4+BC+N+PolyK+FR+HT,Spam Email,0.47333333333333333,0.5052083333333334
+combination$4+BC+N+PolyK+FR+HT+Bag offset,Spam Email,0.5266666666666666,0.5052083333333334
+combination$4+BC+N+PolyK+FR+HT+Bag nooffset,Spam Email,0.5266666666666666,0.4947916666666667
+combination$4+BC+N+PolyK+FR+HT+HT+Boost nooffset,Spam Email,0.5266666666666666,0.4947916666666667
+combination$4+BC+N+PolyK+FR+HT+HT+Boost offset,Spam Email,0.47333333333333333,0.5052083333333334
+combination$4+BC,Water Potability,0.625,0.6061068702290077
+combination$4+BC+N,Water Potability,0.625,0.6061068702290077
+combination$4+BC+N+PolyK,Water Potability,0.625,0.6061068702290077
+combination$4+BC+N+PolyK+FR,Water Potability,0.4954268292682927,0.5225190839694657
+combination$4+BC+N+PolyK+FR+HT,Water Potability,0.4954268292682927,0.5225190839694657
+combination$4+BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.5045731707317073,0.5225190839694657
+combination$4+BC+N+PolyK+FR+HT+Bag nooffset,Water Potability,0.5045731707317073,0.47748091603053433
+combination$4+BC+N+PolyK+FR+HT+HT+Boost nooffset,Water Potability,0.4954268292682927,0.5225190839694657
+combination$4+BC+N+PolyK+FR+HT+HT+Boost offset,Water Potability,0.4954268292682927,0.5225190839694657
+combination$4+BC,Alzheimers Handwriting,0.6285714285714286,0.5035971223021583
+combination$4+BC+N,Alzheimers Handwriting,0.6,0.460431654676259
+combination$4+BC+N+RBFK,Alzheimers Handwriting,0.6,0.460431654676259
+combination$4+BC+N+RBFK+FR,Alzheimers Handwriting,0.6,0.460431654676259
+combination$4+BC+N+RBFK+FR+HT,Alzheimers Handwriting,0.6,0.460431654676259
+combination$4+BC+N+RBFK+FR+HT+Bag offset,Alzheimers Handwriting,0.6,0.539568345323741
+combination$4+BC+N+RBFK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.6,0.460431654676259
+combination$4+BC+N+RBFK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.6,0.460431654676259
+combination$4+BC+N+RBFK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.6,0.460431654676259
+combination$4+BC,Breast Cancer,0.7543859649122807,0.7032967032967034
+combination$4+BC+N,Breast Cancer,0.6929824561403509,0.610989010989011
+combination$4+BC+N+RBFK,Breast Cancer,0.6929824561403509,0.610989010989011
+combination$4+BC+N+RBFK+FR,Breast Cancer,0.6929824561403509,0.610989010989011
+combination$4+BC+N+RBFK+FR+HT,Breast Cancer,0.6929824561403509,0.610989010989011
+combination$4+BC+N+RBFK+FR+HT+Bag offset,Breast Cancer,0.6929824561403509,0.610989010989011
+combination$4+BC+N+RBFK+FR+HT+Bag nooffset,Breast Cancer,0.6929824561403509,0.610989010989011
+combination$4+BC+N+RBFK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6929824561403509,0.610989010989011
+combination$4+BC+N+RBFK+FR+HT+HT+Boost offset,Breast Cancer,0.6929824561403509,0.610989010989011
+combination$4+BC,Spam Email,0.5016666666666667,0.5033333333333333
+combination$4+BC+N,Spam Email,0.5016666666666667,0.5033333333333333
+combination$4+BC+N+RBFK,Spam Email,0.5016666666666667,0.5033333333333333
+combination$4+BC+N+RBFK+FR,Spam Email,0.5016666666666667,0.5033333333333333
+combination$4+BC+N+RBFK+FR+HT,Spam Email,0.5016666666666667,0.5033333333333333
+combination$4+BC+N+RBFK+FR+HT+Bag offset,Spam Email,0.5016666666666667,0.5033333333333333
+combination$4+BC+N+RBFK+FR+HT+Bag nooffset,Spam Email,0.5016666666666667,0.5033333333333333
+combination$4+BC+N+RBFK+FR+HT+HT+Boost nooffset,Spam Email,0.5016666666666667,0.5033333333333333
+combination$4+BC+N+RBFK+FR+HT+HT+Boost offset,Spam Email,0.5016666666666667,0.5033333333333333
+combination$4+BC,Water Potability,0.614329268292683,0.6087786259541985
+combination$4+BC+N,Water Potability,0.614329268292683,0.6087786259541985
+combination$4+BC+N+RBFK,Water Potability,0.614329268292683,0.6087786259541985
+combination$4+BC+N+RBFK+FR,Water Potability,0.614329268292683,0.6087786259541985
+combination$4+BC+N+RBFK+FR+HT,Water Potability,0.614329268292683,0.6087786259541985
+combination$4+BC+N+RBFK+FR+HT+Bag offset,Water Potability,0.614329268292683,0.6087786259541985
+combination$4+BC+N+RBFK+FR+HT+Bag nooffset,Water Potability,0.614329268292683,0.6087786259541985
+combination$4+BC+N+RBFK+FR+HT+HT+Boost nooffset,Water Potability,0.614329268292683,0.6087786259541985
+combination$4+BC+N+RBFK+FR+HT+HT+Boost offset,Water Potability,0.614329268292683,0.6087786259541985
+combination$5+BC,Alzheimers Handwriting,0.4,0.5179856115107914
+combination$5+BC+N,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$5+BC+N+FS,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$5+BC+N+FS+FR,Alzheimers Handwriting,0.6,0.5755395683453237
+combination$5+BC+N+FS+FR+HT,Alzheimers Handwriting,0.6857142857142857,0.6690647482014388
+combination$5+BC+N+FS+FR+HT+Bag offset,Alzheimers Handwriting,0.7142857142857143,0.6474820143884892
+combination$5+BC+N+FS+FR+HT+Bag nooffset,Alzheimers Handwriting,0.5714285714285714,0.5755395683453237
+combination$5+BC+N+FS+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.6,0.5827338129496403
+combination$5+BC+N+FS+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5714285714285714,0.60431654676259
+combination$5+BC+N+FR,Alzheimers Handwriting,0.7714285714285715,0.7410071942446043
+combination$5+BC+N+FR+HT,Alzheimers Handwriting,0.7714285714285715,0.762589928057554
+combination$5+BC+N+FR+HT+Bag nooffset,Alzheimers Handwriting,0.7428571428571429,0.7410071942446043
+combination$5+BC+N+FR+HT+Bag offset,Alzheimers Handwriting,0.7714285714285715,0.7410071942446043
+combination$5+BC+N+FR+HT+Boost nooffset,Alzheimers Handwriting,0.7142857142857143,0.6762589928057554
+combination$5+BC+N+FR+HT+Boost offset,Alzheimers Handwriting,0.7714285714285715,0.7338129496402878
+combination$5+BC,Breast Cancer,0.6842105263157895,0.7186813186813187
+combination$5+BC+N,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$5+BC+N+FS,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$5+BC+N+FS+FR,Breast Cancer,0.631578947368421,0.6395604395604395
+combination$5+BC+N+FS+FR+HT,Breast Cancer,0.6842105263157895,0.6989010989010989
+combination$5+BC+N+FS+FR+HT+Bag offset,Breast Cancer,0.631578947368421,0.6373626373626373
+combination$5+BC+N+FS+FR+HT+Bag nooffset,Breast Cancer,0.631578947368421,0.6373626373626373
+combination$5+BC+N+FS+FR+HT+HT+Boost nooffset,Breast Cancer,0.631578947368421,0.6417582417582418
+combination$5+BC+N+FS+FR+HT+HT+Boost offset,Breast Cancer,0.631578947368421,0.643956043956044
+combination$5+BC+N+FR,Breast Cancer,0.631578947368421,0.6395604395604395
+combination$5+BC+N+FR+HT,Breast Cancer,0.6842105263157895,0.6989010989010989
+combination$5+BC+N+FR+HT+Bag nooffset,Breast Cancer,0.631578947368421,0.6395604395604395
+combination$5+BC+N+FR+HT+Bag offset,Breast Cancer,0.631578947368421,0.643956043956044
+combination$5+BC+N+FR+HT+Boost nooffset,Breast Cancer,0.631578947368421,0.643956043956044
+combination$5+BC+N+FR+HT+Boost offset,Breast Cancer,0.631578947368421,0.6373626373626373
+combination$5+BC,Spam Email,0.49583333333333335,0.5047916666666666
+combination$5+BC+N,Spam Email,0.49583333333333335,0.5047916666666666
+combination$5+BC+N+FS,Spam Email,0.49583333333333335,0.5047916666666666
+combination$5+BC+N+FS+FR,Spam Email,0.49583333333333335,0.5047916666666666
+combination$5+BC+N+FS+FR+HT,Spam Email,0.49583333333333335,0.5047916666666666
+combination$5+BC+N+FS+FR+HT+Bag offset,Spam Email,0.5041666666666667,0.5047916666666666
+combination$5+BC+N+FS+FR+HT+Bag nooffset,Spam Email,0.49583333333333335,0.5047916666666666
+combination$5+BC+N+FS+FR+HT+HT+Boost nooffset,Spam Email,0.49583333333333335,0.5047916666666666
+combination$5+BC+N+FS+FR+HT+HT+Boost offset,Spam Email,0.49583333333333335,0.5047916666666666
+combination$5+BC+N+FR,Spam Email,0.49583333333333335,0.5047916666666666
+combination$5+BC+N+FR+HT,Spam Email,0.49583333333333335,0.5047916666666666
+combination$5+BC+N+FR+HT+Bag nooffset,Spam Email,0.49583333333333335,0.5047916666666666
+combination$5+BC+N+FR+HT+Bag offset,Spam Email,0.5041666666666667,0.5047916666666666
+combination$5+BC+N+FR+HT+Boost nooffset,Spam Email,0.49583333333333335,0.5047916666666666
+combination$5+BC+N+FR+HT+Boost offset,Spam Email,0.49583333333333335,0.5047916666666666
+combination$5+BC,Water Potability,0.6234756097560976,0.6064885496183207
+combination$5+BC+N,Water Potability,0.6234756097560976,0.6064885496183207
+combination$5+BC+N+FS,Water Potability,0.6234756097560976,0.6064885496183207
+combination$5+BC+N+FS+FR,Water Potability,0.6234756097560976,0.6064885496183207
+combination$5+BC+N+FS+FR+HT,Water Potability,0.6234756097560976,0.6064885496183207
+combination$5+BC+N+FS+FR+HT+Bag offset,Water Potability,0.6234756097560976,0.6064885496183207
+combination$5+BC+N+FS+FR+HT+Bag nooffset,Water Potability,0.6234756097560976,0.6064885496183207
+combination$5+BC+N+FS+FR+HT+HT+Boost nooffset,Water Potability,0.6234756097560976,0.6064885496183207
+combination$5+BC+N+FS+FR+HT+HT+Boost offset,Water Potability,0.6234756097560976,0.6064885496183207
+combination$5+BC+N+FR,Water Potability,0.6234756097560976,0.6064885496183207
+combination$5+BC+N+FR+HT,Water Potability,0.6234756097560976,0.6064885496183207
+combination$5+BC+N+FR+HT+Bag nooffset,Water Potability,0.6234756097560976,0.6064885496183207
+combination$5+BC+N+FR+HT+Bag offset,Water Potability,0.6234756097560976,0.6064885496183207
+combination$5+BC+N+FR+HT+Boost nooffset,Water Potability,0.6234756097560976,0.6064885496183207
+combination$5+BC+N+FR+HT+Boost offset,Water Potability,0.6234756097560976,0.6064885496183207
+combination$5+BC,Alzheimers Handwriting,0.4857142857142857,0.5179856115107914
+combination$5+BC+N,Alzheimers Handwriting,0.4857142857142857,0.4892086330935252
+combination$5+BC+N+DR,Alzheimers Handwriting,0.4857142857142857,0.4892086330935252
+combination$5+BC+N+DR+FR,Alzheimers Handwriting,0.5428571428571428,0.5107913669064749
+combination$5+BC+N+DR+FR+HT,Alzheimers Handwriting,0.5714285714285714,0.5179856115107914
+combination$5+BC+N+DR+FR+HT+Bag offset,Alzheimers Handwriting,0.6,0.5827338129496403
+combination$5+BC+N+DR+FR+HT+Bag nooffset,Alzheimers Handwriting,0.3142857142857143,0.4028776978417266
+combination$5+BC+N+DR+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.5142857142857142,0.5035971223021583
+combination$5+BC+N+DR+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5142857142857142,0.539568345323741
+combination$5+BC+N+DR,Alzheimers Handwriting,0.4857142857142857,0.4892086330935252
+combination$5+BC+N+DR+HT,Alzheimers Handwriting,0.4857142857142857,0.5035971223021583
+combination$5+BC+N+DR+HT+Bag nooffset,Alzheimers Handwriting,0.4857142857142857,0.4892086330935252
+combination$5+BC+N+DR+HT+Bag offset,Alzheimers Handwriting,0.5142857142857142,0.5107913669064749
+combination$5+BC+N+DR+HT+Boost nooffset,Alzheimers Handwriting,0.4857142857142857,0.4892086330935252
+combination$5+BC+N+DR+HT+Boost offset,Alzheimers Handwriting,0.4857142857142857,0.4892086330935252
+combination$5+BC,Breast Cancer,0.7105263157894737,0.7142857142857143
+combination$5+BC+N,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$5+BC+N+DR,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$5+BC+N+DR+FR,Breast Cancer,0.6228070175438597,0.6527472527472528
+combination$5+BC+N+DR+FR+HT,Breast Cancer,0.631578947368421,0.7120879120879121
+combination$5+BC+N+DR+FR+HT+Bag offset,Breast Cancer,0.6228070175438597,0.654945054945055
+combination$5+BC+N+DR+FR+HT+Bag nooffset,Breast Cancer,0.6228070175438597,0.6505494505494506
+combination$5+BC+N+DR+FR+HT+HT+Boost nooffset,Breast Cancer,0.6228070175438597,0.6461538461538462
+combination$5+BC+N+DR+FR+HT+HT+Boost offset,Breast Cancer,0.631578947368421,0.6659340659340659
+combination$5+BC+N+DR,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$5+BC+N+DR+HT,Breast Cancer,0.6228070175438597,0.6351648351648351
+combination$5+BC+N+DR+HT+Bag nooffset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$5+BC+N+DR+HT+Bag offset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$5+BC+N+DR+HT+Boost nooffset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$5+BC+N+DR+HT+Boost offset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$5+BC,Spam Email,0.4925,0.505625
+combination$5+BC+N,Spam Email,0.4925,0.505625
+combination$5+BC+N+DR,Spam Email,0.4925,0.505625
+combination$5+BC+N+DR+FR,Spam Email,0.4925,0.505625
+combination$5+BC+N+DR+FR+HT,Spam Email,0.4925,0.505625
+combination$5+BC+N+DR+FR+HT+Bag offset,Spam Email,0.5075,0.505625
+combination$5+BC+N+DR+FR+HT+Bag nooffset,Spam Email,0.4925,0.505625
+combination$5+BC+N+DR+FR+HT+HT+Boost nooffset,Spam Email,0.4925,0.505625
+combination$5+BC+N+DR+FR+HT+HT+Boost offset,Spam Email,0.4925,0.505625
+combination$5+BC+N+DR,Spam Email,0.4925,0.505625
+combination$5+BC+N+DR+HT,Spam Email,0.4925,0.505625
+combination$5+BC+N+DR+HT+Bag nooffset,Spam Email,0.4925,0.505625
+combination$5+BC+N+DR+HT+Bag offset,Spam Email,0.5075,0.505625
+combination$5+BC+N+DR+HT+Boost nooffset,Spam Email,0.4925,0.505625
+combination$5+BC+N+DR+HT+Boost offset,Spam Email,0.4925,0.505625
+combination$5+BC,Water Potability,0.6082317073170732,0.6103053435114504
+combination$5+BC+N,Water Potability,0.6082317073170732,0.6103053435114504
+combination$5+BC+N+DR,Water Potability,0.6082317073170732,0.6103053435114504
+combination$5+BC+N+DR+FR,Water Potability,0.6082317073170732,0.6103053435114504
+combination$5+BC+N+DR+FR+HT,Water Potability,0.6082317073170732,0.6103053435114504
+combination$5+BC+N+DR+FR+HT+Bag offset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$5+BC+N+DR+FR+HT+Bag nooffset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$5+BC+N+DR+FR+HT+HT+Boost nooffset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$5+BC+N+DR+FR+HT+HT+Boost offset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$5+BC+N+DR,Water Potability,0.6082317073170732,0.6103053435114504
+combination$5+BC+N+DR+HT,Water Potability,0.6082317073170732,0.6103053435114504
+combination$5+BC+N+DR+HT+Bag nooffset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$5+BC+N+DR+HT+Bag offset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$5+BC+N+DR+HT+Boost nooffset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$5+BC+N+DR+HT+Boost offset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$5+BC,Alzheimers Handwriting,0.5142857142857142,0.5107913669064749
+combination$5+BC+N,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$5+BC+N+SigK,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$5+BC+N+SigK+FR,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$5+BC+N+SigK+FR+HT,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$5+BC+N+SigK+FR+HT+Bag offset,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$5+BC+N+SigK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$5+BC+N+SigK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$5+BC+N+SigK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$5+BC,Breast Cancer,0.7280701754385965,0.7142857142857143
+combination$5+BC+N,Breast Cancer,0.6666666666666666,0.6175824175824176
+combination$5+BC+N+SigK,Breast Cancer,0.6666666666666666,0.6175824175824176
+combination$5+BC+N+SigK+FR,Breast Cancer,0.6666666666666666,0.6175824175824176
+combination$5+BC+N+SigK+FR+HT,Breast Cancer,0.6666666666666666,0.6175824175824176
+combination$5+BC+N+SigK+FR+HT+Bag offset,Breast Cancer,0.6666666666666666,0.6175824175824176
+combination$5+BC+N+SigK+FR+HT+Bag nooffset,Breast Cancer,0.6666666666666666,0.6175824175824176
+combination$5+BC+N+SigK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6666666666666666,0.6175824175824176
+combination$5+BC+N+SigK+FR+HT+HT+Boost offset,Breast Cancer,0.6666666666666666,0.6175824175824176
+combination$5+BC,Spam Email,0.49,0.50625
+combination$5+BC+N,Spam Email,0.49,0.50625
+combination$5+BC+N+SigK,Spam Email,0.49,0.50625
+combination$5+BC+N+SigK+FR,Spam Email,0.49,0.50625
+combination$5+BC+N+SigK+FR+HT,Spam Email,0.49,0.50625
+combination$5+BC+N+SigK+FR+HT+Bag offset,Spam Email,0.51,0.50625
+combination$5+BC+N+SigK+FR+HT+Bag nooffset,Spam Email,0.49,0.50625
+combination$5+BC+N+SigK+FR+HT+HT+Boost nooffset,Spam Email,0.49,0.50625
+combination$5+BC+N+SigK+FR+HT+HT+Boost offset,Spam Email,0.49,0.50625
+combination$5+BC,Water Potability,0.6173780487804879,0.6080152671755725
+combination$5+BC+N,Water Potability,0.6173780487804879,0.6080152671755725
+combination$5+BC+N+SigK,Water Potability,0.6173780487804879,0.6080152671755725
+combination$5+BC+N+SigK+FR,Water Potability,0.6173780487804879,0.6080152671755725
+combination$5+BC+N+SigK+FR+HT,Water Potability,0.6173780487804879,0.6080152671755725
+combination$5+BC+N+SigK+FR+HT+Bag offset,Water Potability,0.6173780487804879,0.6080152671755725
+combination$5+BC+N+SigK+FR+HT+Bag nooffset,Water Potability,0.6173780487804879,0.6080152671755725
+combination$5+BC+N+SigK+FR+HT+HT+Boost nooffset,Water Potability,0.6173780487804879,0.6080152671755725
+combination$5+BC+N+SigK+FR+HT+HT+Boost offset,Water Potability,0.6173780487804879,0.6080152671755725
+combination$5+BC,Alzheimers Handwriting,0.6285714285714286,0.4892086330935252
+combination$5+BC+N,Alzheimers Handwriting,0.6,0.460431654676259
+combination$5+BC+N+PolyK,Alzheimers Handwriting,0.6,0.460431654676259
+combination$5+BC+N+PolyK+FR,Alzheimers Handwriting,0.5142857142857142,0.49640287769784175
+combination$5+BC+N+PolyK+FR+HT,Alzheimers Handwriting,0.5142857142857142,0.49640287769784175
+combination$5+BC+N+PolyK+FR+HT+Bag offset,Alzheimers Handwriting,0.6571428571428571,0.5467625899280576
+combination$5+BC+N+PolyK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.42857142857142855,0.5107913669064749
+combination$5+BC+N+PolyK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.5142857142857142,0.5035971223021583
+combination$5+BC+N+PolyK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5428571428571428,0.45323741007194246
+combination$5+BC,Breast Cancer,0.7894736842105263,0.6945054945054945
+combination$5+BC+N,Breast Cancer,0.6842105263157895,0.6131868131868132
+combination$5+BC+N+PolyK,Breast Cancer,0.6842105263157895,0.6131868131868132
+combination$5+BC+N+PolyK+FR,Breast Cancer,0.5526315789473685,0.5758241758241758
+combination$5+BC+N+PolyK+FR+HT,Breast Cancer,0.5526315789473685,0.5758241758241758
+combination$5+BC+N+PolyK+FR+HT+Bag offset,Breast Cancer,0.5526315789473685,0.5758241758241758
+combination$5+BC+N+PolyK+FR+HT+Bag nooffset,Breast Cancer,0.5526315789473685,0.5758241758241758
+combination$5+BC+N+PolyK+FR+HT+HT+Boost nooffset,Breast Cancer,0.4473684210526316,0.42417582417582417
+combination$5+BC+N+PolyK+FR+HT+HT+Boost offset,Breast Cancer,0.5526315789473685,0.5758241758241758
+combination$5+BC,Spam Email,0.53,0.49625
+combination$5+BC+N,Spam Email,0.53,0.49625
+combination$5+BC+N+PolyK,Spam Email,0.53,0.49625
+combination$5+BC+N+PolyK+FR,Spam Email,0.47,0.5060416666666666
+combination$5+BC+N+PolyK+FR+HT,Spam Email,0.47,0.5060416666666666
+combination$5+BC+N+PolyK+FR+HT+Bag offset,Spam Email,0.53,0.5060416666666666
+combination$5+BC+N+PolyK+FR+HT+Bag nooffset,Spam Email,0.47,0.5060416666666666
+combination$5+BC+N+PolyK+FR+HT+HT+Boost nooffset,Spam Email,0.47,0.5060416666666666
+combination$5+BC+N+PolyK+FR+HT+HT+Boost offset,Spam Email,0.47,0.5060416666666666
+combination$5+BC,Water Potability,0.625,0.6061068702290077
+combination$5+BC+N,Water Potability,0.625,0.6061068702290077
+combination$5+BC+N+PolyK,Water Potability,0.625,0.6061068702290077
+combination$5+BC+N+PolyK+FR,Water Potability,0.5442073170731707,0.5103053435114504
+combination$5+BC+N+PolyK+FR+HT,Water Potability,0.5442073170731707,0.5103053435114504
+combination$5+BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.5442073170731707,0.5103053435114504
+combination$5+BC+N+PolyK+FR+HT+Bag nooffset,Water Potability,0.0,0.0
+combination$5+BC+N+PolyK+FR+HT+HT+Boost nooffset,Water Potability,0.5442073170731707,0.5103053435114504
+combination$5+BC+N+PolyK+FR+HT+HT+Boost offset,Water Potability,0.4557926829268293,0.4896946564885496
+combination$5+BC,Alzheimers Handwriting,0.6285714285714286,0.4892086330935252
+combination$5+BC+N,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$5+BC+N+RBFK,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$5+BC+N+RBFK+FR,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$5+BC+N+RBFK+FR+HT,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$5+BC+N+RBFK+FR+HT+Bag offset,Alzheimers Handwriting,0.5714285714285714,0.5323741007194245
+combination$5+BC+N+RBFK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$5+BC+N+RBFK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$5+BC+N+RBFK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$5+BC,Breast Cancer,0.7456140350877193,0.7142857142857143
+combination$5+BC+N,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$5+BC+N+RBFK,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$5+BC+N+RBFK+FR,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$5+BC+N+RBFK+FR+HT,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$5+BC+N+RBFK+FR+HT+Bag offset,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$5+BC+N+RBFK+FR+HT+Bag nooffset,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$5+BC+N+RBFK+FR+HT+HT+Boost nooffset,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$5+BC+N+RBFK+FR+HT+HT+Boost offset,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$5+BC,Spam Email,0.5016666666666667,0.5033333333333333
+combination$5+BC+N,Spam Email,0.5016666666666667,0.5033333333333333
+combination$5+BC+N+RBFK,Spam Email,0.5016666666666667,0.5033333333333333
+combination$5+BC+N+RBFK+FR,Spam Email,0.5016666666666667,0.5033333333333333
+combination$5+BC+N+RBFK+FR+HT,Spam Email,0.5016666666666667,0.5033333333333333
+combination$5+BC+N+RBFK+FR+HT+Bag offset,Spam Email,0.5016666666666667,0.5033333333333333
+combination$5+BC+N+RBFK+FR+HT+Bag nooffset,Spam Email,0.5016666666666667,0.5033333333333333
+combination$5+BC+N+RBFK+FR+HT+HT+Boost nooffset,Spam Email,0.5016666666666667,0.5033333333333333
+combination$5+BC+N+RBFK+FR+HT+HT+Boost offset,Spam Email,0.5016666666666667,0.5033333333333333
+combination$5+BC,Water Potability,0.6341463414634146,0.6038167938931298
+combination$5+BC+N,Water Potability,0.6341463414634146,0.6038167938931298
+combination$5+BC+N+RBFK,Water Potability,0.6341463414634146,0.6038167938931298
+combination$5+BC+N+RBFK+FR,Water Potability,0.6341463414634146,0.6038167938931298
+combination$5+BC+N+RBFK+FR+HT,Water Potability,0.6341463414634146,0.6038167938931298
+combination$5+BC+N+RBFK+FR+HT+Bag offset,Water Potability,0.6341463414634146,0.6038167938931298
+combination$5+BC+N+RBFK+FR+HT+Bag nooffset,Water Potability,0.6341463414634146,0.6038167938931298
+combination$5+BC+N+RBFK+FR+HT+HT+Boost nooffset,Water Potability,0.6341463414634146,0.6038167938931298
+combination$5+BC+N+RBFK+FR+HT+HT+Boost offset,Water Potability,0.6341463414634146,0.6038167938931298
+combination$6+BC,Alzheimers Handwriting,0.45714285714285713,0.5107913669064749
+combination$6+BC+N,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$6+BC+N+FS,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$6+BC+N+FS+FR,Alzheimers Handwriting,0.5142857142857142,0.6187050359712231
+combination$6+BC+N+FS+FR+HT,Alzheimers Handwriting,0.6,0.6906474820143885
+combination$6+BC+N+FS+FR+HT+Bag offset,Alzheimers Handwriting,0.6,0.6187050359712231
+combination$6+BC+N+FS+FR+HT+Bag nooffset,Alzheimers Handwriting,0.5142857142857142,0.5971223021582733
+combination$6+BC+N+FS+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.5142857142857142,0.6187050359712231
+combination$6+BC+N+FS+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5142857142857142,0.5971223021582733
+combination$6+BC+N+FR,Alzheimers Handwriting,0.7428571428571429,0.7482014388489209
+combination$6+BC+N+FR+HT,Alzheimers Handwriting,0.7428571428571429,0.7553956834532374
+combination$6+BC+N+FR+HT+Bag nooffset,Alzheimers Handwriting,0.7428571428571429,0.7482014388489209
+combination$6+BC+N+FR+HT+Bag offset,Alzheimers Handwriting,0.7714285714285715,0.7553956834532374
+combination$6+BC+N+FR+HT+Boost nooffset,Alzheimers Handwriting,0.7428571428571429,0.7482014388489209
+combination$6+BC+N+FR+HT+Boost offset,Alzheimers Handwriting,0.7428571428571429,0.762589928057554
+combination$6+BC,Breast Cancer,0.6491228070175439,0.7120879120879121
+combination$6+BC+N,Breast Cancer,0.5789473684210527,0.6395604395604395
+combination$6+BC+N+FS,Breast Cancer,0.5789473684210527,0.6395604395604395
+combination$6+BC+N+FS+FR,Breast Cancer,0.5789473684210527,0.6527472527472528
+combination$6+BC+N+FS+FR+HT,Breast Cancer,0.6491228070175439,0.7054945054945055
+combination$6+BC+N+FS+FR+HT+Bag offset,Breast Cancer,0.5877192982456141,0.654945054945055
+combination$6+BC+N+FS+FR+HT+Bag nooffset,Breast Cancer,0.5789473684210527,0.6527472527472528
+combination$6+BC+N+FS+FR+HT+HT+Boost nooffset,Breast Cancer,0.5789473684210527,0.6505494505494506
+combination$6+BC+N+FS+FR+HT+HT+Boost offset,Breast Cancer,0.5789473684210527,0.6505494505494506
+combination$6+BC+N+FR,Breast Cancer,0.5789473684210527,0.6527472527472528
+combination$6+BC+N+FR+HT,Breast Cancer,0.6491228070175439,0.7032967032967034
+combination$6+BC+N+FR+HT+Bag nooffset,Breast Cancer,0.5789473684210527,0.6527472527472528
+combination$6+BC+N+FR+HT+Bag offset,Breast Cancer,0.5789473684210527,0.654945054945055
+combination$6+BC+N+FR+HT+Boost nooffset,Breast Cancer,0.5789473684210527,0.6461538461538462
+combination$6+BC+N+FR+HT+Boost offset,Breast Cancer,0.5789473684210527,0.6483516483516484
+combination$6+BC,Spam Email,0.5058333333333334,0.5022916666666667
+combination$6+BC+N,Spam Email,0.5058333333333334,0.5022916666666667
+combination$6+BC+N+FS,Spam Email,0.5058333333333334,0.5022916666666667
+combination$6+BC+N+FS+FR,Spam Email,0.5058333333333334,0.5022916666666667
+combination$6+BC+N+FS+FR+HT,Spam Email,0.5058333333333334,0.5022916666666667
+combination$6+BC+N+FS+FR+HT+Bag offset,Spam Email,0.5058333333333334,0.5022916666666667
+combination$6+BC+N+FS+FR+HT+Bag nooffset,Spam Email,0.5058333333333334,0.5022916666666667
+combination$6+BC+N+FS+FR+HT+HT+Boost nooffset,Spam Email,0.5058333333333334,0.5022916666666667
+combination$6+BC+N+FS+FR+HT+HT+Boost offset,Spam Email,0.5058333333333334,0.5022916666666667
+combination$6+BC+N+FR,Spam Email,0.5058333333333334,0.5022916666666667
+combination$6+BC+N+FR+HT,Spam Email,0.5058333333333334,0.5022916666666667
+combination$6+BC+N+FR+HT+Bag nooffset,Spam Email,0.5058333333333334,0.5022916666666667
+combination$6+BC+N+FR+HT+Bag offset,Spam Email,0.5058333333333334,0.5022916666666667
+combination$6+BC+N+FR+HT+Boost nooffset,Spam Email,0.5058333333333334,0.5022916666666667
+combination$6+BC+N+FR+HT+Boost offset,Spam Email,0.5058333333333334,0.5022916666666667
+combination$6+BC,Water Potability,0.6082317073170732,0.6103053435114504
+combination$6+BC+N,Water Potability,0.6082317073170732,0.6103053435114504
+combination$6+BC+N+FS,Water Potability,0.6082317073170732,0.6103053435114504
+combination$6+BC+N+FS+FR,Water Potability,0.6082317073170732,0.6103053435114504
+combination$6+BC+N+FS+FR+HT,Water Potability,0.6082317073170732,0.6103053435114504
+combination$6+BC+N+FS+FR+HT+Bag offset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$6+BC+N+FS+FR+HT+Bag nooffset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$6+BC+N+FS+FR+HT+HT+Boost nooffset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$6+BC+N+FS+FR+HT+HT+Boost offset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$6+BC+N+FR,Water Potability,0.6082317073170732,0.6103053435114504
+combination$6+BC+N+FR+HT,Water Potability,0.6082317073170732,0.6103053435114504
+combination$6+BC+N+FR+HT+Bag nooffset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$6+BC+N+FR+HT+Bag offset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$6+BC+N+FR+HT+Boost nooffset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$6+BC+N+FR+HT+Boost offset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$6+BC,Alzheimers Handwriting,0.42857142857142855,0.5251798561151079
+combination$6+BC+N,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$6+BC+N+DR,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$6+BC+N+DR+FR,Alzheimers Handwriting,0.5428571428571428,0.5971223021582733
+combination$6+BC+N+DR+FR+HT,Alzheimers Handwriting,0.6285714285714286,0.6834532374100719
+combination$6+BC+N+DR+FR+HT+Bag offset,Alzheimers Handwriting,0.5714285714285714,0.5755395683453237
+combination$6+BC+N+DR+FR+HT+Bag nooffset,Alzheimers Handwriting,0.5142857142857142,0.5467625899280576
+combination$6+BC+N+DR+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.5142857142857142,0.60431654676259
+combination$6+BC+N+DR+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.4857142857142857,0.5323741007194245
+combination$6+BC+N+DR,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$6+BC+N+DR+HT,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$6+BC+N+DR+HT+Bag nooffset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$6+BC+N+DR+HT+Bag offset,Alzheimers Handwriting,0.5714285714285714,0.5035971223021583
+combination$6+BC+N+DR+HT+Boost nooffset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$6+BC+N+DR+HT+Boost offset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$6+BC,Breast Cancer,0.7192982456140351,0.7120879120879121
+combination$6+BC+N,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$6+BC+N+DR,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$6+BC+N+DR+FR,Breast Cancer,0.6228070175438597,0.6461538461538462
+combination$6+BC+N+DR+FR+HT,Breast Cancer,0.6403508771929824,0.7120879120879121
+combination$6+BC+N+DR+FR+HT+Bag offset,Breast Cancer,0.6228070175438597,0.6461538461538462
+combination$6+BC+N+DR+FR+HT+Bag nooffset,Breast Cancer,0.6228070175438597,0.643956043956044
+combination$6+BC+N+DR+FR+HT+HT+Boost nooffset,Breast Cancer,0.6228070175438597,0.6505494505494506
+combination$6+BC+N+DR+FR+HT+HT+Boost offset,Breast Cancer,0.6228070175438597,0.6505494505494506
+combination$6+BC+N+DR,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$6+BC+N+DR+HT,Breast Cancer,0.6140350877192983,0.6329670329670329
+combination$6+BC+N+DR+HT+Bag nooffset,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$6+BC+N+DR+HT+Bag offset,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$6+BC+N+DR+HT+Boost nooffset,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$6+BC+N+DR+HT+Boost offset,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$6+BC,Spam Email,0.4866666666666667,0.5070833333333333
+combination$6+BC+N,Spam Email,0.4866666666666667,0.5070833333333333
+combination$6+BC+N+DR,Spam Email,0.4866666666666667,0.5070833333333333
+combination$6+BC+N+DR+FR,Spam Email,0.4866666666666667,0.5070833333333333
+combination$6+BC+N+DR+FR+HT,Spam Email,0.4866666666666667,0.5070833333333333
+combination$6+BC+N+DR+FR+HT+Bag offset,Spam Email,0.5133333333333333,0.5070833333333333
+combination$6+BC+N+DR+FR+HT+Bag nooffset,Spam Email,0.4866666666666667,0.5070833333333333
+combination$6+BC+N+DR+FR+HT+HT+Boost nooffset,Spam Email,0.4866666666666667,0.5070833333333333
+combination$6+BC+N+DR+FR+HT+HT+Boost offset,Spam Email,0.4866666666666667,0.5070833333333333
+combination$6+BC+N+DR,Spam Email,0.4866666666666667,0.5070833333333333
+combination$6+BC+N+DR+HT,Spam Email,0.4866666666666667,0.5070833333333333
+combination$6+BC+N+DR+HT+Bag nooffset,Spam Email,0.4866666666666667,0.5070833333333333
+combination$6+BC+N+DR+HT+Bag offset,Spam Email,0.5133333333333333,0.5070833333333333
+combination$6+BC+N+DR+HT+Boost nooffset,Spam Email,0.4866666666666667,0.5070833333333333
+combination$6+BC+N+DR+HT+Boost offset,Spam Email,0.4866666666666667,0.5070833333333333
+combination$6+BC,Water Potability,0.5899390243902439,0.6148854961832061
+combination$6+BC+N,Water Potability,0.5899390243902439,0.6148854961832061
+combination$6+BC+N+DR,Water Potability,0.5899390243902439,0.6148854961832061
+combination$6+BC+N+DR+FR,Water Potability,0.5899390243902439,0.6148854961832061
+combination$6+BC+N+DR+FR+HT,Water Potability,0.5899390243902439,0.6148854961832061
+combination$6+BC+N+DR+FR+HT+Bag offset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$6+BC+N+DR+FR+HT+Bag nooffset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$6+BC+N+DR+FR+HT+HT+Boost nooffset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$6+BC+N+DR+FR+HT+HT+Boost offset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$6+BC+N+DR,Water Potability,0.5899390243902439,0.6148854961832061
+combination$6+BC+N+DR+HT,Water Potability,0.5899390243902439,0.6148854961832061
+combination$6+BC+N+DR+HT+Bag nooffset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$6+BC+N+DR+HT+Bag offset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$6+BC+N+DR+HT+Boost nooffset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$6+BC+N+DR+HT+Boost offset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$6+BC,Alzheimers Handwriting,0.4,0.5251798561151079
+combination$6+BC+N,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$6+BC+N+SigK,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$6+BC+N+SigK+FR,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$6+BC+N+SigK+FR+HT,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$6+BC+N+SigK+FR+HT+Bag offset,Alzheimers Handwriting,0.6,0.5107913669064749
+combination$6+BC+N+SigK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$6+BC+N+SigK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$6+BC+N+SigK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$6+BC,Breast Cancer,0.7368421052631579,0.7186813186813187
+combination$6+BC+N,Breast Cancer,0.6403508771929824,0.6241758241758242
+combination$6+BC+N+SigK,Breast Cancer,0.6403508771929824,0.6241758241758242
+combination$6+BC+N+SigK+FR,Breast Cancer,0.6403508771929824,0.6241758241758242
+combination$6+BC+N+SigK+FR+HT,Breast Cancer,0.6403508771929824,0.6241758241758242
+combination$6+BC+N+SigK+FR+HT+Bag offset,Breast Cancer,0.6403508771929824,0.6241758241758242
+combination$6+BC+N+SigK+FR+HT+Bag nooffset,Breast Cancer,0.6403508771929824,0.6241758241758242
+combination$6+BC+N+SigK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6403508771929824,0.6241758241758242
+combination$6+BC+N+SigK+FR+HT+HT+Boost offset,Breast Cancer,0.6403508771929824,0.6241758241758242
+combination$6+BC,Spam Email,0.5,0.50375
+combination$6+BC+N,Spam Email,0.5,0.50375
+combination$6+BC+N+SigK,Spam Email,0.5,0.50375
+combination$6+BC+N+SigK+FR,Spam Email,0.5,0.50375
+combination$6+BC+N+SigK+FR+HT,Spam Email,0.5,0.50375
+combination$6+BC+N+SigK+FR+HT+Bag offset,Spam Email,0.0,0.50375
+combination$6+BC+N+SigK+FR+HT+Bag nooffset,Spam Email,0.5,0.50375
+combination$6+BC+N+SigK+FR+HT+HT+Boost nooffset,Spam Email,0.5,0.50375
+combination$6+BC+N+SigK+FR+HT+HT+Boost offset,Spam Email,0.5,0.50375
+combination$6+BC,Water Potability,0.5914634146341463,0.6145038167938931
+combination$6+BC+N,Water Potability,0.5914634146341463,0.6145038167938931
+combination$6+BC+N+SigK,Water Potability,0.5914634146341463,0.6145038167938931
+combination$6+BC+N+SigK+FR,Water Potability,0.5914634146341463,0.6145038167938931
+combination$6+BC+N+SigK+FR+HT,Water Potability,0.5914634146341463,0.6145038167938931
+combination$6+BC+N+SigK+FR+HT+Bag offset,Water Potability,0.5914634146341463,0.6145038167938931
+combination$6+BC+N+SigK+FR+HT+Bag nooffset,Water Potability,0.5914634146341463,0.6145038167938931
+combination$6+BC+N+SigK+FR+HT+HT+Boost nooffset,Water Potability,0.5914634146341463,0.6145038167938931
+combination$6+BC+N+SigK+FR+HT+HT+Boost offset,Water Potability,0.5914634146341463,0.6145038167938931
+combination$6+BC,Alzheimers Handwriting,0.5428571428571428,0.49640287769784175
+combination$6+BC+N,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$6+BC+N+PolyK,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$6+BC+N+PolyK+FR,Alzheimers Handwriting,0.45714285714285713,0.5611510791366906
+combination$6+BC+N+PolyK+FR+HT,Alzheimers Handwriting,0.45714285714285713,0.5611510791366906
+combination$6+BC+N+PolyK+FR+HT+Bag offset,Alzheimers Handwriting,0.6857142857142857,0.5827338129496403
+combination$6+BC+N+PolyK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.5714285714285714,0.4316546762589928
+combination$6+BC+N+PolyK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.6285714285714286,0.5467625899280576
+combination$6+BC+N+PolyK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.42857142857142855,0.4748201438848921
+combination$6+BC,Breast Cancer,0.7368421052631579,0.7054945054945055
+combination$6+BC+N,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$6+BC+N+PolyK,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$6+BC+N+PolyK+FR,Breast Cancer,0.5964912280701754,0.5648351648351648
+combination$6+BC+N+PolyK+FR+HT,Breast Cancer,0.5964912280701754,0.5648351648351648
+combination$6+BC+N+PolyK+FR+HT+Bag offset,Breast Cancer,0.5964912280701754,0.5648351648351648
+combination$6+BC+N+PolyK+FR+HT+Bag nooffset,Breast Cancer,0.5964912280701754,0.5648351648351648
+combination$6+BC+N+PolyK+FR+HT+HT+Boost nooffset,Breast Cancer,0.5964912280701754,0.5648351648351648
+combination$6+BC+N+PolyK+FR+HT+HT+Boost offset,Breast Cancer,0.5964912280701754,0.5648351648351648
+combination$6+BC,Spam Email,0.5116666666666667,0.5008333333333334
+combination$6+BC+N,Spam Email,0.5116666666666667,0.5008333333333334
+combination$6+BC+N+PolyK,Spam Email,0.5116666666666667,0.5008333333333334
+combination$6+BC+N+PolyK+FR,Spam Email,0.5075,0.4995833333333333
+combination$6+BC+N+PolyK+FR+HT,Spam Email,0.5075,0.4995833333333333
+combination$6+BC+N+PolyK+FR+HT+Bag offset,Spam Email,0.5075,0.5004166666666666
+combination$6+BC+N+PolyK+FR+HT+Bag nooffset,Spam Email,0.0,0.0
+combination$6+BC+N+PolyK+FR+HT+HT+Boost nooffset,Spam Email,0.5075,0.4995833333333333
+combination$6+BC+N+PolyK+FR+HT+HT+Boost offset,Spam Email,0.5075,0.4995833333333333
+combination$6+BC,Water Potability,0.6067073170731707,0.6106870229007634
+combination$6+BC+N,Water Potability,0.6067073170731707,0.6106870229007634
+combination$6+BC+N+PolyK,Water Potability,0.6067073170731707,0.6106870229007634
+combination$6+BC+N+PolyK+FR,Water Potability,0.5213414634146342,0.516030534351145
+combination$6+BC+N+PolyK+FR+HT,Water Potability,0.5213414634146342,0.516030534351145
+combination$6+BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.5213414634146342,0.516030534351145
+combination$6+BC+N+PolyK+FR+HT+Bag nooffset,Water Potability,0.0,0.0
+combination$6+BC+N+PolyK+FR+HT+HT+Boost nooffset,Water Potability,0.47865853658536583,0.48396946564885496
+combination$6+BC+N+PolyK+FR+HT+HT+Boost offset,Water Potability,0.5213414634146342,0.516030534351145
+combination$6+BC,Alzheimers Handwriting,0.4857142857142857,0.5107913669064749
+combination$6+BC+N,Alzheimers Handwriting,0.4857142857142857,0.4892086330935252
+combination$6+BC+N+RBFK,Alzheimers Handwriting,0.4857142857142857,0.4892086330935252
+combination$6+BC+N+RBFK+FR,Alzheimers Handwriting,0.4857142857142857,0.4892086330935252
+combination$6+BC+N+RBFK+FR+HT,Alzheimers Handwriting,0.4857142857142857,0.4892086330935252
+combination$6+BC+N+RBFK+FR+HT+Bag offset,Alzheimers Handwriting,0.5142857142857142,0.5107913669064749
+combination$6+BC+N+RBFK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.4857142857142857,0.4892086330935252
+combination$6+BC+N+RBFK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.4857142857142857,0.4892086330935252
+combination$6+BC+N+RBFK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.4857142857142857,0.4892086330935252
+combination$6+BC,Breast Cancer,0.7192982456140351,0.7098901098901099
+combination$6+BC+N,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$6+BC+N+RBFK,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$6+BC+N+RBFK+FR,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$6+BC+N+RBFK+FR+HT,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$6+BC+N+RBFK+FR+HT+Bag offset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$6+BC+N+RBFK+FR+HT+Bag nooffset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$6+BC+N+RBFK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$6+BC+N+RBFK+FR+HT+HT+Boost offset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$6+BC,Spam Email,0.5116666666666667,0.5008333333333334
+combination$6+BC+N,Spam Email,0.5116666666666667,0.5008333333333334
+combination$6+BC+N+RBFK,Spam Email,0.5116666666666667,0.5008333333333334
+combination$6+BC+N+RBFK+FR,Spam Email,0.5116666666666667,0.5008333333333334
+combination$6+BC+N+RBFK+FR+HT,Spam Email,0.5116666666666667,0.5008333333333334
+combination$6+BC+N+RBFK+FR+HT+Bag offset,Spam Email,0.5116666666666667,0.5008333333333334
+combination$6+BC+N+RBFK+FR+HT+Bag nooffset,Spam Email,0.5116666666666667,0.5008333333333334
+combination$6+BC+N+RBFK+FR+HT+HT+Boost nooffset,Spam Email,0.5116666666666667,0.5008333333333334
+combination$6+BC+N+RBFK+FR+HT+HT+Boost offset,Spam Email,0.5116666666666667,0.5008333333333334
+combination$6+BC,Water Potability,0.600609756097561,0.6122137404580152
+combination$6+BC+N,Water Potability,0.600609756097561,0.6122137404580152
+combination$6+BC+N+RBFK,Water Potability,0.600609756097561,0.6122137404580152
+combination$6+BC+N+RBFK+FR,Water Potability,0.600609756097561,0.6122137404580152
+combination$6+BC+N+RBFK+FR+HT,Water Potability,0.600609756097561,0.6122137404580152
+combination$6+BC+N+RBFK+FR+HT+Bag offset,Water Potability,0.600609756097561,0.6122137404580152
+combination$6+BC+N+RBFK+FR+HT+Bag nooffset,Water Potability,0.600609756097561,0.6122137404580152
+combination$6+BC+N+RBFK+FR+HT+HT+Boost nooffset,Water Potability,0.600609756097561,0.6122137404580152
+combination$6+BC+N+RBFK+FR+HT+HT+Boost offset,Water Potability,0.39939024390243905,0.38778625954198476
+combination$7+BC,Alzheimers Handwriting,0.6,0.5035971223021583
+combination$7+BC+N,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$7+BC+N+FS,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$7+BC+N+FS+FR,Alzheimers Handwriting,0.7142857142857143,0.6115107913669064
+combination$7+BC+N+FS+FR+HT,Alzheimers Handwriting,0.7428571428571429,0.697841726618705
+combination$7+BC+N+FS+FR+HT+Bag offset,Alzheimers Handwriting,0.6857142857142857,0.6115107913669064
+combination$7+BC+N+FS+FR+HT+Bag nooffset,Alzheimers Handwriting,0.7142857142857143,0.6115107913669064
+combination$7+BC+N+FS+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.7428571428571429,0.6115107913669064
+combination$7+BC+N+FS+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.6285714285714286,0.5683453237410072
+combination$7+BC+N+FR,Alzheimers Handwriting,0.7714285714285715,0.7697841726618705
+combination$7+BC+N+FR+HT,Alzheimers Handwriting,0.8,0.7769784172661871
+combination$7+BC+N+FR+HT+Bag nooffset,Alzheimers Handwriting,0.7428571428571429,0.7553956834532374
+combination$7+BC+N+FR+HT+Bag offset,Alzheimers Handwriting,0.7714285714285715,0.7482014388489209
+combination$7+BC+N+FR+HT+Boost nooffset,Alzheimers Handwriting,0.7714285714285715,0.7482014388489209
+combination$7+BC+N+FR+HT+Boost offset,Alzheimers Handwriting,0.7428571428571429,0.7553956834532374
+combination$7+BC,Breast Cancer,0.6842105263157895,0.7076923076923077
+combination$7+BC+N,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$7+BC+N+FS,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$7+BC+N+FS+FR,Breast Cancer,0.6403508771929824,0.6373626373626373
+combination$7+BC+N+FS+FR+HT,Breast Cancer,0.7368421052631579,0.6901098901098901
+combination$7+BC+N+FS+FR+HT+Bag offset,Breast Cancer,0.6403508771929824,0.6373626373626373
+combination$7+BC+N+FS+FR+HT+Bag nooffset,Breast Cancer,0.6403508771929824,0.6373626373626373
+combination$7+BC+N+FS+FR+HT+HT+Boost nooffset,Breast Cancer,0.6403508771929824,0.6373626373626373
+combination$7+BC+N+FS+FR+HT+HT+Boost offset,Breast Cancer,0.6403508771929824,0.6417582417582418
+combination$7+BC+N+FR,Breast Cancer,0.6403508771929824,0.6373626373626373
+combination$7+BC+N+FR+HT,Breast Cancer,0.7280701754385965,0.6901098901098901
+combination$7+BC+N+FR+HT+Bag nooffset,Breast Cancer,0.6403508771929824,0.6329670329670329
+combination$7+BC+N+FR+HT+Bag offset,Breast Cancer,0.6403508771929824,0.6373626373626373
+combination$7+BC+N+FR+HT+Boost nooffset,Breast Cancer,0.6403508771929824,0.6329670329670329
+combination$7+BC+N+FR+HT+Boost offset,Breast Cancer,0.6403508771929824,0.643956043956044
+combination$7+BC,Spam Email,0.505,0.5025
+combination$7+BC+N,Spam Email,0.505,0.5025
+combination$7+BC+N+FS,Spam Email,0.505,0.5025
+combination$7+BC+N+FS+FR,Spam Email,0.505,0.5025
+combination$7+BC+N+FS+FR+HT,Spam Email,0.505,0.5025
+combination$7+BC+N+FS+FR+HT+Bag offset,Spam Email,0.505,0.5025
+combination$7+BC+N+FS+FR+HT+Bag nooffset,Spam Email,0.505,0.5025
+combination$7+BC+N+FS+FR+HT+HT+Boost nooffset,Spam Email,0.505,0.5025
+combination$7+BC+N+FS+FR+HT+HT+Boost offset,Spam Email,0.505,0.5025
+combination$7+BC+N+FR,Spam Email,0.505,0.5025
+combination$7+BC+N+FR+HT,Spam Email,0.505,0.5025
+combination$7+BC+N+FR+HT+Bag nooffset,Spam Email,0.505,0.5025
+combination$7+BC+N+FR+HT+Bag offset,Spam Email,0.505,0.5025
+combination$7+BC+N+FR+HT+Boost nooffset,Spam Email,0.505,0.5025
+combination$7+BC+N+FR+HT+Boost offset,Spam Email,0.505,0.5025
+combination$7+BC,Water Potability,0.5899390243902439,0.6148854961832061
+combination$7+BC+N,Water Potability,0.5899390243902439,0.6148854961832061
+combination$7+BC+N+FS,Water Potability,0.5899390243902439,0.6148854961832061
+combination$7+BC+N+FS+FR,Water Potability,0.5899390243902439,0.6148854961832061
+combination$7+BC+N+FS+FR+HT,Water Potability,0.5899390243902439,0.6148854961832061
+combination$7+BC+N+FS+FR+HT+Bag offset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$7+BC+N+FS+FR+HT+Bag nooffset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$7+BC+N+FS+FR+HT+HT+Boost nooffset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$7+BC+N+FS+FR+HT+HT+Boost offset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$7+BC+N+FR,Water Potability,0.5899390243902439,0.6148854961832061
+combination$7+BC+N+FR+HT,Water Potability,0.5899390243902439,0.6148854961832061
+combination$7+BC+N+FR+HT+Bag nooffset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$7+BC+N+FR+HT+Bag offset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$7+BC+N+FR+HT+Boost nooffset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$7+BC+N+FR+HT+Boost offset,Water Potability,0.5899390243902439,0.6148854961832061
+combination$7+BC,Alzheimers Handwriting,0.6285714285714286,0.5035971223021583
+combination$7+BC+N,Alzheimers Handwriting,0.6285714285714286,0.45323741007194246
+combination$7+BC+N+DR,Alzheimers Handwriting,0.6285714285714286,0.45323741007194246
+combination$7+BC+N+DR+FR,Alzheimers Handwriting,0.37142857142857144,0.5971223021582733
+combination$7+BC+N+DR+FR+HT,Alzheimers Handwriting,0.37142857142857144,0.5827338129496403
+combination$7+BC+N+DR+FR+HT+Bag offset,Alzheimers Handwriting,0.6285714285714286,0.5827338129496403
+combination$7+BC+N+DR+FR+HT+Bag nooffset,Alzheimers Handwriting,0.2857142857142857,0.43884892086330934
+combination$7+BC+N+DR+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.37142857142857144,0.5683453237410072
+combination$7+BC+N+DR+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.37142857142857144,0.5611510791366906
+combination$7+BC+N+DR,Alzheimers Handwriting,0.6285714285714286,0.45323741007194246
+combination$7+BC+N+DR+HT,Alzheimers Handwriting,0.6571428571428571,0.539568345323741
+combination$7+BC+N+DR+HT+Bag nooffset,Alzheimers Handwriting,0.6285714285714286,0.45323741007194246
+combination$7+BC+N+DR+HT+Bag offset,Alzheimers Handwriting,0.6285714285714286,0.5467625899280576
+combination$7+BC+N+DR+HT+Boost nooffset,Alzheimers Handwriting,0.6285714285714286,0.45323741007194246
+combination$7+BC+N+DR+HT+Boost offset,Alzheimers Handwriting,0.6285714285714286,0.4676258992805755
+combination$7+BC,Breast Cancer,0.7017543859649122,0.7142857142857143
+combination$7+BC+N,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$7+BC+N+DR,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$7+BC+N+DR+FR,Breast Cancer,0.6228070175438597,0.6615384615384615
+combination$7+BC+N+DR+FR+HT,Breast Cancer,0.6754385964912281,0.7186813186813187
+combination$7+BC+N+DR+FR+HT+Bag offset,Breast Cancer,0.6228070175438597,0.6615384615384615
+combination$7+BC+N+DR+FR+HT+Bag nooffset,Breast Cancer,0.6228070175438597,0.6637362637362637
+combination$7+BC+N+DR+FR+HT+HT+Boost nooffset,Breast Cancer,0.631578947368421,0.6659340659340659
+combination$7+BC+N+DR+FR+HT+HT+Boost offset,Breast Cancer,0.6228070175438597,0.6615384615384615
+combination$7+BC+N+DR,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$7+BC+N+DR+HT,Breast Cancer,0.6140350877192983,0.6373626373626373
+combination$7+BC+N+DR+HT+Bag nooffset,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$7+BC+N+DR+HT+Bag offset,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$7+BC+N+DR+HT+Boost nooffset,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$7+BC+N+DR+HT+Boost offset,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$7+BC,Spam Email,0.49083333333333334,0.5060416666666666
+combination$7+BC+N,Spam Email,0.49083333333333334,0.5060416666666666
+combination$7+BC+N+DR,Spam Email,0.49083333333333334,0.5060416666666666
+combination$7+BC+N+DR+FR,Spam Email,0.49083333333333334,0.5060416666666666
+combination$7+BC+N+DR+FR+HT,Spam Email,0.49083333333333334,0.5060416666666666
+combination$7+BC+N+DR+FR+HT+Bag offset,Spam Email,0.5091666666666667,0.5060416666666666
+combination$7+BC+N+DR+FR+HT+Bag nooffset,Spam Email,0.49083333333333334,0.5060416666666666
+combination$7+BC+N+DR+FR+HT+HT+Boost nooffset,Spam Email,0.49083333333333334,0.5060416666666666
+combination$7+BC+N+DR+FR+HT+HT+Boost offset,Spam Email,0.49083333333333334,0.5060416666666666
+combination$7+BC+N+DR,Spam Email,0.49083333333333334,0.5060416666666666
+combination$7+BC+N+DR+HT,Spam Email,0.49083333333333334,0.5060416666666666
+combination$7+BC+N+DR+HT+Bag nooffset,Spam Email,0.49083333333333334,0.5060416666666666
+combination$7+BC+N+DR+HT+Bag offset,Spam Email,0.5091666666666667,0.5060416666666666
+combination$7+BC+N+DR+HT+Boost nooffset,Spam Email,0.49083333333333334,0.5060416666666666
+combination$7+BC+N+DR+HT+Boost offset,Spam Email,0.49083333333333334,0.5060416666666666
+combination$7+BC,Water Potability,0.6082317073170732,0.6103053435114504
+combination$7+BC+N,Water Potability,0.6082317073170732,0.6103053435114504
+combination$7+BC+N+DR,Water Potability,0.6082317073170732,0.6103053435114504
+combination$7+BC+N+DR+FR,Water Potability,0.6082317073170732,0.6103053435114504
+combination$7+BC+N+DR+FR+HT,Water Potability,0.6082317073170732,0.6103053435114504
+combination$7+BC+N+DR+FR+HT+Bag offset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$7+BC+N+DR+FR+HT+Bag nooffset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$7+BC+N+DR+FR+HT+HT+Boost nooffset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$7+BC+N+DR+FR+HT+HT+Boost offset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$7+BC+N+DR,Water Potability,0.6082317073170732,0.6103053435114504
+combination$7+BC+N+DR+HT,Water Potability,0.6082317073170732,0.6103053435114504
+combination$7+BC+N+DR+HT+Bag nooffset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$7+BC+N+DR+HT+Bag offset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$7+BC+N+DR+HT+Boost nooffset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$7+BC+N+DR+HT+Boost offset,Water Potability,0.6082317073170732,0.6103053435114504
+combination$7+BC,Alzheimers Handwriting,0.45714285714285713,0.5251798561151079
+combination$7+BC+N,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$7+BC+N+SigK,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$7+BC+N+SigK+FR,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$7+BC+N+SigK+FR+HT,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$7+BC+N+SigK+FR+HT+Bag offset,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$7+BC+N+SigK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$7+BC+N+SigK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$7+BC+N+SigK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$7+BC,Breast Cancer,0.7368421052631579,0.7186813186813187
+combination$7+BC+N,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$7+BC+N+SigK,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$7+BC+N+SigK+FR,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$7+BC+N+SigK+FR+HT,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$7+BC+N+SigK+FR+HT+Bag offset,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$7+BC+N+SigK+FR+HT+Bag nooffset,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$7+BC+N+SigK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$7+BC+N+SigK+FR+HT+HT+Boost offset,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$7+BC,Spam Email,0.505,0.5025
+combination$7+BC+N,Spam Email,0.505,0.5025
+combination$7+BC+N+SigK,Spam Email,0.505,0.5025
+combination$7+BC+N+SigK+FR,Spam Email,0.505,0.5025
+combination$7+BC+N+SigK+FR+HT,Spam Email,0.505,0.5025
+combination$7+BC+N+SigK+FR+HT+Bag offset,Spam Email,0.505,0.5025
+combination$7+BC+N+SigK+FR+HT+Bag nooffset,Spam Email,0.505,0.5025
+combination$7+BC+N+SigK+FR+HT+HT+Boost nooffset,Spam Email,0.505,0.5025
+combination$7+BC+N+SigK+FR+HT+HT+Boost offset,Spam Email,0.505,0.5025
+combination$7+BC,Water Potability,0.6280487804878049,0.6053435114503817
+combination$7+BC+N,Water Potability,0.6280487804878049,0.6053435114503817
+combination$7+BC+N+SigK,Water Potability,0.6280487804878049,0.6053435114503817
+combination$7+BC+N+SigK+FR,Water Potability,0.6280487804878049,0.6053435114503817
+combination$7+BC+N+SigK+FR+HT,Water Potability,0.6280487804878049,0.6053435114503817
+combination$7+BC+N+SigK+FR+HT+Bag offset,Water Potability,0.6280487804878049,0.6053435114503817
+combination$7+BC+N+SigK+FR+HT+Bag nooffset,Water Potability,0.6280487804878049,0.6053435114503817
+combination$7+BC+N+SigK+FR+HT+HT+Boost nooffset,Water Potability,0.6280487804878049,0.6053435114503817
+combination$7+BC+N+SigK+FR+HT+HT+Boost offset,Water Potability,0.6280487804878049,0.6053435114503817
+combination$7+BC,Alzheimers Handwriting,0.5142857142857142,0.5251798561151079
+combination$7+BC+N,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$7+BC+N+PolyK,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$7+BC+N+PolyK+FR,Alzheimers Handwriting,0.5428571428571428,0.48201438848920863
+combination$7+BC+N+PolyK+FR+HT,Alzheimers Handwriting,0.5428571428571428,0.48201438848920863
+combination$7+BC+N+PolyK+FR+HT+Bag offset,Alzheimers Handwriting,0.5714285714285714,0.5107913669064749
+combination$7+BC+N+PolyK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.5428571428571428,0.48201438848920863
+combination$7+BC+N+PolyK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$7+BC+N+PolyK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.4857142857142857,0.48201438848920863
+combination$7+BC,Breast Cancer,0.6842105263157895,0.7142857142857143
+combination$7+BC+N,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$7+BC+N+PolyK,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$7+BC+N+PolyK+FR,Breast Cancer,0.6052631578947368,0.5626373626373626
+combination$7+BC+N+PolyK+FR+HT,Breast Cancer,0.6052631578947368,0.5626373626373626
+combination$7+BC+N+PolyK+FR+HT+Bag offset,Breast Cancer,0.6052631578947368,0.5626373626373626
+combination$7+BC+N+PolyK+FR+HT+Bag nooffset,Breast Cancer,0.6052631578947368,0.5626373626373626
+combination$7+BC+N+PolyK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6052631578947368,0.5626373626373626
+combination$7+BC+N+PolyK+FR+HT+HT+Boost offset,Breast Cancer,0.6052631578947368,0.5626373626373626
+combination$7+BC,Spam Email,0.5,0.50375
+combination$7+BC+N,Spam Email,0.5,0.50375
+combination$7+BC+N+PolyK,Spam Email,0.5,0.50375
+combination$7+BC+N+PolyK+FR,Spam Email,0.5033333333333333,0.4977083333333333
+combination$7+BC+N+PolyK+FR+HT,Spam Email,0.5033333333333333,0.4977083333333333
+combination$7+BC+N+PolyK+FR+HT+Bag offset,Spam Email,0.5033333333333333,0.5022916666666667
+combination$7+BC+N+PolyK+FR+HT+Bag nooffset,Spam Email,0.5033333333333333,0.4977083333333333
+combination$7+BC+N+PolyK+FR+HT+HT+Boost nooffset,Spam Email,0.5033333333333333,0.4977083333333333
+combination$7+BC+N+PolyK+FR+HT+HT+Boost offset,Spam Email,0.5033333333333333,0.4977083333333333
+combination$7+BC,Water Potability,0.6021341463414634,0.6118320610687022
+combination$7+BC+N,Water Potability,0.6021341463414634,0.6118320610687022
+combination$7+BC+N+PolyK,Water Potability,0.6021341463414634,0.6118320610687022
+combination$7+BC+N+PolyK+FR,Water Potability,0.4771341463414634,0.48435114503816795
+combination$7+BC+N+PolyK+FR+HT,Water Potability,0.4771341463414634,0.48435114503816795
+combination$7+BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.5228658536585366,0.5156488549618321
+combination$7+BC+N+PolyK+FR+HT+Bag nooffset,Water Potability,0.0,0.0
+combination$7+BC+N+PolyK+FR+HT+HT+Boost nooffset,Water Potability,0.4771341463414634,0.48435114503816795
+combination$7+BC+N+PolyK+FR+HT+HT+Boost offset,Water Potability,0.5228658536585366,0.5156488549618321
+combination$7+BC,Alzheimers Handwriting,0.5428571428571428,0.5035971223021583
+combination$7+BC+N,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$7+BC+N+RBFK,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$7+BC+N+RBFK+FR,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$7+BC+N+RBFK+FR+HT,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$7+BC+N+RBFK+FR+HT+Bag offset,Alzheimers Handwriting,0.5714285714285714,0.5323741007194245
+combination$7+BC+N+RBFK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$7+BC+N+RBFK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$7+BC+N+RBFK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$7+BC,Breast Cancer,0.7368421052631579,0.7098901098901099
+combination$7+BC+N,Breast Cancer,0.6666666666666666,0.6175824175824176
+combination$7+BC+N+RBFK,Breast Cancer,0.6666666666666666,0.6175824175824176
+combination$7+BC+N+RBFK+FR,Breast Cancer,0.6666666666666666,0.6175824175824176
+combination$7+BC+N+RBFK+FR+HT,Breast Cancer,0.6666666666666666,0.6175824175824176
+combination$7+BC+N+RBFK+FR+HT+Bag offset,Breast Cancer,0.6666666666666666,0.6175824175824176
+combination$7+BC+N+RBFK+FR+HT+Bag nooffset,Breast Cancer,0.6666666666666666,0.6175824175824176
+combination$7+BC+N+RBFK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6666666666666666,0.6175824175824176
+combination$7+BC+N+RBFK+FR+HT+HT+Boost offset,Breast Cancer,0.6666666666666666,0.6175824175824176
+combination$7+BC,Spam Email,0.5158333333333334,0.4997916666666667
+combination$7+BC+N,Spam Email,0.5158333333333334,0.4997916666666667
+combination$7+BC+N+RBFK,Spam Email,0.5158333333333334,0.4997916666666667
+combination$7+BC+N+RBFK+FR,Spam Email,0.5158333333333334,0.4997916666666667
+combination$7+BC+N+RBFK+FR+HT,Spam Email,0.5158333333333334,0.4997916666666667
+combination$7+BC+N+RBFK+FR+HT+Bag offset,Spam Email,0.5158333333333334,0.5002083333333334
+combination$7+BC+N+RBFK+FR+HT+Bag nooffset,Spam Email,0.5158333333333334,0.4997916666666667
+combination$7+BC+N+RBFK+FR+HT+HT+Boost nooffset,Spam Email,0.5158333333333334,0.4997916666666667
+combination$7+BC+N+RBFK+FR+HT+HT+Boost offset,Spam Email,0.5158333333333334,0.4997916666666667
+combination$7+BC,Water Potability,0.6036585365853658,0.6114503816793894
+combination$7+BC+N,Water Potability,0.6036585365853658,0.6114503816793894
+combination$7+BC+N+RBFK,Water Potability,0.6036585365853658,0.6114503816793894
+combination$7+BC+N+RBFK+FR,Water Potability,0.6036585365853658,0.6114503816793894
+combination$7+BC+N+RBFK+FR+HT,Water Potability,0.6036585365853658,0.6114503816793894
+combination$7+BC+N+RBFK+FR+HT+Bag offset,Water Potability,0.6036585365853658,0.6114503816793894
+combination$7+BC+N+RBFK+FR+HT+Bag nooffset,Water Potability,0.6036585365853658,0.6114503816793894
+combination$7+BC+N+RBFK+FR+HT+HT+Boost nooffset,Water Potability,0.6036585365853658,0.6114503816793894
+combination$7+BC+N+RBFK+FR+HT+HT+Boost offset,Water Potability,0.6036585365853658,0.6114503816793894
+combination$8+BC,Alzheimers Handwriting,0.4857142857142857,0.5179856115107914
+combination$8+BC+N,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$8+BC+N+FS,Alzheimers Handwriting,0.45714285714285713,0.49640287769784175
+combination$8+BC+N+FS+FR,Alzheimers Handwriting,0.5714285714285714,0.6115107913669064
+combination$8+BC+N+FS+FR+HT,Alzheimers Handwriting,0.6285714285714286,0.6834532374100719
+combination$8+BC+N+FS+FR+HT+Bag offset,Alzheimers Handwriting,0.5714285714285714,0.6474820143884892
+combination$8+BC+N+FS+FR+HT+Bag nooffset,Alzheimers Handwriting,0.5714285714285714,0.6474820143884892
+combination$8+BC+N+FS+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.5714285714285714,0.6330935251798561
+combination$8+BC+N+FS+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5714285714285714,0.6115107913669064
+combination$8+BC+N+FR,Alzheimers Handwriting,0.7142857142857143,0.762589928057554
+combination$8+BC+N+FR+HT,Alzheimers Handwriting,0.7142857142857143,0.762589928057554
+combination$8+BC+N+FR+HT+Bag nooffset,Alzheimers Handwriting,0.7428571428571429,0.7266187050359713
+combination$8+BC+N+FR+HT+Bag offset,Alzheimers Handwriting,0.7142857142857143,0.762589928057554
+combination$8+BC+N+FR+HT+Boost nooffset,Alzheimers Handwriting,0.7428571428571429,0.7410071942446043
+combination$8+BC+N+FR+HT+Boost offset,Alzheimers Handwriting,0.7142857142857143,0.762589928057554
+combination$8+BC,Breast Cancer,0.7543859649122807,0.7032967032967034
+combination$8+BC+N,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$8+BC+N+FS,Breast Cancer,0.6491228070175439,0.621978021978022
+combination$8+BC+N+FS+FR,Breast Cancer,0.6578947368421053,0.6373626373626373
+combination$8+BC+N+FS+FR+HT,Breast Cancer,0.7192982456140351,0.6989010989010989
+combination$8+BC+N+FS+FR+HT+Bag offset,Breast Cancer,0.6578947368421053,0.6329670329670329
+combination$8+BC+N+FS+FR+HT+Bag nooffset,Breast Cancer,0.6578947368421053,0.6373626373626373
+combination$8+BC+N+FS+FR+HT+HT+Boost nooffset,Breast Cancer,0.6491228070175439,0.6241758241758242
+combination$8+BC+N+FS+FR+HT+HT+Boost offset,Breast Cancer,0.6578947368421053,0.6307692307692307
+combination$8+BC+N+FR,Breast Cancer,0.6578947368421053,0.6373626373626373
+combination$8+BC+N+FR+HT,Breast Cancer,0.7192982456140351,0.701098901098901
+combination$8+BC+N+FR+HT+Bag nooffset,Breast Cancer,0.6578947368421053,0.6373626373626373
+combination$8+BC+N+FR+HT+Bag offset,Breast Cancer,0.6842105263157895,0.6373626373626373
+combination$8+BC+N+FR+HT+Boost nooffset,Breast Cancer,0.6578947368421053,0.6329670329670329
+combination$8+BC+N+FR+HT+Boost offset,Breast Cancer,0.6578947368421053,0.6351648351648351
+combination$8+BC,Spam Email,0.52,0.49875
+combination$8+BC+N,Spam Email,0.52,0.49875
+combination$8+BC+N+FS,Spam Email,0.52,0.49875
+combination$8+BC+N+FS+FR,Spam Email,0.52,0.49875
+combination$8+BC+N+FS+FR+HT,Spam Email,0.52,0.49875
+combination$8+BC+N+FS+FR+HT+Bag offset,Spam Email,0.52,0.50125
+combination$8+BC+N+FS+FR+HT+Bag nooffset,Spam Email,0.52,0.49875
+combination$8+BC+N+FS+FR+HT+HT+Boost nooffset,Spam Email,0.52,0.49875
+combination$8+BC+N+FS+FR+HT+HT+Boost offset,Spam Email,0.52,0.49875
+combination$8+BC+N+FR,Spam Email,0.52,0.49875
+combination$8+BC+N+FR+HT,Spam Email,0.52,0.49875
+combination$8+BC+N+FR+HT+Bag nooffset,Spam Email,0.52,0.49875
+combination$8+BC+N+FR+HT+Bag offset,Spam Email,0.52,0.50125
+combination$8+BC+N+FR+HT+Boost nooffset,Spam Email,0.52,0.49875
+combination$8+BC+N+FR+HT+Boost offset,Spam Email,0.52,0.49875
+combination$8+BC,Water Potability,0.6051829268292683,0.6110687022900764
+combination$8+BC+N,Water Potability,0.6051829268292683,0.6110687022900764
+combination$8+BC+N+FS,Water Potability,0.6051829268292683,0.6110687022900764
+combination$8+BC+N+FS+FR,Water Potability,0.6051829268292683,0.6110687022900764
+combination$8+BC+N+FS+FR+HT,Water Potability,0.6051829268292683,0.6110687022900764
+combination$8+BC+N+FS+FR+HT+Bag offset,Water Potability,0.6051829268292683,0.6110687022900764
+combination$8+BC+N+FS+FR+HT+Bag nooffset,Water Potability,0.6051829268292683,0.6110687022900764
+combination$8+BC+N+FS+FR+HT+HT+Boost nooffset,Water Potability,0.6051829268292683,0.6110687022900764
+combination$8+BC+N+FS+FR+HT+HT+Boost offset,Water Potability,0.6051829268292683,0.6110687022900764
+combination$8+BC+N+FR,Water Potability,0.6051829268292683,0.6110687022900764
+combination$8+BC+N+FR+HT,Water Potability,0.6051829268292683,0.6110687022900764
+combination$8+BC+N+FR+HT+Bag nooffset,Water Potability,0.6051829268292683,0.6110687022900764
+combination$8+BC+N+FR+HT+Bag offset,Water Potability,0.6051829268292683,0.6110687022900764
+combination$8+BC+N+FR+HT+Boost nooffset,Water Potability,0.6051829268292683,0.6110687022900764
+combination$8+BC+N+FR+HT+Boost offset,Water Potability,0.6051829268292683,0.6110687022900764
+combination$8+BC,Alzheimers Handwriting,0.42857142857142855,0.5251798561151079
+combination$8+BC+N,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+DR,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+DR+FR,Alzheimers Handwriting,0.5428571428571428,0.539568345323741
+combination$8+BC+N+DR+FR+HT,Alzheimers Handwriting,0.6571428571428571,0.60431654676259
+combination$8+BC+N+DR+FR+HT+Bag offset,Alzheimers Handwriting,0.6571428571428571,0.6474820143884892
+combination$8+BC+N+DR+FR+HT+Bag nooffset,Alzheimers Handwriting,0.42857142857142855,0.5179856115107914
+combination$8+BC+N+DR+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.42857142857142855,0.5323741007194245
+combination$8+BC+N+DR+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.4857142857142857,0.5755395683453237
+combination$8+BC+N+DR,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+DR+HT,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+DR+HT+Bag nooffset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+DR+HT+Bag offset,Alzheimers Handwriting,0.5714285714285714,0.5035971223021583
+combination$8+BC+N+DR+HT+Boost nooffset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+DR+HT+Boost offset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC,Breast Cancer,0.7894736842105263,0.7186813186813187
+combination$8+BC+N,Breast Cancer,0.6754385964912281,0.6153846153846154
+combination$8+BC+N+DR,Breast Cancer,0.6754385964912281,0.6153846153846154
+combination$8+BC+N+DR+FR,Breast Cancer,0.6842105263157895,0.6571428571428571
+combination$8+BC+N+DR+FR+HT,Breast Cancer,0.7017543859649122,0.7252747252747253
+combination$8+BC+N+DR+FR+HT+Bag offset,Breast Cancer,0.6842105263157895,0.6593406593406593
+combination$8+BC+N+DR+FR+HT+Bag nooffset,Breast Cancer,0.6842105263157895,0.6527472527472528
+combination$8+BC+N+DR+FR+HT+HT+Boost nooffset,Breast Cancer,0.6842105263157895,0.6637362637362637
+combination$8+BC+N+DR+FR+HT+HT+Boost offset,Breast Cancer,0.6842105263157895,0.6461538461538462
+combination$8+BC+N+DR,Breast Cancer,0.6754385964912281,0.6153846153846154
+combination$8+BC+N+DR+HT,Breast Cancer,0.6842105263157895,0.6329670329670329
+combination$8+BC+N+DR+HT+Bag nooffset,Breast Cancer,0.6754385964912281,0.6153846153846154
+combination$8+BC+N+DR+HT+Bag offset,Breast Cancer,0.6754385964912281,0.6153846153846154
+combination$8+BC+N+DR+HT+Boost nooffset,Breast Cancer,0.6754385964912281,0.6153846153846154
+combination$8+BC+N+DR+HT+Boost offset,Breast Cancer,0.6754385964912281,0.6153846153846154
+combination$8+BC,Spam Email,0.4775,0.509375
+combination$8+BC+N,Spam Email,0.4775,0.509375
+combination$8+BC+N+DR,Spam Email,0.4775,0.509375
+combination$8+BC+N+DR+FR,Spam Email,0.4775,0.509375
+combination$8+BC+N+DR+FR+HT,Spam Email,0.4775,0.509375
+combination$8+BC+N+DR+FR+HT+Bag offset,Spam Email,0.5225,0.509375
+combination$8+BC+N+DR+FR+HT+Bag nooffset,Spam Email,0.4775,0.509375
+combination$8+BC+N+DR+FR+HT+HT+Boost nooffset,Spam Email,0.4775,0.509375
+combination$8+BC+N+DR+FR+HT+HT+Boost offset,Spam Email,0.4775,0.509375
+combination$8+BC+N+DR,Spam Email,0.4775,0.509375
+combination$8+BC+N+DR+HT,Spam Email,0.4775,0.509375
+combination$8+BC+N+DR+HT+Bag nooffset,Spam Email,0.4775,0.509375
+combination$8+BC+N+DR+HT+Bag offset,Spam Email,0.5225,0.509375
+combination$8+BC+N+DR+HT+Boost nooffset,Spam Email,0.4775,0.509375
+combination$8+BC+N+DR+HT+Boost offset,Spam Email,0.4775,0.509375
+combination$8+BC,Water Potability,0.586890243902439,0.6156488549618321
+combination$8+BC+N,Water Potability,0.586890243902439,0.6156488549618321
+combination$8+BC+N+DR,Water Potability,0.586890243902439,0.6156488549618321
+combination$8+BC+N+DR+FR,Water Potability,0.586890243902439,0.6156488549618321
+combination$8+BC+N+DR+FR+HT,Water Potability,0.586890243902439,0.6156488549618321
+combination$8+BC+N+DR+FR+HT+Bag offset,Water Potability,0.586890243902439,0.6156488549618321
+combination$8+BC+N+DR+FR+HT+Bag nooffset,Water Potability,0.586890243902439,0.6156488549618321
+combination$8+BC+N+DR+FR+HT+HT+Boost nooffset,Water Potability,0.586890243902439,0.6156488549618321
+combination$8+BC+N+DR+FR+HT+HT+Boost offset,Water Potability,0.586890243902439,0.6156488549618321
+combination$8+BC+N+DR,Water Potability,0.586890243902439,0.6156488549618321
+combination$8+BC+N+DR+HT,Water Potability,0.586890243902439,0.6156488549618321
+combination$8+BC+N+DR+HT+Bag nooffset,Water Potability,0.586890243902439,0.6156488549618321
+combination$8+BC+N+DR+HT+Bag offset,Water Potability,0.586890243902439,0.6156488549618321
+combination$8+BC+N+DR+HT+Boost nooffset,Water Potability,0.586890243902439,0.6156488549618321
+combination$8+BC+N+DR+HT+Boost offset,Water Potability,0.586890243902439,0.6156488549618321
+combination$8+BC,Alzheimers Handwriting,0.45714285714285713,0.5107913669064749
+combination$8+BC+N,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+SigK,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+SigK+FR,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+SigK+FR+HT,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+SigK+FR+HT+Bag offset,Alzheimers Handwriting,0.5714285714285714,0.5035971223021583
+combination$8+BC+N+SigK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+SigK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+SigK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC,Breast Cancer,0.7192982456140351,0.7032967032967034
+combination$8+BC+N,Breast Cancer,0.6578947368421053,0.6197802197802198
+combination$8+BC+N+SigK,Breast Cancer,0.6578947368421053,0.6197802197802198
+combination$8+BC+N+SigK+FR,Breast Cancer,0.6578947368421053,0.6197802197802198
+combination$8+BC+N+SigK+FR+HT,Breast Cancer,0.6578947368421053,0.6197802197802198
+combination$8+BC+N+SigK+FR+HT+Bag offset,Breast Cancer,0.6578947368421053,0.6197802197802198
+combination$8+BC+N+SigK+FR+HT+Bag nooffset,Breast Cancer,0.6578947368421053,0.6197802197802198
+combination$8+BC+N+SigK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6578947368421053,0.6197802197802198
+combination$8+BC+N+SigK+FR+HT+HT+Boost offset,Breast Cancer,0.34210526315789475,0.3802197802197802
+combination$8+BC,Spam Email,0.5158333333333334,0.4997916666666667
+combination$8+BC+N,Spam Email,0.5158333333333334,0.4997916666666667
+combination$8+BC+N+SigK,Spam Email,0.5158333333333334,0.4997916666666667
+combination$8+BC+N+SigK+FR,Spam Email,0.5158333333333334,0.4997916666666667
+combination$8+BC+N+SigK+FR+HT,Spam Email,0.5158333333333334,0.4997916666666667
+combination$8+BC+N+SigK+FR+HT+Bag offset,Spam Email,0.5158333333333334,0.5002083333333334
+combination$8+BC+N+SigK+FR+HT+Bag nooffset,Spam Email,0.5158333333333334,0.4997916666666667
+combination$8+BC+N+SigK+FR+HT+HT+Boost nooffset,Spam Email,0.5158333333333334,0.4997916666666667
+combination$8+BC+N+SigK+FR+HT+HT+Boost offset,Spam Email,0.5158333333333334,0.4997916666666667
+combination$8+BC,Water Potability,0.5945121951219512,0.6137404580152672
+combination$8+BC+N,Water Potability,0.5945121951219512,0.6137404580152672
+combination$8+BC+N+SigK,Water Potability,0.5945121951219512,0.6137404580152672
+combination$8+BC+N+SigK+FR,Water Potability,0.5945121951219512,0.6137404580152672
+combination$8+BC+N+SigK+FR+HT,Water Potability,0.5945121951219512,0.6137404580152672
+combination$8+BC+N+SigK+FR+HT+Bag offset,Water Potability,0.5945121951219512,0.6137404580152672
+combination$8+BC+N+SigK+FR+HT+Bag nooffset,Water Potability,0.5945121951219512,0.6137404580152672
+combination$8+BC+N+SigK+FR+HT+HT+Boost nooffset,Water Potability,0.5945121951219512,0.6137404580152672
+combination$8+BC+N+SigK+FR+HT+HT+Boost offset,Water Potability,0.5945121951219512,0.6137404580152672
+combination$8+BC,Alzheimers Handwriting,0.6,0.5179856115107914
+combination$8+BC+N,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$8+BC+N+PolyK,Alzheimers Handwriting,0.5714285714285714,0.4676258992805755
+combination$8+BC+N+PolyK+FR,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$8+BC+N+PolyK+FR+HT,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$8+BC+N+PolyK+FR+HT+Bag offset,Alzheimers Handwriting,0.5714285714285714,0.539568345323741
+combination$8+BC+N+PolyK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.4857142857142857,0.5035971223021583
+combination$8+BC+N+PolyK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.4857142857142857,0.5035971223021583
+combination$8+BC+N+PolyK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.6,0.5323741007194245
+combination$8+BC,Breast Cancer,0.6754385964912281,0.7208791208791209
+combination$8+BC+N,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$8+BC+N+PolyK,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$8+BC+N+PolyK+FR,Breast Cancer,0.5789473684210527,0.5692307692307692
+combination$8+BC+N+PolyK+FR+HT,Breast Cancer,0.5789473684210527,0.5692307692307692
+combination$8+BC+N+PolyK+FR+HT+Bag offset,Breast Cancer,0.5789473684210527,0.5692307692307692
+combination$8+BC+N+PolyK+FR+HT+Bag nooffset,Breast Cancer,0.5789473684210527,0.5692307692307692
+combination$8+BC+N+PolyK+FR+HT+HT+Boost nooffset,Breast Cancer,0.5789473684210527,0.5692307692307692
+combination$8+BC+N+PolyK+FR+HT+HT+Boost offset,Breast Cancer,0.5789473684210527,0.5692307692307692
+combination$8+BC,Spam Email,0.49166666666666664,0.5058333333333334
+combination$8+BC+N,Spam Email,0.49166666666666664,0.5058333333333334
+combination$8+BC+N+PolyK,Spam Email,0.49166666666666664,0.5058333333333334
+combination$8+BC+N+PolyK+FR,Spam Email,0.5133333333333333,0.4952083333333333
+combination$8+BC+N+PolyK+FR+HT,Spam Email,0.5133333333333333,0.4952083333333333
+combination$8+BC+N+PolyK+FR+HT+Bag offset,Spam Email,0.5133333333333333,0.5047916666666666
+combination$8+BC+N+PolyK+FR+HT+Bag nooffset,Spam Email,0.5133333333333333,0.4952083333333333
+combination$8+BC+N+PolyK+FR+HT+HT+Boost nooffset,Spam Email,0.5133333333333333,0.4952083333333333
+combination$8+BC+N+PolyK+FR+HT+HT+Boost offset,Spam Email,0.5133333333333333,0.4952083333333333
+combination$8+BC,Water Potability,0.625,0.6061068702290077
+combination$8+BC+N,Water Potability,0.625,0.6061068702290077
+combination$8+BC+N+PolyK,Water Potability,0.625,0.6061068702290077
+combination$8+BC+N+PolyK+FR,Water Potability,0.5076219512195121,0.5194656488549618
+combination$8+BC+N+PolyK+FR+HT,Water Potability,0.5076219512195121,0.5194656488549618
+combination$8+BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.5076219512195121,0.5194656488549618
+combination$8+BC+N+PolyK+FR+HT+Bag nooffset,Water Potability,0.4923780487804878,0.4805343511450382
+combination$8+BC+N+PolyK+FR+HT+HT+Boost nooffset,Water Potability,0.4923780487804878,0.4805343511450382
+combination$8+BC+N+PolyK+FR+HT+HT+Boost offset,Water Potability,0.4923780487804878,0.4805343511450382
+combination$8+BC,Alzheimers Handwriting,0.42857142857142855,0.5323741007194245
+combination$8+BC+N,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+RBFK,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+RBFK+FR,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+RBFK+FR+HT,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+RBFK+FR+HT+Bag offset,Alzheimers Handwriting,0.5714285714285714,0.5035971223021583
+combination$8+BC+N+RBFK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+RBFK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC+N+RBFK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$8+BC,Breast Cancer,0.6754385964912281,0.7032967032967034
+combination$8+BC+N,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$8+BC+N+RBFK,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$8+BC+N+RBFK+FR,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$8+BC+N+RBFK+FR+HT,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$8+BC+N+RBFK+FR+HT+Bag offset,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$8+BC+N+RBFK+FR+HT+Bag nooffset,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$8+BC+N+RBFK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6140350877192983,0.6307692307692307
+combination$8+BC+N+RBFK+FR+HT+HT+Boost offset,Breast Cancer,0.38596491228070173,0.36923076923076925
+combination$8+BC,Spam Email,0.49,0.50625
+combination$8+BC+N,Spam Email,0.49,0.50625
+combination$8+BC+N+RBFK,Spam Email,0.49,0.50625
+combination$8+BC+N+RBFK+FR,Spam Email,0.49,0.50625
+combination$8+BC+N+RBFK+FR+HT,Spam Email,0.49,0.50625
+combination$8+BC+N+RBFK+FR+HT+Bag offset,Spam Email,0.51,0.50625
+combination$8+BC+N+RBFK+FR+HT+Bag nooffset,Spam Email,0.49,0.50625
+combination$8+BC+N+RBFK+FR+HT+HT+Boost nooffset,Spam Email,0.49,0.50625
+combination$8+BC+N+RBFK+FR+HT+HT+Boost offset,Spam Email,0.49,0.50625
+combination$8+BC,Water Potability,0.5945121951219512,0.6137404580152672
+combination$8+BC+N,Water Potability,0.5945121951219512,0.6137404580152672
+combination$8+BC+N+RBFK,Water Potability,0.5945121951219512,0.6137404580152672
+combination$8+BC+N+RBFK+FR,Water Potability,0.5945121951219512,0.6137404580152672
+combination$8+BC+N+RBFK+FR+HT,Water Potability,0.5945121951219512,0.6137404580152672
+combination$8+BC+N+RBFK+FR+HT+Bag offset,Water Potability,0.5945121951219512,0.6137404580152672
+combination$8+BC+N+RBFK+FR+HT+Bag nooffset,Water Potability,0.5945121951219512,0.6137404580152672
+combination$8+BC+N+RBFK+FR+HT+HT+Boost nooffset,Water Potability,0.5945121951219512,0.6137404580152672
+combination$8+BC+N+RBFK+FR+HT+HT+Boost offset,Water Potability,0.5945121951219512,0.6137404580152672
+combination$9+BC,Alzheimers Handwriting,0.4857142857142857,0.5107913669064749
+combination$9+BC+N,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$9+BC+N+FS,Alzheimers Handwriting,0.42857142857142855,0.5035971223021583
+combination$9+BC+N+FS+FR,Alzheimers Handwriting,0.5428571428571428,0.6187050359712231
+combination$9+BC+N+FS+FR+HT,Alzheimers Handwriting,0.6285714285714286,0.6834532374100719
+combination$9+BC+N+FS+FR+HT+Bag offset,Alzheimers Handwriting,0.6,0.6402877697841727
+combination$9+BC+N+FS+FR+HT+Bag nooffset,Alzheimers Handwriting,0.5428571428571428,0.6258992805755396
+combination$9+BC+N+FS+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.6,0.6618705035971223
+combination$9+BC+N+FS+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.6,0.6474820143884892
+combination$9+BC+N+FR,Alzheimers Handwriting,0.7428571428571429,0.7553956834532374
+combination$9+BC+N+FR+HT,Alzheimers Handwriting,0.7428571428571429,0.7482014388489209
+combination$9+BC+N+FR+HT+Bag nooffset,Alzheimers Handwriting,0.7428571428571429,0.7553956834532374
+combination$9+BC+N+FR+HT+Bag offset,Alzheimers Handwriting,0.7714285714285715,0.7410071942446043
+combination$9+BC+N+FR+HT+Boost nooffset,Alzheimers Handwriting,0.7142857142857143,0.7482014388489209
+combination$9+BC+N+FR+HT+Boost offset,Alzheimers Handwriting,0.7714285714285715,0.7553956834532374
+combination$9+BC,Breast Cancer,0.8070175438596491,0.7252747252747253
+combination$9+BC+N,Breast Cancer,0.6929824561403509,0.610989010989011
+combination$9+BC+N+FS,Breast Cancer,0.6929824561403509,0.610989010989011
+combination$9+BC+N+FS+FR,Breast Cancer,0.7105263157894737,0.6241758241758242
+combination$9+BC+N+FS+FR+HT,Breast Cancer,0.7631578947368421,0.6879120879120879
+combination$9+BC+N+FS+FR+HT+Bag offset,Breast Cancer,0.7105263157894737,0.6307692307692307
+combination$9+BC+N+FS+FR+HT+Bag nooffset,Breast Cancer,0.7105263157894737,0.6241758241758242
+combination$9+BC+N+FS+FR+HT+HT+Boost nooffset,Breast Cancer,0.7105263157894737,0.6241758241758242
+combination$9+BC+N+FS+FR+HT+HT+Boost offset,Breast Cancer,0.7017543859649122,0.621978021978022
+combination$9+BC+N+FR,Breast Cancer,0.7105263157894737,0.6241758241758242
+combination$9+BC+N+FR+HT,Breast Cancer,0.7719298245614035,0.6901098901098901
+combination$9+BC+N+FR+HT+Bag nooffset,Breast Cancer,0.7017543859649122,0.6241758241758242
+combination$9+BC+N+FR+HT+Bag offset,Breast Cancer,0.7105263157894737,0.6241758241758242
+combination$9+BC+N+FR+HT+Boost nooffset,Breast Cancer,0.7105263157894737,0.6263736263736264
+combination$9+BC+N+FR+HT+Boost offset,Breast Cancer,0.7105263157894737,0.6285714285714286
+combination$9+BC,Spam Email,0.515,0.5
+combination$9+BC+N,Spam Email,0.515,0.5
+combination$9+BC+N+FS,Spam Email,0.515,0.5
+combination$9+BC+N+FS+FR,Spam Email,0.515,0.5
+combination$9+BC+N+FS+FR+HT,Spam Email,0.515,0.5
+combination$9+BC+N+FS+FR+HT+Bag offset,Spam Email,0.515,0.0
+combination$9+BC+N+FS+FR+HT+Bag nooffset,Spam Email,0.515,0.5
+combination$9+BC+N+FS+FR+HT+HT+Boost nooffset,Spam Email,0.515,0.5
+combination$9+BC+N+FS+FR+HT+HT+Boost offset,Spam Email,0.515,0.5
+combination$9+BC+N+FR,Spam Email,0.515,0.5
+combination$9+BC+N+FR+HT,Spam Email,0.515,0.5
+combination$9+BC+N+FR+HT+Bag nooffset,Spam Email,0.515,0.5
+combination$9+BC+N+FR+HT+Bag offset,Spam Email,0.515,0.0
+combination$9+BC+N+FR+HT+Boost nooffset,Spam Email,0.515,0.5
+combination$9+BC+N+FR+HT+Boost offset,Spam Email,0.515,0.5
+combination$9+BC,Water Potability,0.5853658536585366,0.6160305343511451
+combination$9+BC+N,Water Potability,0.5853658536585366,0.6160305343511451
+combination$9+BC+N+FS,Water Potability,0.5853658536585366,0.6160305343511451
+combination$9+BC+N+FS+FR,Water Potability,0.5853658536585366,0.6160305343511451
+combination$9+BC+N+FS+FR+HT,Water Potability,0.5853658536585366,0.6160305343511451
+combination$9+BC+N+FS+FR+HT+Bag offset,Water Potability,0.5853658536585366,0.6160305343511451
+combination$9+BC+N+FS+FR+HT+Bag nooffset,Water Potability,0.5853658536585366,0.6160305343511451
+combination$9+BC+N+FS+FR+HT+HT+Boost nooffset,Water Potability,0.5853658536585366,0.6160305343511451
+combination$9+BC+N+FS+FR+HT+HT+Boost offset,Water Potability,0.5853658536585366,0.6160305343511451
+combination$9+BC+N+FR,Water Potability,0.5853658536585366,0.6160305343511451
+combination$9+BC+N+FR+HT,Water Potability,0.5853658536585366,0.6160305343511451
+combination$9+BC+N+FR+HT+Bag nooffset,Water Potability,0.5853658536585366,0.6160305343511451
+combination$9+BC+N+FR+HT+Bag offset,Water Potability,0.5853658536585366,0.6160305343511451
+combination$9+BC+N+FR+HT+Boost nooffset,Water Potability,0.5853658536585366,0.6160305343511451
+combination$9+BC+N+FR+HT+Boost offset,Water Potability,0.5853658536585366,0.6160305343511451
+combination$9+BC,Alzheimers Handwriting,0.5142857142857142,0.5107913669064749
+combination$9+BC+N,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$9+BC+N+DR,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$9+BC+N+DR+FR,Alzheimers Handwriting,0.5142857142857142,0.5611510791366906
+combination$9+BC+N+DR+FR+HT,Alzheimers Handwriting,0.5142857142857142,0.5107913669064749
+combination$9+BC+N+DR+FR+HT+Bag offset,Alzheimers Handwriting,0.7428571428571429,0.5899280575539568
+combination$9+BC+N+DR+FR+HT+Bag nooffset,Alzheimers Handwriting,0.45714285714285713,0.5467625899280576
+combination$9+BC+N+DR+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.37142857142857144,0.37410071942446044
+combination$9+BC+N+DR+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5142857142857142,0.5755395683453237
+combination$9+BC+N+DR,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$9+BC+N+DR+HT,Alzheimers Handwriting,0.5142857142857142,0.5251798561151079
+combination$9+BC+N+DR+HT+Bag nooffset,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$9+BC+N+DR+HT+Bag offset,Alzheimers Handwriting,0.5142857142857142,0.5179856115107914
+combination$9+BC+N+DR+HT+Boost nooffset,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$9+BC+N+DR+HT+Boost offset,Alzheimers Handwriting,0.5142857142857142,0.48201438848920863
+combination$9+BC,Breast Cancer,0.7456140350877193,0.7076923076923077
+combination$9+BC+N,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$9+BC+N+DR,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$9+BC+N+DR+FR,Breast Cancer,0.631578947368421,0.6483516483516484
+combination$9+BC+N+DR+FR+HT,Breast Cancer,0.6754385964912281,0.7098901098901099
+combination$9+BC+N+DR+FR+HT+Bag offset,Breast Cancer,0.631578947368421,0.643956043956044
+combination$9+BC+N+DR+FR+HT+Bag nooffset,Breast Cancer,0.631578947368421,0.6461538461538462
+combination$9+BC+N+DR+FR+HT+HT+Boost nooffset,Breast Cancer,0.631578947368421,0.6483516483516484
+combination$9+BC+N+DR+FR+HT+HT+Boost offset,Breast Cancer,0.6403508771929824,0.6505494505494506
+combination$9+BC+N+DR,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$9+BC+N+DR+HT,Breast Cancer,0.631578947368421,0.6307692307692307
+combination$9+BC+N+DR+HT+Bag nooffset,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$9+BC+N+DR+HT+Bag offset,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$9+BC+N+DR+HT+Boost nooffset,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$9+BC+N+DR+HT+Boost offset,Breast Cancer,0.631578947368421,0.6263736263736264
+combination$9+BC,Spam Email,0.5016666666666667,0.5033333333333333
+combination$9+BC+N,Spam Email,0.5016666666666667,0.5033333333333333
+combination$9+BC+N+DR,Spam Email,0.5016666666666667,0.5033333333333333
+combination$9+BC+N+DR+FR,Spam Email,0.5016666666666667,0.5033333333333333
+combination$9+BC+N+DR+FR+HT,Spam Email,0.5016666666666667,0.5033333333333333
+combination$9+BC+N+DR+FR+HT+Bag offset,Spam Email,0.5016666666666667,0.5033333333333333
+combination$9+BC+N+DR+FR+HT+Bag nooffset,Spam Email,0.5016666666666667,0.5033333333333333
+combination$9+BC+N+DR+FR+HT+HT+Boost nooffset,Spam Email,0.5016666666666667,0.5033333333333333
+combination$9+BC+N+DR+FR+HT+HT+Boost offset,Spam Email,0.5016666666666667,0.5033333333333333
+combination$9+BC+N+DR,Spam Email,0.5016666666666667,0.5033333333333333
+combination$9+BC+N+DR+HT,Spam Email,0.5016666666666667,0.5033333333333333
+combination$9+BC+N+DR+HT+Bag nooffset,Spam Email,0.5016666666666667,0.5033333333333333
+combination$9+BC+N+DR+HT+Bag offset,Spam Email,0.5016666666666667,0.5033333333333333
+combination$9+BC+N+DR+HT+Boost nooffset,Spam Email,0.5016666666666667,0.5033333333333333
+combination$9+BC+N+DR+HT+Boost offset,Spam Email,0.5016666666666667,0.5033333333333333
+combination$9+BC,Water Potability,0.5929878048780488,0.6141221374045801
+combination$9+BC+N,Water Potability,0.5929878048780488,0.6141221374045801
+combination$9+BC+N+DR,Water Potability,0.5929878048780488,0.6141221374045801
+combination$9+BC+N+DR+FR,Water Potability,0.5929878048780488,0.6141221374045801
+combination$9+BC+N+DR+FR+HT,Water Potability,0.5929878048780488,0.6141221374045801
+combination$9+BC+N+DR+FR+HT+Bag offset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$9+BC+N+DR+FR+HT+Bag nooffset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$9+BC+N+DR+FR+HT+HT+Boost nooffset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$9+BC+N+DR+FR+HT+HT+Boost offset,Water Potability,0.4070121951219512,0.38587786259541984
+combination$9+BC+N+DR,Water Potability,0.5929878048780488,0.6141221374045801
+combination$9+BC+N+DR+HT,Water Potability,0.5929878048780488,0.6141221374045801
+combination$9+BC+N+DR+HT+Bag nooffset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$9+BC+N+DR+HT+Bag offset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$9+BC+N+DR+HT+Boost nooffset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$9+BC+N+DR+HT+Boost offset,Water Potability,0.5929878048780488,0.6141221374045801
+combination$9+BC,Alzheimers Handwriting,0.4,0.5179856115107914
+combination$9+BC+N,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$9+BC+N+SigK,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$9+BC+N+SigK+FR,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$9+BC+N+SigK+FR+HT,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$9+BC+N+SigK+FR+HT+Bag offset,Alzheimers Handwriting,0.6,0.5107913669064749
+combination$9+BC+N+SigK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$9+BC+N+SigK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$9+BC+N+SigK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$9+BC,Breast Cancer,0.7280701754385965,0.7098901098901099
+combination$9+BC+N,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$9+BC+N+SigK,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$9+BC+N+SigK+FR,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$9+BC+N+SigK+FR+HT,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$9+BC+N+SigK+FR+HT+Bag offset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$9+BC+N+SigK+FR+HT+Bag nooffset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$9+BC+N+SigK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$9+BC+N+SigK+FR+HT+HT+Boost offset,Breast Cancer,0.6228070175438597,0.6285714285714286
+combination$9+BC,Spam Email,0.5125,0.500625
+combination$9+BC+N,Spam Email,0.5125,0.500625
+combination$9+BC+N+SigK,Spam Email,0.5125,0.500625
+combination$9+BC+N+SigK+FR,Spam Email,0.5125,0.500625
+combination$9+BC+N+SigK+FR+HT,Spam Email,0.5125,0.500625
+combination$9+BC+N+SigK+FR+HT+Bag offset,Spam Email,0.5125,0.500625
+combination$9+BC+N+SigK+FR+HT+Bag nooffset,Spam Email,0.5125,0.500625
+combination$9+BC+N+SigK+FR+HT+HT+Boost nooffset,Spam Email,0.5125,0.500625
+combination$9+BC+N+SigK+FR+HT+HT+Boost offset,Spam Email,0.5125,0.500625
+combination$9+BC,Water Potability,0.6189024390243902,0.6076335877862595
+combination$9+BC+N,Water Potability,0.6189024390243902,0.6076335877862595
+combination$9+BC+N+SigK,Water Potability,0.6189024390243902,0.6076335877862595
+combination$9+BC+N+SigK+FR,Water Potability,0.6189024390243902,0.6076335877862595
+combination$9+BC+N+SigK+FR+HT,Water Potability,0.6189024390243902,0.6076335877862595
+combination$9+BC+N+SigK+FR+HT+Bag offset,Water Potability,0.6189024390243902,0.6076335877862595
+combination$9+BC+N+SigK+FR+HT+Bag nooffset,Water Potability,0.6189024390243902,0.6076335877862595
+combination$9+BC+N+SigK+FR+HT+HT+Boost nooffset,Water Potability,0.6189024390243902,0.6076335877862595
+combination$9+BC+N+SigK+FR+HT+HT+Boost offset,Water Potability,0.6189024390243902,0.6076335877862595
+combination$9+BC,Alzheimers Handwriting,0.4,0.5323741007194245
+combination$9+BC+N,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$9+BC+N+PolyK,Alzheimers Handwriting,0.4,0.5107913669064749
+combination$9+BC+N+PolyK+FR,Alzheimers Handwriting,0.5714285714285714,0.5107913669064749
+combination$9+BC+N+PolyK+FR+HT,Alzheimers Handwriting,0.5714285714285714,0.5107913669064749
+combination$9+BC+N+PolyK+FR+HT+Bag offset,Alzheimers Handwriting,0.6,0.5323741007194245
+combination$9+BC+N+PolyK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.42857142857142855,0.45323741007194246
+combination$9+BC+N+PolyK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.42857142857142855,0.539568345323741
+combination$9+BC+N+PolyK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5428571428571428,0.4892086330935252
+combination$9+BC,Breast Cancer,0.7105263157894737,0.7120879120879121
+combination$9+BC+N,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$9+BC+N+PolyK,Breast Cancer,0.6052631578947368,0.6329670329670329
+combination$9+BC+N+PolyK+FR,Breast Cancer,0.6140350877192983,0.5604395604395604
+combination$9+BC+N+PolyK+FR+HT,Breast Cancer,0.6140350877192983,0.5604395604395604
+combination$9+BC+N+PolyK+FR+HT+Bag offset,Breast Cancer,0.6140350877192983,0.5604395604395604
+combination$9+BC+N+PolyK+FR+HT+Bag nooffset,Breast Cancer,0.6140350877192983,0.5604395604395604
+combination$9+BC+N+PolyK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6140350877192983,0.5604395604395604
+combination$9+BC+N+PolyK+FR+HT+HT+Boost offset,Breast Cancer,0.6140350877192983,0.5604395604395604
+combination$9+BC,Spam Email,0.5175,0.499375
+combination$9+BC+N,Spam Email,0.5175,0.499375
+combination$9+BC+N+PolyK,Spam Email,0.5175,0.499375
+combination$9+BC+N+PolyK+FR,Spam Email,0.5091666666666667,0.49916666666666665
+combination$9+BC+N+PolyK+FR+HT,Spam Email,0.5091666666666667,0.49916666666666665
+combination$9+BC+N+PolyK+FR+HT+Bag offset,Spam Email,0.5091666666666667,0.5008333333333334
+combination$9+BC+N+PolyK+FR+HT+Bag nooffset,Spam Email,0.5091666666666667,0.49916666666666665
+combination$9+BC+N+PolyK+FR+HT+HT+Boost nooffset,Spam Email,0.49083333333333334,0.5008333333333334
+combination$9+BC+N+PolyK+FR+HT+HT+Boost offset,Spam Email,0.49083333333333334,0.5008333333333334
+combination$9+BC,Water Potability,0.5990853658536586,0.6125954198473282
+combination$9+BC+N,Water Potability,0.5990853658536586,0.6125954198473282
+combination$9+BC+N+PolyK,Water Potability,0.5990853658536586,0.6125954198473282
+combination$9+BC+N+PolyK+FR,Water Potability,0.45884146341463417,0.48893129770992366
+combination$9+BC+N+PolyK+FR+HT,Water Potability,0.45884146341463417,0.48893129770992366
+combination$9+BC+N+PolyK+FR+HT+Bag offset,Water Potability,0.5411585365853658,0.5110687022900763
+combination$9+BC+N+PolyK+FR+HT+Bag nooffset,Water Potability,0.45884146341463417,0.48893129770992366
+combination$9+BC+N+PolyK+FR+HT+HT+Boost nooffset,Water Potability,0.45884146341463417,0.48893129770992366
+combination$9+BC+N+PolyK+FR+HT+HT+Boost offset,Water Potability,0.5411585365853658,0.5110687022900763
+combination$9+BC,Alzheimers Handwriting,0.6,0.4892086330935252
+combination$9+BC+N,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$9+BC+N+RBFK,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$9+BC+N+RBFK+FR,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$9+BC+N+RBFK+FR+HT,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$9+BC+N+RBFK+FR+HT+Bag offset,Alzheimers Handwriting,0.5428571428571428,0.5251798561151079
+combination$9+BC+N+RBFK+FR+HT+Bag nooffset,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$9+BC+N+RBFK+FR+HT+HT+Boost nooffset,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$9+BC+N+RBFK+FR+HT+HT+Boost offset,Alzheimers Handwriting,0.5428571428571428,0.4748201438848921
+combination$9+BC,Breast Cancer,0.7631578947368421,0.701098901098901
+combination$9+BC+N,Breast Cancer,0.6842105263157895,0.6131868131868132
+combination$9+BC+N+RBFK,Breast Cancer,0.6842105263157895,0.6131868131868132
+combination$9+BC+N+RBFK+FR,Breast Cancer,0.6842105263157895,0.6131868131868132
+combination$9+BC+N+RBFK+FR+HT,Breast Cancer,0.6842105263157895,0.6131868131868132
+combination$9+BC+N+RBFK+FR+HT+Bag offset,Breast Cancer,0.6842105263157895,0.6131868131868132
+combination$9+BC+N+RBFK+FR+HT+Bag nooffset,Breast Cancer,0.6842105263157895,0.6131868131868132
+combination$9+BC+N+RBFK+FR+HT+HT+Boost nooffset,Breast Cancer,0.6842105263157895,0.6131868131868132
+combination$9+BC+N+RBFK+FR+HT+HT+Boost offset,Breast Cancer,0.6842105263157895,0.6131868131868132
+combination$9+BC,Spam Email,0.49916666666666665,0.5039583333333333
+combination$9+BC+N,Spam Email,0.49916666666666665,0.5039583333333333
+combination$9+BC+N+RBFK,Spam Email,0.49916666666666665,0.5039583333333333
+combination$9+BC+N+RBFK+FR,Spam Email,0.49916666666666665,0.5039583333333333
+combination$9+BC+N+RBFK+FR+HT,Spam Email,0.49916666666666665,0.5039583333333333
+combination$9+BC+N+RBFK+FR+HT+Bag offset,Spam Email,0.5008333333333334,0.5039583333333333
+combination$9+BC+N+RBFK+FR+HT+Bag nooffset,Spam Email,0.49916666666666665,0.5039583333333333
+combination$9+BC+N+RBFK+FR+HT+HT+Boost nooffset,Spam Email,0.49916666666666665,0.5039583333333333
+combination$9+BC+N+RBFK+FR+HT+HT+Boost offset,Spam Email,0.49916666666666665,0.5039583333333333
+combination$9+BC,Water Potability,0.6265243902439024,0.6057251908396947
+combination$9+BC+N,Water Potability,0.6265243902439024,0.6057251908396947
+combination$9+BC+N+RBFK,Water Potability,0.6265243902439024,0.6057251908396947
+combination$9+BC+N+RBFK+FR,Water Potability,0.6265243902439024,0.6057251908396947
+combination$9+BC+N+RBFK+FR+HT,Water Potability,0.6265243902439024,0.6057251908396947
+combination$9+BC+N+RBFK+FR+HT+Bag offset,Water Potability,0.6265243902439024,0.6057251908396947
+combination$9+BC+N+RBFK+FR+HT+Bag nooffset,Water Potability,0.6265243902439024,0.6057251908396947
+combination$9+BC+N+RBFK+FR+HT+HT+Boost nooffset,Water Potability,0.6265243902439024,0.6057251908396947
+combination$9+BC+N+RBFK+FR+HT+HT+Boost offset,Water Potability,0.6265243902439024,0.6057251908396947

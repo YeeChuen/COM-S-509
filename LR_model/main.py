@@ -6,14 +6,16 @@ from feature_reduction import PCA
 from feature_selection import feature_selection_filter_corr, select_feature
 from hyperparam_tuning import hyperparam_tuning
 
+# 4827541 long_1nod LR_model    chuen  R       0:01      1 nova18-58 11:20PM v8
+# 4829417 long_1nod LR_model    chuen  R       0:48      1 nova18-67 11:45PM v9
 
 def writeB(s):
-    save = '/work/ratul1/chuen/temp/COM-S-573/LR_model/v3_BinomLR.txt'
+    save = '/work/ratul1/chuen/temp/COM-S-573/LR_model/v9_BinomLR.txt'
     with open(save, 'a') as f:
         f.write(f'{s}')
 
 def writeM(s):
-    save = '/work/ratul1/chuen/temp/COM-S-573/LR_model/v3_MultiLR.txt'
+    save = '/work/ratul1/chuen/temp/COM-S-573/LR_model/v9_MultiLR.txt'
     with open(save, 'a') as f:
         f.write(f'{s}')
 
@@ -57,7 +59,7 @@ def training_test_model_boosting(offset, technique,dataset_name,
         else:
             technique = technique + ' offset'
 
-
+        print("binom")
         ws, bs, ls, lWs = boosting(train_x, train_y, val_x, val_y, batch_size, l_rate1, no_iter1, num_models, int(train_x.shape[0] / 3), 
                             model = LogisticRegression, model_type = 'binomial')
         score_test = ensemble_wrapper(test_x, test_y, ws, bs, True, weight, accs = lWs,
@@ -66,6 +68,7 @@ def training_test_model_boosting(offset, technique,dataset_name,
                                model = LogisticRegression, model_type = 'binomial')
         writeB(f"{technique},{dataset_name},{score_test},{score_train}\n")
         
+        print("multi")
         ws, bs, ls, lWs = boosting(train_x, train_y, val_x, val_y, batch_size, l_rate2, no_iter2, num_models, int(train_x.shape[0] / 3), 
                             model = LogisticRegression, model_type = 'multinomial')
         score_test = ensemble_wrapper(test_x, test_y, ws, bs, True, weight, accs = lWs,
@@ -89,15 +92,15 @@ def training_test_model(technique,dataset_name,
     score2 = model1.score(train_x, train_y, prob= best_prob1)
     writeM(f"{technique},{dataset_name},{score},{score2}\n")
 '''
-Normalization
-Kernelization
+Normalization           X 
+Kernelization           X
 Feature selection
 Feature reduction
-Shuffling
-Bagging
-Boosting
-Hyperparameter-tuning
-Data-reconstruction
+Shuffling               X
+Bagging                 X
+Boosting                X
+Hyperparameter-tuning   X
+Data-reconstruction     X
 Combination of the above techniques
 '''
 def basecase():
@@ -165,7 +168,7 @@ def rbf_kernelization():
         X = dataset[0]
         y = dataset[1]
 
-        X = rbf_kernel(X, 1)
+        X = rbf_kernel(X, 100, 1000)
 
         train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
         training_test_model('rbf kernelization', key,train_x, train_y, val_x, val_y, test_x, test_y)
@@ -299,10 +302,11 @@ def boosting_model():
         X = dataset[0]
         y = dataset[1]
 
+        print(key)
         train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
 
         training_test_model_boosting(True, 'boosting', key,train_x, train_y, val_x, val_y, test_x, test_y)
-        training_test_model_boosting(False, 'boosting', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        # training_test_model_boosting(False, 'boosting', key,train_x, train_y, val_x, val_y, test_x, test_y)
     pass
 
 def hyperparameter_tuning():
@@ -350,7 +354,7 @@ def data_reconstruction():
         training_test_model('data reconstruction', key,train_x, train_y, val_x, val_y, test_x, test_y)
     pass
 
-def combination():
+def combination(iter):
     #write("combination_")
     datasets = get_datasets()
 
@@ -366,54 +370,281 @@ def combination():
         X, y = shuffle(X, y)
         #write("--- basecase ---")
         train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
-        training_test_model('combination$BC', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model(f'combination${str(i)}+BC', key,train_x, train_y, val_x, val_y, test_x, test_y)
 
         X = normalize(X)
         #write("--- add normalization ---")
         train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
-        training_test_model('combination$BC+N', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model(f'combination${str(i)}+BC+N', key,train_x, train_y, val_x, val_y, test_x, test_y)
 
         FS_filter = feature_selection_filter_corr(X, y, remove_negative=True, minimum = X.shape[1])
         X_filter = select_feature(X, FS_filter)
         #write("--- add feature selection ---")
         train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_filter, y, 0.8, 0.0, 0.2)
-        training_test_model('combination$BC+N+FS', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model(f'combination${str(i)}+BC+N+FS', key,train_x, train_y, val_x, val_y, test_x, test_y)
         
         X_pca = PCA(X_filter, k=2)
         #write("--- add feature reduction w/ FS ---")
         train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_pca, y, 0.8, 0.0, 0.2)
-        training_test_model('combination$BC+N+FS+FR', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model(f'combination${str(i)}+BC+N+FS+FR', key,train_x, train_y, val_x, val_y, test_x, test_y)
         
         #write("--- add hyperparameter tuning ---")
         l_rate1, no_iter1, best_prob1 = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
         l_rate2, no_iter2, best_prob2 = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
 
-        training_test_model('combination$BC+N+FS+FR+HT', key,train_x, train_y, val_x, val_y, test_x, test_y, 
+        training_test_model(f'combination${str(i)}+BC+N+FS+FR+HT', key,train_x, train_y, val_x, val_y, test_x, test_y, 
                             l_rate1, no_iter1, best_prob1, l_rate2, no_iter2, best_prob2)
 
         #write("--- add bagging no offset---")
-        training_test_model_bagging(False, 'combination$BC+N+FS+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_bagging(True, f'combination${str(i)}+BC+N+FS+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_bagging(False, f'combination${str(i)}+BC+N+FS+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
         
         #write("--- add boosting offset---")
-        training_test_model_boosting(True, 'combination$BC+N+FS+FR+HT+HT+Boost', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_boosting(False, f'combination${str(i)}+BC+N+FS+FR+HT+HT+Boost', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_boosting(True, f'combination${str(i)}+BC+N+FS+FR+HT+HT+Boost', key,train_x, train_y, val_x, val_y, test_x, test_y)
 
 
         X_pca = PCA(X, k=X.shape[1] * 0.2)
         #write("--- add feature reduction w/o FS ---")
         train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_pca, y, 0.8, 0.0, 0.2)
-        training_test_model('combination$BC+N+FR', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model(f'combination${str(i)}+BC+N+FR', key,train_x, train_y, val_x, val_y, test_x, test_y)
         
         #write("--- add hyperparameter tuning w/o FS ---")
         l_rate1, no_iter1, best_prob1 = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
         l_rate2, no_iter2, best_prob2 = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
-        training_test_model('combination$BC+N+FR+HT', key,train_x, train_y, val_x, val_y, test_x, test_y, 
+        training_test_model(f'combination${str(i)}+BC+N+FR+HT', key,train_x, train_y, val_x, val_y, test_x, test_y, 
                             l_rate1, no_iter1, best_prob1, l_rate2, no_iter2, best_prob2)
 
         #write("--- add bagging no offset w/o FS ---")
-        training_test_model_bagging(False, 'combination$BC+N+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_bagging(False, f'combination${str(i)}+BC+N+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_bagging(True, f'combination${str(i)}+BC+N+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
         
         #write("--- add boosting offset w/o FS ---")
-        training_test_model_boosting(True, 'combination$BC+N+FR+HT+Boost', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_boosting(False, f'combination${str(i)}+BC+N+FR+HT+Boost', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_boosting(True, f'combination${str(i)}+BC+N+FR+HT+Boost', key, train_x, train_y, val_x, val_y, test_x, test_y)
+    pass
+
+def combination2(iter):
+    #write("combination_")
+    datasets = get_datasets()
+
+    for key in datasets:
+        dataset = datasets[key]
+        #write(f"\nModel performance for: {key}")
+        #write(f"combination,{key},")
+        X = dataset[0]
+        y = dataset[1]
+
+        X, y = shuffle(X, y)
+        X, y = shuffle(X, y)
+        X, y = shuffle(X, y)
+        #write("--- basecase ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
+        training_test_model(f'combination${str(i)}+BC', key,train_x, train_y, val_x, val_y, test_x, test_y)
+
+        X = normalize(X)
+        #write("--- add normalization ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
+        training_test_model(f'combination${str(i)}+BC+N', key,train_x, train_y, val_x, val_y, test_x, test_y)
+
+        X_filter = applyCorruption(X, 0.5, 0.5, True)
+        X_filter = data_reconstruct(X, 0.25)
+
+        #write("--- add feature selection ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_filter, y, 0.8, 0.0, 0.2)
+        training_test_model(f'combination${str(i)}+BC+N+DR', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        X_pca = PCA(X_filter, k=2)
+        #write("--- add feature reduction w/ DR ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_pca, y, 0.8, 0.0, 0.2)
+        training_test_model(f'combination${str(i)}+BC+N+DR+FR', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        #write("--- add hyperparameter tuning ---")
+        l_rate1, no_iter1, best_prob1 = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
+        l_rate2, no_iter2, best_prob2 = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
+
+        training_test_model(f'combination${str(i)}+BC+N+DR+FR+HT', key,train_x, train_y, val_x, val_y, test_x, test_y, 
+                            l_rate1, no_iter1, best_prob1, l_rate2, no_iter2, best_prob2)
+
+        #write("--- add bagging no offset ---")
+        training_test_model_bagging(True, f'combination${str(i)}+BC+N+DR+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_bagging(False, f'combination${str(i)}+BC+N+DR+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        #write("--- add boosting offset ---")
+        training_test_model_boosting(False, f'combination${str(i)}+BC+N+DR+FR+HT+HT+Boost', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_boosting(True, f'combination${str(i)}+BC+N+DR+FR+HT+HT+Boost', key,train_x, train_y, val_x, val_y, test_x, test_y)
+
+
+        #write("--- add feature reduction w/o FS ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_filter, y, 0.8, 0.0, 0.2)
+        training_test_model(f'combination${str(i)}+BC+N+DR', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        #write("--- add hyperparameter tuning w/o FS ---")
+        l_rate1, no_iter1, best_prob1 = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
+        l_rate2, no_iter2, best_prob2 = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
+        training_test_model(f'combination${str(i)}+BC+N+DR+HT', key,train_x, train_y, val_x, val_y, test_x, test_y, 
+                            l_rate1, no_iter1, best_prob1, l_rate2, no_iter2, best_prob2)
+
+        #write("--- add bagging no offset w/o FS ---")
+        training_test_model_bagging(False, f'combination${str(i)}+BC+N+DR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_bagging(True, f'combination${str(i)}+BC+N+DR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        #write("--- add boosting offset w/o FS ---")
+        training_test_model_boosting(False, f'combination${str(i)}+BC+N+DR+HT+Boost', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_boosting(True, f'combination${str(i)}+BC+N+DR+HT+Boost', key, train_x, train_y, val_x, val_y, test_x, test_y)
+    pass
+
+def combination3(iter):
+    #write("combination_")
+    datasets = get_datasets()
+
+    for key in datasets:
+        dataset = datasets[key]
+        #write(f"\nModel performance for: {key}")
+        #write(f"combination,{key},")
+        X = dataset[0]
+        y = dataset[1]
+
+        X, y = shuffle(X, y)
+        X, y = shuffle(X, y)
+        X, y = shuffle(X, y)
+        #write("--- basecase ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
+        training_test_model(f'combination${str(i)}+BC', key,train_x, train_y, val_x, val_y, test_x, test_y)
+
+        X = normalize(X)
+        #write("--- add normalization ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
+        training_test_model(f'combination${str(i)}+BC+N', key,train_x, train_y, val_x, val_y, test_x, test_y)
+
+        X = rbf_kernel(X, 100, 1000)
+        X = poly_kernel(X, 1, 1, 2)
+        X_sigmoid = sigmoid_kernel(X, 1, 1)
+
+        #write("--- add feature selection ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_sigmoid, y, 0.8, 0.0, 0.2)
+        training_test_model(f'combination${str(i)}+BC+N+SigK', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        X_pca = PCA(X_sigmoid, k=2)
+        #write("--- add feature reduction w/ SigK ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_pca, y, 0.8, 0.0, 0.2)
+        training_test_model(f'combination${str(i)}+BC+N+SigK+FR', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        #write("--- add hyperparameter tuning ---")
+        l_rate1, no_iter1, best_prob1 = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
+        l_rate2, no_iter2, best_prob2 = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
+
+        training_test_model(f'combination${str(i)}+BC+N+SigK+FR+HT', key,train_x, train_y, val_x, val_y, test_x, test_y, 
+                            l_rate1, no_iter1, best_prob1, l_rate2, no_iter2, best_prob2)
+
+        #write("--- add bagging no offset ---")
+        training_test_model_bagging(True, f'combination${str(i)}+BC+N+SigK+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_bagging(False, f'combination${str(i)}+BC+N+SigK+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        #write("--- add boosting offset ---")
+        training_test_model_boosting(False, f'combination${str(i)}+BC+N+SigK+FR+HT+HT+Boost', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_boosting(True, f'combination${str(i)}+BC+N+SigK+FR+HT+HT+Boost', key,train_x, train_y, val_x, val_y, test_x, test_y)
+    pass
+
+def combination4(iter):
+    #write("combination_")
+    datasets = get_datasets()
+
+    for key in datasets:
+        dataset = datasets[key]
+        #write(f"\nModel performance for: {key}")
+        #write(f"combination,{key},")
+        X = dataset[0]
+        y = dataset[1]
+
+        X, y = shuffle(X, y)
+        X, y = shuffle(X, y)
+        X, y = shuffle(X, y)
+        #write("--- basecase ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
+        training_test_model(f'combination${str(i)}+BC', key,train_x, train_y, val_x, val_y, test_x, test_y)
+
+        X = normalize(X)
+        #write("--- add normalization ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
+        training_test_model(f'combination${str(i)}+BC+N', key,train_x, train_y, val_x, val_y, test_x, test_y)
+
+        X = rbf_kernel(X, 100, 1000)
+        X_poly = poly_kernel(X, 1, 1, 2)
+
+        #write("--- add feature selection ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_poly, y, 0.8, 0.0, 0.2)
+        training_test_model(f'combination${str(i)}+BC+N+PolyK', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        X_pca = PCA(X_poly, k=2)
+        #write("--- add feature reduction w/ PolyK ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_pca, y, 0.8, 0.0, 0.2)
+        training_test_model(f'combination${str(i)}+BC+N+PolyK+FR', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        #write("--- add hyperparameter tuning ---")
+        l_rate1, no_iter1, best_prob1 = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
+        l_rate2, no_iter2, best_prob2 = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
+
+        training_test_model(f'combination${str(i)}+BC+N+PolyK+FR+HT', key,train_x, train_y, val_x, val_y, test_x, test_y, 
+                            l_rate1, no_iter1, best_prob1, l_rate2, no_iter2, best_prob2)
+
+        #write("--- add bagging no offset ---")
+        training_test_model_bagging(True, f'combination${str(i)}+BC+N+PolyK+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_bagging(False, f'combination${str(i)}+BC+N+PolyK+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        #write("--- add boosting offset ---")
+        training_test_model_boosting(False, f'combination${str(i)}+BC+N+PolyK+FR+HT+HT+Boost', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_boosting(True, f'combination${str(i)}+BC+N+PolyK+FR+HT+HT+Boost', key,train_x, train_y, val_x, val_y, test_x, test_y)
+    pass
+
+def combination5(iter):
+    #write("combination_")
+    datasets = get_datasets()
+
+    for key in datasets:
+        dataset = datasets[key]
+        #write(f"\nModel performance for: {key}")
+        #write(f"combination,{key},")
+        X = dataset[0]
+        y = dataset[1]
+
+        X, y = shuffle(X, y)
+        X, y = shuffle(X, y)
+        X, y = shuffle(X, y)
+        #write("--- basecase ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
+        training_test_model(f'combination${str(i)}+BC', key,train_x, train_y, val_x, val_y, test_x, test_y)
+
+        X = normalize(X)
+        #write("--- add normalization ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X, y, 0.8, 0.0, 0.2)
+        training_test_model(f'combination${str(i)}+BC+N', key,train_x, train_y, val_x, val_y, test_x, test_y)
+
+        X_rbf = rbf_kernel(X, 100, 1000)
+
+        #write("--- add feature selection ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_rbf, y, 0.8, 0.0, 0.2)
+        training_test_model(f'combination${str(i)}+BC+N+RBFK', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        X_pca = PCA(X_rbf, k=2)
+        #write("--- add feature reduction w/ RBFK ---")
+        train_x, train_y, val_x, val_y, test_x, test_y = splitData(X_pca, y, 0.8, 0.0, 0.2)
+        training_test_model(f'combination${str(i)}+BC+N+RBFK+FR', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        #write("--- add hyperparameter tuning ---")
+        l_rate1, no_iter1, best_prob1 = hyperparam_tuning(LogisticRegression, "multinomial", train_x, train_y)
+        l_rate2, no_iter2, best_prob2 = hyperparam_tuning(LogisticRegression, "binomial", train_x, train_y)
+
+        training_test_model(f'combination${str(i)}+BC+N+RBFK+FR+HT', key,train_x, train_y, val_x, val_y, test_x, test_y, 
+                            l_rate1, no_iter1, best_prob1, l_rate2, no_iter2, best_prob2)
+
+        #write("--- add bagging no offset ---")
+        training_test_model_bagging(True, f'combination${str(i)}+BC+N+RBFK+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_bagging(False, f'combination${str(i)}+BC+N+RBFK+FR+HT+Bag', key, train_x, train_y, val_x, val_y, test_x, test_y)
+        
+        #write("--- add boosting offset ---")
+        training_test_model_boosting(False, f'combination${str(i)}+BC+N+RBFK+FR+HT+HT+Boost', key,train_x, train_y, val_x, val_y, test_x, test_y)
+        training_test_model_boosting(True, f'combination${str(i)}+BC+N+RBFK+FR+HT+HT+Boost', key,train_x, train_y, val_x, val_y, test_x, test_y)
     pass
 
 if __name__ == "__main__":
@@ -448,11 +679,17 @@ if __name__ == "__main__":
     boosting_model()         # 8 CHECK
 
     data_reconstruction()   # 9 CHECK
-    #hyperparameter_tuning() # 10 CHECK
+    hyperparameter_tuning() # 10 CHECK
 
     for i in range(10):
         #write(f"Round {i}")
-        #combination()           # 11 No combinations yet.
+        combination(i)           # 11 No combinations yet.
+        combination2(i)
+        combination3(i)
+        combination4(i)
+        combination5(i)
         continue
 
+    writeB('END')
+    writeM('END')
     pass

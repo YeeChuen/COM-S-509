@@ -29,7 +29,7 @@ def plot_bar_individual(file_content_list, save_name, dataset_name, model_type, 
     train = []
 
     for content in file_content_list:
-        if 'combination' in content[0] or content[1] != dataset_name:
+        if content[1] != dataset_name:
             continue
 
         if content[0] not in labels:
@@ -77,6 +77,11 @@ def plot_bar_individual(file_content_list, save_name, dataset_name, model_type, 
         test.insert(1, mean['test'][dataset_name])
         train.insert(1, mean['train'][dataset_name])
         labels.insert(1, 'combination')
+
+    #print(test)
+    #print(train)
+    #print(legend)
+    #print(labels)
 
     x = np.arange(len(labels))  # the label locations
     width = 0.2  # the width of the bars
@@ -216,7 +221,7 @@ def lr_model():
     plot_bar_individual(file_content_list,'LR_Water_Potability', 'Water Potability', 'Binomial Logistic Regression')
 
     
-    folder_comb = 'LR_combination.txt'
+    folder_comb = 'LR_combination_selection.txt'
     result_list = readfile(folder_comb)
     plot_bar_combination(result_list, 'LR_Combination', 'Binomial Logistic Regression')
 
@@ -225,6 +230,26 @@ def lr_model():
     plot_bar_individual(file_content_list,'LR_Breast_Cancer_w_combination', 'Breast Cancer', 'Binomial Logistic Regression', result_list)
     plot_bar_individual(file_content_list,'LR_Spam_Email_w_combination', 'Spam Email', 'Binomial Logistic Regression', result_list)
     plot_bar_individual(file_content_list,'LR_Water_Potability_w_combination', 'Water Potability', 'Binomial Logistic Regression', result_list)
+
+def mlr_model():
+    folder = 'MLR_result.txt'
+    file_content_list = readfile(folder)
+    plot_bar_individual(file_content_list,'MLR_Alzheimers_Handwriting', 'Alzheimers Handwriting', 'Multinomial Logistic Regression')
+    plot_bar_individual(file_content_list,'MLR_Breast_Cancer', 'Breast Cancer', 'Multinomial Logistic Regression')
+    plot_bar_individual(file_content_list,'MLR_Spam_Email', 'Spam Email', 'Multinomial Logistic Regression')
+    plot_bar_individual(file_content_list,'MLR_Water_Potability', 'Water Potability', 'Multinomial Logistic Regression')
+
+    
+    folder_comb = 'MLR_combination_selection.txt'
+    result_list = readfile(folder_comb)
+    plot_bar_combination(result_list, 'MLR_Combination', 'Multinomial Logistic Regression')
+
+    
+    plot_bar_individual(file_content_list,'MLR_Alzheimers_Handwriting_w_combination', 'Alzheimers Handwriting', 'Multinomial Logistic Regression', result_list)
+    plot_bar_individual(file_content_list,'MLR_Breast_Cancer_w_combination', 'Breast Cancer', 'Multinomial Logistic Regression', result_list)
+    plot_bar_individual(file_content_list,'MLR_Spam_Email_w_combination', 'Spam Email', 'Multinomial Logistic Regression', result_list)
+    plot_bar_individual(file_content_list,'MLR_Water_Potability_w_combination', 'Water Potability', 'Multinomial Logistic Regression', result_list)
+
 
 def svm_model():
     folder = 'SVM_result.txt'
@@ -270,4 +295,5 @@ if __name__ == "__main__":
         combination
     '''
     lr_model()
-    svm_model()
+    #mlr_model()
+    #svm_model()
