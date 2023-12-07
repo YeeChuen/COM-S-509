@@ -21,3 +21,5 @@ Swap the techniques by comment and uncomment in the main.
 in the main directory
 `python plot.py` will plot the result of the performance from these models against the dataset
 
+All result plot can be found in directory `result`
+
