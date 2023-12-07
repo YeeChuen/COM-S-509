@@ -1,6 +1,6 @@
 # Comparative analysis of various machine learning method
 
-## Abstract
+## Summary
 This repo implements various machine-learning models that we have addressed 573. These include but are not limited to support-vector machines, and logistic regression. 
 For each of the models we implement, we also incorporate various optimization techniques to increase the performance of corresponding models. Some of the techniques we will show include bagging, boosting, feature selection via entropy/information gain, feature space projection, hyperparameter tuning, etc. 
 Furthermore, we also make hypotheses on the correlation factor between the model, optimization techniques used and the quality of the data. This paper aims to provide insight into the efficacy of different optimization techniques on various models and show their impact on performance gain. 
