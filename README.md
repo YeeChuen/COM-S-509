@@ -11,7 +11,7 @@ All Logistic Regression's script are in the folder `LR_model`
 use
 `python main.py`
 for all testing using LR model on all 4 dataset
-\n
+
 All Support Vector Machine's script are in the folder `SVM`
 use
 It uses Jupyter Notebook, hence result will already be shown.
