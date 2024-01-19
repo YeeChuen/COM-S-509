@@ -2,6 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# for commit testing
+
 def readfile(folder):
     with open(folder, 'r') as f:
         to_return = []
