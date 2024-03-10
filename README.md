@@ -3,7 +3,7 @@
 ## Summary
 This repo implements various machine-learning models that we have addressed in course COM S 573. These include but are not limited to support-vector machines, and logistic regression. 
 For each of the models we implement, we also incorporate various optimization techniques to increase the performance of corresponding models. Some of the techniques we will show include bagging, boosting, feature selection via entropy/information gain, feature space projection, hyperparameter tuning, etc. 
-Furthermore, we also make hypotheses on the correlation factor between the model, optimization techniques used and the quality of the data. This paper aims to provide insight into the efficacy of different optimization techniques on various models and show their impact on performance gain. 
+Furthermore, we also make hypotheses on the correlation factor between the model, optimization techniques used and the quality of the data. This repo aims to provide insight into the efficacy of different optimization techniques on various models and show their impact on performance gain. 
 The efficacy of these models is assessed through their performance on a diverse range of datasets, encompassing predictions related to breast cancer, Alzheimer’s disease handwriting, spam email classification, and water potability determination.
 
 ## scripts
